@@ -2,12 +2,18 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
+import com.solvd.repairService.DAO.interfaces.IProblemDAO;
 import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.EmployerProfiles;
 import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.ServiceCenters;
 
-public class OrdersService implements IOrderDAO {
+public class OrdersService {
+    private final IOrderDAO dao;
+
+    public OrdersService(IOrderDAO dao) {
+        this.dao = dao;
+    }
 
     public boolean checkAvailability(AbstractModel model) {
         return false;

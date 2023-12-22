@@ -7,13 +7,17 @@ import com.solvd.repairService.model.Users;
 import java.util.List;
 
 public class UsersService {
-    private final IUserDAO dao = new UsersDAO();
+    private final IUserDAO dao;
+
+    public UsersService(IUserDAO dao) {
+        this.dao = dao;
+    }
 
     public Users create(Users user) throws Exception {
         var isAvailable = dao.checkAvailability(user);
         if (isAvailable)
             return dao.create(user);
-        else throw new Exception("user with login" + user.login() + "already existed");
+        else throw new Exception("User with login" + user.login() + "already existed");
     }
 
     public Users validateAccessData(Users user) throws Exception {
@@ -44,35 +48,37 @@ public class UsersService {
     public Users updateUser(Users from, Users to) throws Exception {
         return dao.updateUser(findUserByLogin(from.login()), to);
     }
+
     public boolean deleteUserByLogin(String login) throws Exception {
         var result = dao.deleteUserByLogin(login);
-        if(!result) {
+        if (!result) {
             var userForDelete = dao.findByLogin(login);
-            if(userForDelete == null)
+            if (userForDelete == null)
                 throw new Exception("User with login " + login + " wasn't spotted");
             else
                 throw new Exception("User with login " + login + " was spotted, but not deleted");
         }
         return result;
     }
+
     public int delete(Users user) throws Exception {
         var result = dao.delete(user);
         if (result < 1)
             throw new Exception(user + " wasn't deleted");
         return result;
     }
+
     public boolean checkAvailability(Users user) throws Exception {
         var result = dao.checkAvailability(user);
-        if (!result)
-        {
+        if (!result) {
             var tmp_user = dao.findByLogin(user.login());
             String exceptionMessage = "user " + user;
             exceptionMessage += tmp_user == null ?
                     " isn't exist in db"
-                    : "exist in db, but his id is " + tmp_user.id() + " but not " + user.id() +" in input";
+                    : "exist in db, but his id is " + tmp_user.id() + " but not " + user.id() + " in input";
             throw new Exception(exceptionMessage);
         }
-            return result;
+        return result;
     }
 
 }

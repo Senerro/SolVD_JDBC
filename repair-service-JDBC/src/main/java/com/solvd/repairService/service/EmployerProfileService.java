@@ -2,6 +2,7 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
+import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
 import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.EmployerPosts;
 import com.solvd.repairService.model.EmployerProfiles;
@@ -10,6 +11,11 @@ import com.solvd.repairService.model.OrderExecutions;
 import java.util.List;
 
 public class EmployerProfileService {
+    private final IEmployerProfileDAO dao;
+
+    public EmployerProfileService(IEmployerProfileDAO dao) {
+        this.dao = dao;
+    }
 
     public boolean checkAvailability(AbstractModel model) {
         return false;

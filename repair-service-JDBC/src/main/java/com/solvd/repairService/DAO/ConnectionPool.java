@@ -12,28 +12,34 @@ import java.sql.*;
 import java.util.Properties;
 
 
-public class ConnectionPool {
+public final class ConnectionPool {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-
     private static final Logger LOGGER = LogManager.getLogger(ConnectionPool.class);
-    private static ConnectionPool connectionPool;
-    public int maxSize;
+    private final String url;
+    private final String username;
+    private final String password;
     private final ConcurrentLinkedDeque<Connection> freeConnections = new ConcurrentLinkedDeque<>();
     private final ConcurrentLinkedDeque<Connection> occupiedConnections = new ConcurrentLinkedDeque<>();
 
-    public static synchronized ConnectionPool getConnectionPool(int size) {
+    private static ConnectionPool connectionPool;
+    public int maxSize;
+
+    public static synchronized ConnectionPool getConnectionPool(int size, ConnectionObject setting) {
         if (connectionPool == null) {
-            connectionPool = new ConnectionPool(size);
+            connectionPool = new ConnectionPool(size, setting);
         }
         return connectionPool;
     }
 
-    private ConnectionPool(int size) {
+    private ConnectionPool(int size, ConnectionObject setting) {
         this.maxSize = size;
         if (size <= 1)
             this.maxSize = 5;
+        this.url = setting.url();
+        this.username = setting.username();
+        this.password = setting.password();
     }
 
     public synchronized Connection getConnection() {
@@ -48,7 +54,7 @@ public class ConnectionPool {
             try {
                 wait();
             } catch (InterruptedException e) {
-                LOGGER.error("thread "+ Thread.currentThread() +" wasn't able to wait free connection");
+                LOGGER.error("thread " + Thread.currentThread() + " wasn't able to wait free connection");
                 throw new RuntimeException(e);
             }
             connection = getPoolConnection();
@@ -63,26 +69,14 @@ public class ConnectionPool {
     }
 
     private Connection createConnection() {
-        var props = new Properties();
-
-        try (InputStream in = Files.newInputStream(Paths.get("src/main/resources/database.properties"))) {
-            props.load(in);
-        } catch (IOException e) {
-            LOGGER.error("database.property file from resources folder was renamed or replaced");
-            throw new RuntimeException(e);
-        }
-
         Connection connection;
         try {
-            connection = DriverManager.getConnection(
-                    props.getProperty("url"),
-                    props.getProperty("username"),
-                    props.getProperty("password"));
+            connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
             LOGGER.error("fail connection to database:\n"
-                    +"url " +  props.getProperty("url") +"\n"
-                    +"username " +  props.getProperty("username" ) +"\n"
-                    +"password " +  props.getProperty("password"));
+                    + "url " + url + "\n"
+                    + "username " + username + "\n"
+                    + "password " + password);
             throw new RuntimeException(e);
         }
         return connection;

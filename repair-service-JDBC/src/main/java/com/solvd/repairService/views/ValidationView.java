@@ -1,5 +1,7 @@
 package com.solvd.repairService.views;
 
+import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.DAO.interfaces.IUserDAO;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;
 import org.apache.logging.log4j.LogManager;
@@ -33,7 +35,8 @@ public class ValidationView {
     }
 
     private static void registrationUser() {
-        UsersService service = new UsersService();
+
+        UsersService service = new UsersService(new UsersDAO());
         Users user;
         try {
             user = service.create(receiveUserData());
@@ -44,7 +47,7 @@ public class ValidationView {
     }
 
     private static void loginUser() {
-        UsersService service = new UsersService();
+        UsersService service = new UsersService(new UsersDAO());
         Users user;
         try {
            user = service.validateAccessData(receiveUserData());

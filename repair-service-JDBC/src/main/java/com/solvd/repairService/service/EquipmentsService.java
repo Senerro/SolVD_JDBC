@@ -2,12 +2,19 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
+import com.solvd.repairService.DAO.interfaces.IOrderExecuteDAO;
 import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.Equipments;
 
 import java.util.List;
 
 public class EquipmentsService {
+
+    private final IEquipmentDAO dao;
+
+    public EquipmentsService(IEquipmentDAO dao) {
+        this.dao = dao;
+    }
 
     public boolean checkAvailability(AbstractModel model) {
         return false;

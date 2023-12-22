@@ -11,11 +11,9 @@ public class AbstractDAO implements IAbstractDAO {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-
     private static final Logger LOGGER = LogManager.getLogger(AbstractDAO.class);
-
     protected Connection connection;
-    protected final ConnectionPool connectionPool = ConnectionPool.getConnectionPool(5);
+    protected final ConnectionPool connectionPool = ConnectionPool.getConnectionPool(5, new ConnectionObject("src/main/resources/database.properties"));
 
     @Override
     public boolean checkAvailability(AbstractModel model) {
