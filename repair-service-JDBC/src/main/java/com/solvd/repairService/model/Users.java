@@ -1,23 +1,25 @@
 package com.solvd.repairService.model;
+
 public class Users extends AbstractModel {
     private String login;
     private String password;
     private boolean role;
 
-    public Users()
-    {
+    public Users() {
         super(0L, Users.class);
     }
 
     public Users(Long id) {
         super(id, Users.class);
     }
+
     public Users(String login, String password) {
         this();
         this.login = login;
         this.password = password;
         role = false;
     }
+
     public Users(Long id, String login, String password, boolean role) {
         this(id);
         this.login = login;
@@ -29,17 +31,30 @@ public class Users extends AbstractModel {
         return login;
     }
 
+    public void login(String login) {
+        this.login = login;
+    }
+
     public String password() {
         return password;
     }
-    public boolean role()
-    {
+
+    public void password(String password) {
+        this.password = password;
+    }
+
+    public boolean role() {
         return role;
     }
+
+    public void role(boolean b) {
+       this.role = b;
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        if(this.role)
+        if (this.role)
             stringBuilder.append("Employee with login [");
         else
             stringBuilder.append("Customer with login [");
@@ -48,6 +63,6 @@ public class Users extends AbstractModel {
         stringBuilder.append("] And password [");
         stringBuilder.append(this.password).append("] ");
 
-     return stringBuilder.toString();
+        return stringBuilder.toString();
     }
 }

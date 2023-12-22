@@ -1,7 +1,6 @@
 package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.UsersDAO;
-import com.solvd.repairService.DAO.interfaces.IUserDAO;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;
 import org.apache.logging.log4j.LogManager;
@@ -33,17 +32,38 @@ public class ValidationView {
                 loadValidationView();
         }
     }
+    public static void test_find(Users user) {
+        UsersService service = new UsersService(new UsersDAO());
+        Users spottedUser = null;
+        try {
+            spottedUser = service.findUserByLogin(user.login());
+            LOGGER.debug(spottedUser);
+            test_update(spottedUser);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+    public static void test_update(Users user) {
+        UsersService service = new UsersService(new UsersDAO());
+        try {
+            service.updateUser(user, receiveUserData());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
     private static void registrationUser() {
 
         UsersService service = new UsersService(new UsersDAO());
-        Users user;
+        Users user = null;
         try {
             user = service.create(receiveUserData());
         } catch (Exception e) {
             LOGGER.info(e.getMessage());
             loadValidationView();
         }
+        test_find(user);
     }
 
     private static void loginUser() {
