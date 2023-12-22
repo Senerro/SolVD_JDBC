@@ -1,12 +1,14 @@
 package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IUserDAO;
+import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.Users;
 
 import java.util.List;
 
-public class UsersService {
+public class UsersService{
     private final IUserDAO dao;
 
     public UsersService(IUserDAO dao) {
@@ -67,18 +69,4 @@ public class UsersService {
             throw new Exception(user + " wasn't deleted");
         return result;
     }
-
-    public boolean checkAvailability(Users user) throws Exception {
-        var result = dao.checkAvailability(user);
-        if (!result) {
-            var tmp_user = dao.findByLogin(user.login());
-            String exceptionMessage = "user " + user;
-            exceptionMessage += tmp_user == null ?
-                    " isn't exist in db"
-                    : "exist in db, but his id is " + tmp_user.id() + " but not " + user.id() + " in input";
-            throw new Exception(exceptionMessage);
-        }
-        return result;
-    }
-
 }

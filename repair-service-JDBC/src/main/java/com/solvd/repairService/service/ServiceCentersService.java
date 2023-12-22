@@ -29,10 +29,10 @@ public class ServiceCentersService {
     }
 
     public boolean updateServiceCenter(ServiceCenters from, ServiceCenters to) {
-        return false;
+        return dao.updateServiceCenter(from, to);
     }
 
     public List<ServiceCenters> orderByBusing(boolean desc) {
-        return null;
+        return dao.orderByBusing(desc);
     }
 }

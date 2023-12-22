@@ -25,26 +25,24 @@ public class CustomerProfilesService {
     }
 
     public CustomerProfiles create(CustomerProfiles profile) {
-        return null;
+        return dao.create(profile);
     }
 
 
     public CustomerProfiles selectById(CustomerProfiles profile) {
-        return null;
+        return dao.selectById(profile);
     }
 
-
     public List<CustomerProfiles> selectByNick(String nick) {
-        return null;
+        return dao.selectByNick(nick);
     }
 
 
     public List<CustomerProfiles> selectByPhone(String phone) {
-        return null;
+        return dao.selectByPhone(phone);
     }
 
-
     public CustomerProfiles updateProfile(CustomerProfiles from, CustomerProfiles to) {
-        return null;
+        return dao.updateProfile(from, to);
     }
 }

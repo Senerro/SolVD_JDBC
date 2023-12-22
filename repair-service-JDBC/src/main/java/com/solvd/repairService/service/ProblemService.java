@@ -14,23 +14,23 @@ public class ProblemService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(AbstractModel model) {
-        return false;
+    public boolean checkAvailability(Problems model) {
+        return dao.checkAvailability(model);
     }
 
-    public int delete(AbstractModel model) {
-        return 0;
+    public int delete(Problems model) {
+        return dao.delete(model);
     }
 
     public Problems create(Problems problem) {
-        return null;
+        return dao.create(problem);
     }
 
-    public boolean linkProblemToEquipment(Problems problems, Equipments equipment) {
-        return false;
+    public boolean linkProblemToEquipment(Problems problem, Equipments equipment) {
+        return dao.linkProblemToEquipment(problem, equipment);
     }
 
-    public boolean updateProblem(Problems problems) {
-        return false;
+    public boolean updateProblem(Problems problem) {
+        return dao.updateProblem(problem);
     }
 }

@@ -1,9 +1,5 @@
 package com.solvd.repairService.service;
-
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
-import com.solvd.repairService.DAO.interfaces.IProblemDAO;
-import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.EmployerProfiles;
 import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.ServiceCenters;
@@ -15,27 +11,27 @@ public class OrdersService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(AbstractModel model) {
-        return false;
+    public boolean checkAvailability(Orders model) {
+        return dao.checkAvailability(model);
     }
 
-    public int delete(AbstractModel model) {
-        return 0;
+    public int delete(Orders model) {
+        return dao.delete(model);
     }
 
     public Orders create(Orders order) {
-        return null;
+        return dao.create(order);
     }
 
     public Orders selectById(Orders order) {
-        return null;
+        return dao.selectById(order);
     }
 
     public Orders changeRepairman(Orders order, EmployerProfiles repairman) {
-        return null;
+        return dao.changeRepairman(order, repairman);
     }
 
     public Orders changeServiceCenter(Orders order, ServiceCenters serviceCenter) {
-        return null;
+        return dao.changeServiceCenter(order, serviceCenter);
     }
 }

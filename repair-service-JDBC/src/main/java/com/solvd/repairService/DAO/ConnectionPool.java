@@ -4,12 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.util.concurrent.ConcurrentLinkedDeque;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.*;
-import java.util.Properties;
 
 
 public final class ConnectionPool {
@@ -26,20 +21,21 @@ public final class ConnectionPool {
     private static ConnectionPool connectionPool;
     public int maxSize;
 
-    public static synchronized ConnectionPool getConnectionPool(int size, ConnectionObject setting) {
+    public static synchronized ConnectionPool getConnectionPool(int size, ConnectionSettings setting) {
         if (connectionPool == null) {
             connectionPool = new ConnectionPool(size, setting);
         }
         return connectionPool;
     }
 
-    private ConnectionPool(int size, ConnectionObject setting) {
+    private ConnectionPool(int size, ConnectionSettings setting) {
         this.maxSize = size;
         if (size <= 1)
             this.maxSize = 5;
         this.url = setting.url();
         this.username = setting.username();
         this.password = setting.password();
+        connectionPool = this;
     }
 
     public synchronized Connection getConnection() {

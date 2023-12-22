@@ -15,7 +15,6 @@ public class UsersDAO extends AbstractDAO implements IUserDAO {
         return null;
     }
 
-
     @Override
     public List<Users> selectByRole(boolean role) {
         return null;

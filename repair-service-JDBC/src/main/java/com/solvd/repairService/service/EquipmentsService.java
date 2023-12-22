@@ -16,35 +16,35 @@ public class EquipmentsService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(AbstractModel model) {
-        return false;
+    public boolean checkAvailability(Equipments model) {
+        return dao.checkAvailability(model);
     }
 
-    public int delete(AbstractModel model) {
-        return 0;
+    public int delete(Equipments model) {
+        return dao.delete(model);
     }
 
-    public Equipments create(Equipments equipments) {
-        return null;
+    public Equipments create(Equipments equipment) {
+        return dao.create(equipment);
     }
 
-    public Equipments selectById(Equipments equipments) {
-        return null;
+    public Equipments selectById(Equipments equipment) {
+        return dao.selectById(equipment);
     }
 
     public List<Equipments> selectByType(String type) {
-        return null;
+        return dao.selectByType(type);
     }
 
     public List<Equipments> selectByProducer(String producer) {
-        return null;
+        return dao.selectByProducer(producer);
     }
 
     public List<Equipments> orderByCost(double cost, boolean desc) {
-        return null;
+        return dao.orderByCost(cost, desc);
     }
 
     public Equipments updateEquipment(Equipments from, Equipments to) {
-        return null;
+        return dao.updateEquipment(from, to);
     }
 }

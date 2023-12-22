@@ -17,52 +17,43 @@ public class EmployerProfileService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(AbstractModel model) {
-        return false;
+    public boolean checkAvailability(EmployerProfiles model) {
+        return dao.checkAvailability(model);
     }
 
-
-    public int delete(AbstractModel model) {
-        return 0;
+    public int delete(EmployerProfiles model) {
+        return dao.delete(model);
     }
-
 
     public EmployerProfiles create(EmployerProfiles profile) {
-        return null;
+        return dao.create(profile);
     }
-
 
     public EmployerProfiles selectById(EmployerProfiles profile) {
-        return null;
+        return dao.selectById(profile);
     }
-
 
     public List<EmployerProfiles> findByFullname(String fullname) {
-        return null;
+        return dao.findByFullname(fullname);
     }
-
 
     public List<EmployerProfiles> findByPhone(String phone) {
-        return null;
+        return dao.findByPhone(phone);
     }
-
 
     public List<EmployerProfiles> selectByExperience(double role, boolean desc) {
-        return null;
+        return dao.selectByExperience(role, desc);
     }
-
 
     public EmployerProfiles updateProfile(EmployerProfiles from, EmployerProfiles to) {
-        return null;
+        return dao.updateProfile(from, to);
     }
-
 
     public EmployerProfiles updatePost(EmployerProfiles employee, EmployerPosts post) {
-        return null;
+        return dao.updatePost(employee, post);
     }
 
-
     public double setCost(EmployerProfiles employee, OrderExecutions orderExecution) {
-        return 0;
+        return dao.setCost(employee, orderExecution);
     }
 }

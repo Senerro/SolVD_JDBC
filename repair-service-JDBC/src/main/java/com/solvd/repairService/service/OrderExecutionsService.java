@@ -13,27 +13,23 @@ public class OrderExecutionsService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(AbstractModel model) {
-        return false;
+    public boolean checkAvailability(OrderExecutions model) {
+        return dao.checkAvailability(model);
     }
 
-
-    public int delete(AbstractModel model) {
-        return 0;
+    public int delete(OrderExecutions model) {
+        return dao.delete(model);
     }
-
 
     public OrderExecutions selectById(OrderExecutions orderExecution) {
-        return null;
+        return dao.selectById(orderExecution);
     }
-
 
     public OrderExecutions create(OrderExecutions orderExecution) {
-        return null;
+        return dao.create(orderExecution);
     }
 
-
     public boolean updateOrderExecution(OrderExecutions from, OrderExecutions to) {
-        return false;
+        return dao.updateOrderExecution(from, to);
     }
 }

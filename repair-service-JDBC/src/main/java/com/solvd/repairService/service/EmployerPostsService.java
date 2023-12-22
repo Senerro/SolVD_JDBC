@@ -15,25 +15,22 @@ public class EmployerPostsService {
     }
 
     public boolean checkAvailability(EmployerPosts model) {
-        return false;
+        return dao.checkAvailability(model);
     }
-
 
     public int delete(EmployerPosts model) {
-        return 0;
+        return dao.delete(model);
     }
-
 
     public EmployerPosts create(EmployerPosts post) {
-        return null;
+        return dao.create(post);
     }
 
-
     public EmployerPosts selectById(EmployerPosts post) {
-        return null;
+        return dao.selectById(post);
     }
 
     public EmployerPosts changePostName(EmployerPosts from, EmployerPosts to) {
-        return null;
+        return dao.changePostName(from, to);
     }
 }

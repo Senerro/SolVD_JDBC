@@ -6,14 +6,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
-public class ConnectionObject {
+public class ConnectionSettings {
     private final String driver;
     private final String url;
     private final String password;
     private final String username;
     private final String path;
 
-    public ConnectionObject(String path) {
+    public ConnectionSettings(String path) {
         this.path = path;
         var props = new Properties();
         try (InputStream in = Files.newInputStream(Paths.get(this.path))) {
