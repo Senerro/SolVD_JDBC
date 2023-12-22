@@ -91,3 +91,94 @@ java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' does
 [DEBUG] 2023-12-20 15:19:11.277 [main] Main - connection successfully added
 [DEBUG] 2023-12-20 15:19:11.312 [main] Main - id 1, name iPhone X,price 61000
 [DEBUG] 2023-12-20 15:19:11.313 [main] Main - id 2, name Galaxy S9,price 30000
+[INFO ] 2023-12-20 18:27:03.974 [main] Main - test_message
+[DEBUG] 2023-12-20 18:27:04.004 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:27:04.353 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:27:04.406 [main] Main - df
+[DEBUG] 2023-12-20 18:27:04.413 [main] Main - id 1, name iPhone X, price 61000
+[DEBUG] 2023-12-20 18:27:04.413 [main] Main - id 2, name Galaxy S9, price 30000
+[INFO ] 2023-12-20 18:28:08.676 [main] Main - test_message
+[DEBUG] 2023-12-20 18:28:08.703 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:28:09.028 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:28:09.082 [main] Main - Connection failed...
+java.sql.SQLException: Illegal operation on empty result set.
+[INFO ] 2023-12-20 18:28:34.573 [main] Main - test_message
+[DEBUG] 2023-12-20 18:28:34.590 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:28:34.920 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:28:39.647 [main] Main - Connection failed...
+java.sql.SQLException: Illegal operation on empty result set.
+[INFO ] 2023-12-20 18:28:43.334 [main] Main - test_message
+[DEBUG] 2023-12-20 18:28:43.353 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:28:43.695 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:29:51.816 [main] Main - Connection failed...
+java.sql.SQLException: Illegal operation on empty result set.
+[INFO ] 2023-12-20 18:29:55.297 [main] Main - test_message
+[DEBUG] 2023-12-20 18:29:55.324 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:29:55.639 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:29:55.693 [main] Main - id 1, name iPhone X, price 61000
+[DEBUG] 2023-12-20 18:29:55.693 [main] Main - id 2, name Galaxy S9, price 30000
+[INFO ] 2023-12-20 18:30:17.139 [main] Main - test_message
+[DEBUG] 2023-12-20 18:30:17.167 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:30:17.463 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:30:17.507 [main] Main - id 1, name iPhone X, price 61000
+[DEBUG] 2023-12-20 18:30:17.508 [main] Main - id 2, name Galaxy S9, price 30000
+[DEBUG] 2023-12-20 18:30:17.508 [main] Main - id 4, name test, price 540000
+[DEBUG] 2023-12-20 18:30:17.509 [main] Main - id 5, name test, price 540000
+[INFO ] 2023-12-20 18:31:04.476 [main] Main - test_message
+[DEBUG] 2023-12-20 18:31:04.492 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:31:04.862 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:31:31.588 [main] Main - Connection failed...
+java.sql.SQLException: Illegal operation on empty result set.
+[INFO ] 2023-12-20 18:32:50.294 [main] Main - test_message
+[DEBUG] 2023-12-20 18:32:50.324 [main] Main - Connection successful!
+[DEBUG] 2023-12-20 18:32:50.628 [main] Main - connection successfully added
+[DEBUG] 2023-12-20 18:32:50.671 [main] Main - Connection failed...
+java.sql.SQLException: Illegal operation on empty result set.
+[INFO ] 2023-12-21 14:06:51.245 [main] Main - test_message
+[DEBUG] 2023-12-21 14:06:51.275 [main] Main - Connection successful!
+[DEBUG] 2023-12-21 14:06:51.715 [main] Main - connection successfully added
+[DEBUG] 2023-12-21 14:06:51.771 [main] Main - Connection failed...
+java.sql.SQLException: Illegal operation on empty result set.
+[INFO ] 2023-12-21 14:07:03.448 [main] Main - test_message
+[DEBUG] 2023-12-21 14:07:03.474 [main] Main - Connection successful!
+[DEBUG] 2023-12-21 14:07:03.770 [main] Main - connection successfully added
+[DEBUG] 2023-12-21 14:07:03.833 [main] Main - id 1, name iPhone X, price 61000
+[DEBUG] 2023-12-21 14:07:03.833 [main] Main - id 2, name Galaxy S9, price 30000
+[DEBUG] 2023-12-21 14:07:03.834 [main] Main - id 4, name test, price 540000
+[DEBUG] 2023-12-21 14:07:03.834 [main] Main - id 5, name test, price 540000
+[DEBUG] 2023-12-21 14:07:03.835 [main] Main - id 6, name test, price 540000
+[INFO ] 2023-12-21 14:07:23.130 [main] Main - test_message
+[DEBUG] 2023-12-21 14:07:23.448 [main] Main - connection successfully added
+[DEBUG] 2023-12-21 14:07:23.495 [main] Main - id 1, name iPhone X, price 61000
+[DEBUG] 2023-12-21 14:07:23.496 [main] Main - id 2, name Galaxy S9, price 30000
+[DEBUG] 2023-12-21 14:07:23.496 [main] Main - id 4, name test, price 540000
+[DEBUG] 2023-12-21 14:07:23.497 [main] Main - id 5, name test, price 540000
+[DEBUG] 2023-12-21 14:07:23.497 [main] Main - id 6, name test, price 540000
+[DEBUG] 2023-12-21 14:07:23.498 [main] Main - id 7, name test, price 540000
+[INFO ] 2023-12-21 14:07:29.439 [main] Main - test_message
+[DEBUG] 2023-12-21 14:07:29.758 [main] Main - connection successfully added
+[DEBUG] 2023-12-21 14:07:29.802 [main] Main - id 1, name iPhone X, price 61000
+[DEBUG] 2023-12-21 14:07:29.802 [main] Main - id 2, name Galaxy S9, price 30000
+[DEBUG] 2023-12-21 14:07:29.803 [main] Main - id 4, name test, price 540000
+[DEBUG] 2023-12-21 14:07:29.803 [main] Main - id 5, name test, price 540000
+[DEBUG] 2023-12-21 14:07:29.804 [main] Main - id 6, name test, price 540000
+[DEBUG] 2023-12-21 14:07:29.804 [main] Main - id 7, name test, price 540000
+[DEBUG] 2023-12-21 14:07:29.805 [main] Main - id 8, name test, price 540000
+[ERROR] 2023-12-21 15:00:17.997 [main] AbstractDAO - Some error with table users
+query is DELETE FROM users WHERE id = 40
+Exception is java.sql.SQLException: Statement.executeQuery() cannot issue statements that do not produce result sets.
+[ERROR] 2023-12-21 15:03:17.566 [main] AbstractDAO - Some error with table users
+query is DELETE FROM users WHERE id = 4
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`equipment_repair_service`.`employer_profile`, CONSTRAINT `employer_profile_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+[ERROR] 2023-12-21 15:09:58.365 [main] AbstractDAO - Some error with table users
+query is DELETE FROM users WHERE id = 4
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`equipment_repair_service`.`employer_profile`, CONSTRAINT `employer_profile_ibfk_3` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
+[ERROR] 2023-12-21 16:28:58.587 [main] AbstractDAO - Some error with table user
+query is DELETE FROM user WHERE id = 5
+Exception is java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.user' doesn't exist
+[ERROR] 2023-12-21 16:29:41.467 [main] AbstractDAO - Some error with table user
+query is DELETE FROM user WHERE id = 5
+Exception is java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.user' doesn't exist
+[ERROR] 2023-12-21 16:31:33.833 [main] AbstractDAO - Some error with table users
+query is DELETE FROM users WHERE id = 5
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`equipment_repair_service`.`customer_profile`, CONSTRAINT `customer_profile_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`))
