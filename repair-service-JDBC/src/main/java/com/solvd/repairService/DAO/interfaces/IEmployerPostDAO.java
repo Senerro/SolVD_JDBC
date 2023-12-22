@@ -5,7 +5,7 @@ import com.solvd.repairService.model.EmployerProfiles;
 import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.ServiceCenters;
 
-public interface IEmployerPostDAO {
+public interface IEmployerPostDAO  extends IAbstractDAO {
     public EmployerPosts create(EmployerPosts post);
     public EmployerPosts selectById(EmployerPosts post);
     public EmployerPosts changePostName(EmployerPosts from, EmployerPosts to);

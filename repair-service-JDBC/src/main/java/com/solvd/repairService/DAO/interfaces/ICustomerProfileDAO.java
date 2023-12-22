@@ -5,7 +5,7 @@ import com.solvd.repairService.model.Equipments;
 
 import java.util.List;
 
-public interface ICustomerProfileDAO {
+public interface ICustomerProfileDAO  extends IAbstractDAO {
     public CustomerProfiles create(CustomerProfiles profile);
     public CustomerProfiles selectById(CustomerProfiles profile);
     public List<CustomerProfiles> selectByNick(String nick);

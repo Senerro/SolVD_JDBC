@@ -1,5 +1,6 @@
 package com.solvd.repairService.service;
 
+import com.solvd.repairService.DAO.ServiceCentersDAO;
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IServiceCenterDAO;
 import com.solvd.repairService.model.AbstractModel;
@@ -8,16 +9,18 @@ import com.solvd.repairService.model.ServiceCenters;
 import java.util.List;
 
 public class ServiceCentersService  {
-    public boolean checkAvailability(AbstractModel model) {
-        return false;
+
+    private final IServiceCenterDAO dao = new ServiceCentersDAO();
+    public boolean checkAvailability(ServiceCenters serviceCenter) {
+        return dao.checkAvailability(serviceCenter);
     }
 
-    public int delete(AbstractModel model) {
-        return 0;
+    public int delete(ServiceCenters serviceCenter) {
+        return new ServiceCentersDAO().delete(serviceCenter);
     }
    
     public ServiceCenters create(ServiceCenters serviceCenter) {
-        return null;
+        return new ServiceCentersDAO().create(serviceCenter);
     }
    
     public boolean updateServiceCenter(ServiceCenters from, ServiceCenters to) {

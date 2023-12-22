@@ -1,12 +1,13 @@
 package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.DAO.interfaces.IUserDAO;
 import com.solvd.repairService.model.Users;
 
 import java.util.List;
 
 public class UsersService {
-    private final UsersDAO dao = new UsersDAO();
+    private final IUserDAO dao = new UsersDAO();
 
     public Users create(Users user) throws Exception {
         var isAvailable = dao.checkAvailability(user);
@@ -54,7 +55,7 @@ public class UsersService {
         }
         return result;
     }
-    public int deleteUser(Users user) throws Exception {
+    public int delete(Users user) throws Exception {
         var result = dao.delete(user);
         if (result < 1)
             throw new Exception(user + " wasn't deleted");

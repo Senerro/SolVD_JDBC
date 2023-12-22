@@ -6,7 +6,7 @@ import com.solvd.repairService.model.OrderExecutions;
 
 import java.util.List;
 
-public interface IEmployerProfileDAO {
+public interface IEmployerProfileDAO  extends IAbstractDAO  {
     public EmployerProfiles create(EmployerProfiles profile);
     public EmployerProfiles selectById(EmployerProfiles profile);
     public List<EmployerProfiles> findByFullname(String fullname);

@@ -1,5 +1,6 @@
 package com.solvd.repairService.service;
 
+import com.solvd.repairService.DAO.CustomerProfilesDAO;
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
 import com.solvd.repairService.model.AbstractModel;
@@ -8,17 +9,16 @@ import com.solvd.repairService.model.CustomerProfiles;
 import java.util.List;
 
 public class CustomerProfilesService {
+    private final CustomerProfilesDAO dao = new CustomerProfilesDAO();
 
     public boolean checkAvailability(AbstractModel model) {
-        return false;
+        return dao.checkAvailability(model);
     }
 
 
     public int delete(AbstractModel model) {
-        return 0;
+        return dao.delete(model);
     }
-
-
     public CustomerProfiles create(CustomerProfiles profile) {
         return null;
     }
