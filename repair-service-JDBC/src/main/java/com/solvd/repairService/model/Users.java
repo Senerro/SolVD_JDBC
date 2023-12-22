@@ -32,6 +32,10 @@ public class Users extends AbstractModel {
     public String password() {
         return password;
     }
+    public boolean role()
+    {
+        return role;
+    }
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();

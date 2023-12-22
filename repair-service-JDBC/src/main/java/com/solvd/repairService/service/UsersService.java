@@ -16,8 +16,8 @@ public class UsersService{
     }
 
     public Users create(Users user) throws Exception {
-        var isAvailable = dao.checkAvailability(user);
-        if (isAvailable)
+        var users = dao.findByLogin(user.login());
+        if (users == null)
             return dao.create(user);
         else throw new Exception("User with login" + user.login() + "already existed");
     }
