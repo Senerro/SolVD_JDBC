@@ -12,7 +12,6 @@ public class ValidationView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
 
@@ -32,26 +31,6 @@ public class ValidationView {
                 loadValidationView();
         }
     }
-    public static void test_find(Users user) {
-        UsersService service = new UsersService(new UsersDAO());
-        Users spottedUser = null;
-        try {
-            spottedUser = service.findUserByLogin(user.login());
-            LOGGER.debug(spottedUser);
-            test_update(spottedUser);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-    public static void test_update(Users user) {
-        UsersService service = new UsersService(new UsersDAO());
-        try {
-            service.updateUser(user, receiveUserData());
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     private static void registrationUser() {
 
@@ -63,18 +42,19 @@ public class ValidationView {
             LOGGER.info(e.getMessage());
             loadValidationView();
         }
-        test_find(user);
+        CustomerProfileView.profileUI(user);
     }
 
     private static void loginUser() {
         UsersService service = new UsersService(new UsersDAO());
-        Users user;
+        Users user = null;
         try {
-           user = service.validateAccessData(receiveUserData());
+           user = service.findUserByLogin(receiveUserData().login());
         } catch (Exception e) {
-            LOGGER.info(e);
+            LOGGER.info("User isn't exist");
             registrationUser();
         }
+        CustomerProfileView.profileUI(user);
     }
 
     private static Users receiveUserData() {
@@ -92,5 +72,4 @@ public class ValidationView {
         while (password.length() < 4);
         return new Users(login, password);
     }
-
 }

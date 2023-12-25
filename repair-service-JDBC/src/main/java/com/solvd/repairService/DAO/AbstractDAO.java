@@ -17,7 +17,7 @@ public class AbstractDAO implements IAbstractDAO {
 
     @Override
     public boolean checkAvailability(AbstractModel model) {
-        String query = "SELECT * FROM " + model.simpleName() + " WHERE id = " + model.id();
+        String query = "SELECT * FROM " + model.tableName() + " WHERE id = " + model.id();
         connection = connectionPool.getConnection();
         ResultSet result;
         try {
@@ -26,7 +26,7 @@ public class AbstractDAO implements IAbstractDAO {
             connectionPool.returnConnection(connection);
             return result.next();
         } catch (SQLException e) {
-            LOGGER.error("Some error with table " + model.simpleName() + "\n"
+            LOGGER.error("Some error with table " + model.tableName() + "\n"
                     + "query is " + query + "\n"
                     + "Exception is " + e);
             throw new RuntimeException(e);
@@ -35,7 +35,7 @@ public class AbstractDAO implements IAbstractDAO {
 
     @Override
     public int delete(AbstractModel model) {
-        String query = "DELETE FROM " + model.simpleName() + " WHERE id = " + model.id();
+        String query = "DELETE FROM " + model.tableName() + " WHERE id = " + model.id();
         connection = connectionPool.getConnection();
         int result;
         try {
@@ -46,7 +46,7 @@ public class AbstractDAO implements IAbstractDAO {
             statement.close();
             return result;
         } catch (SQLException e) {
-            LOGGER.error("Some error with table " + model.simpleName() + "\n"
+            LOGGER.error("Some error with table " + model.tableName() + "\n"
                     + "query is " + query + "\n"
                     + "Exception is " + e);
             throw new RuntimeException(e);

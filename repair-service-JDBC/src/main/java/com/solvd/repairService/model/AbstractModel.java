@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class AbstractModel {
     private Long id;
-    private final String simpleName;
+    private final String tableName;
     private final Class<?> clazz;
 
     public AbstractModel(Long id, Class<?> clazz) {
         this.id = id;
         this.clazz = clazz;
-        this.simpleName = classTransform(clazz);
+        this.tableName = classTransform(clazz);
     }
 
     private String classTransform(Class<?> clazz) {
@@ -40,8 +40,8 @@ public class AbstractModel {
         return this.clazz;
     }
 
-    public String simpleName() {
-        return this.simpleName;
+    public String tableName() {
+        return this.tableName;
     }
 
     public Long id() {

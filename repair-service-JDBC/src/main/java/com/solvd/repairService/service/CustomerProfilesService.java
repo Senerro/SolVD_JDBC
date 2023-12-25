@@ -16,11 +16,11 @@ public class CustomerProfilesService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(AbstractModel model) {
+    public boolean checkAvailability(CustomerProfiles model) {
         return dao.checkAvailability(model);
     }
 
-    public int delete(AbstractModel model) {
+    public int delete(CustomerProfiles model) {
         return dao.delete(model);
     }
 
@@ -29,8 +29,8 @@ public class CustomerProfilesService {
     }
 
 
-    public CustomerProfiles selectById(CustomerProfiles profile) {
-        return dao.selectById(profile);
+    public CustomerProfiles selectById(Long id) {
+        return dao.selectById(id);
     }
 
     public List<CustomerProfiles> selectByNick(String nick) {

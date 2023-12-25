@@ -18,15 +18,10 @@ public class UsersService{
     public Users create(Users user) throws Exception {
         var users = dao.findByLogin(user.login());
         if (users == null)
-            return dao.create(user);
+            dao.create(user);
         else throw new Exception("User with login" + user.login() + "already existed");
-    }
 
-    public Users validateAccessData(Users user) throws Exception {
-        var result = dao.checkAvailability(user);
-        if (!result)
-            throw new Exception("incorrect data of login or password");
-        return user;
+        return dao.findByLogin(user.login());
     }
 
     public Users findUserByLogin(String login) throws Exception {
