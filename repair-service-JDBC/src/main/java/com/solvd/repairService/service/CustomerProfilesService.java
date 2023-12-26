@@ -1,12 +1,7 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.CustomerProfilesDAO;
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
-import com.solvd.repairService.DAO.interfaces.IEmployerPostDAO;
-import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.CustomerProfiles;
-
 import java.util.List;
 
 public class CustomerProfilesService {
@@ -28,7 +23,6 @@ public class CustomerProfilesService {
         return dao.create(profile);
     }
 
-
     public CustomerProfiles selectById(Long id) {
         return dao.selectById(id);
     }
@@ -42,7 +36,10 @@ public class CustomerProfilesService {
         return dao.selectByPhone(phone);
     }
 
-    public CustomerProfiles updateProfile(CustomerProfiles from, CustomerProfiles to) {
+    public CustomerProfiles updateProfile(CustomerProfiles from, CustomerProfiles to) throws Exception {
+        if(from.equals(to))
+            throw new Exception("similar profiles. Id " + from.user().id());
+
         return dao.updateProfile(from, to);
     }
 }

@@ -1,134 +1,105 @@
-[INFO ] 2023-12-25 13:20:39.721 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 13:20:39.733 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 13:20:39.734 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 13:20:42.529 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:20:45.783 [main] ValidationView - Input password
-[ERROR] 2023-12-25 13:21:43.032 [main] ConnectionPool - fail connection to database:
-url jdbc:mysql://localhost/equipment_repair_service?serverTimezone=Europe/Moscow&useSSL=false
-username root
-password 1234
-[INFO ] 2023-12-25 13:21:50.493 [main] ValidationView - java.lang.RuntimeException: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-[INFO ] 2023-12-25 13:21:50.496 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:22:09.339 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 13:22:09.346 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 13:22:09.347 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 13:22:15.574 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 13:22:15.582 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 13:22:15.583 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 13:22:24.199 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:22:27.589 [main] ValidationView - Input password
-[INFO ] 2023-12-25 13:25:50.344 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 13:25:50.351 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 13:25:50.352 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 13:25:51.378 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:25:53.337 [main] ValidationView - Input password
-[DEBUG] 2023-12-25 13:25:55.526 [main] ValidationView - Customer with login [rtrtrtrt] And password [rtrtrtrt] 
-[INFO ] 2023-12-25 13:25:55.527 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:26:27.309 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 13:26:27.317 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 13:26:27.317 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 13:26:37.491 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:26:40.032 [main] ValidationView - Input password
-[DEBUG] 2023-12-25 13:27:51.722 [main] ValidationView - Customer with login [rtrtrtrt1] And password [rtrtrtrt1] 
-[INFO ] 2023-12-25 13:28:21.440 [main] ValidationView - Input login
-[INFO ] 2023-12-25 13:28:31.965 [main] ValidationView - Input password
-[INFO ] 2023-12-25 14:37:07.619 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 14:37:07.633 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 14:37:07.634 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 14:37:09.497 [main] ValidationView - Input login
-[INFO ] 2023-12-25 14:37:12.474 [main] ValidationView - Input password
-[ERROR] 2023-12-25 14:37:14.614 [main] CustomerProfilesDAO - Some error with table customer_profiles
-query is INSERT INTO customer_profiles  VALUES ( 22, User#22, None )
-Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-[INFO ] 2023-12-25 14:49:26.293 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 14:49:26.298 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 14:49:26.299 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 14:50:44.657 [main] ValidationView - Input login
-[INFO ] 2023-12-25 14:50:47.034 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:38:50.490 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:38:50.497 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:38:50.498 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:38:52.812 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:38:58.086 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:39:02.634 [main] ValidationView - java.lang.Exception: User with login fghfgd wasn't spotted
-[INFO ] 2023-12-25 15:39:02.635 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:39:44.905 [main] ValidationView - Input password
-[ERROR] 2023-12-25 15:39:48.993 [main] UsersDAO - Some error with table users
-query is SELECT * FROM users WHERE login = ''1', 'login@customer.com', '1234', '1''
-Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', 'login@customer.com', '1234', '1''' at line 1
-[INFO ] 2023-12-25 15:39:48.994 [main] ValidationView - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1', 'login@customer.com', '1234', '1''' at line 1
-[INFO ] 2023-12-25 15:39:48.994 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:39:48.995 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:39:48.995 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:40:09.853 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:40:12.615 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:41:15.355 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:41:15.361 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:41:15.362 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:41:25.655 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:41:32.227 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:44:12.209 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:44:12.215 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:44:12.216 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:44:24.926 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:44:26.190 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:55:49.762 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:55:49.789 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:55:49.791 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:55:52.422 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:55:53.331 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:55:55.260 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:56:58.945 [main] ValidationView - java.lang.Exception: User with login  translucent shimmering overlay wasn't spotted
-[INFO ] 2023-12-25 15:56:58.946 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:57:03.180 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:57:05.505 [main] ValidationView - User with loginlogin@customer.comalready existed
-[INFO ] 2023-12-25 15:57:05.505 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:57:05.506 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:57:05.506 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:57:20.132 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:57:21.880 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:57:34.111 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:57:34.116 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:57:34.116 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:57:36.238 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:57:39.330 [main] ValidationView - Input password
-[INFO ] 2023-12-25 15:58:42.637 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 15:58:42.645 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 15:58:42.646 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 15:58:52.666 [main] ValidationView - Input login
-[INFO ] 2023-12-25 15:58:55.994 [main] ValidationView - Input password
-[ERROR] 2023-12-25 16:01:09.044 [main] CustomerProfilesDAO - Some error with table customer_profiles
-query is SELECT * FROM users WHERE id = '1'
-Exception is java.sql.SQLException: Column 'nick' not found.
-[INFO ] 2023-12-25 16:01:15.644 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 16:01:15.650 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 16:01:15.650 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 16:01:24.660 [main] ValidationView - Input login
-[INFO ] 2023-12-25 16:01:27.515 [main] ValidationView - Input password
-[ERROR] 2023-12-25 16:02:20.476 [main] CustomerProfilesDAO - Some error with table customer_profiles
-query is SELECT * FROM users WHERE id = '1'
-Exception is java.sql.SQLException: Column 'nick' not found.
-[INFO ] 2023-12-25 16:02:22.945 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 16:02:22.952 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 16:02:22.953 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 16:02:30.760 [main] ValidationView - Input login
-[INFO ] 2023-12-25 16:02:32.093 [main] ValidationView - Input password
-[ERROR] 2023-12-25 16:04:07.934 [main] CustomerProfilesDAO - Some error with table customer_profiles
-query is SELECT * FROM users WHERE id = '1'
-Exception is java.sql.SQLException: Column 'nick' not found.
-[INFO ] 2023-12-25 16:04:45.034 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 16:04:45.041 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 16:04:45.041 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 16:04:47.285 [main] ValidationView - Input login
-[INFO ] 2023-12-25 16:04:48.301 [main] ValidationView - Input password
-[INFO ] 2023-12-25 16:04:50.246 [main] ValidationView - Input password
-[INFO ] 2023-12-25 16:04:52.028 [main] ValidationView - Input password
-[INFO ] 2023-12-25 16:04:52.773 [main] ValidationView - Input password
-[INFO ] 2023-12-25 16:04:59.076 [main] ValidationView - Log in or registration?
-[INFO ] 2023-12-25 16:04:59.083 [main] ValidationView - 1: log in
-[INFO ] 2023-12-25 16:04:59.084 [main] ValidationView - 2: registration
-[INFO ] 2023-12-25 16:05:02.684 [main] ValidationView - Input login
-[INFO ] 2023-12-25 16:05:15.397 [main] ValidationView - Input password
-[INFO ] 2023-12-25 16:07:00.944 [main] CustomerProfileView - nickname: Somebofy
-[INFO ] 2023-12-25 16:07:01.485 [main] CustomerProfileView - phone: +375-25-124-39-52
-[INFO ] 2023-12-25 16:07:06.339 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 13:24:31.365 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 13:24:31.381 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 13:24:31.381 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 13:24:35.197 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:24:36.105 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:24:36.546 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:24:38.458 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:24:38.972 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:25:12.831 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 13:25:12.837 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 13:25:12.838 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 13:26:26.239 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 13:26:26.243 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 13:26:26.244 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 13:26:28.822 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:26:34.470 [main] ValidationView - Input password
+[INFO ] 2023-12-26 13:26:36.266 [main] CustomerProfileView - nickname: sqlNick
+[INFO ] 2023-12-26 13:26:36.266 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 13:26:36.267 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 13:26:36.267 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 13:26:36.267 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 13:26:48.262 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:26:48.262 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:26:48.263 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 13:26:51.079 [main] CustomerProfileView - Enter new nick
+[ERROR] 2023-12-26 13:27:06.459 [main] CustomerProfileView - same nick
+[DEBUG] 2023-12-26 13:27:06.460 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:27:06.460 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:27:06.460 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-26 13:27:11.494 [main] CustomerProfileView - nickname: sqlNick
+[INFO ] 2023-12-26 13:27:11.495 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 13:27:11.496 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 13:27:11.496 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 13:27:11.497 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-26 13:33:03.289 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 13:33:03.296 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 13:33:03.296 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 13:33:04.993 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:33:06.785 [main] ValidationView - Input password
+[INFO ] 2023-12-26 13:34:05.809 [main] CustomerProfileView - nickname: sqlNick
+[INFO ] 2023-12-26 13:34:06.049 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 13:34:06.243 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 13:34:07.539 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 13:34:07.740 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 13:34:15.221 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:34:15.222 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:34:15.224 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 13:34:23.400 [main] CustomerProfileView - Enter new nick
+[ERROR] 2023-12-26 13:34:50.909 [main] CustomerProfileView - same nick
+[DEBUG] 2023-12-26 13:35:44.521 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:35:44.523 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:35:44.525 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 13:35:50.999 [main] CustomerProfileView - Enter new nick
+[ERROR] 2023-12-26 13:36:53.165 [main] CustomerProfileView - same nick
+[DEBUG] 2023-12-26 13:36:55.255 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:36:55.257 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:36:55.259 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 13:37:09.389 [main] CustomerProfileView - Enter new nick
+[ERROR] 2023-12-26 13:37:58.456 [main] CustomerProfileView - same nick
+[DEBUG] 2023-12-26 13:37:58.458 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:37:58.459 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:37:58.460 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-26 13:38:17.984 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 13:38:17.989 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 13:38:17.990 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 13:38:20.245 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:38:22.463 [main] ValidationView - Input password
+[INFO ] 2023-12-26 13:38:27.156 [main] CustomerProfileView - nickname: sqlNick
+[INFO ] 2023-12-26 13:38:27.156 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 13:38:27.157 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 13:38:27.158 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 13:38:27.158 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 13:38:30.536 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:38:30.537 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:38:30.537 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 13:38:34.979 [main] CustomerProfileView - Enter new nick
+[ERROR] 2023-12-26 13:39:12.603 [main] CustomerProfilesDAO - Some error with table customer_profiles
+query is UPDATE customer_profilesSET nick = 'dfgh' WHERE id = 23
+Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'dfgh' WHERE id = 23' at line 1
+[ERROR] 2023-12-26 13:39:40.432 [main] CustomerProfileView - same nick
+[DEBUG] 2023-12-26 13:39:40.434 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:39:40.436 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:39:40.439 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-26 13:39:44.774 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 13:39:44.778 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 13:39:44.778 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 13:39:46.803 [main] ValidationView - Input login
+[INFO ] 2023-12-26 13:39:48.172 [main] ValidationView - Input password
+[INFO ] 2023-12-26 13:39:54.329 [main] CustomerProfileView - nickname: sqlNick
+[INFO ] 2023-12-26 13:39:54.330 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 13:39:54.331 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 13:39:54.332 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 13:39:54.333 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 13:39:58.371 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:39:58.372 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:39:58.372 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 13:39:59.157 [main] CustomerProfileView - Enter new nick
+[DEBUG] 2023-12-26 13:40:34.838 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 13:40:34.839 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 13:40:34.840 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-26 13:40:43.496 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 13:40:43.498 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 13:40:43.500 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 13:40:43.502 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 13:40:43.503 [main] CustomerProfileView - 2: orders

@@ -19,7 +19,7 @@ public class CustomerProfileView {
     public static void profileUI(Users user) {
 
         CustomerProfiles profile = null;
-        CustomerProfilesService service = new CustomerProfilesService(new CustomerProfilesDAO());
+        var service = new CustomerProfilesService(new CustomerProfilesDAO());
         var isDetected = service.checkAvailability(new CustomerProfiles(user.id()));
         profile = isDetected ? service.selectById(user.id())
                 : service.create(new CustomerProfiles(user.id()));
@@ -59,14 +59,35 @@ public class CustomerProfileView {
     }
 
     private static void advansedSettingsUI(CustomerProfiles profile) {
+
+
     }
 
     private static void changePhone(CustomerProfiles profile) {
+        CustomerProfiles newProfile = new CustomerProfiles(profile.id(), profile.nick(), profile.phone());
+        LOGGER.debug("Enter new phone");
+        newProfile.phone(scanner.nextLine());
+        CustomerProfilesService service = new CustomerProfilesService(new CustomerProfilesDAO());
+        try {
+            profile.phone(service.updateProfile(profile, newProfile).phone());
 
+        } catch (Exception e) {
+            LOGGER.error("same phone");
+        }
+        profileActions(profile);
     }
 
     private static void changeNick(CustomerProfiles profile) {
-        
+        CustomerProfiles newProfile = new CustomerProfiles(profile);
+        LOGGER.debug("Enter new nick");
+        newProfile.nick(scanner.nextLine());
+        CustomerProfilesService service = new CustomerProfilesService(new CustomerProfilesDAO());
+        try {
+            profile.nick( (service.updateProfile(profile, newProfile)).nick());
+        } catch (Exception e) {
+            LOGGER.error("same nick");
+        }
+        profileActions(profile);
     }
 
 }

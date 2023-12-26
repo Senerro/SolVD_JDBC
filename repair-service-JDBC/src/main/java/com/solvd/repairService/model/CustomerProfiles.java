@@ -16,6 +16,12 @@ public class CustomerProfiles extends AbstractModel
         this.nick = nick;
         this.phone = phone;
     }
+    public CustomerProfiles(CustomerProfiles profiles) {
+        this(profiles.id());
+        this.nick = profiles.nick;
+        this.phone = profiles.phone;
+        this.user = profiles.user;
+    }
 
     public String nick() {
         return nick;
@@ -39,5 +45,13 @@ public class CustomerProfiles extends AbstractModel
 
     public void user(Users user) {
         this.user = user;
+    }
+    @Override
+    public boolean equals(Object object)
+    {
+        if(this.nick.equals(((CustomerProfiles) object).nick()))
+            if (this.phone.equals(((CustomerProfiles) object).phone))
+                return true;
+        return false;
     }
 }
