@@ -294,3 +294,104 @@ Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syn
 [INFO ] 2023-12-26 15:23:19.413 [main] CustomerProfileView - email: asdf
 [INFO ] 2023-12-26 15:23:19.414 [main] CustomerProfileView - 1: profile
 [INFO ] 2023-12-26 15:23:19.416 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-26 15:42:54.803 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:42:54.808 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:42:54.809 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:43:03.941 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:43:04.808 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:43:06.180 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:43:06.180 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:43:06.181 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:43:06.181 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:43:06.181 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:43:07.742 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:43:07.743 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:43:07.743 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:43:08.808 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:43:08.809 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:43:53.188 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:43:53.194 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:43:53.195 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:43:57.313 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:44:00.203 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:44:01.423 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:44:01.424 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:44:01.424 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:44:01.424 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:44:01.425 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:44:02.926 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:44:02.927 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:44:02.927 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:44:04.562 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:44:04.562 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-26 15:44:04.563 [main] CustomerProfileView - 3: delete account
+[INFO ] 2023-12-26 15:44:05.882 [main] CustomerProfileView - Are you sure? This action can't be iterated
+[INFO ] 2023-12-26 15:44:05.883 [main] CustomerProfileView - 1: yes
+[INFO ] 2023-12-26 15:44:05.883 [main] CustomerProfileView - 2: no, go back
+[INFO ] 2023-12-26 15:44:07.950 [main] CustomerProfileView - account was successfully deleted
+[INFO ] 2023-12-26 15:44:07.950 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:44:07.950 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:44:07.951 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:45:05.640 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:45:06.992 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:45:09.067 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:45:10.764 [main] ValidationView - User isn't exist
+[INFO ] 2023-12-26 15:45:10.765 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:45:16.128 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:45:17.705 [main] CustomerProfileView - nickname: User#24
+[INFO ] 2023-12-26 15:45:17.705 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-26 15:45:17.706 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:45:17.706 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:45:17.706 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:45:57.335 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:45:57.336 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:45:57.336 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:45:58.373 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:45:58.373 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-26 15:45:58.373 [main] CustomerProfileView - 3: delete account
+[INFO ] 2023-12-26 15:45:59.650 [main] CustomerProfileView - Are you sure? This action can't be iterated
+[INFO ] 2023-12-26 15:45:59.650 [main] CustomerProfileView - 1: yes
+[INFO ] 2023-12-26 15:45:59.651 [main] CustomerProfileView - 2: no, go back
+[INFO ] 2023-12-26 15:46:00.597 [main] CustomerProfileView - account was successfully deleted
+[INFO ] 2023-12-26 15:46:00.598 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:46:00.598 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:46:00.598 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:48:17.261 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:48:17.274 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:48:17.275 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:48:21.951 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:48:29.683 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:48:42.138 [main] ValidationView - User isn't exist
+[INFO ] 2023-12-26 15:48:43.820 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:50:13.627 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:50:15.560 [main] ValidationView - User with loginlog5already existed
+[INFO ] 2023-12-26 15:50:15.561 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:50:15.562 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:50:15.563 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:51:25.446 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:51:25.451 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:51:25.452 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:51:35.668 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:51:39.880 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:51:52.069 [main] CustomerProfileView - nickname: pas5
+[INFO ] 2023-12-26 15:51:52.070 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-26 15:51:52.071 [main] CustomerProfileView - email: log5
+[INFO ] 2023-12-26 15:51:52.073 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:51:52.074 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:51:54.102 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:51:54.103 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:51:54.104 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:51:54.934 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:51:54.935 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-26 15:51:54.936 [main] CustomerProfileView - 3: delete account
+[INFO ] 2023-12-26 15:51:55.791 [main] CustomerProfileView - Are you sure? This action can't be iterated
+[INFO ] 2023-12-26 15:51:55.792 [main] CustomerProfileView - 1: yes
+[INFO ] 2023-12-26 15:51:55.793 [main] CustomerProfileView - 2: no, go back
+[INFO ] 2023-12-26 15:51:56.646 [main] CustomerProfileView - account was successfully deleted
+[INFO ] 2023-12-26 15:51:56.647 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:51:56.648 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:51:56.649 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:52:24.983 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:52:32.454 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:52:40.484 [main] ValidationView - User isn't exist
+[INFO ] 2023-12-26 15:52:41.005 [main] ValidationView - Input login

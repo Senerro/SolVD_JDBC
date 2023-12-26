@@ -18,13 +18,34 @@ public class UserSettingsView {
     public static CustomerProfiles settingsUI(CustomerProfiles profile) {
         LOGGER.debug("1: change login");
         LOGGER.debug("2: change password");
+        LOGGER.debug("3: delete account");
         String answer = scanner.nextLine();
         switch (answer) {
             case "1": changeLogin(profile); break;
             case "2": changePassword(profile); break;
+            case "3": deleteAccount(profile);
             default: CustomerProfileView.profileUI(profile.user());
         }
         return profile;
+    }
+
+    private static void deleteAccount(CustomerProfiles profile) {
+        LOGGER.info("Are you sure? This action can't be iterated");
+        LOGGER.info("1: yes");
+        LOGGER.info("2: no, go back");
+        String answer = scanner.nextLine();
+        switch (answer)
+        {
+            case "1":
+                try {
+                    int service = new UsersService(new UsersDAO()).delete(profile.user());
+                    LOGGER.info("account was successfully deleted");
+                    ValidationView.loadValidationView();
+                } catch (Exception e) {
+                    LOGGER.error("Account wasn't deleted");
+                    UserSettingsView.settingsUI(profile);
+                }
+        }
     }
 
     private static void changePassword(CustomerProfiles profile) {
