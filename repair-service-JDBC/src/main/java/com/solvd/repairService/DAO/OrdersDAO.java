@@ -1,10 +1,12 @@
 package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
+import com.solvd.repairService.QueryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -65,7 +67,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 orderExecutions.serviceCenterId(resultSet.getLong("serviceCenterId"));
 
                 Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));
-                equipment.equipmentType(resultSet.getString("equipmentType"));
+                equipment.type(resultSet.getString("equipmentType"));
                 equipment.model(resultSet.getString("model"));
 
                 order.orderExecution(orderExecutions);

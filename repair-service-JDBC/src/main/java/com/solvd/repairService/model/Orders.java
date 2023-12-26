@@ -18,6 +18,12 @@ public class Orders extends AbstractModel{
         this.userId = userId;
         this.executeId = executeId;
     }
+    public Orders(Long userId, Equipments equipment)
+    {
+        this(0L);
+        this.equipment = equipment;
+        this.userId = userId;
+    }
 
     public Equipments equipment() {
         return equipment;
@@ -40,11 +46,13 @@ public class Orders extends AbstractModel{
     public void userId(Long userId) {
         this.userId = userId;
     }
+    public OrderExecutions getOrderExecution() {
+        return orderExecution;
+    }
     public void orderExecution(OrderExecutions oe)
     {
         this.orderExecution = oe;
     }
-
     public Users getUser() {
         return user;
     }
@@ -53,16 +61,15 @@ public class Orders extends AbstractModel{
         return equipment;
     }
 
-    public OrderExecutions getOrderExecution() {
-        return orderExecution;
-    }
 
-    public void setEquipment(Equipments equipment) {
-        this.equipment = equipment;
-    }
 
-    public void setUser(Users user) {
+    public void user(Users user) {
         this.user = user;
     }
-
+    @Override
+    public String toString() {
+        String status = this.orderExecution.isReturned()? " returned ":" not returned";
+        return "Number of order is " + this.id() + ". Device is " + this.equipment.type() + " " + this.equipment.producer() + " " + this.equipment.model() + "\n"
+                + " Status: " + status + ", finish date is " + this.orderExecution.finishDate() + ", cost is " + this.orderExecution.cost() + "\n";
+    }
 }

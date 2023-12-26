@@ -563,3 +563,26 @@ Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syn
 [INFO ] 2023-12-26 18:43:34.387 [main] CustomerProfileView - processornulli7-670HQ
 [INFO ] 2023-12-26 18:43:34.388 [main] CustomerProfileView - smartphonenullMi A3
 [INFO ] 2023-12-26 18:43:34.389 [main] CustomerProfileView - laptopnullfx502VM
+[INFO ] 2023-12-26 19:18:45.252 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 19:18:45.258 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 19:18:45.259 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 19:18:47.691 [main] ValidationView - Input login
+[INFO ] 2023-12-26 19:18:53.501 [main] ValidationView - Input password
+[INFO ] 2023-12-26 19:18:56.441 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 19:18:56.442 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 19:18:56.442 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 19:18:56.443 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 19:18:56.443 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 19:18:58.251 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 19:18:58.252 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 19:18:58.252 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-26 19:18:59.478 [main] CustomerProfileView - 3 of Orders
+[INFO ] 2023-12-26 19:18:59.491 [main] CustomerProfileView - Number of order is 1. Device is processor null i7-670HQ
+ Status:  not returned, finish date is 2000-10-10, cost is 85.0
+
+[INFO ] 2023-12-26 19:18:59.492 [main] CustomerProfileView - Number of order is 3. Device is smartphone null Mi A3
+ Status:  not returned, finish date is 2023-10-10, cost is 45.0
+
+[INFO ] 2023-12-26 19:18:59.492 [main] CustomerProfileView - Number of order is 2. Device is laptop null fx502VM
+ Status:  not returned, finish date is 2023-11-12, cost is 878.0
+

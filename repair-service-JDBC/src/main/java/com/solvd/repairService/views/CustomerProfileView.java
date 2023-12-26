@@ -1,10 +1,14 @@
 package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.CustomerProfilesDAO;
+import com.solvd.repairService.DAO.EquipmentsDAO;
 import com.solvd.repairService.DAO.OrdersDAO;
 import com.solvd.repairService.model.CustomerProfiles;
+import com.solvd.repairService.model.Equipments;
+import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.CustomerProfilesService;
+import com.solvd.repairService.service.EquipmentsService;
 import com.solvd.repairService.service.OrdersService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,16 +19,22 @@ public class CustomerProfileView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
+    private static CustomerProfilesService serviceCP = 5>4 ? new CustomerProfilesService(new CustomerProfilesDAO())
+                                                         : new CustomerProfilesService(new CustomerProfilesDAO());
+    private static OrdersService serviceO = 5>4 ? new OrdersService(new OrdersDAO()): new OrdersService(new OrdersDAO());
+
+    private static EquipmentsService serviceE = 5>4 ? new EquipmentsService(new EquipmentsDAO()): new EquipmentsService(new EquipmentsDAO());
+
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
 
     public static void profileUI(Users user) {
 
         CustomerProfiles profile = null;
-        var service = new CustomerProfilesService(new CustomerProfilesDAO());
-        var isDetected = service.checkAvailability(new CustomerProfiles(user.id()));
-        profile = isDetected ? service.selectById(user.id())
-                : service.create(new CustomerProfiles(user.id()));
+
+        var isDetected = serviceCP.checkAvailability(new CustomerProfiles(user.id()));
+        profile = isDetected ? serviceCP.selectById(user.id())
+                : serviceCP.create(new CustomerProfiles(user.id()));
         profile.user(user);
         LOGGER.info("nickname: " + profile.nick());
         LOGGER.info("phone: " + profile.phone());
@@ -35,37 +45,61 @@ public class CustomerProfileView {
         LOGGER.info("2: orders");
         String answer = scanner.nextLine();
         switch (answer) {
-            case "1": profileActions(profile); break;
-            case "2": ordersActions(profile); break;
+            case "1":
+                profileActions(profile);
+                break;
+            case "2":
+                ordersActions(profile);
+                break;
+            default:profileUI(user);
         }
     }
 
-    private static void ordersActions(CustomerProfiles profile)
-    {
+    private static void ordersActions(CustomerProfiles profile) {
         LOGGER.debug("1: create new order");
         LOGGER.debug("2: check order history");
         LOGGER.debug("3: return");
 
         String answer = scanner.nextLine();
         switch (answer) {
-            case "1":break;
-            case "2":checkOrderHistory(profile);break;
-            case "3":profileUI(profile.user());break;
-            default:ordersActions(profile);
+            case "1":
+                createNewOrder(profile);
+                break;
+            case "2":
+                checkOrderHistory(profile);
+                break;
+            case "3":
+                profileUI(profile.user());
+                break;
+            default:
+                ordersActions(profile);
         }
     }
 
+    private static void createNewOrder(CustomerProfiles profile) {
+        LOGGER.debug("Type: ");
+        String type = scanner.nextLine();
+        LOGGER.debug("Producer: ");
+        String producer = scanner.nextLine();
+        LOGGER.debug("Model: ");
+        String model = scanner.nextLine();
+        LOGGER.debug("Price: ");
+        double price = scanner.nextDouble();
+        var equipment = new Equipments(type, producer, model, price);
+        var newEquipment = serviceE.create(equipment);
+        var order = new Orders(profile.id(), newEquipment);
+        serviceO.create(order);
+
+    }
+
     private static void checkOrderHistory(CustomerProfiles profile) {
-        OrdersService service = new OrdersService(new OrdersDAO());
-        var orders = service.ordersHistory(profile);
-        if (orders!= null)
-        {
+        var orders = serviceO.ordersHistory(profile);
+        if (orders != null) {
             LOGGER.info(orders.size() + " of Orders");
-            for (var element: orders) {
-                LOGGER.info(element.equipment().equipmentType() + element.equipment().producer() + element.equipment().model());
+            for (var element : orders) {
+                LOGGER.info(element);
             }
         }
-
     }
 
     private static void profileActions(CustomerProfiles profile) {
@@ -96,9 +130,8 @@ public class CustomerProfileView {
         CustomerProfiles newProfile = new CustomerProfiles(profile.id(), profile.nick(), profile.phone());
         LOGGER.debug("Enter new phone");
         newProfile.phone(scanner.nextLine());
-        CustomerProfilesService service = new CustomerProfilesService(new CustomerProfilesDAO());
         try {
-            profile.phone(service.updateProfile(profile, newProfile).phone());
+            profile.phone(serviceCP.updateProfile(profile, newProfile).phone());
 
         } catch (Exception e) {
             LOGGER.error("same phone");
@@ -112,7 +145,7 @@ public class CustomerProfileView {
         newProfile.nick(scanner.nextLine());
         CustomerProfilesService service = new CustomerProfilesService(new CustomerProfilesDAO());
         try {
-            profile.nick( (service.updateProfile(profile, newProfile)).nick());
+            profile.nick((service.updateProfile(profile, newProfile)).nick());
         } catch (Exception e) {
             LOGGER.error("same nick");
         }

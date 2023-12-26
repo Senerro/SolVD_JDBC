@@ -3,7 +3,7 @@ package com.solvd.repairService.model;
 import java.util.List;
 
 public class Equipments extends AbstractModel {
-    private String equipmentType;
+    private String type;
     private String producer;
     private String model;
     private double price;
@@ -13,23 +13,33 @@ public class Equipments extends AbstractModel {
         super(id, Equipments.class);
     }
 
-    public Equipments(Long id, String equipmentType, String producer, double price) {
+    public Equipments(Long id, String type, String producer, String model, double price) {
         this(id);
-        this.equipmentType = equipmentType;
+        this.type = type;
         this.producer = producer;
+        this.model = model;
         this.price = price;
+
+    }
+
+    public Equipments() {
+        this(0L);
+    }
+    public Equipments(String type, String producer, String model, double price)
+    {
+        this(0L, type, producer, model, price);
     }
 
     public double price() {
         return price;
     }
 
-    public String equipmentType() {
-        return equipmentType;
+    public String type() {
+        return type;
     }
 
-    public void equipmentType(String equipmentType) {
-        this.equipmentType = equipmentType;
+    public void type(String equipmentType) {
+        this.type = equipmentType;
     }
 
     public String model() {

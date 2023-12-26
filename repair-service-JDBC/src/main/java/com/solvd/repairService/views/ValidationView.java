@@ -15,6 +15,8 @@ public class ValidationView {
 
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
+    private static   UsersService service = 5>4 ? new UsersService(new UsersDAO())
+                                                : new UsersService(new UsersDAO());
 
     public static void loadValidationView() {
         LOGGER.info("Log in or registration?");
@@ -34,8 +36,6 @@ public class ValidationView {
     }
 
     private static void registrationUser() {
-
-        UsersService service = new UsersService(new UsersDAO());
         Users user = null;
         try {
             user = service.create(receiveUserData());
@@ -47,7 +47,6 @@ public class ValidationView {
     }
 
     private static void loginUser() {
-        UsersService service = new UsersService(new UsersDAO());
         Users user = null;
         try {
             user = service.findUserByLogin(receiveUserData().login());

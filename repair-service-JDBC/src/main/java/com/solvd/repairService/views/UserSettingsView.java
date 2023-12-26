@@ -13,18 +13,28 @@ public class UserSettingsView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
+
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
+    private static UsersService service = 5 > 4 ? new UsersService(new UsersDAO())
+            : new UsersService(new UsersDAO());
+
     public static CustomerProfiles settingsUI(CustomerProfiles profile) {
         LOGGER.debug("1: change login");
         LOGGER.debug("2: change password");
         LOGGER.debug("3: delete account");
         String answer = scanner.nextLine();
         switch (answer) {
-            case "1": changeLogin(profile); break;
-            case "2": changePassword(profile); break;
-            case "3": deleteAccount(profile);
-            default: CustomerProfileView.profileUI(profile.user());
+            case "1":
+                changeLogin(profile);
+                break;
+            case "2":
+                changePassword(profile);
+                break;
+            case "3":
+                deleteAccount(profile);
+            default:
+                CustomerProfileView.profileUI(profile.user());
         }
         return profile;
     }
@@ -34,27 +44,26 @@ public class UserSettingsView {
         LOGGER.info("1: yes");
         LOGGER.info("2: no, go back");
         String answer = scanner.nextLine();
-        switch (answer)
-        {
+        switch (answer) {
             case "1":
                 try {
-                    int service = new UsersService(new UsersDAO()).delete(profile.user());
-                    LOGGER.info("account was successfully deleted");
+                    int count = service.delete(profile.user());
+                    LOGGER.info(service + " account was successfully deleted");
                     ValidationView.loadValidationView();
                 } catch (Exception e) {
                     LOGGER.error("Account wasn't deleted");
                     UserSettingsView.settingsUI(profile);
                 }
+                break;
+            default: settingsUI(profile);
         }
     }
 
     private static void changePassword(CustomerProfiles profile) {
         LOGGER.info("Enter current password");
         String oldPass = scanner.nextLine();
-        UsersService service = new UsersService(new UsersDAO());
         boolean isDetected = service.acceptPassword(oldPass, profile.id());
-        if(!isDetected)
-        {
+        if (!isDetected) {
             LOGGER.error("wrong password");
             changePassword(profile);
         }
@@ -63,8 +72,8 @@ public class UserSettingsView {
         Users newUser = new Users(profile.user());
         newUser.password(newPass);
         try {
-           var updatedUser = service.updateUser(profile.user(), newUser);
-           profile.user(updatedUser);
+            var updatedUser = service.updateUser(profile.user(), newUser);
+            profile.user(updatedUser);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -74,7 +83,6 @@ public class UserSettingsView {
     private static void changeLogin(CustomerProfiles profile) {
         LOGGER.info("Enter new login");
         String newLogin = scanner.nextLine();
-        UsersService service = new UsersService(new UsersDAO());
         try {
             service.findUserByLogin(newLogin);
             LOGGER.error("User with the same login already exist");
