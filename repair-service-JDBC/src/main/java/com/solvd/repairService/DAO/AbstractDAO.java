@@ -51,6 +51,5 @@ public class AbstractDAO implements IAbstractDAO {
                     + "Exception is " + e);
             throw new RuntimeException(e);
         }
-
     }
 }

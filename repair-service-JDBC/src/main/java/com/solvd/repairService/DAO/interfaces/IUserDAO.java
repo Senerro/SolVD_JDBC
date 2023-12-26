@@ -10,4 +10,5 @@ public interface IUserDAO extends IAbstractDAO{
     public List<Users> selectByRole(boolean role);
     public Users updateUser(Users from, Users to);
     public boolean deleteUserByLogin(String login);
+    public boolean acceptPassword(String password, Long id);
 }

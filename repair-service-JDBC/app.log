@@ -103,3 +103,194 @@ Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syn
 [INFO ] 2023-12-26 13:40:43.500 [main] CustomerProfileView - email: qwer
 [INFO ] 2023-12-26 13:40:43.502 [main] CustomerProfileView - 1: profile
 [INFO ] 2023-12-26 13:40:43.503 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-26 14:55:23.100 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 14:55:23.109 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 14:55:23.110 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 14:55:25.453 [main] ValidationView - Input login
+[INFO ] 2023-12-26 14:55:27.304 [main] ValidationView - Input password
+[INFO ] 2023-12-26 14:55:28.909 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 14:55:28.910 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 14:55:28.910 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 14:55:28.911 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 14:55:28.911 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 14:55:30.846 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 14:55:30.847 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 14:55:30.847 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-26 14:56:20.921 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 14:56:20.926 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 14:56:20.927 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 14:56:24.011 [main] ValidationView - Input login
+[INFO ] 2023-12-26 14:56:25.117 [main] ValidationView - Input password
+[INFO ] 2023-12-26 14:56:27.277 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 14:56:27.278 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 14:56:27.279 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 14:56:27.279 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 14:56:27.280 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 14:56:28.837 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 14:56:28.838 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 14:56:28.839 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 14:56:30.721 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 14:56:30.722 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 14:56:32.376 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 14:56:35.947 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 14:56:35.947 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 14:56:40.180 [main] CustomerProfileView - Enter current password
+[ERROR] 2023-12-26 14:56:42.938 [main] UsersDAO - Some error with table users
+query is SELECT * FROM users WHERE id = 23AND password = 'qwer'
+Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'password = 'qwer'' at line 1
+[INFO ] 2023-12-26 14:57:50.004 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 14:57:50.010 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 14:57:50.011 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 14:57:52.094 [main] ValidationView - Input login
+[INFO ] 2023-12-26 14:57:53.339 [main] ValidationView - Input password
+[INFO ] 2023-12-26 14:57:54.873 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 14:57:54.873 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 14:57:54.874 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 14:57:54.874 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 14:57:54.874 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 14:57:56.486 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 14:57:56.487 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 14:57:56.488 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 14:57:57.382 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 14:57:57.382 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 14:57:58.324 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 14:58:02.224 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 14:58:02.225 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-26 14:58:07.093 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 14:58:07.094 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-26 14:58:12.454 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 14:58:12.455 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 14:59:51.553 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 14:59:51.559 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 14:59:51.560 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 14:59:54.961 [main] ValidationView - Input login
+[INFO ] 2023-12-26 14:59:56.735 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:00:06.377 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:00:06.378 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:00:06.379 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 15:00:06.380 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:00:06.380 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:00:14.279 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:00:14.280 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:00:14.280 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:00:17.584 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:00:17.585 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:00:20.506 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 15:01:36.369 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:01:36.370 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:01:44.259 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:01:44.264 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:01:44.265 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:01:47.728 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:01:49.633 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:01:53.287 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:01:53.288 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:01:53.288 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 15:01:53.289 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:01:53.289 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:01:56.156 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:01:56.156 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:01:56.157 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:01:56.692 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:01:56.693 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:01:58.152 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 15:03:19.430 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:03:19.431 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:10:30.274 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:10:30.280 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:10:30.281 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:10:34.484 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:10:35.974 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:10:39.788 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:10:39.788 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:10:39.789 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 15:10:39.789 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:10:39.790 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:10:47.969 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:10:47.969 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:10:47.970 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:10:50.113 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:10:50.114 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:10:51.437 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 15:12:50.915 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:12:50.917 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:12:54.706 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:12:54.711 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:12:54.712 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:12:57.066 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:12:58.436 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:13:05.935 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:13:05.936 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:13:05.936 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 15:13:05.937 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:13:05.937 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:13:08.558 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:13:08.558 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:13:08.559 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:13:08.940 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:13:08.940 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:13:10.296 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 15:13:44.359 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:13:44.363 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:13:53.042 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:13:53.043 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:13:53.044 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:13:53.045 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:13:53.046 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:13:57.571 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:13:57.573 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:13:57.574 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-26 15:14:11.184 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:14:11.185 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:14:11.186 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:14:11.187 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:14:11.188 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:14:22.517 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:14:22.518 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:14:22.519 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:14:24.165 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:14:24.167 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:14:25.747 [main] CustomerProfileView - Enter current password
+[ERROR] 2023-12-26 15:14:32.568 [main] CustomerProfileView - wrong password
+[INFO ] 2023-12-26 15:14:32.569 [main] CustomerProfileView - Enter current password
+[INFO ] 2023-12-26 15:14:38.142 [main] CustomerProfileView - Enter new password
+[ERROR] 2023-12-26 15:16:12.327 [main] UsersDAO - Some error with table users
+query is UPDATE users SET login = 'asdf',  SET password = 'qwer' WHERE id = 23
+Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SET password = 'qwer' WHERE id = 23' at line 1
+[INFO ] 2023-12-26 15:19:19.648 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 15:19:19.654 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 15:19:19.655 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 15:19:27.013 [main] ValidationView - Input login
+[INFO ] 2023-12-26 15:19:28.410 [main] ValidationView - Input password
+[INFO ] 2023-12-26 15:19:31.129 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:19:31.129 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:19:31.130 [main] CustomerProfileView - email: qwer
+[INFO ] 2023-12-26 15:19:31.130 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:19:31.131 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:19:41.713 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:19:41.714 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:19:41.714 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:19:43.269 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:19:43.270 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:19:44.181 [main] CustomerProfileView - Enter new login
+[DEBUG] 2023-12-26 15:20:27.714 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:20:27.717 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:20:39.347 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:20:39.348 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:20:39.349 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:20:39.351 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:20:39.351 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 15:20:45.910 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-26 15:20:45.911 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-26 15:20:45.912 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-26 15:20:46.747 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:20:46.749 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:20:48.036 [main] CustomerProfileView - Enter current password
+[INFO ] 2023-12-26 15:21:38.338 [main] CustomerProfileView - Enter new password
+[DEBUG] 2023-12-26 15:23:16.252 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-26 15:23:16.255 [main] CustomerProfileView - 2: change password
+[INFO ] 2023-12-26 15:23:19.411 [main] CustomerProfileView - nickname: NewSQLNickname
+[INFO ] 2023-12-26 15:23:19.412 [main] CustomerProfileView - phone: phone example
+[INFO ] 2023-12-26 15:23:19.413 [main] CustomerProfileView - email: asdf
+[INFO ] 2023-12-26 15:23:19.414 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 15:23:19.416 [main] CustomerProfileView - 2: orders

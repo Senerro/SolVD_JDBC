@@ -1,6 +1,7 @@
 package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.IUserDAO;
+import com.solvd.repairService.QueryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.Users;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,6 +16,7 @@ public class UsersDAO extends AbstractDAO implements IUserDAO {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
+
     private static final Logger LOGGER = LogManager.getLogger(UsersDAO.class);
 
     @Override
@@ -41,7 +43,7 @@ public class UsersDAO extends AbstractDAO implements IUserDAO {
 
     @Override
     public Users findByLogin(String login) {
-        String query = "SELECT * FROM users WHERE login = '" + login+"'";
+        String query = "SELECT * FROM users WHERE login = '" + login + "'";
         Users user = null;
         connection = connectionPool.getConnection();
         try {
@@ -70,58 +72,50 @@ public class UsersDAO extends AbstractDAO implements IUserDAO {
 
     @Override
     public Users updateUser(Users from, Users to) {
-
-       /* ArrayList<String> fields = new ArrayList<>();
-        ArrayList<String> values = new ArrayList<>();
-        if(from.login().equals(to.login())) {
-            fields.add("login");
-            values.add(to.login());
-        }
-        if(from.password().equals(to.password())) {
-            fields.add("password");
-            values.add(to.password());
-        }
-        StringBuilder fieldsSQL = new StringBuilder();
-        for (int i = 0; i < fields.size(); i++) {
-            fieldsSQL.append(fields.get(i));
-            if(i + 1 < fields.size())
-                fieldsSQL.append(", ");
-        }
-        StringBuilder valuesSQL = new StringBuilder();
-        for (int i = 0; i < values.size(); i++) {
-            fieldsSQL.append("( ").append( values.get(i) ).append( " )");
-            if(i + 1 < values.size())
-                fieldsSQL.append(", ");
-        }
-        StringBuilder query = new StringBuilder();
-        query.append("Update users SET (");
-        for(int i = 0; )*/
-       /* ArrayList<String> set = new ArrayList<>();
-
+        String query = UpdateStatements.get(from, to);
         connection = connectionPool.getConnection();
         try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(query);
-            while (resultSet.next()) {
-                user = new Users(resultSet.getLong("id"));
-                user.login(resultSet.getString("login"));
-                user.password(resultSet.getString("password"));
-                user.role(resultSet.getInt("role") > 0);
-            }
+            PreparedStatement ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ps.executeUpdate();
             connectionPool.returnConnection(connection);
-            return user;
+            ps.close();
         } catch (SQLException e) {
-            LOGGER.error("Some error with table users" + "\n"
+            LOGGER.error("Some error with table " + from.tableName() + "\n"
                     + "query is " + query + "\n"
                     + "Exception is " + e);
-            throw new RuntimeException(e);*/
-        return null;
+            throw new RuntimeException(e);
         }
-
+        return to;
+    }
 
 
     @Override
     public boolean deleteUserByLogin(String login) {
         return false;
+    }
+
+    @Override
+    public boolean acceptPassword(String password, Long id) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("SELECT * FROM users WHERE id = ").append(id)
+               .append(" AND password = ").append("'").append(password).append("'");
+        String query = builder.toString();
+        connection = connectionPool.getConnection();
+        boolean isDetected = false;
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                isDetected = true;
+                break;
+            }
+            connectionPool.returnConnection(connection);
+            return isDetected;
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
     }
 }

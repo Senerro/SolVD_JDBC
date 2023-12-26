@@ -51,16 +51,15 @@ public class CustomerProfileView {
                 changePhone(profile);
                 break;
             case "3":
-                advansedSettingsUI(profile);
+                advancedSettingsUI(profile);
                 break;
             default:
                 profileUI(profile.user());
         }
     }
 
-    private static void advansedSettingsUI(CustomerProfiles profile) {
-
-
+    private static void advancedSettingsUI(CustomerProfiles profile) {
+        UserSettingsView.settingsUI(profile);
     }
 
     private static void changePhone(CustomerProfiles profile) {

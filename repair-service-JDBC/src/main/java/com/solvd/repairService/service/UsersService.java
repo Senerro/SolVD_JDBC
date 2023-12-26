@@ -64,4 +64,9 @@ public class UsersService{
             throw new Exception(user + " wasn't deleted");
         return result;
     }
+
+    public boolean acceptPassword(String oldPass, Long id)
+    {
+        return dao.acceptPassword(oldPass, id);
+    }
 }

@@ -2,7 +2,7 @@ package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
 import com.solvd.repairService.QueryConfigurationHelper.InsertValuesHelper;
-import com.solvd.repairService.QueryConfigurationHelper.UpdateProfileStatement;
+import com.solvd.repairService.QueryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.CustomerProfiles;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -83,7 +83,7 @@ public class CustomerProfilesDAO extends AbstractDAO implements ICustomerProfile
 
     @Override
     public CustomerProfiles updateProfile(CustomerProfiles from, CustomerProfiles to) {
-        String query = UpdateProfileStatement.get(from, to, from.user().id());
+        String query = UpdateStatements.get(from, to, from.user().id());
         connection = connectionPool.getConnection();
 
         try {
