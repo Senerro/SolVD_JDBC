@@ -1,9 +1,11 @@
 package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.CustomerProfilesDAO;
+import com.solvd.repairService.DAO.OrdersDAO;
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.CustomerProfilesService;
+import com.solvd.repairService.service.OrdersService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,9 +35,37 @@ public class CustomerProfileView {
         LOGGER.info("2: orders");
         String answer = scanner.nextLine();
         switch (answer) {
-            case "1":
-                profileActions(profile);
+            case "1": profileActions(profile); break;
+            case "2": ordersActions(profile); break;
         }
+    }
+
+    private static void ordersActions(CustomerProfiles profile)
+    {
+        LOGGER.debug("1: create new order");
+        LOGGER.debug("2: check order history");
+        LOGGER.debug("3: return");
+
+        String answer = scanner.nextLine();
+        switch (answer) {
+            case "1":break;
+            case "2":checkOrderHistory(profile);break;
+            case "3":profileUI(profile.user());break;
+            default:ordersActions(profile);
+        }
+    }
+
+    private static void checkOrderHistory(CustomerProfiles profile) {
+        OrdersService service = new OrdersService(new OrdersDAO());
+        var orders = service.ordersHistory(profile);
+        if (orders!= null)
+        {
+            LOGGER.info(orders.size() + " of Orders");
+            for (var element: orders) {
+                LOGGER.info(element.equipment().equipmentType() + element.equipment().producer() + element.equipment().model());
+            }
+        }
+
     }
 
     private static void profileActions(CustomerProfiles profile) {

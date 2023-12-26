@@ -395,3 +395,171 @@ Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syn
 [INFO ] 2023-12-26 15:52:32.454 [main] ValidationView - Input password
 [INFO ] 2023-12-26 15:52:40.484 [main] ValidationView - User isn't exist
 [INFO ] 2023-12-26 15:52:41.005 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:27:06.507 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:27:06.512 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:27:06.512 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:27:08.133 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:27:09.322 [main] ValidationView - Input password
+[INFO ] 2023-12-26 17:29:26.404 [main] CustomerProfileView - nickname: User#25
+[INFO ] 2023-12-26 17:29:26.405 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-26 17:29:26.406 [main] CustomerProfileView - email: sgfdgfhjdgfhj
+[INFO ] 2023-12-26 17:29:26.406 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 17:29:26.406 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-26 17:42:23.607 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:42:23.611 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:42:23.612 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:42:25.684 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:42:28.064 [main] ValidationView - Input password
+[INFO ] 2023-12-26 17:42:45.443 [main] CustomerProfileView - nickname: User#26
+[INFO ] 2023-12-26 17:53:24.762 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:53:24.766 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:53:24.766 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:53:28.220 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:53:30.070 [main] ValidationView - Input password
+[INFO ] 2023-12-26 17:57:25.694 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:57:25.700 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:57:25.701 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:57:30.711 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:57:31.786 [main] ValidationView - Input password
+[INFO ] 2023-12-26 17:57:33.721 [main] ValidationView - Cannot invoke "java.util.List.isEmpty()" because "fields" is null
+[INFO ] 2023-12-26 17:57:33.722 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:57:33.722 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:57:33.722 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:58:43.155 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:58:43.162 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:58:43.163 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:58:50.500 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:58:52.470 [main] ValidationView - Input password
+[INFO ] 2023-12-26 17:58:53.941 [main] ValidationView - Cannot invoke "java.util.List.isEmpty()" because "fields" is null
+[INFO ] 2023-12-26 17:58:53.941 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:58:53.941 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:58:53.942 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:59:46.077 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:59:46.083 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:59:46.083 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 17:59:47.963 [main] ValidationView - Input login
+[INFO ] 2023-12-26 17:59:49.256 [main] ValidationView - Input password
+[ERROR] 2023-12-26 17:59:59.243 [main] UsersDAO - Some error with table users
+query is INSERT INTO users VALUES ( 'zxczxc', 'zxzxcz', 0 )
+Exception is java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2023-12-26 17:59:59.244 [main] ValidationView - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2023-12-26 17:59:59.245 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 17:59:59.245 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 17:59:59.246 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:28:42.318 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:28:42.323 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:28:42.323 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:28:49.287 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:28:52.684 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:29:00.850 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 18:29:00.851 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 18:29:00.852 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 18:29:00.852 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 18:29:00.852 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 18:29:06.690 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 18:29:06.690 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 18:29:06.691 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-26 18:34:47.491 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:34:47.497 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:34:47.498 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:34:52.314 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:34:53.504 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:35:02.443 [main] ValidationView - User isn't exist
+[INFO ] 2023-12-26 18:35:02.444 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:35:12.509 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:35:13.821 [main] ValidationView - User with loginlogin@customer.comalready existed
+[INFO ] 2023-12-26 18:35:13.821 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:35:13.822 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:35:13.822 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:35:33.809 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:35:33.816 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:35:33.816 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:35:36.066 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:35:37.785 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:35:40.708 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 18:35:40.708 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 18:35:40.708 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 18:35:40.709 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 18:35:40.709 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 18:35:46.985 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 18:35:46.985 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 18:35:46.986 [main] CustomerProfileView - 3: return
+[ERROR] 2023-12-26 18:35:49.851 [main] UsersDAO - Some error with table users
+query is  SELECT o.id AS oId, userId, equipmentId, executeId, oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, e.id as eId, equipmentType, producer, model, price  from orders AS o JOIN order_executions AS oe on executeId = oe.idJOIN equipments AS e on equipmentId = e.id WHERE userId = 1
+Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'equipments AS e on equipmentId = e.id WHERE userId = 1' at line 1
+[INFO ] 2023-12-26 18:37:39.206 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:39.215 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:39.216 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:40.973 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:40.974 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:40.975 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:40.975 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:40.976 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:40.976 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:40.976 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:40.977 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:40.977 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:40.978 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:40.978 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:40.978 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:40.979 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:40.979 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:40.979 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:50.318 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:37:50.325 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:37:50.326 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:37:55.374 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:38:02.630 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:38:05.074 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 18:38:05.075 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 18:38:05.075 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 18:38:05.076 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 18:38:05.076 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 18:38:07.589 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 18:38:07.590 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 18:38:07.590 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-26 18:39:07.460 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:39:07.464 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:39:07.465 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:39:10.054 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:39:34.200 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:39:36.344 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 18:39:36.345 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 18:39:36.346 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 18:39:36.346 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 18:39:36.346 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 18:39:38.685 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 18:39:38.685 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 18:39:38.686 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-26 18:39:39.764 [main] CustomerProfileView - 0 of Orders
+[INFO ] 2023-12-26 18:41:30.762 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:41:30.769 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:41:30.770 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:41:35.369 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:41:36.791 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:41:38.506 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 18:41:38.507 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 18:41:38.507 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 18:41:38.508 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 18:41:38.508 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 18:41:42.504 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 18:41:42.504 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 18:41:42.505 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-26 18:43:07.332 [main] CustomerProfileView - 0 of Orders
+[INFO ] 2023-12-26 18:43:25.804 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-26 18:43:25.808 [main] ValidationView - 1: log in
+[INFO ] 2023-12-26 18:43:25.809 [main] ValidationView - 2: registration
+[INFO ] 2023-12-26 18:43:27.825 [main] ValidationView - Input login
+[INFO ] 2023-12-26 18:43:30.018 [main] ValidationView - Input password
+[INFO ] 2023-12-26 18:43:31.950 [main] CustomerProfileView - nickname: Somebofy
+[INFO ] 2023-12-26 18:43:31.951 [main] CustomerProfileView - phone: +375-25-124-39-52
+[INFO ] 2023-12-26 18:43:31.951 [main] CustomerProfileView - email: login@customer.com
+[INFO ] 2023-12-26 18:43:31.952 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-26 18:43:31.952 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-26 18:43:33.334 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-26 18:43:33.334 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-26 18:43:33.335 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-26 18:43:34.386 [main] CustomerProfileView - 3 of Orders
+[INFO ] 2023-12-26 18:43:34.387 [main] CustomerProfileView - processornulli7-670HQ
+[INFO ] 2023-12-26 18:43:34.388 [main] CustomerProfileView - smartphonenullMi A3
+[INFO ] 2023-12-26 18:43:34.389 [main] CustomerProfileView - laptopnullfx502VM

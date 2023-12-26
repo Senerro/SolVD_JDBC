@@ -19,15 +19,50 @@ public class Orders extends AbstractModel{
         this.executeId = executeId;
     }
 
-    public Long equipmentId() {
-        return equipmentId;
+    public Equipments equipment() {
+        return equipment;
+    }
+    public void equipment( Equipments equipment) {
+        this.equipment = equipment;
     }
 
     public Long executeId() {
         return executeId;
     }
+    public void executeId(Long executeId) {
+       this.executeId = executeId;
+    }
+
 
     public Long userId() {
         return userId;
     }
+    public void userId(Long userId) {
+        this.userId = userId;
+    }
+    public void orderExecution(OrderExecutions oe)
+    {
+        this.orderExecution = oe;
+    }
+
+    public Users getUser() {
+        return user;
+    }
+
+    public Equipments getEquipment() {
+        return equipment;
+    }
+
+    public OrderExecutions getOrderExecution() {
+        return orderExecution;
+    }
+
+    public void setEquipment(Equipments equipment) {
+        this.equipment = equipment;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
+    }
+
 }

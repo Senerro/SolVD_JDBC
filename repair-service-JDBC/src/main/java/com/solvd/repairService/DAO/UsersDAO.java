@@ -1,6 +1,7 @@
 package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.IUserDAO;
+import com.solvd.repairService.QueryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.QueryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.Users;
 import org.apache.logging.log4j.LogManager;
@@ -10,25 +11,39 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UsersDAO extends AbstractDAO implements IUserDAO {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-
     private static final Logger LOGGER = LogManager.getLogger(UsersDAO.class);
 
     @Override
     public Users create(Users user) {
         int role;
         role = user.role() ? 1 : 0;
-        String query = "INSERT INTO " + user.tableName() + " (login, password, role) VALUES ('" + user.login() + "', '" + user.password() + "', " + role + ")";
-        connection = connectionPool.getConnection();
 
+        ArrayList<String> fields = new ArrayList<>();
+        fields.add("login");
+        fields.add("password");
+        fields.add("role");
+
+        ArrayList<String> values = new ArrayList<>();
+        values.add(user.login());
+        values.add(user.password());
+        values.add(String.format("%d", role));
+
+        String query = InsertValuesHelper.get(user, null, values);
+        connection = connectionPool.getConnection();
         try {
             PreparedStatement ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
             ps.executeUpdate();
+            var a = ps.getGeneratedKeys();
+            while (a.next()) {
+                user.id(a.getLong("GENERATED_KEY"));
+            }
             connectionPool.returnConnection(connection);
             ps.close();
         } catch (SQLException e) {

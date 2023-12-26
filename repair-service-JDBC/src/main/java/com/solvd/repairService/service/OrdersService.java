@@ -1,8 +1,11 @@
 package com.solvd.repairService.service;
+
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
+import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.EmployerProfiles;
 import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.ServiceCenters;
+import java.util.List;
 
 public class OrdersService {
     private final IOrderDAO dao;
@@ -33,5 +36,10 @@ public class OrdersService {
 
     public Orders changeServiceCenter(Orders order, ServiceCenters serviceCenter) {
         return dao.changeServiceCenter(order, serviceCenter);
+    }
+
+    public List<Orders> ordersHistory(CustomerProfiles profiles) {
+        return dao.orderHistory(profiles);
+
     }
 }

@@ -12,6 +12,7 @@ public class ValidationView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
+
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
 
@@ -49,7 +50,7 @@ public class ValidationView {
         UsersService service = new UsersService(new UsersDAO());
         Users user = null;
         try {
-           user = service.findUserByLogin(receiveUserData().login());
+            user = service.findUserByLogin(receiveUserData().login());
         } catch (Exception e) {
             LOGGER.info("User isn't exist");
             registrationUser();
