@@ -1,10 +1,8 @@
 package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
-import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.EmployerProfiles;
-import com.solvd.repairService.model.Orders;
-import com.solvd.repairService.model.ServiceCenters;
+import com.solvd.repairService.model.*;
+
 import java.util.List;
 
 public class OrdersService {
@@ -22,9 +20,11 @@ public class OrdersService {
         return dao.delete(model);
     }
 
-    public Orders create(Orders order) {
+    public Orders create(CustomerProfiles profile, Equipments equipment, OrderExecutions orderExecution) {
+        var order = new Orders(profile.id(), equipment, orderExecution);
+        dao.create(order);
 
-        return dao.create(order);
+        return order;
     }
 
     public Orders selectById(Orders order) {

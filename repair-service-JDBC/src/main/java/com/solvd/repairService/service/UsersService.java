@@ -1,14 +1,11 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.UsersDAO;
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IUserDAO;
-import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.Users;
 
 import java.util.List;
 
-public class UsersService{
+public class UsersService {
     private final IUserDAO dao;
 
     public UsersService(IUserDAO dao) {
@@ -65,8 +62,7 @@ public class UsersService{
         return result;
     }
 
-    public boolean acceptPassword(String oldPass, Long id)
-    {
+    public boolean acceptPassword(String oldPass, Long id) {
         return dao.acceptPassword(oldPass, id);
     }
 }

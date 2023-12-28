@@ -35,4 +35,10 @@ public class ServiceCentersService {
     public List<ServiceCenters> orderByBusing(boolean desc) {
         return dao.orderByBusing(desc);
     }
+
+    public ServiceCenters findUnoccupied() {
+        ServiceCenters centers = new ServiceCenters();
+        dao.findUnoccupied(centers);
+        return centers;
+    }
 }

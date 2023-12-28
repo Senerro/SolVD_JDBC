@@ -1,7 +1,7 @@
 package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
-import com.solvd.repairService.QueryConfigurationHelper.InsertValuesHelper;
+import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.model.Equipments;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -18,7 +18,7 @@ public class EquipmentsDAO  extends AbstractDAO implements IEquipmentDAO {
     }
     private static final Logger LOGGER = LogManager.getLogger(EquipmentsDAO.class);
     @Override
-    public Equipments create(Equipments equipment) {
+    public int create(Equipments equipment) {
         ArrayList<String>fields = new ArrayList<>();
         ArrayList<String>values = new ArrayList<>();
         fields.add("type");
@@ -41,13 +41,13 @@ public class EquipmentsDAO  extends AbstractDAO implements IEquipmentDAO {
             }
             connectionPool.returnConnection(connection);
             ps.close();
+            return 1;
         } catch (SQLException e) {
             LOGGER.error("Some error with table " + equipment.tableName() + "\n"
                     + "query is " + query + "\n"
                     + "Exception is " + e);
             throw new RuntimeException(e);
         }
-        return equipment;
     }
 
     @Override

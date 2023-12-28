@@ -7,6 +7,8 @@ import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.Equipments;
 import com.solvd.repairService.model.Problems;
 
+import java.util.Random;
+
 public class ProblemService {
     private final IProblemDAO dao;
 
@@ -22,8 +24,11 @@ public class ProblemService {
         return dao.delete(model);
     }
 
-    public Problems create(Problems problem) {
-        return dao.create(problem);
+    public Problems create() {
+        Problems problem = new Problems();
+        problem.typeId(new Random().nextLong(3) + 1);
+        dao.create(problem);
+        return problem;
     }
 
     public boolean linkProblemToEquipment(Problems problem, Equipments equipment) {

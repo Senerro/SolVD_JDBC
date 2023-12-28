@@ -18,11 +18,14 @@ public class Orders extends AbstractModel{
         this.userId = userId;
         this.executeId = executeId;
     }
-    public Orders(Long userId, Equipments equipment)
+    public Orders(Long userId, Equipments equipment, OrderExecutions oe)
     {
         this(0L);
         this.equipment = equipment;
+        this.equipmentId = equipment.id();
         this.userId = userId;
+        this.orderExecution = oe;
+        this.executeId = oe.id();
     }
 
     public Equipments equipment() {
@@ -68,7 +71,7 @@ public class Orders extends AbstractModel{
     }
     @Override
     public String toString() {
-        String status = this.orderExecution.isReturned()? " returned ":" not returned";
+        String status = this.orderExecution.isReturned() > 0 ? " returned ":" not returned";
         return "Number of order is " + this.id() + ". Device is " + this.equipment.type() + " " + this.equipment.producer() + " " + this.equipment.model() + "\n"
                 + " Status: " + status + ", finish date is " + this.orderExecution.finishDate() + ", cost is " + this.orderExecution.cost() + "\n";
     }

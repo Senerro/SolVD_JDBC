@@ -13,6 +13,14 @@ public class Equipments extends AbstractModel {
         super(id, Equipments.class);
     }
 
+    public Equipments(Equipments equipment) {
+        super(equipment.id(), Equipments.class);
+        this.producer = equipment.producer;
+        this.model = equipment.model;
+        this.price = equipment.price;
+        this.problemsList = equipment.problemsList;
+    }
+
     public Equipments(Long id, String type, String producer, String model, double price) {
         this(id);
         this.type = type;
@@ -25,8 +33,8 @@ public class Equipments extends AbstractModel {
     public Equipments() {
         this(0L);
     }
-    public Equipments(String type, String producer, String model, double price)
-    {
+
+    public Equipments(String type, String producer, String model, double price) {
         this(0L, type, producer, model, price);
     }
 
@@ -56,5 +64,12 @@ public class Equipments extends AbstractModel {
 
     public void producer(String producer) {
         this.producer = producer;
+    }
+
+    public void addProblem(Problems problem) {
+        problemsList.add(problem);
+    }
+    public Problems getProblem() {
+        return problemsList.get(problemsList.size()-1);
     }
 }

@@ -586,3 +586,118 @@ Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syn
 [INFO ] 2023-12-26 19:18:59.492 [main] CustomerProfileView - Number of order is 2. Device is laptop null fx502VM
  Status:  not returned, finish date is 2023-11-12, cost is 878.0
 
+[INFO ] 2023-12-27 13:06:20.799 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:06:20.806 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:06:20.807 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:06:24.308 [main] ValidationView - Input login
+[INFO ] 2023-12-27 13:06:25.564 [main] ValidationView - Input password
+[ERROR] 2023-12-27 13:06:27.311 [main] ConnectionPool - fail connection to database:
+url jdbc:mysql://localhost/equipment_repair_service?serverTimezone=Europe/Moscow&useSSL=false
+username root
+password 1234
+[INFO ] 2023-12-27 13:06:27.311 [main] ValidationView - java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+[INFO ] 2023-12-27 13:06:27.312 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:06:27.312 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:06:27.313 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:09:19.954 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:09:19.959 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:09:19.960 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:09:24.051 [main] ValidationView - Input login
+[INFO ] 2023-12-27 13:09:26.624 [main] ValidationView - Input password
+[ERROR] 2023-12-27 13:09:28.874 [main] ConnectionPool - fail connection to database:
+url jdbc:mysql://localhost/equipment_repair_service?serverTimezone=Europe/Moscow&useSSL=false
+username root
+password 1234
+[INFO ] 2023-12-27 13:09:28.875 [main] ValidationView - java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
+[INFO ] 2023-12-27 13:09:28.875 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:09:28.876 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:09:28.876 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:10:42.749 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:10:42.756 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:10:42.757 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:10:50.103 [main] ValidationView - Input login
+[INFO ] 2023-12-27 13:10:57.717 [main] ValidationView - Input password
+[ERROR] 2023-12-27 13:11:01.175 [main] AbstractDAO - Some error with table users
+query is INSERT INTO users VALUES ( 'sdfgsfdg', 'qweru', 0 )
+Exception is java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2023-12-27 13:11:01.176 [main] ValidationView - java.sql.SQLException: Column count doesn't match value count at row 1
+[INFO ] 2023-12-27 13:11:01.177 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:11:01.178 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:11:01.179 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:12:10.669 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:12:10.674 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:12:10.675 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:12:12.490 [main] ValidationView - Input login
+[INFO ] 2023-12-27 13:12:14.507 [main] ValidationView - Input password
+[INFO ] 2023-12-27 13:12:35.510 [main] ValidationView - Cannot invoke "java.sql.ResultSet.next()" because "result" is null
+[INFO ] 2023-12-27 13:12:36.887 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:12:36.891 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:12:36.894 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:14:29.448 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 13:14:29.453 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 13:14:29.454 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 13:14:32.618 [main] ValidationView - Input login
+[INFO ] 2023-12-27 13:14:41.270 [main] ValidationView - Input password
+[INFO ] 2023-12-27 13:14:41.271 [main] ValidationView - Input password
+[INFO ] 2023-12-27 13:23:40.544 [main] CustomerProfileView - nickname: User#29
+[INFO ] 2023-12-27 13:23:40.545 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-27 13:23:40.547 [main] CustomerProfileView - email: qwerqwer
+[INFO ] 2023-12-27 13:23:40.550 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-27 13:23:40.551 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-27 14:10:38.587 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:10:38.594 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:10:38.594 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:11:01.461 [main] ValidationView - Input login
+[INFO ] 2023-12-27 14:11:04.704 [main] ValidationView - Input password
+[ERROR] 2023-12-27 14:11:06.777 [main] AbstractDAO - Some error with table users
+query is SELECT * FROM users WHERE login = 'log3'
+Exception is java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() with statements that produce result sets
+[INFO ] 2023-12-27 14:11:06.778 [main] ValidationView - User isn't exist
+[INFO ] 2023-12-27 14:11:06.778 [main] ValidationView - Input login
+[INFO ] 2023-12-27 14:15:32.707 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:15:32.713 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:15:32.713 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:15:35.132 [main] ValidationView - Input login
+[INFO ] 2023-12-27 14:15:37.097 [main] ValidationView - Input password
+[INFO ] 2023-12-27 14:15:39.920 [main] CustomerProfileView - nickname: pas3
+[INFO ] 2023-12-27 14:15:39.920 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-27 14:15:39.920 [main] CustomerProfileView - email: log3
+[INFO ] 2023-12-27 14:15:39.921 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-27 14:15:39.921 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-27 14:15:51.219 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:15:51.223 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:15:51.223 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:15:52.648 [main] ValidationView - Input login
+[INFO ] 2023-12-27 14:15:54.906 [main] ValidationView - Input password
+[ERROR] 2023-12-27 14:15:56.485 [main] UsersDAO - Some error with table users
+query is INSERT INTO users(login, password, role)  VALUES ( 'dglkjfh\l', 'kasdfjgh', 0 )
+Exception is java.sql.SQLException: Before start of result set
+[INFO ] 2023-12-27 14:15:56.486 [main] ValidationView - java.sql.SQLException: Before start of result set
+[INFO ] 2023-12-27 14:15:56.486 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:15:56.487 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:15:56.487 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:16:33.755 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:16:33.760 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:16:33.761 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:16:37.399 [main] ValidationView - Input login
+[INFO ] 2023-12-27 14:16:39.400 [main] ValidationView - Input password
+[ERROR] 2023-12-27 14:19:49.818 [main] UsersDAO - Some error with table users
+query is INSERT INTO users(login, password, role)  VALUES ( 'tyuiyu', 'fhgjfghj', 0 )
+Exception is java.sql.SQLException: Before start of result set
+[INFO ] 2023-12-27 14:19:49.821 [main] ValidationView - java.sql.SQLException: Before start of result set
+[INFO ] 2023-12-27 14:19:49.822 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:19:49.823 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:19:49.824 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:20:04.265 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 14:20:04.270 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 14:20:04.271 [main] ValidationView - 2: registration
+[INFO ] 2023-12-27 14:20:09.365 [main] ValidationView - Input login
+[INFO ] 2023-12-27 14:20:11.421 [main] ValidationView - Input password
+[INFO ] 2023-12-27 14:20:26.812 [main] CustomerProfileView - nickname: User#32
+[INFO ] 2023-12-27 14:20:26.814 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-27 14:20:26.818 [main] CustomerProfileView - email: sfghjfg
+[INFO ] 2023-12-27 14:20:26.821 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-27 14:20:26.824 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-27 16:27:03.719 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-27 16:27:03.725 [main] ValidationView - 1: log in
+[INFO ] 2023-12-27 16:27:03.726 [main] ValidationView - 2: registration

@@ -1,7 +1,7 @@
 package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
-import com.solvd.repairService.QueryConfigurationHelper.InsertValuesHelper;
+import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,8 +21,39 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
     private static final Logger LOGGER = LogManager.getLogger(UsersDAO.class);
 
     @Override
-    public Orders create(Orders order) {
-        return null;
+    public void create(Orders order) {
+
+        ArrayList<String> fields = new ArrayList<>();
+        fields.add("userId");
+        fields.add("equipmentId");
+        fields.add("executeId");
+
+        ArrayList<String> values = new ArrayList<>();
+        values.add(String.valueOf(order.userId()));
+        values.add(String.valueOf(order.equipment()));
+        values.add(String.valueOf(order.executeId()));
+
+
+        String query = InsertValuesHelper.get(order, fields, values);
+        ResultSet result;
+        PreparedStatement ps;
+        connection = connectionPool.getConnection();
+        try {
+            ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ps.executeUpdate();
+            result = ps.getGeneratedKeys();
+            connectionPool.returnConnection(connection);
+            while (result.next()) {
+                order.id(result.getLong("GENERATED_KEY"));
+            }
+            ps.close();
+
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table " + order.tableName() + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -62,8 +93,8 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 OrderExecutions orderExecutions = new OrderExecutions(order.executeId());
                 orderExecutions.employerId(resultSet.getLong("employerId"));
                 orderExecutions.cost(resultSet.getDouble("cost"));
-                orderExecutions.finishDate(resultSet.getDate("finishDate"));
-                orderExecutions.isReturned(resultSet.getBoolean("returned"));
+                orderExecutions.finishDate(resultSet.getInt("finishDate"));
+                orderExecutions.isReturned(resultSet.getInt("returned"));
                 orderExecutions.serviceCenterId(resultSet.getLong("serviceCenterId"));
 
                 Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));

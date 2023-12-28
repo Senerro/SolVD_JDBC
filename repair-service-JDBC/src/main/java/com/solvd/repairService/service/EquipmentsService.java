@@ -24,8 +24,11 @@ public class EquipmentsService {
         return dao.delete(model);
     }
 
-    public Equipments create(Equipments equipment) {
-        return dao.create(equipment);
+    public Equipments create(Equipments equipment) throws Exception {
+        var result = dao.create(equipment);
+        if(result > 0)
+            return equipment;
+        else throw new Exception("equipment wasn't added in db");
     }
 
     public Equipments selectById(Equipments equipment) {

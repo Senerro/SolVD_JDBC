@@ -1,32 +1,41 @@
 package com.solvd.repairService.views;
 
-import com.solvd.repairService.DAO.CustomerProfilesDAO;
-import com.solvd.repairService.DAO.EquipmentsDAO;
-import com.solvd.repairService.DAO.OrdersDAO;
-import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.Equipments;
-import com.solvd.repairService.model.Orders;
-import com.solvd.repairService.model.Users;
-import com.solvd.repairService.service.CustomerProfilesService;
-import com.solvd.repairService.service.EquipmentsService;
-import com.solvd.repairService.service.OrdersService;
+import com.solvd.repairService.DAO.*;
+import com.solvd.repairService.helpers.calculateData.Calculate;
+import com.solvd.repairService.model.*;
+import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CustomerProfileView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-    private static CustomerProfilesService serviceCP = 5>4 ? new CustomerProfilesService(new CustomerProfilesDAO())
-                                                         : new CustomerProfilesService(new CustomerProfilesDAO());
-    private static OrdersService serviceO = 5>4 ? new OrdersService(new OrdersDAO()): new OrdersService(new OrdersDAO());
-
-    private static EquipmentsService serviceE = 5>4 ? new EquipmentsService(new EquipmentsDAO()): new EquipmentsService(new EquipmentsDAO());
-
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
+    private static CustomerProfilesService serviceCP = 5>4 ? new CustomerProfilesService(new CustomerProfilesDAO())
+                                                           : new CustomerProfilesService(new CustomerProfilesDAO());
+    private static OrdersService serviceO = 5>4 ? new OrdersService(new OrdersDAO())
+                                                :new OrdersService(new OrdersDAO());
+
+    private static EquipmentsService serviceE = 5>4 ? new EquipmentsService(new EquipmentsDAO())
+                                                    : new EquipmentsService(new EquipmentsDAO());
+
+    private static ServiceCentersService serviceSC = 5>4 ? new ServiceCentersService(new ServiceCentersDAO())
+                                                         : new ServiceCentersService(new ServiceCentersDAO());
+    private static OrderExecutionsService serviceOE = 5>4 ? new OrderExecutionsService(new OrderExecutionsDAO())
+                                                          : new OrderExecutionsService(new OrderExecutionsDAO());
+    private static EmployerProfileService serviceEP = 5>4 ? new EmployerProfileService(new EmployerProfilesDAO())
+                                                          : new EmployerProfileService(new EmployerProfilesDAO());
+
+    private static ProblemService serviceP= 5>4 ? new ProblemService(new ProblemsDAO())
+                                                : new ProblemService(new ProblemsDAO());
+
+    private static EquipmentProblemService serviceEqPr= 5>4 ? new EquipmentProblemService(new EquipmentProblemDAO())
+                                                            : new EquipmentProblemService(new EquipmentProblemDAO());
 
     public static void profileUI(Users user) {
 
@@ -84,14 +93,29 @@ public class CustomerProfileView {
         LOGGER.debug("Model: ");
         String model = scanner.nextLine();
         LOGGER.debug("Price: ");
+
         double price = scanner.nextDouble();
         var equipment = new Equipments(type, producer, model, price);
-        var newEquipment = serviceE.create(equipment);
-        var order = new Orders(profile.id(), newEquipment);
-        serviceO.create(order);
+        try {
+            equipment = serviceE.create(equipment);
+        } catch (Exception e) {
+            LOGGER.error(e);
+            ordersActions(profile);
+        }
+        var center = serviceSC.findUnoccupied();
+        var employee = serviceEP.findByServiceCenter(center);
+        var problem = serviceP.create();
+        equipment.addProblem(problem);
+
+        EquipmentProblem ep = new EquipmentProblem(equipment.id(), problem.typeId());
+        serviceEqPr.create(ep);
+
+        var orderExecution = serviceOE.create(equipment, employee);
+
+
+        serviceO.create(profile, equipment, orderExecution);
 
     }
-
     private static void checkOrderHistory(CustomerProfiles profile) {
         var orders = serviceO.ordersHistory(profile);
         if (orders != null) {

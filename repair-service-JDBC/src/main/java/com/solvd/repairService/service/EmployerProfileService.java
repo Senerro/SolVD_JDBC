@@ -1,14 +1,20 @@
 package com.solvd.repairService.service;
 
+import com.solvd.repairService.DAO.EquipmentProblemDAO;
+import com.solvd.repairService.DAO.EquipmentsDAO;
+import com.solvd.repairService.DAO.OrderExecutionsDAO;
+import com.solvd.repairService.DAO.ProblemsDAO;
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
 import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
-import com.solvd.repairService.model.AbstractModel;
-import com.solvd.repairService.model.EmployerPosts;
-import com.solvd.repairService.model.EmployerProfiles;
-import com.solvd.repairService.model.OrderExecutions;
+import com.solvd.repairService.helpers.calculateData.Calculate;
+import com.solvd.repairService.helpers.calculateData.LevelCostDependency;
+import com.solvd.repairService.model.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.stream.Collectors;
 
 public class EmployerProfileService {
     private final IEmployerProfileDAO dao;
@@ -25,7 +31,8 @@ public class EmployerProfileService {
         return dao.delete(model);
     }
 
-    public EmployerProfiles create(EmployerProfiles profile) {
+    public EmployerProfiles create(EmployerProfiles profile, Equipments equipment, ServiceCenters center) {
+
         return dao.create(profile);
     }
 
@@ -55,5 +62,20 @@ public class EmployerProfileService {
 
     public double setCost(EmployerProfiles employee, OrderExecutions orderExecution) {
         return dao.setCost(employee, orderExecution);
+    }
+
+    public EmployerProfiles findByServiceCenter(ServiceCenters center) {
+        ArrayList<EmployerProfiles> list = new ArrayList<>();
+        EmployerProfiles profile = null;
+        dao.findByServiceCenter(center, list);
+        profile = list.get(new Random().nextInt(list.size()));
+
+        return profile;
+    }
+
+    public void detectEquipmentProblem(EmployerProfiles employee, Equipments equipment, ServiceCenters center) {
+
+
+
     }
 }

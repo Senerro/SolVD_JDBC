@@ -1,12 +1,10 @@
 package com.solvd.repairService.model;
 
-import java.sql.Date;
-
 public class OrderExecutions extends AbstractModel {
     private Long employerId;
     private double cost;
-    private Date finishDate;
-    private boolean returned;
+    private int finishDate;
+    private int returned;
     private Long serviceCenterId;
     private ServiceCenters serviceCenter;
     private Long userId;
@@ -16,7 +14,11 @@ public class OrderExecutions extends AbstractModel {
         super(id, OrderExecutions.class);
     }
 
-    public OrderExecutions(Long id, Long employerId, double cost, Date date, boolean returned, Long serviceId) {
+    public OrderExecutions() {
+        super(0L, OrderExecutions.class);
+    }
+
+    public OrderExecutions(Long id, Long employerId, double cost, int date, int returned, Long serviceId) {
         this(id);
         this.employerId = employerId;
         this.cost = cost;
@@ -25,11 +27,11 @@ public class OrderExecutions extends AbstractModel {
         this.serviceCenterId = serviceId;
     }
 
-    public Date finishDate() {
+    public int finishDate() {
         return finishDate;
     }
 
-    public void finishDate(Date date) {
+    public void finishDate(int date) {
         this.finishDate = date;
     }
 
@@ -57,11 +59,11 @@ public class OrderExecutions extends AbstractModel {
         this.serviceCenterId = serviceCenterId;
     }
 
-    public boolean isReturned() {
+    public int isReturned() {
         return returned;
     }
 
-    public void isReturned(boolean returned) {
+    public void isReturned(int returned) {
         this.returned = returned;
     }
 
@@ -79,5 +81,16 @@ public class OrderExecutions extends AbstractModel {
 
     public void serviceCenter(ServiceCenters serviceCenter) {
         this.serviceCenter = serviceCenter;
+    }
+
+    public int getFinishDate(int days) {
+        this.finishDate = days;
+        return finishDate;
+    }
+
+    public void setReturned(boolean returned) {
+        if (!returned)
+            this.returned = 0;
+        else this.returned = 1;
     }
 }

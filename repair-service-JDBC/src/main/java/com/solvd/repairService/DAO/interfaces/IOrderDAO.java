@@ -8,7 +8,7 @@ import com.solvd.repairService.model.ServiceCenters;
 import java.util.List;
 
 public interface IOrderDAO extends IAbstractDAO {
-    Orders create(Orders order);
+    void create(Orders order);
 
     Orders selectById(Orders order);
 

@@ -1,8 +1,8 @@
 package com.solvd.repairService.DAO;
 
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
-import com.solvd.repairService.QueryConfigurationHelper.InsertValuesHelper;
-import com.solvd.repairService.QueryConfigurationHelper.UpdateStatements;
+import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
+import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.CustomerProfiles;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

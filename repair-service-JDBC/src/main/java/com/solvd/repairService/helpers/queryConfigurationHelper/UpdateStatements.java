@@ -1,4 +1,4 @@
-package com.solvd.repairService.QueryConfigurationHelper;
+package com.solvd.repairService.helpers.queryConfigurationHelper;
 
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Users;
