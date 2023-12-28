@@ -11,6 +11,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static com.solvd.repairService.views.OrdersView.ordersActions;
+
 public class CustomerProfileView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
@@ -20,32 +22,6 @@ public class CustomerProfileView {
     private static CustomerProfilesService serviceCP = Global.state()
             ? new CustomerProfilesService(new CustomerProfilesDAO())
             : new CustomerProfilesService(new CustomerProfilesDAO());
-    private static OrdersService serviceO = Global.state()
-            ? new OrdersService(new OrdersDAO())
-            : new OrdersService(new OrdersDAO());
-
-    private static EquipmentsService serviceE = Global.state()
-            ? new EquipmentsService(new EquipmentsDAO())
-            : new EquipmentsService(new EquipmentsDAO());
-
-    private static ServiceCentersService serviceSC = Global.state()
-            ? new ServiceCentersService(new ServiceCentersDAO())
-            : new ServiceCentersService(new ServiceCentersDAO());
-    private static OrderExecutionsService serviceOE = Global.state()
-            ? new OrderExecutionsService(new OrderExecutionsDAO())
-            : new OrderExecutionsService(new OrderExecutionsDAO());
-    private static EmployerProfileService serviceEP = Global.state()
-            ? new EmployerProfileService(new EmployerProfilesDAO())
-            : new EmployerProfileService(new EmployerProfilesDAO());
-
-    private static ProblemService serviceP= Global.state()
-            ? new ProblemService(new ProblemsDAO())
-            : new ProblemService(new ProblemsDAO());
-
-    private static EquipmentProblemService serviceEqPr= Global.state()
-            ? new EquipmentProblemService(new EquipmentProblemDAO())
-            : new EquipmentProblemService(new EquipmentProblemDAO());
-
     public static void profileUI(Users user) {
 
         CustomerProfiles profile = null;
@@ -73,69 +49,7 @@ public class CustomerProfileView {
         }
     }
 
-    private static void ordersActions(CustomerProfiles profile) {
-        LOGGER.debug("1: create new order");
-        LOGGER.debug("2: check order history");
-        LOGGER.debug("3: return");
 
-        String answer = scanner.nextLine();
-        switch (answer) {
-            case "1":
-                createNewOrder(profile);
-                break;
-            case "2":
-                checkOrderHistory(profile);
-                break;
-            case "3":
-                profileUI(profile.user());
-                break;
-            default:
-                ordersActions(profile);
-        }
-    }
-
-    private static void createNewOrder(CustomerProfiles profile) {
-        LOGGER.debug("Type: ");
-        String type = scanner.nextLine();
-        LOGGER.debug("Producer: ");
-        String producer = scanner.nextLine();
-        LOGGER.debug("Model: ");
-        String model = scanner.nextLine();
-        LOGGER.debug("Price: ");
-
-        double price = scanner.nextDouble();
-        var equipment = new Equipments(type, producer, model, price);
-        try {
-            equipment = serviceE.create(equipment);
-        } catch (Exception e) {
-            LOGGER.error(e);
-            ordersActions(profile);
-        }
-        var center = serviceSC.findUnoccupied();
-        var employee = serviceEP.findByServiceCenter(center);
-        var problem = serviceP.create();
-        equipment.addProblem(problem);
-
-
-        var ep = serviceEqPr.create(equipment, problem);
-
-        var orderExecution = serviceOE.create(equipment, employee, center);
-
-
-        serviceO.create(profile, equipment, orderExecution);
-        LOGGER.info("Order was successfully created");
-        ordersActions(profile);
-
-    }
-    private static void checkOrderHistory(CustomerProfiles profile) {
-        var orders = serviceO.ordersHistory(profile);
-        if (orders != null) {
-            LOGGER.info(orders.size() + " of Orders");
-            for (var element : orders) {
-                LOGGER.info(element);
-            }
-        }
-    }
 
     private static void profileActions(CustomerProfiles profile) {
         LOGGER.debug("1: change nickname");

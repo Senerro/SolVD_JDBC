@@ -13,14 +13,15 @@ public class ValidationView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
+
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
-    private static   UsersService service = Global.state()
+    private static final UsersService service = Global.state()
             ? new UsersService(new UsersDAO())
             : new UsersService(new UsersDAO());
 
     public static void loadValidationView() {
-       //CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
+        //CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
         LOGGER.info("Log in or registration?");
         LOGGER.info("1: log in");
         LOGGER.info("2: registration");
