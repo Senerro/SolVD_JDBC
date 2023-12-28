@@ -36,7 +36,7 @@ public class ServiceCentersDAO extends AbstractDAO implements IServiceCenterDAO 
     @Override
     public int findUnoccupied(ServiceCenters center) {
         String query = "\n" +
-                " SELECT sc.id, sc.name, sc.address, sc.photo, sc. sc.description, MIN(myCount) FROM \n" +
+                " SELECT sc.id, sc.name, sc.address, sc.photo, sc.description, MIN(myCount) FROM \n" +
                 " (SELECT *, COUNT(serviceCenterID) as myCount FROM order_executions WHERE returned = 0 GROUP BY serviceCenterID) \n" +
                 " AS result\n" +
                 " JOIN service_centers AS sc ON sc.id = result.serviceCenterId";

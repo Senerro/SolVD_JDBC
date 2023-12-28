@@ -30,9 +30,8 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
 
         ArrayList<String> values = new ArrayList<>();
         values.add(String.valueOf(order.userId()));
-        values.add(String.valueOf(order.equipment()));
+        values.add(String.valueOf(order.equipmentId()));
         values.add(String.valueOf(order.executeId()));
-
 
         String query = InsertValuesHelper.get(order, fields, values);
         ResultSet result;
@@ -75,7 +74,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
     public List<Orders> orderHistory(CustomerProfiles profiles) {
         String query = " SELECT o.id AS oId, userId, equipmentId, executeId, " +
                 "oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, " +
-                "e.id as eId, equipmentType, producer, model, price  from orders AS o " +
+                "e.id as eId, type, producer, model, price  from orders AS o " +
                 "JOIN order_executions AS oe on executeId = oe.id " +
                 "JOIN equipments AS e on equipmentId = e.id " +
                 "WHERE userId = " + profiles.id();
@@ -98,7 +97,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 orderExecutions.serviceCenterId(resultSet.getLong("serviceCenterId"));
 
                 Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));
-                equipment.type(resultSet.getString("equipmentType"));
+                equipment.type(resultSet.getString("type"));
                 equipment.model(resultSet.getString("model"));
 
                 order.orderExecution(orderExecutions);

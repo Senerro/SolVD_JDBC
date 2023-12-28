@@ -1,7 +1,6 @@
 package com.solvd.repairService.model;
 
 public class ServiceCenters extends AbstractModel {
-    private Long id;
     private String address;
     private String name;
     private byte[] photo;

@@ -1,5 +1,6 @@
 package com.solvd.repairService.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Equipments extends AbstractModel {
@@ -7,7 +8,7 @@ public class Equipments extends AbstractModel {
     private String producer;
     private String model;
     private double price;
-    private List<Problems> problemsList;
+    private List<Problems> problemsList = new ArrayList<>();
 
     public Equipments(Long id) {
         super(id, Equipments.class);

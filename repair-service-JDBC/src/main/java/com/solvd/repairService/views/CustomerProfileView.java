@@ -107,13 +107,15 @@ public class CustomerProfileView {
         var problem = serviceP.create();
         equipment.addProblem(problem);
 
-        EquipmentProblem ep = new EquipmentProblem(equipment.id(), problem.typeId());
-        serviceEqPr.create(ep);
 
-        var orderExecution = serviceOE.create(equipment, employee);
+        var ep = serviceEqPr.create(equipment, problem);
+
+        var orderExecution = serviceOE.create(equipment, employee, center);
 
 
         serviceO.create(profile, equipment, orderExecution);
+        LOGGER.info("Order was successfully created");
+        ordersActions(profile);
 
     }
     private static void checkOrderHistory(CustomerProfiles profile) {

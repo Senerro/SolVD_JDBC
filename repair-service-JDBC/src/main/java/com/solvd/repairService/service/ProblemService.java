@@ -26,7 +26,9 @@ public class ProblemService {
 
     public Problems create() {
         Problems problem = new Problems();
-        problem.typeId(new Random().nextLong(3) + 1);
+        var a = new Random().nextInt(3) + 1;
+        Long variable = (long)a;
+        problem.typeId(variable);
         dao.create(problem);
         return problem;
     }

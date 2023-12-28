@@ -56,7 +56,7 @@ public class Orders extends AbstractModel{
     {
         this.orderExecution = oe;
     }
-    public Users getUser() {
+    public Users user() {
         return user;
     }
 
@@ -64,7 +64,13 @@ public class Orders extends AbstractModel{
         return equipment;
     }
 
+    public Long equipmentId() {
+        return equipmentId;
+    }
 
+    public void equipmentId(Long equipmentId) {
+        this.equipmentId = equipmentId;
+    }
 
     public void user(Users user) {
         this.user = user;
