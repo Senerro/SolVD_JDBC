@@ -21,7 +21,7 @@ public class ValidationView {
             : new UsersService(new UsersDAO());
 
     public static void loadValidationView() {
-        //CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
+        CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
         LOGGER.info("Log in or registration?");
         LOGGER.info("1: log in");
         LOGGER.info("2: registration");
@@ -55,7 +55,7 @@ public class ValidationView {
             user = service.findUserByLogin(receiveUserData().login());
         } catch (Exception e) {
             LOGGER.info("User isn't exist");
-            registrationUser();
+            loadValidationView();
         }
         CustomerProfileView.profileUI(user);
     }

@@ -56,8 +56,41 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
     }
 
     @Override
-    public Orders selectById(Orders order) {
-        return null;
+    public void selectById(Orders order) {
+        String query = null;
+
+        connection = connectionPool.getConnection();
+        ArrayList<Orders> orders = new ArrayList<>();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                order.userId(resultSet.getLong("userId"));
+                order.executeId(resultSet.getLong("executeId"));
+
+                OrderExecutions orderExecutions = new OrderExecutions(order.executeId());
+                orderExecutions.employerId(resultSet.getLong("employerId"));
+                orderExecutions.cost(resultSet.getDouble("cost"));
+                orderExecutions.finishDate(resultSet.getInt("finishDate"));
+                orderExecutions.isReturned(resultSet.getInt("returned"));
+                orderExecutions.serviceCenterId(resultSet.getLong("serviceCenterId"));
+
+                Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));
+                equipment.type(resultSet.getString("type"));
+                equipment.model(resultSet.getString("model"));
+
+                order.orderExecution(orderExecutions);
+                order.equipment(equipment);
+                orders.add(order);
+            }
+            connectionPool.returnConnection(connection);
+
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -74,7 +107,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
     public List<Orders> orderHistory(CustomerProfiles profiles) {
         String query = " SELECT o.id AS oId, userId, equipmentId, executeId, " +
                 "oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, " +
-                "e.id as eId, type, producer, model, price  from orders AS o " +
+                "e.id as eId, type, producer, model, price  FROM orders AS o " +
                 "JOIN order_executions AS oe on executeId = oe.id " +
                 "JOIN equipments AS e on equipmentId = e.id " +
                 "WHERE userId = " + profiles.id();

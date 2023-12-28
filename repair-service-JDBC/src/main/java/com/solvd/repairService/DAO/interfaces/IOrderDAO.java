@@ -10,7 +10,7 @@ import java.util.List;
 public interface IOrderDAO extends IAbstractDAO {
     void create(Orders order);
 
-    Orders selectById(Orders order);
+    void selectById(Orders order);
 
     Orders changeRepairman(Orders order, EmployerProfiles repairman);
 

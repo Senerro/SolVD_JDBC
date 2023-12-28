@@ -8,6 +8,7 @@ import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 import static com.solvd.repairService.views.CustomerProfileView.profileUI;
@@ -16,6 +17,7 @@ public class OrdersView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
+
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
     private static final OrdersService serviceO = Global.state()
@@ -36,11 +38,11 @@ public class OrdersView {
             ? new EmployerProfileService(new EmployerProfilesDAO())
             : new EmployerProfileService(new EmployerProfilesDAO());
 
-    private static final ProblemService serviceP= Global.state()
+    private static final ProblemService serviceP = Global.state()
             ? new ProblemService(new ProblemsDAO())
             : new ProblemService(new ProblemsDAO());
 
-    private static final EquipmentProblemService serviceEqPr= Global.state()
+    private static final EquipmentProblemService serviceEqPr = Global.state()
             ? new EquipmentProblemService(new EquipmentProblemDAO())
             : new EquipmentProblemService(new EquipmentProblemDAO());
 
@@ -73,8 +75,8 @@ public class OrdersView {
         LOGGER.debug("Model: ");
         String model = scanner.nextLine();
         LOGGER.debug("Price: ");
-
         double price = scanner.nextDouble();
+
         var equipment = new Equipments(type, producer, model, price);
         try {
             equipment = serviceE.create(equipment);
@@ -98,13 +100,39 @@ public class OrdersView {
         ordersActions(profile);
 
     }
+
     private static void checkOrderHistory(CustomerProfiles profile) {
         var orders = serviceO.ordersHistory(profile);
+        HashSet<Long> hashSetId = new HashSet<>();
         if (orders != null) {
             LOGGER.info(orders.size() + " of Orders");
             for (var element : orders) {
+                hashSetId.add(element.id());
                 LOGGER.info(element);
             }
+            System.out.println();
+            LOGGER.debug("Input number ");
+            String answer = scanner.nextLine();
+            try {
+                if (hashSetId.contains(Long.getLong(answer))) {
+                    checkOrder(Long.getLong(answer));
+                }
+                else {
+                    LOGGER.debug("[redirect...]");
+                    checkOrderHistory(profile);
+                }
+            } catch (Exception e) {
+                ordersActions(profile);
+            }
+
+        } else {
+            LOGGER.info("History is empty");
+            ordersActions(profile);
         }
+    }
+
+    private static void checkOrder(Long id) {
+        var order = serviceO.selectById(id);
+
     }
 }

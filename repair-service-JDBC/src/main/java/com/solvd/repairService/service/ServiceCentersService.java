@@ -1,10 +1,6 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.ServiceCentersDAO;
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IServiceCenterDAO;
-import com.solvd.repairService.DAO.interfaces.IUserDAO;
-import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.ServiceCenters;
 
 import java.util.List;
@@ -39,6 +35,10 @@ public class ServiceCentersService {
     public ServiceCenters findUnoccupied() {
         ServiceCenters centers = new ServiceCenters();
         dao.findUnoccupied(centers);
+        if(centers.id() <= 0)
+            dao.findCrowded(centers);
+        if(centers.id() <= 0)
+            throw new RuntimeException("center isn't spotted");
         return centers;
     }
 }

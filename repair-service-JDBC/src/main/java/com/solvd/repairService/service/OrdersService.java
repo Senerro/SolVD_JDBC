@@ -27,8 +27,10 @@ public class OrdersService {
         return order;
     }
 
-    public Orders selectById(Orders order) {
-        return dao.selectById(order);
+    public Orders selectById(Long id) {
+        Orders order = new Orders(id);
+        dao.selectById(order);
+        return order;
     }
 
     public Orders changeRepairman(Orders order, EmployerProfiles repairman) {

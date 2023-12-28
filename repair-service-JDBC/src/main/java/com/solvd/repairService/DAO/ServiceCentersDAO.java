@@ -34,32 +34,61 @@ public class ServiceCentersDAO extends AbstractDAO implements IServiceCenterDAO 
     }
 
     @Override
-    public int findUnoccupied(ServiceCenters center) {
+    public void findUnoccupied(ServiceCenters center) {
         String query = "\n" +
                 " SELECT sc.id, sc.name, sc.address, sc.photo, sc.description, MIN(myCount) FROM \n" +
                 " (SELECT *, COUNT(serviceCenterID) as myCount FROM order_executions WHERE returned = 0 GROUP BY serviceCenterID) \n" +
                 " AS result\n" +
                 " JOIN service_centers AS sc ON sc.id = result.serviceCenterId";
 
-        PreparedStatement ps = null;
-        ResultSet result = null;
-        ServiceCenters serviceCenter = null;
+        PreparedStatement ps;
+        ResultSet result;
+        ServiceCenters serviceCenter;
         connection = connectionPool.getConnection();
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-
                 center.id(resultSet.getLong("id"));
                 center.name(resultSet.getString("name"));
                 center.address(resultSet.getString("address"));
                 center.photo(resultSet.getBytes("photo"));
                 center.description(resultSet.getString("description"));
-
             }
             connectionPool.returnConnection(connection);
             statement.close();
-            return 1;
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void findCrowded(ServiceCenters center) {
+        String query = "SELECT *, MAX(myCount) FROM\n " +
+                "( \n" +
+                " SELECT sc.id, sc.name, sc.address, sc.photo, sc.description, COUNT(sc.id) as myCount FROM service_centers AS sc\n" +
+                " JOIN employer_profiles AS ep ON ep.serviceCenterId = sc.id\n" +
+                " GROUP BY serviceCenterId\n" +
+                " ) AS f";
+
+        PreparedStatement ps;
+        ResultSet resultSet;
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                center.id(resultSet.getLong("id"));
+                center.name(resultSet.getString("name"));
+                center.address(resultSet.getString("address"));
+                center.photo(resultSet.getBytes("photo"));
+                center.description(resultSet.getString("description"));
+            }
+            connectionPool.returnConnection(connection);
+            statement.close();
         } catch (SQLException e) {
             LOGGER.error("Some error with table users" + "\n"
                     + "query is " + query + "\n"

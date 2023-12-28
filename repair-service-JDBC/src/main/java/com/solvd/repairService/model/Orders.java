@@ -77,8 +77,9 @@ public class Orders extends AbstractModel{
     }
     @Override
     public String toString() {
-        String status = this.orderExecution.isReturned() > 0 ? " returned ":" not returned";
+        String status = this.orderExecution.isReturned() > 0 ? " returned "
+                                                             : " not returned ";
         return "Number of order is " + this.id() + ". Device is " + this.equipment.type() + " " + this.equipment.producer() + " " + this.equipment.model() + "\n"
-                + " Status: " + status + ", finish date is " + this.orderExecution.finishDate() + ", cost is " + this.orderExecution.cost() + "\n";
+                + " Status: " + status + ", repair duration is " + this.orderExecution.finishDate() + ", cost is " + this.orderExecution.cost() + "\n";
     }
 }

@@ -59,7 +59,7 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
         return 0;
     }
     @Override
-    public int findByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list) {
+    public int findFreeByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list) {
         String query = " SELECT DISTINCT  ep.id, ep.fullName, ep.phone, ep.postId, ep.experience, ep.serviceCenterId from employer_profiles as ep\n" +
                 " JOIN order_executions AS oe ON ep.id <> oe.employerId\n" +
                 " JOIN service_centers AS sc ON sc.id = ep.serviceCenterId\n" +
@@ -82,6 +82,36 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
             connectionPool.returnConnection(connection);
             statement.close();
             return list.size();
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void findByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list) {
+        String query = " SELECT DISTINCT  ep.id, ep.fullName, ep.phone, ep.postId, ep.experience, ep.serviceCenterId from employer_profiles as ep\n" +
+                " JOIN service_centers AS sc ON sc.id = ep.serviceCenterId\n" +
+                " WHERE sc.id = " + center.id();
+
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
+                profile.fullName(resultSet.getString("fullName"));
+                profile.phone(resultSet.getString("phone"));
+                profile.postId(resultSet.getLong("postId"));
+                profile.experience(resultSet.getInt("experience"));
+                profile.serviceCenterId(center.id());
+
+                list.add(profile);
+            }
+            connectionPool.returnConnection(connection);
+            statement.close();
         } catch (SQLException e) {
             LOGGER.error("Some error with table users" + "\n"
                     + "query is " + query + "\n"

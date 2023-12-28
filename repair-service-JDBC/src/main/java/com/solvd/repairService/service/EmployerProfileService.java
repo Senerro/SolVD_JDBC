@@ -1,20 +1,11 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.EquipmentProblemDAO;
-import com.solvd.repairService.DAO.EquipmentsDAO;
-import com.solvd.repairService.DAO.OrderExecutionsDAO;
-import com.solvd.repairService.DAO.ProblemsDAO;
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
-import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
-import com.solvd.repairService.helpers.calculateData.Calculate;
-import com.solvd.repairService.helpers.calculateData.LevelCostDependency;
 import com.solvd.repairService.model.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
 
 public class EmployerProfileService {
     private final IEmployerProfileDAO dao;
@@ -67,9 +58,11 @@ public class EmployerProfileService {
     public EmployerProfiles findByServiceCenter(ServiceCenters center) {
         ArrayList<EmployerProfiles> list = new ArrayList<>();
         EmployerProfiles profile = null;
-        dao.findByServiceCenter(center, list);
-        profile = list.get(new Random().nextInt(list.size()));
+        dao.findFreeByServiceCenter(center, list);
+        if(list.isEmpty())
+            dao.findByServiceCenter(center, list);
 
+        profile = list.get(new Random().nextInt(list.size()));
         return profile;
     }
 

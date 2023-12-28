@@ -11,5 +11,7 @@ public interface IServiceCenterDAO extends IAbstractDAO {
 
     List<ServiceCenters> orderByBusing(boolean desc);
 
-    int findUnoccupied(ServiceCenters centers);
+    void findUnoccupied(ServiceCenters centers);
+
+    void findCrowded(ServiceCenters centers);
 }
