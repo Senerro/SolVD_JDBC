@@ -2,6 +2,7 @@ package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.*;
 import com.solvd.repairService.helpers.calculateData.Calculate;
+import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;
@@ -16,26 +17,34 @@ public class CustomerProfileView {
     }
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
-    private static CustomerProfilesService serviceCP = 5>4 ? new CustomerProfilesService(new CustomerProfilesDAO())
-                                                           : new CustomerProfilesService(new CustomerProfilesDAO());
-    private static OrdersService serviceO = 5>4 ? new OrdersService(new OrdersDAO())
-                                                :new OrdersService(new OrdersDAO());
+    private static CustomerProfilesService serviceCP = Global.state()
+            ? new CustomerProfilesService(new CustomerProfilesDAO())
+            : new CustomerProfilesService(new CustomerProfilesDAO());
+    private static OrdersService serviceO = Global.state()
+            ? new OrdersService(new OrdersDAO())
+            : new OrdersService(new OrdersDAO());
 
-    private static EquipmentsService serviceE = 5>4 ? new EquipmentsService(new EquipmentsDAO())
-                                                    : new EquipmentsService(new EquipmentsDAO());
+    private static EquipmentsService serviceE = Global.state()
+            ? new EquipmentsService(new EquipmentsDAO())
+            : new EquipmentsService(new EquipmentsDAO());
 
-    private static ServiceCentersService serviceSC = 5>4 ? new ServiceCentersService(new ServiceCentersDAO())
-                                                         : new ServiceCentersService(new ServiceCentersDAO());
-    private static OrderExecutionsService serviceOE = 5>4 ? new OrderExecutionsService(new OrderExecutionsDAO())
-                                                          : new OrderExecutionsService(new OrderExecutionsDAO());
-    private static EmployerProfileService serviceEP = 5>4 ? new EmployerProfileService(new EmployerProfilesDAO())
-                                                          : new EmployerProfileService(new EmployerProfilesDAO());
+    private static ServiceCentersService serviceSC = Global.state()
+            ? new ServiceCentersService(new ServiceCentersDAO())
+            : new ServiceCentersService(new ServiceCentersDAO());
+    private static OrderExecutionsService serviceOE = Global.state()
+            ? new OrderExecutionsService(new OrderExecutionsDAO())
+            : new OrderExecutionsService(new OrderExecutionsDAO());
+    private static EmployerProfileService serviceEP = Global.state()
+            ? new EmployerProfileService(new EmployerProfilesDAO())
+            : new EmployerProfileService(new EmployerProfilesDAO());
 
-    private static ProblemService serviceP= 5>4 ? new ProblemService(new ProblemsDAO())
-                                                : new ProblemService(new ProblemsDAO());
+    private static ProblemService serviceP= Global.state()
+            ? new ProblemService(new ProblemsDAO())
+            : new ProblemService(new ProblemsDAO());
 
-    private static EquipmentProblemService serviceEqPr= 5>4 ? new EquipmentProblemService(new EquipmentProblemDAO())
-                                                            : new EquipmentProblemService(new EquipmentProblemDAO());
+    private static EquipmentProblemService serviceEqPr= Global.state()
+            ? new EquipmentProblemService(new EquipmentProblemDAO())
+            : new EquipmentProblemService(new EquipmentProblemDAO());
 
     public static void profileUI(Users user) {
 

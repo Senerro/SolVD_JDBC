@@ -1,6 +1,7 @@
 package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;
@@ -16,7 +17,8 @@ public class UserSettingsView {
 
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
-    private static UsersService service = 5 > 4 ? new UsersService(new UsersDAO())
+    private static UsersService service = Global.state()
+            ? new UsersService(new UsersDAO())
             : new UsersService(new UsersDAO());
 
     public static CustomerProfiles settingsUI(CustomerProfiles profile) {

@@ -1,6 +1,7 @@
 package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;
 import org.apache.logging.log4j.LogManager;
@@ -12,14 +13,14 @@ public class ValidationView {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
-    private static   UsersService service = 5>4 ? new UsersService(new UsersDAO())
-                                                : new UsersService(new UsersDAO());
+    private static   UsersService service = Global.state()
+            ? new UsersService(new UsersDAO())
+            : new UsersService(new UsersDAO());
 
     public static void loadValidationView() {
-        CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
+       //CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
         LOGGER.info("Log in or registration?");
         LOGGER.info("1: log in");
         LOGGER.info("2: registration");

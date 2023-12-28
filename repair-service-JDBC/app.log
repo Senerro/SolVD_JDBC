@@ -206,3 +206,27 @@ Exception is java.sql.SQLException: Column 'equipmentType' not found.
 [INFO ] 2023-12-28 17:46:51.099 [main] CustomerProfileView - Number of order is 4. Device is yuiuio null dfghhdfghj
  Status:  not returned, finish date is 2147483647, cost is 233.0
 
+[INFO ] 2023-12-28 18:14:12.060 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 18:14:12.062 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 18:14:12.063 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-28 18:20:51.407 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:51.424 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:51.425 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 18:20:55.316 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:55.317 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:55.318 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 18:20:56.208 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:56.209 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:56.209 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 18:20:57.108 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:57.108 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:57.109 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 18:20:58.952 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 18:20:58.952 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 18:20:58.953 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-28 18:37:04.139 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:37:04.145 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:37:04.145 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 18:37:08.830 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 18:37:08.831 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 18:37:08.831 [main] ValidationView - 2: registration
