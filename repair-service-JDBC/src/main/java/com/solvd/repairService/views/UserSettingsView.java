@@ -50,14 +50,15 @@ public class UserSettingsView {
             case "1":
                 try {
                     int count = service.delete(profile.user());
-                    LOGGER.info(service + " account was successfully deleted");
+                    LOGGER.info(count + " account was successfully deleted");
                     ValidationView.loadValidationView();
                 } catch (Exception e) {
                     LOGGER.error("Account wasn't deleted");
                     UserSettingsView.settingsUI(profile);
                 }
                 break;
-            default: settingsUI(profile);
+            default:
+                settingsUI(profile);
         }
     }
 
