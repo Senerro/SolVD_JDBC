@@ -22,7 +22,7 @@ public class UsersDAO extends AbstractDAO implements IUserDAO {
     private static final Logger LOGGER = LogManager.getLogger(UsersDAO.class);
 
     @Override
-    public int create(Users user) {
+    public void create(Users user) {
         int role;
         role = user.role() ? 1 : 0;
 
@@ -49,7 +49,6 @@ public class UsersDAO extends AbstractDAO implements IUserDAO {
                 user.id(result.getLong("GENERATED_KEY"));
             }
             ps.close();
-            return 1;
         } catch (SQLException e) {
             LOGGER.error("Some error with table " + user.tableName() + "\n"
                     + "query is " + query + "\n"

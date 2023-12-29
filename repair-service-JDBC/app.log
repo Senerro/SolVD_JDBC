@@ -898,3 +898,53 @@ Exception is java.sql.SQLException: Column 'equipmentId' not found.
 [INFO ] 2023-12-29 14:28:24.343 [main] ValidationView - Log in or registration?
 [INFO ] 2023-12-29 14:28:24.343 [main] ValidationView - 1: log in
 [INFO ] 2023-12-29 14:28:24.344 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 15:38:17.678 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:38:17.698 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:38:17.699 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-29 15:56:49.725 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:56:49.730 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:56:49.731 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:56:52.624 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 15:56:52.625 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 15:56:52.625 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 15:56:52.625 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 15:56:52.626 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 15:57:13.107 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:57:13.114 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:57:13.114 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:57:14.822 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:57:14.822 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:57:14.823 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:57:16.207 [main] ValidationView - Input login
+[INFO ] 2023-12-29 15:57:38.037 [main] ValidationView - Input password
+[INFO ] 2023-12-29 15:57:39.644 [main] ValidationView - java.io.IOException: Could not find resource myBatis.config.xml
+[INFO ] 2023-12-29 15:57:39.645 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:57:39.645 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:57:39.645 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 15:58:10.039 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:58:10.044 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:58:10.045 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:58:11.721 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:11.721 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:11.721 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:58:14.556 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:14.557 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:14.557 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:58:16.028 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:16.029 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:16.029 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 15:58:25.708 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:58:25.712 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:58:25.713 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:58:27.486 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:27.486 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:27.487 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:58:28.627 [main] ValidationView - Input login
+[INFO ] 2023-12-29 15:58:30.229 [main] ValidationView - Input password
+[INFO ] 2023-12-29 15:58:32.305 [main] ValidationView - 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'POLED'.  Cause: java.lang.ClassNotFoundException: Cannot find class: POLED
+[INFO ] 2023-12-29 15:58:32.305 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:32.306 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:32.306 [main] ValidationView - 2: registration
