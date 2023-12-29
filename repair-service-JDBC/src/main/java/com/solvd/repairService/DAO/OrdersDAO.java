@@ -57,7 +57,12 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
 
     @Override
     public void selectById(Orders order) {
-        String query = null;
+        String query = "SELECT e.type, e.producer, e.model, pt.type AS ptype FROM orders AS o \n" +
+                " JOIN equipments AS e ON e.id = o.equipmentId\n" +
+                " JOIN equipment_problem AS ep ON ep.equipmentId = e.id\n" +
+                " JOIN problems AS p ON p.id = ep.problemId\n" +
+                " JOIN problem_type AS pt ON pt.id = p.typeId " +
+                " WHERE o.id = " + order.id() + " ";
 
         connection = connectionPool.getConnection();
         ArrayList<Orders> orders = new ArrayList<>();
@@ -65,23 +70,16 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                order.userId(resultSet.getLong("userId"));
-                order.executeId(resultSet.getLong("executeId"));
-
-                OrderExecutions orderExecutions = new OrderExecutions(order.executeId());
-                orderExecutions.employerId(resultSet.getLong("employerId"));
-                orderExecutions.cost(resultSet.getDouble("cost"));
-                orderExecutions.finishDate(resultSet.getInt("finishDate"));
-                orderExecutions.isReturned(resultSet.getInt("returned"));
-                orderExecutions.serviceCenterId(resultSet.getLong("serviceCenterId"));
-
-                Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));
+                Equipments equipment = new Equipments();
                 equipment.type(resultSet.getString("type"));
+                equipment.producer(resultSet.getString("producer"));
                 equipment.model(resultSet.getString("model"));
 
-                order.orderExecution(orderExecutions);
+                Problems problem = new Problems();
+                problem.description(resultSet.getString("ptype"));
+
+                equipment.addProblem(problem);
                 order.equipment(equipment);
-                orders.add(order);
             }
             connectionPool.returnConnection(connection);
 

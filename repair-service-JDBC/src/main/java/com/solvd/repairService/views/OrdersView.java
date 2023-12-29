@@ -64,6 +64,7 @@ public class OrdersView {
                 break;
             default:
                 ordersActions(profile);
+                break;
         }
     }
 
@@ -89,11 +90,9 @@ public class OrdersView {
         var problem = serviceP.create();
         equipment.addProblem(problem);
 
-
         serviceEqPr.create(equipment, problem);
 
         var orderExecution = serviceOE.create(equipment, employee, center);
-
 
         serviceO.create(profile, equipment, orderExecution);
         LOGGER.info("Order was successfully created");
@@ -114,8 +113,9 @@ public class OrdersView {
             LOGGER.debug("Input number ");
             String answer = scanner.nextLine();
             try {
-                if (hashSetId.contains(Long.getLong(answer))) {
-                    checkOrder(Long.getLong(answer));
+                var a = Long.parseLong(answer);
+                if (hashSetId.contains(a)) {
+                    checkOrder(Long.parseLong(answer), profile);
                 }
                 else {
                     LOGGER.debug("[redirect...]");
@@ -131,8 +131,12 @@ public class OrdersView {
         }
     }
 
-    private static void checkOrder(Long id) {
+    private static void checkOrder(Long id, CustomerProfiles profile) {
         var order = serviceO.selectById(id);
+        LOGGER.info("type: " + order.equipment().type());
+        LOGGER.info("device: " + order.equipment().producer() + " " + order.equipment().model());
+        LOGGER.info("need to " + order.equipment().getProblem().description());
 
+        checkOrderHistory(profile);
     }
 }

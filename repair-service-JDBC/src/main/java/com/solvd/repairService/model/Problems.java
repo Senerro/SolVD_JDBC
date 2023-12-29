@@ -22,7 +22,9 @@ private List<Equipments> equipmentsList;
     public String description() {
         return description;
     }
-
+    public void description( String description) {
+        this.description = description;
+    }
     public Long typeId() {
         return typeId;
     }

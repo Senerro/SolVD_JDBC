@@ -13,7 +13,7 @@ public class EquipmentProblemService {
     }
 
     public EquipmentProblem create(Equipments equipment, Problems problem) {
-        EquipmentProblem ep = new EquipmentProblem(equipment.id(), problem.typeId());
+        EquipmentProblem ep = new EquipmentProblem(equipment.id(), problem.id());
         dao.create(ep);
         return ep;
     }
