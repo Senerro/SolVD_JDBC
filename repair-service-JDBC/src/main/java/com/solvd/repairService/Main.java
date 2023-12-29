@@ -1,5 +1,6 @@
 package com.solvd.repairService;
 
+import com.solvd.repairService.views.ValidationView;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,11 +29,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-    LOGGER.info("test_message");
+    ValidationView.loadValidationView();
 
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
-            LOGGER.debug("Connection successful!");
+       /* try{
+
             var connection = getConnection();
             LOGGER.debug("connection successfully added");
 
@@ -44,10 +44,14 @@ public class Main {
             //statement.executeUpdate("UPDATE test_table SET Price = Price - 5000");
             //statement.executeUpdate("DELETE FROM test_table WHERE Id = 3");
 
+            PreparedStatement ps = connection.prepareStatement("INSERT test_table (ProductName, Price) VALUES ('test', 540000)", Statement.RETURN_GENERATED_KEYS);
+            ResultSet key =  ps.getGeneratedKeys();
+//            LOGGER.debug(key.getInt(0));
+            ps.executeUpdate();
 
             ResultSet resultSet = statement.executeQuery("SELECT * FROM test_table");
-            while(resultSet.next()){
 
+            while(resultSet.next()){
                 int id = resultSet.getInt("iD");
                 String name = resultSet.getString(2);
                 int price = resultSet.getInt(3);
@@ -59,6 +63,6 @@ public class Main {
         catch(Exception ex){
             LOGGER.debug("Connection failed...\n" + ex);
             System.exit(520);
-        }
+        }*/
     }
 }
