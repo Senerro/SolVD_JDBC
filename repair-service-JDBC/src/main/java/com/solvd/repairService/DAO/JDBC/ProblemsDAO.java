@@ -1,4 +1,4 @@
-package com.solvd.repairService.DAO;
+package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IProblemDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;

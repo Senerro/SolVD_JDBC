@@ -1,8 +1,7 @@
 package com.solvd.repairService;
 
-import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.DAO.JDBC.UsersDAO;
 import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.Users;
 
 public class testMAin {
     public static void main(String[] args) {

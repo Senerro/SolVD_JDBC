@@ -1,6 +1,7 @@
 package com.solvd.repairService.views;
 
-import com.solvd.repairService.DAO.*;
+import com.solvd.repairService.DAO.JDBC.*;
+import com.solvd.repairService.DAO.myBatisXML.*;
 import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Equipments;
@@ -22,29 +23,29 @@ public class OrdersView {
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
     private static final OrdersService serviceO = Global.state()
             ? new OrdersService(new OrdersDAO())
-            : new OrdersService(new OrdersDAO());
+            : new OrdersService(new OrdersBatisDAO());
 
     private static final EquipmentsService serviceE = Global.state()
             ? new EquipmentsService(new EquipmentsDAO())
-            : new EquipmentsService(new EquipmentsDAO());
+            : new EquipmentsService(new EquipmentsBatisDAO());
 
     private static final ServiceCentersService serviceSC = Global.state()
             ? new ServiceCentersService(new ServiceCentersDAO())
-            : new ServiceCentersService(new ServiceCentersDAO());
+            : new ServiceCentersService(new ServiceCentersBatisDAO());
     private static final OrderExecutionsService serviceOE = Global.state()
             ? new OrderExecutionsService(new OrderExecutionsDAO())
-            : new OrderExecutionsService(new OrderExecutionsDAO());
+            : new OrderExecutionsService(new OrderExecutionsBatisDAO());
     private static final EmployerProfileService serviceEP = Global.state()
             ? new EmployerProfileService(new EmployerProfilesDAO())
-            : new EmployerProfileService(new EmployerProfilesDAO());
+            : new EmployerProfileService(new EmployerProfilesBatisDAO());
 
     private static final ProblemService serviceP = Global.state()
             ? new ProblemService(new ProblemsDAO())
-            : new ProblemService(new ProblemsDAO());
+            : new ProblemService(new ProblemsBatisDAO());
 
     private static final EquipmentProblemService serviceEqPr = Global.state()
             ? new EquipmentProblemService(new EquipmentProblemDAO())
-            : new EquipmentProblemService(new EquipmentProblemDAO());
+            : new EquipmentProblemService(new EquipmentProblemBatisDAO());
 
     public static void ordersActions(CustomerProfiles profile) {
         LOGGER.debug("1: create new order");

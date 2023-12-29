@@ -1,6 +1,7 @@
 package com.solvd.repairService.views;
 
-import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.DAO.JDBC.UsersDAO;
+import com.solvd.repairService.DAO.myBatisXML.UserBatisDAO;
 import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;
@@ -18,7 +19,7 @@ public class ValidationView {
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
     private static final UsersService service = Global.state()
             ? new UsersService(new UsersDAO())
-            : new UsersService(new UsersDAO());
+            : new UsersService(new UserBatisDAO());
 
     public static void loadValidationView() {
         CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));

@@ -1,6 +1,7 @@
 package com.solvd.repairService.views;
 
-import com.solvd.repairService.DAO.UsersDAO;
+import com.solvd.repairService.DAO.JDBC.UsersDAO;
+import com.solvd.repairService.DAO.myBatisXML.UserBatisDAO;
 import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Users;
@@ -19,7 +20,7 @@ public class UserSettingsView {
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
     private static UsersService service = Global.state()
             ? new UsersService(new UsersDAO())
-            : new UsersService(new UsersDAO());
+            : new UsersService(new UserBatisDAO());
 
     public static CustomerProfiles settingsUI(CustomerProfiles profile) {
         LOGGER.debug("1: change login");

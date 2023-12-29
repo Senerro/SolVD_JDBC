@@ -1,7 +1,6 @@
-package com.solvd.repairService.DAO;
+package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IEmployerPostDAO;
-import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.EmployerPosts;
 
 public class EmployerPostsDAO extends AbstractDAO implements IEmployerPostDAO {

@@ -1,14 +1,12 @@
 package com.solvd.repairService.views;
 
-import com.solvd.repairService.DAO.*;
-import com.solvd.repairService.helpers.calculateData.Calculate;
+import com.solvd.repairService.DAO.JDBC.CustomerProfilesDAO;
 import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import static com.solvd.repairService.views.OrdersView.ordersActions;

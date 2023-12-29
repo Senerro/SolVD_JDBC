@@ -1,5 +1,7 @@
-package com.solvd.repairService.DAO;
+package com.solvd.repairService.DAO.JDBC;
 
+import com.solvd.repairService.DAO.ConnectionPool;
+import com.solvd.repairService.DAO.ConnectionSettings;
 import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.model.AbstractModel;
 import org.apache.logging.log4j.LogManager;
