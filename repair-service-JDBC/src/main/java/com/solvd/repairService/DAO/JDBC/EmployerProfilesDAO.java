@@ -1,11 +1,13 @@
 package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
+import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.views.CustomerProfileView;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -17,11 +19,117 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
-    private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
     @Override
-    public EmployerProfiles create(EmployerProfiles profile) {
-        return null;
+    public void create(EmployerProfiles profile) {
+
+        ArrayList<String> fields = new ArrayList<>();
+        fields.add("fullName");
+        fields.add("phone");
+        fields.add("postId");
+        fields.add("experience");
+        fields.add("serviceCenterId");
+
+        ArrayList<String> values = new ArrayList<>();
+        values.add(profile.fullName());
+        values.add(profile.phone());
+        values.add(String.format("%d", profile.postId()));
+        values.add(String.format("%d", profile.experience()));
+        values.add(String.format("%d", profile.serviceCenterId()));
+
+        String query = InsertValuesHelper.get(profile, fields, values);
+
+        ResultSet result;
+        PreparedStatement ps;
+        connection = connectionPool.getConnection();
+        try {
+            ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ps.executeUpdate();
+            result = ps.getGeneratedKeys();
+            connectionPool.returnConnection(connection);
+            while (result.next()) {
+                profile.id(result.getLong("GENERATED_KEY"));
+            }
+            ps.close();
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table " + profile.tableName() + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void get(ArrayList<EmployerProfiles> list) {
+        String query =
+                " SELECT w.id, fullName AS name, phone, ep.role, experience, sc.id AS centerId," +
+                        " sc.name AS centerName, sc.address FROM employer_profiles AS w \n" +
+                " JOIN employer_posts AS ep ON ep.id = postId";
+
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
+                profile.fullName(resultSet.getString("name"));
+                profile.phone(resultSet.getString("phone"));
+                profile.experience(resultSet.getInt("experience"));
+
+                EmployerPosts post = new EmployerPosts();
+                post.role(resultSet.getString("role"));
+
+                profile.post(post);
+                list.add(profile);
+            }
+            connectionPool.returnConnection(connection);
+            statement.close();
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void get(EmployerProfiles model) {
+        String query =
+                " SELECT w.id, fullName AS name, phone, ep.role, experience, sc.id AS centerId," +
+                        " sc.name AS centerName, sc.address FROM employer_profiles AS w \n" +
+                        " LEFT JOIN service_centers AS sc ON sc.id = serviceCenterId \n" +
+                        " LEFT JOIN employer_posts AS ep ON ep.id = postId";
+
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
+                profile.fullName(resultSet.getString("name"));
+                profile.phone(resultSet.getString("phone"));
+                profile.experience(resultSet.getInt("experience"));
+                profile.serviceCenterId(resultSet.getLong("centerId"));
+
+                EmployerPosts post = new EmployerPosts();
+                post.role(resultSet.getString("role"));
+
+                ServiceCenters center = new ServiceCenters(resultSet.getLong("centerId"));
+                center.name(resultSet.getString("centerName"));
+                center.address(resultSet.getString("address"));
+
+                profile.serviceCenters(center);
+                profile.post(post);
+
+            }
+            connectionPool.returnConnection(connection);
+            statement.close();
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

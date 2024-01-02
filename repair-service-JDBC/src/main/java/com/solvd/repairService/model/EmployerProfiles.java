@@ -8,10 +8,15 @@ public class EmployerProfiles extends AbstractModel {
     private double experience;
     private Users user;
     private EmployerPosts post;
+    private ServiceCenters center;
 
     public EmployerProfiles(Long id) {
         super(id, EmployerProfiles.class);
     }
+    public EmployerProfiles()
+        {
+            this(0L);
+        }
 
     public EmployerProfiles(Long id, String fullName, String phone, Long postId, double experience, Long serviceCenterId) {
         this(id);
@@ -22,8 +27,20 @@ public class EmployerProfiles extends AbstractModel {
         this.serviceCenterId = serviceCenterId;
     }
 
+    public void post(EmployerPosts post) {
+        this.post = post;
+    }
+
     public double experience() {
         return experience;
+    }
+
+    public ServiceCenters serviceCenters() {
+        return center;
+    }
+
+    public void serviceCenters(ServiceCenters center) {
+        this.center = center;
     }
 
     public void experience(double experience) {
@@ -60,6 +77,22 @@ public class EmployerProfiles extends AbstractModel {
 
     public void serviceCenterId(Long serviceCenterId) {
         this.serviceCenterId = serviceCenterId;
+    }
+    @Override
+    public String toString()
+    {
+        StringBuilder builder = new StringBuilder();
+        if(id() > 0)
+            builder.append("[").append(id()).append("] ");
+        builder.append("Name: ").append(fullName).append(" ,phone ").append(phone).append("\n");
+        builder.append("Exp ").append(experience).append(" years");
+
+        if(post != null)
+            builder.append("position: ").append(post.description());
+        if(serviceCenters() != null)
+            builder.append("location: ").append(center.name() + " " + center.address());
+
+        return builder.toString();
     }
 
 }

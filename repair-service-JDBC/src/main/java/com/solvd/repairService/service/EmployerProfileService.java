@@ -10,6 +10,19 @@ import java.util.Random;
 public class EmployerProfileService {
     private final IEmployerProfileDAO dao;
 
+    public ArrayList<EmployerProfiles> get() throws Exception {
+        ArrayList<EmployerProfiles> profiles = new ArrayList<>();
+        dao.get(profiles);
+        if(profiles.isEmpty())
+            throw new Exception("Workers aren't exist");
+        return profiles;
+    }
+    public EmployerProfiles get(Long id) {
+        EmployerProfiles profile = new EmployerProfiles(id);
+        dao.get(profile);
+        return profile;
+    }
+
     public EmployerProfileService(IEmployerProfileDAO dao) {
         this.dao = dao;
     }
@@ -22,9 +35,10 @@ public class EmployerProfileService {
         return dao.delete(model);
     }
 
-    public EmployerProfiles create(EmployerProfiles profile, Equipments equipment, ServiceCenters center) {
+    public EmployerProfiles create(EmployerProfiles profile) {
 
-        return dao.create(profile);
+         dao.create(profile);
+         return profile;
     }
 
     public EmployerProfiles selectById(EmployerProfiles profile) {
@@ -59,7 +73,7 @@ public class EmployerProfileService {
         ArrayList<EmployerProfiles> list = new ArrayList<>();
         EmployerProfiles profile = null;
         dao.findFreeByServiceCenter(center, list);
-        if(list.isEmpty())
+        if (list.isEmpty())
             dao.findByServiceCenter(center, list);
 
         profile = list.get(new Random().nextInt(list.size()));
@@ -69,6 +83,9 @@ public class EmployerProfileService {
     public void detectEquipmentProblem(EmployerProfiles employee, Equipments equipment, ServiceCenters center) {
 
 
+    }
 
+    public void update(EmployerProfiles worker, EmployerProfiles newWorker) {
+        dao.updateProfile(worker, newWorker);
     }
 }

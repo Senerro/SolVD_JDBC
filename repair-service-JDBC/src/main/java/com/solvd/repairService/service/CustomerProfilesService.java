@@ -2,6 +2,8 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
 import com.solvd.repairService.model.CustomerProfiles;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerProfilesService {
@@ -20,11 +22,14 @@ public class CustomerProfilesService {
     }
 
     public CustomerProfiles create(CustomerProfiles profile) {
-        return dao.create(profile);
+         dao.create(profile);
+         return profile;
     }
 
-    public CustomerProfiles selectById(Long id) {
-        return dao.selectById(id);
+    public CustomerProfiles get(Long id) {
+        CustomerProfiles profile = new CustomerProfiles(id);
+         dao.get(profile);
+         return profile;
     }
 
     public List<CustomerProfiles> selectByNick(String nick) {
@@ -41,5 +46,12 @@ public class CustomerProfilesService {
             throw new Exception("similar profiles. Id " + from.user().id());
 
         return dao.updateProfile(from, to);
+    }
+    public ArrayList<CustomerProfiles> get() throws Exception {
+        ArrayList<CustomerProfiles>  profiles = new ArrayList<>();
+        dao.get(profiles);
+        if(profiles.isEmpty())
+            throw new Exception("empty customers list");
+        return profiles;
     }
 }

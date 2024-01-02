@@ -69,7 +69,7 @@ public class OrdersView {
         }
     }
 
-    private static void createNewOrder(CustomerProfiles profile) {
+    public static void createNewOrder(CustomerProfiles profile) {
         LOGGER.debug("Type: ");
         String type = scanner.nextLine();
         LOGGER.debug("Producer: ");

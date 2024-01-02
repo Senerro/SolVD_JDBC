@@ -54,4 +54,9 @@ public class ServiceCenters extends AbstractModel {
     public String description() {
         return description;
     }
+    @Override
+    public String toString()
+    {
+        return "name: " + name + "location: " + address;
+    }
 }

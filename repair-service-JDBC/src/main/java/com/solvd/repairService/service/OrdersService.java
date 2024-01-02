@@ -2,6 +2,8 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
 import com.solvd.repairService.model.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrdersService {
@@ -43,5 +45,21 @@ public class OrdersService {
     public List<Orders> ordersHistory(CustomerProfiles profiles) {
         return dao.orderHistory(profiles);
 
+    }
+
+    public ArrayList<Orders> get() {
+        ArrayList<Orders> orders = new ArrayList<>();
+        dao.get(orders);
+        return orders;
+    }
+
+    public Orders get(Long id) {
+        Orders order = new Orders(id);
+        dao.get(order);
+        return order;
+    }
+
+    public void update(Orders order, Orders newOrder) {
+        dao.update(order, newOrder);
     }
 }

@@ -5,6 +5,7 @@ import com.solvd.repairService.model.EmployerProfiles;
 import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.ServiceCenters;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface IOrderDAO extends IAbstractDAO {
@@ -17,4 +18,9 @@ public interface IOrderDAO extends IAbstractDAO {
     Orders changeServiceCenter(Orders order, ServiceCenters serviceCenter);
 
     List<Orders> orderHistory(CustomerProfiles profiles);
+
+    void get(ArrayList<Orders> list);
+    void get(Orders order);
+
+    void update(Orders order, Orders newOrder);
 }

@@ -7,6 +7,8 @@ import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
 import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.EmployerPosts;
 
+import java.util.ArrayList;
+
 public class EmployerPostsService {
     private final IEmployerPostDAO dao;
 
@@ -23,14 +25,31 @@ public class EmployerPostsService {
     }
 
     public EmployerPosts create(EmployerPosts post) {
-        return dao.create(post);
+         dao.create(post);
+         return post;
     }
 
     public EmployerPosts selectById(EmployerPosts post) {
         return dao.selectById(post);
     }
+    public ArrayList<EmployerPosts> get()
+    {
+        ArrayList<EmployerPosts> list = new ArrayList<>();
+        dao.get(list);
+        return list;
+    }
+    public EmployerPosts get(Long id) {
+        EmployerPosts post = new EmployerPosts(id);
+        dao.get(post);
+        return post;
+    }
 
     public EmployerPosts changePostName(EmployerPosts from, EmployerPosts to) {
         return dao.changePostName(from, to);
+    }
+
+
+    public void update(EmployerPosts post, EmployerPosts newPost) {
+        dao.update(post, newPost);
     }
 }

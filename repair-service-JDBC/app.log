@@ -948,3 +948,161 @@ Exception is java.sql.SQLException: Column 'equipmentId' not found.
 [INFO ] 2023-12-29 15:58:32.305 [main] ValidationView - Log in or registration?
 [INFO ] 2023-12-29 15:58:32.306 [main] ValidationView - 1: log in
 [INFO ] 2023-12-29 15:58:32.306 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 16:16:30.289 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 16:16:30.295 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 16:16:30.296 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 16:16:34.396 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:16:34.397 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:16:34.397 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 16:16:35.428 [main] ValidationView - Input login
+[INFO ] 2023-12-29 16:16:42.395 [main] ValidationView - Input password
+[DEBUG] 2023-12-29 16:16:45.194 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG] 2023-12-29 16:16:45.209 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2023-12-29 16:16:45.210 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2023-12-29 16:16:45.210 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2023-12-29 16:16:45.211 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[INFO ] 2023-12-29 16:16:45.283 [main] ValidationView - 
+### Error building SqlSession.
+### The error may exist in 
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+[INFO ] 2023-12-29 16:16:45.283 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:16:45.283 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:16:45.284 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 16:52:38.615 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 16:52:38.621 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 16:52:38.622 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 16:52:49.142 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:52:49.142 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:52:49.143 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 16:52:54.981 [main] ValidationView - Input login
+[INFO ] 2023-12-29 16:52:58.678 [main] ValidationView - Input password
+[INFO ] 2023-12-29 16:53:00.073 [main] CustomerProfileView - nickname: User#41
+[INFO ] 2023-12-29 16:53:00.073 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:53:00.074 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:53:00.074 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:53:00.074 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:53:12.102 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:53:12.102 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:53:12.103 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-29 16:53:13.975 [main] CustomerProfileView - Enter new nick
+[DEBUG] 2023-12-29 16:53:22.578 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:53:22.578 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:53:22.579 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-29 16:53:25.193 [main] CustomerProfileView - nickname: NewNock
+[INFO ] 2023-12-29 16:53:25.194 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:53:25.194 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:53:25.195 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:53:25.195 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:55:18.795 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:55:18.795 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:55:18.795 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:55:21.629 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:55:21.630 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:55:25.401 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:55:25.401 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:55:25.401 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:55:31.034 [main] CustomerProfileView - nickname: NewNock
+[INFO ] 2023-12-29 16:55:31.034 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:55:31.035 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:55:31.035 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:55:31.035 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:55:32.318 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:55:32.319 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:55:32.320 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-29 16:55:33.852 [main] CustomerProfileView - Enter new phone
+[DEBUG] 2023-12-29 16:55:35.769 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:55:35.770 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:55:35.771 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-29 16:55:38.605 [main] CustomerProfileView - nickname: NewNock
+[INFO ] 2023-12-29 16:55:38.606 [main] CustomerProfileView - phone: ssfdgsf
+[INFO ] 2023-12-29 16:55:38.607 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:55:38.608 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:55:38.608 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:55:41.919 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:55:41.919 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:55:41.919 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-29 16:55:42.864 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-29 16:55:42.864 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-29 16:55:42.864 [main] CustomerProfileView - 3: delete account
+[INFO ] 2023-12-29 16:55:49.836 [main] CustomerProfileView - Are you sure? This action can't be iterated
+[INFO ] 2023-12-29 16:55:49.837 [main] CustomerProfileView - 1: yes
+[INFO ] 2023-12-29 16:55:49.837 [main] CustomerProfileView - 2: no, go back
+[INFO ] 2023-12-29 16:55:51.175 [main] CustomerProfileView - 1 account was successfully deleted
+[INFO ] 2023-12-29 16:55:51.175 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:55:51.176 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:55:51.176 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 16:55:57.109 [main] ValidationView - Input login
+[INFO ] 2023-12-29 16:56:01.035 [main] ValidationView - Input password
+[INFO ] 2023-12-29 16:56:03.057 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-29 16:56:03.057 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:56:03.058 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-29 16:56:03.058 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:56:03.058 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:56:06.393 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:06.393 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:06.394 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:56:07.635 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:07.636 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:09.851 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:09.851 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:09.851 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:11.498 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 16:56:13.199 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 16:56:13.441 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 16:56:13.835 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-29 16:56:14.391 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 4, 4, 4, '4.0' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4-4-4' for key 'EquipmentType'
+[ERROR] 2023-12-29 16:56:14.392 [main] CustomerProfileView - java.lang.RuntimeException: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4-4-4' for key 'EquipmentType'
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:14.394 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:56:23.002 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:23.002 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:25.627 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 16:56:25.629 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:25.630 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:26.522 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 16:56:26.524 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:26.524 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:28.035 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 16:56:28.037 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:28.037 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:30.784 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:30.784 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:30.785 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:31.833 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 16:56:33.708 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 16:56:34.470 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 16:56:35.353 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-29 16:56:36.255 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-29 16:56:36.256 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:36.256 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:36.256 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:36.257 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:36.257 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:36.257 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:56:44.847 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 16:56:44.859 [main] CustomerProfileView - Number of order is 11. Device is 455 null 455
+ Status:  not returned , repair duration is 10, cost is 414.0
+
+[DEBUG] 2023-12-29 16:56:44.859 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 16:56:57.326 [main] CustomerProfileView - type: 455
+[INFO ] 2023-12-29 16:56:57.328 [main] CustomerProfileView - device: 455 455
+[INFO ] 2023-12-29 16:56:57.329 [main] CustomerProfileView - need to modifying
+[INFO ] 2023-12-29 16:56:57.331 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 16:56:57.332 [main] CustomerProfileView - Number of order is 11. Device is 455 null 455
+ Status:  not returned , repair duration is 10, cost is 414.0
+
+[DEBUG] 2023-12-29 16:56:57.333 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 16:57:07.899 [main] CustomerProfileView - type: 455
+[INFO ] 2023-12-29 16:57:07.900 [main] CustomerProfileView - device: 455 455
+[INFO ] 2023-12-29 16:57:07.900 [main] CustomerProfileView - need to modifying
+[INFO ] 2023-12-29 16:57:07.902 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 16:57:07.903 [main] CustomerProfileView - Number of order is 11. Device is 455 null 455
+ Status:  not returned , repair duration is 10, cost is 414.0
+
+[DEBUG] 2023-12-29 16:57:07.903 [main] CustomerProfileView - Input number 

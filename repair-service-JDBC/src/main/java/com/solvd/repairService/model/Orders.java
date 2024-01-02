@@ -6,6 +6,9 @@ public class Orders extends AbstractModel{
     private Long executeId;
 
     private Users user;
+    private EmployerProfiles employee;
+    private CustomerProfiles customer;
+    private ServiceCenters center;
     private Equipments equipment;
     private OrderExecutions orderExecution;
     public Orders(Long id) {
@@ -31,7 +34,32 @@ public class Orders extends AbstractModel{
     public Equipments equipment() {
         return equipment;
     }
-    public void equipment( Equipments equipment) {
+
+    public EmployerProfiles employee() {
+        return employee;
+    }
+
+    public void employee(EmployerProfiles employee) {
+        this.employee = employee;
+    }
+
+    public CustomerProfiles customer() {
+        return customer;
+    }
+
+    public void customer(CustomerProfiles customer) {
+        this.customer = customer;
+    }
+
+    public ServiceCenters center() {
+        return center;
+    }
+
+    public void center(ServiceCenters center) {
+        this.center = center;
+    }
+
+    public void equipment(Equipments equipment) {
         this.equipment = equipment;
     }
 

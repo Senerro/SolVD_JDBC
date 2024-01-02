@@ -6,6 +6,8 @@ import com.solvd.repairService.DAO.interfaces.IOrderExecuteDAO;
 import com.solvd.repairService.helpers.calculateData.Calculate;
 import com.solvd.repairService.model.*;
 
+import java.util.ArrayList;
+
 public class OrderExecutionsService {
     private final IOrderExecuteDAO dao;
 
@@ -41,4 +43,10 @@ public class OrderExecutionsService {
         return dao.updateOrderExecution(from, to);
     }
 
+    public ArrayList<OrderExecutions> get()
+    {
+        ArrayList<OrderExecutions> list = new ArrayList<>();
+        dao.get(list);
+        return list;
+    }
 }

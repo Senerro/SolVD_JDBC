@@ -1,6 +1,7 @@
 package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.JDBC.CustomerProfilesDAO;
+import com.solvd.repairService.DAO.myBatisXML.CustomerProfilesBatisDAO;
 import com.solvd.repairService.helpers.calculateData.Global;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
@@ -19,13 +20,13 @@ public class CustomerProfileView {
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
     private static CustomerProfilesService serviceCP = Global.state()
             ? new CustomerProfilesService(new CustomerProfilesDAO())
-            : new CustomerProfilesService(new CustomerProfilesDAO());
+            : new CustomerProfilesService(new CustomerProfilesBatisDAO());
     public static void profileUI(Users user) {
 
         CustomerProfiles profile = null;
 
         var isDetected = serviceCP.checkAvailability(new CustomerProfiles(user.id()));
-        profile = isDetected ? serviceCP.selectById(user.id())
+        profile = isDetected ? serviceCP.get(user.id())
                 : serviceCP.create(new CustomerProfiles(user.id()));
         profile.user(user);
         LOGGER.info("nickname: " + profile.nick());

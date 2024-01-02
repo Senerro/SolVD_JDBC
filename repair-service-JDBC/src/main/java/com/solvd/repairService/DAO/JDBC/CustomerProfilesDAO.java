@@ -22,7 +22,7 @@ public class CustomerProfilesDAO extends AbstractDAO implements ICustomerProfile
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfilesDAO.class);
 
     @Override
-    public CustomerProfiles create(CustomerProfiles profile) {
+    public void create(CustomerProfiles profile) {
         ArrayList<String> values = new ArrayList<>();
         values.add(profile.id().toString());
         values.add(profile.nick());
@@ -42,29 +42,49 @@ public class CustomerProfilesDAO extends AbstractDAO implements ICustomerProfile
                     + "Exception is " + e);
             throw new RuntimeException(e);
         }
-
-        return profile;
     }
 
     @Override
-    public CustomerProfiles selectById(Long id) {
-        CustomerProfiles model = new CustomerProfiles(0L);
-        String query = "SELECT * FROM " + model.tableName() + " WHERE id = '" + id + "'";
+    public void get(CustomerProfiles model) {
+
+        String query = "SELECT * FROM " + model.tableName() + " WHERE id = '" + model.id() + "'";
         connection = connectionPool.getConnection();
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                model = new CustomerProfiles(
-                        resultSet.getLong("id"),
-                        resultSet.getString("nick"),
-                        resultSet.getString("phone"));
+                model.nick(resultSet.getString("nick"));
+                model.phone(resultSet.getString("phone"));
             }
             connectionPool.returnConnection(connection);
-            return model;
         } catch (SQLException e) {
             connectionPool.returnConnection(connection);
             LOGGER.error("Some error with table " + model.tableName() + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void get(ArrayList<CustomerProfiles> profiles) {
+
+        String query = "SELECT * FROM customer_profiles";
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                var profile = new CustomerProfiles(
+                        resultSet.getLong("id"),
+                        resultSet.getString("nick"),
+                        resultSet.getString("phone"));
+                profiles.add(profile);
+            }
+            connectionPool.returnConnection(connection);
+        } catch (SQLException e) {
+            connectionPool.returnConnection(connection);
+            LOGGER.error("Some error with table customer_profiles \n"
                     + "query is " + query + "\n"
                     + "Exception is " + e);
             throw new RuntimeException(e);

@@ -58,7 +58,9 @@ public class ValidationView {
             LOGGER.info("User isn't exist");
             loadValidationView();
         }
-        CustomerProfileView.profileUI(user);
+        if(!user.role())
+            CustomerProfileView.profileUI(user);
+        else AdminView.adminUI();
     }
 
     private static Users receiveUserData() {

@@ -14,6 +14,16 @@ public class EmployerPosts extends AbstractModel {
         this.description = description;
     }
 
+    public EmployerPosts(String role, String description) {
+        this(0L);
+        this.role = role;
+        this.description = description;
+    }
+
+    public EmployerPosts() {
+        this(0L);
+    }
+
     public String description() {
         return description;
     }
@@ -24,5 +34,21 @@ public class EmployerPosts extends AbstractModel {
 
     public String role() {
         return role;
+    }
+
+    public void role(String role) {
+        this.role = role;
+    }
+
+    @Override
+    public int hashCode() {
+        return id().hashCode() + role.hashCode() + 47;
+    }
+    @Override
+    public boolean equals(Object object) {
+        if(this.role.equals(((EmployerPosts) object).role))
+            if (this.description.equals(((EmployerPosts) object).description))
+                return true;
+        return false;
     }
 }

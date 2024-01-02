@@ -2,6 +2,7 @@ package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
+import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -139,6 +140,118 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
             return orders;
         } catch (SQLException e) {
             LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void get(ArrayList<Orders> list) {
+        String query = " SELECT o. id, o.userId, e.type, e.producer, e.model, oe.cost  FROM orders AS o\n" +
+                " JOIN equipments AS e ON e.id = o.equipmentId \n" +
+                " JOIN order_executions AS oe ON oe.id = o.executeId";
+
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                Orders order = new Orders(resultSet.getLong("id"));
+                order.userId(resultSet.getLong("userId"));
+
+
+                Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));
+                equipment.type(resultSet.getString("type"));
+                equipment.type(resultSet.getString("producer"));
+                equipment.model(resultSet.getString("model"));
+
+                OrderExecutions orderExecutions = new OrderExecutions(order.executeId());
+                orderExecutions.cost(resultSet.getDouble("cost"));
+
+
+                order.orderExecution(orderExecutions);
+                order.equipment(equipment);
+                list.add(order);
+            }
+            connectionPool.returnConnection(connection);
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @Override
+    public void get(Orders order) {
+        String query = " " +
+                " SELECT cp.nick, cp.phone AS customerPhone, \n" +
+                " ep.fullName, ep.phone AS phone,\n" +
+                " e.type, e.producer, e.model,\n" +
+                " oe.cost, oe.returned,\n" +
+                " sc.name, sc.address\n" +
+                " FROM orders AS o\n" +
+                " JOIN equipments AS e ON e.id = o.equipmentId\n" +
+                " JOIN order_executions AS oe ON oe.id = o.executeId\n" +
+                " JOIN customer_profiles AS cp ON cp.id = o.userId\n" +
+                " JOIN employer_profiles AS ep ON ep.id = oe.employerId\n" +
+                " JOIN service_centers AS sc ON sc.id = oe.serviceCenterID" +
+                " WHERE o.id = " + order.id();
+
+        connection = connectionPool.getConnection();
+        try {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()) {
+                CustomerProfiles customer = new CustomerProfiles();
+                customer.nick(resultSet.getString("nick"));
+                customer.phone(resultSet.getString("customerPhone"));
+                order.customer(customer);
+
+                EmployerProfiles employee = new EmployerProfiles();
+                employee.fullName(resultSet.getString("fullName"));
+                employee.phone(resultSet.getString("phone"));
+                order.employee(employee);
+
+                Equipments equipment = new Equipments();
+                equipment.type(resultSet.getString("type"));
+                equipment.producer(resultSet.getString("producer"));
+                equipment.model(resultSet.getString("model"));
+                order.equipment(equipment);
+
+                OrderExecutions orderExecutions = new OrderExecutions();
+                orderExecutions.cost(resultSet.getDouble("cost"));
+                orderExecutions.isReturned(resultSet.getInt("returned"));
+
+                ServiceCenters center = new ServiceCenters();
+                center.name(resultSet.getString("name"));
+                center.address(resultSet.getString("address"));
+            }
+            connectionPool.returnConnection(connection);
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table users" + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @Override
+    public void update(Orders order, Orders newOrder) {
+        String query = "UPDATE orders SET userId = " + newOrder.userId() + " ,SET equipmentId = " + newOrder.equipmentId() + " ,SET executeId = " + newOrder.executeId() + " " +
+                "WHERE id = " + newOrder.id();
+        connection = connectionPool.getConnection();
+
+        try {
+            PreparedStatement ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ps.executeUpdate();
+            connectionPool.returnConnection(connection);
+            ps.close();
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table " + order.tableName() + "\n"
                     + "query is " + query + "\n"
                     + "Exception is " + e);
             throw new RuntimeException(e);

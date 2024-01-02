@@ -41,7 +41,7 @@ public class AbstractDAO implements IAbstractDAO {
         connection = connectionPool.getConnection();
         int result;
         try {
-            Statement statement = null;
+            Statement statement;
             statement = connection.createStatement();
             result = statement.executeUpdate(query);
             connectionPool.returnConnection(connection);

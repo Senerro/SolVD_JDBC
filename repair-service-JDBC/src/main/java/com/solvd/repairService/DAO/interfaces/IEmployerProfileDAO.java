@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface IEmployerProfileDAO extends IAbstractDAO {
-    EmployerProfiles create(EmployerProfiles profile);
+    void create(EmployerProfiles profile);
+    void get(ArrayList<EmployerProfiles> list);
+    void get(EmployerProfiles list);
 
     EmployerProfiles selectById(EmployerProfiles profile);
 

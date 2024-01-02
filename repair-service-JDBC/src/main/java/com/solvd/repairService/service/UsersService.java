@@ -14,11 +14,11 @@ public class UsersService {
 
     public Users create(Users user) throws Exception {
         var users = dao.findByLogin(user.login());
-        if (users == null)
+        if (users == null) {
             dao.create(user);
-        else throw new Exception("User with login" + user.login() + "already existed");
-
-        return dao.findByLogin(user.login());
+            return user;
+        }
+        else throw new Exception("User with login" + user.login() + " is already existed");
     }
 
     public Users findUserByLogin(String login) throws Exception {

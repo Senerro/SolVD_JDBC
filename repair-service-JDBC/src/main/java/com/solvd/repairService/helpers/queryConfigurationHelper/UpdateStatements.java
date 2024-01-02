@@ -1,13 +1,12 @@
 package com.solvd.repairService.helpers.queryConfigurationHelper;
 
-import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.Users;
+import com.solvd.repairService.model.*;
 
 import java.util.ArrayList;
 
 public class UpdateStatements {
-    private static ArrayList<String> fields = new ArrayList<>();
-    private static ArrayList<String> values = new ArrayList<>();
+    private final static ArrayList<String> fields = new ArrayList<>();
+    private final static ArrayList<String> values = new ArrayList<>();
 
     public static String get(CustomerProfiles from, CustomerProfiles to, Long id) {
         if (!from.nick().equals(to.nick())) {
@@ -20,6 +19,21 @@ public class UpdateStatements {
         }
        return makeQuery(from.tableName(), id);
     }
+    public static String get(ServiceCenters from, ServiceCenters to, Long id) {
+        if (!from.name().equals(to.name())) {
+            fields.add("name");
+            values.add(to.name());
+        }
+        if (!from.address().equals(to.address())) {
+            fields.add("address");
+            values.add(to.address());
+        }
+        if (!from.description().equals(to.description())) {
+            fields.add("description");
+            values.add(to.description());
+        }
+        return makeQuery(from.tableName(), id);
+    }
 
     public static String get(Users from, Users to) {
         if (!from.login().equals(to.login())) {
@@ -29,6 +43,17 @@ public class UpdateStatements {
         if (!from.password().equals(to.password())) {
             fields.add("password");
             values.add(to.password());
+        }
+        return makeQuery(from.tableName(), from.id());
+    }
+    public static String get(EmployerPosts from, EmployerPosts to) {
+        if (!from.role().equals(to.role())) {
+            fields.add("role");
+            values.add(to.role());
+        }
+        if (!from.description().equals(to.description())) {
+            fields.add("description");
+            values.add(to.description());
         }
         return makeQuery(from.tableName(), from.id());
     }
