@@ -25,14 +25,14 @@ public class Main {
 
         LOGGER.debug("JDBC or my batis?");
         LOGGER.debug("1: JDBC");
-        LOGGER.debug("2: XML");
+        LOGGER.debug("2: MyBatis");
         String answer = scanner.nextLine();
         switch (answer) {
             case "1":
-                Global.state(true);
+                Global.state(false);
                 break;
             case "2":
-                Global.state(false);
+                Global.state(true);
                 break;
             default: main(new String[1]);
         }

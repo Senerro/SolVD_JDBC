@@ -52,13 +52,13 @@ public class ValidationView {
 
     private static void loginUser() {
         Users user = null;
-//        try {
-//            user = service.findUserByLogin(receiveUserData().login());
-//        } catch (Exception e) {
-//            LOGGER.info("User isn't exist");
-//            loadValidationView();
-//        }
-        user = new Users(2L, "login@repairman.com", "1234", false);
+        try {
+            user = service.findUserByLogin(receiveUserData().login());
+        } catch (Exception e) {
+            LOGGER.info("User isn't exist");
+            loadValidationView();
+        }
+        // user = new Users(2L, "login@repairman.com", "1234", false);
         if(user.role())
             CustomerProfileView.profileUI(user);
         else AdminView.adminUI();
