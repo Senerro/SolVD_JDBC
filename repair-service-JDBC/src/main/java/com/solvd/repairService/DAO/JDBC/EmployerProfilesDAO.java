@@ -2,6 +2,7 @@ package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
+import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.views.CustomerProfileView;
 import org.apache.logging.log4j.LogManager;
@@ -23,21 +24,15 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     @Override
     public void create(EmployerProfiles profile) {
 
-        ArrayList<String> fields = new ArrayList<>();
-        fields.add("fullName");
-        fields.add("phone");
-        fields.add("postId");
-        fields.add("experience");
-        fields.add("serviceCenterId");
-
         ArrayList<String> values = new ArrayList<>();
+        values.add(String.valueOf(profile.id()));
         values.add(profile.fullName());
         values.add(profile.phone());
         values.add(String.format("%d", profile.postId()));
-        values.add(String.format("%d", profile.experience()));
+        values.add(String.valueOf(profile.experience()));
         values.add(String.format("%d", profile.serviceCenterId()));
 
-        String query = InsertValuesHelper.get(profile, fields, values);
+        String query = "INSERT INTO employer_profiles VALUES "+InsertValuesHelper.values(values);
 
         ResultSet result;
         PreparedStatement ps;
@@ -62,8 +57,8 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     @Override
     public void get(ArrayList<EmployerProfiles> list) {
         String query =
-                " SELECT w.id, fullName AS name, phone, ep.role, experience, sc.id AS centerId," +
-                        " sc.name AS centerName, sc.address FROM employer_profiles AS w \n" +
+                " SELECT w.id, fullName AS name, phone, ep.role, experience " +
+                " FROM employer_profiles AS w \n" +
                 " JOIN employer_posts AS ep ON ep.id = postId";
 
         connection = connectionPool.getConnection();
@@ -98,18 +93,19 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
                 " SELECT w.id, fullName AS name, phone, ep.role, experience, sc.id AS centerId," +
                         " sc.name AS centerName, sc.address FROM employer_profiles AS w \n" +
                         " LEFT JOIN service_centers AS sc ON sc.id = serviceCenterId \n" +
-                        " LEFT JOIN employer_posts AS ep ON ep.id = postId";
+                        " LEFT JOIN employer_posts AS ep ON ep.id = postId \n" +
+                        " WHERE w.id = " + model.id();
 
         connection = connectionPool.getConnection();
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
-                profile.fullName(resultSet.getString("name"));
-                profile.phone(resultSet.getString("phone"));
-                profile.experience(resultSet.getInt("experience"));
-                profile.serviceCenterId(resultSet.getLong("centerId"));
+
+                model.fullName(resultSet.getString("name"));
+                model.phone(resultSet.getString("phone"));
+                model.experience(resultSet.getInt("experience"));
+                model.serviceCenterId(resultSet.getLong("centerId"));
 
                 EmployerPosts post = new EmployerPosts();
                 post.role(resultSet.getString("role"));
@@ -118,9 +114,8 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
                 center.name(resultSet.getString("centerName"));
                 center.address(resultSet.getString("address"));
 
-                profile.serviceCenters(center);
-                profile.post(post);
-
+                model.serviceCenters(center);
+                model.post(post);
             }
             connectionPool.returnConnection(connection);
             statement.close();
@@ -154,7 +149,23 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
 
     @Override
     public EmployerProfiles updateProfile(EmployerProfiles from, EmployerProfiles to) {
-        return null;
+        String query = "UPDATE employer_profiles SET fullName = '"+to.fullName()+"', phone = '"+to.phone()+"', experience = " + to.experience() +
+                " WHERE id = " + to.id();
+        connection = connectionPool.getConnection();
+
+        try {
+            PreparedStatement ps = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+            ps.executeUpdate();
+            connectionPool.returnConnection(connection);
+            ps.close();
+        } catch (SQLException e) {
+            LOGGER.error("Some error with table " + from.tableName() + "\n"
+                    + "query is " + query + "\n"
+                    + "Exception is " + e);
+            throw new RuntimeException(e);
+        }
+
+        return to;
     }
 
     @Override

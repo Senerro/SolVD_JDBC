@@ -37,9 +37,6 @@ public class AdminView {
             ? new EmployerProfileService(new EmployerProfilesDAO())
             : new EmployerProfileService(new EmployerProfilesBatisDAO());
 
-    private static final EquipmentProblemService serviceEqPr = Global.state()
-            ? new EquipmentProblemService(new EquipmentProblemDAO())
-            : new EquipmentProblemService(new EquipmentProblemBatisDAO());
     private static final EmployerPostsService servicePost = Global.state()
             ? new EmployerPostsService(new EmployerPostsDAO())
             : new EmployerPostsService(new EmployerPostsBatisDAO());
@@ -51,7 +48,7 @@ public class AdminView {
         LOGGER.info("3. Worker positions");
         LOGGER.info("4. Orders");
         LOGGER.info("5. Services");
-        var result = scanner.nextLine();
+        var result = scanner.next();
         switch (result) {
             case "1":
                 getCustomers();
@@ -72,13 +69,34 @@ public class AdminView {
                 adminUI();
                 break;
         }
+        adminUI();
+    }
+
+    private static void postActions(ArrayList<EmployerPosts> list) {
+        switch (actions()) {
+            case "1":
+                getPost(list);
+                break;
+            case "2":
+                addPost(list);
+                break;
+            case "3":
+                updatePost(list);
+                break;
+            case "4":
+                deletePost(list);
+                break;
+            default:
+                adminUI();
+                break;
+        }
     }
 
     private static void getOrders() {
         ArrayList<Orders> list = new ArrayList<>();
         try {
             list = serviceO.get();
-            for (var element: list)
+            for (var element : list)
                 LOGGER.info(element);
         } catch (Exception e) {
             LOGGER.info(e);
@@ -106,8 +124,7 @@ public class AdminView {
         }
     }
 
-    private static void updateOrder(ArrayList<Orders> list)
-    {
+    private static void updateOrder(ArrayList<Orders> list) {
         var order = getOrder(list);
         var newOrder = createOrder(order.id());
         try {
@@ -126,8 +143,7 @@ public class AdminView {
         orderActions(list);
     }
 
-    private static Orders createOrder(Long id)
-    {
+    private static Orders createOrder(Long id) {
         Orders orders = new Orders(id);
         LOGGER.info("input userId");
         orders.userId(scanner.nextLong());
@@ -141,29 +157,27 @@ public class AdminView {
 
     private static void addOrder(ArrayList<Orders> list) {
         ArrayList<CustomerProfiles> customerProfiles = new ArrayList<>();
+        HashSet<Long> set = new HashSet<>();
         try {
             customerProfiles = serviceCP.get();
-            for (var element : list)
+            for (var element : customerProfiles) {
                 LOGGER.info(element);
+                set.add(element.id());
+            }
         } catch (Exception e) {
             LOGGER.info(e);
         }
-        if (!customerProfiles.isEmpty()) {
-            HashSet<Long> set = new HashSet<>();
-            for (var element : list)
-                set.add(element.id());
+        LOGGER.info("Input id");
+        var id = scanner.nextLong();
+        if (set.contains(id)) {
+            OrdersView.createNewOrder(serviceCP.get(id));
+            orderActions(list);
+        } else addOrder(list);
 
-            LOGGER.info("Input id");
-            var id = scanner.nextLong();
-            if (set.contains(id)) {
-                OrdersView.createNewOrder(serviceCP.get(id));
-                orderActions(list);
-            }
-            else addOrder(list);
-        }
         LOGGER.info("we can not set customer when any customer doesn't exist");
         orderActions(list);
     }
+
 
     private static void deleteOrder(ArrayList<Orders> list) {
         var order = getOrder(list);
@@ -194,7 +208,7 @@ public class AdminView {
         ArrayList<ServiceCenters> list = new ArrayList<>();
         try {
             list = serviceSC.get();
-            for (var element: list)
+            for (var element : list)
                 LOGGER.info(element);
         } catch (Exception e) {
             LOGGER.info(e);
@@ -249,11 +263,11 @@ public class AdminView {
 
     private static ServiceCenters createServiceCenter(Long id) {
         LOGGER.info("input name");
-        var name = scanner.nextLine();
+        var name = scanner.next();
         LOGGER.info("input description");
-        var descr = scanner.nextLine();
+        var descr = scanner.next();
         LOGGER.info("input address");
-        var address = scanner.nextLine();
+        var address = scanner.next();
 
         ServiceCenters center = new ServiceCenters(id);
         center.description(descr);
@@ -264,11 +278,11 @@ public class AdminView {
 
     private static void addService(ArrayList<ServiceCenters> list) {
         LOGGER.info("address ");
-        var address = scanner.nextLine();
+        var address = scanner.next();
         LOGGER.info("name ");
-        var name = scanner.nextLine();
+        var name = scanner.next();
         LOGGER.info("description ");
-        var description = scanner.nextLine();
+        var description = scanner.next();
 
         ServiceCenters model = new ServiceCenters();
         model.name(name);
@@ -311,7 +325,7 @@ public class AdminView {
         ArrayList<EmployerPosts> list = new ArrayList<>();
         try {
             list = servicePost.get();
-            for (var element: list)
+            for (var element : list)
                 LOGGER.info(element);
         } catch (Exception e) {
             LOGGER.info(e);
@@ -319,25 +333,6 @@ public class AdminView {
         postActions(list);
     }
 
-    private static void postActions(ArrayList<EmployerPosts> list) {
-        switch (actions()) {
-            case "1":
-                getPost(list);
-                break;
-            case "2":
-                addPost(list);
-                break;
-            case "3":
-                updatePost(list);
-                break;
-            case "4":
-                deletePost(list);
-                break;
-            default:
-                adminUI();
-                break;
-        }
-    }
 
     private static void deletePost(ArrayList<EmployerPosts> list) {
         var post = getPost(list);
@@ -368,18 +363,18 @@ public class AdminView {
 
     private static EmployerPosts createEmployerPost(Long id) {
         LOGGER.info("input role");
-        var role = scanner.nextLine();
+        var role = scanner.next();
         LOGGER.info("input description");
-        var description = scanner.nextLine();
+        var description = scanner.next();
         return new EmployerPosts(id, role, description);
 
     }
 
     private static void addPost(ArrayList<EmployerPosts> list) {
         LOGGER.info("role ");
-        var role = scanner.nextLine();
+        var role = scanner.next();
         LOGGER.info("description ");
-        var description = scanner.nextLine();
+        var description = scanner.next();
 
         EmployerPosts model = new EmployerPosts(role, description);
         try {
@@ -475,19 +470,19 @@ public class AdminView {
 
         EmployerProfiles profile = new EmployerProfiles(id);
         LOGGER.info("input fullName");
-        profile.fullName(scanner.nextLine());
+        profile.fullName(scanner.next());
         LOGGER.info("input phone");
-        profile.phone(scanner.nextLine());
+        profile.phone(scanner.next());
         LOGGER.info("input exp");
-        profile.experience(scanner.nextDouble());
+        profile.experience(Double.parseDouble(scanner.next()));
         return profile;
     }
 
     private static void addWorker(ArrayList<EmployerProfiles> list) {
         LOGGER.info("login ");
-        var login = scanner.nextLine();
+        var login = scanner.next();
         LOGGER.info("password ");
-        var password = scanner.nextLine();
+        var password = scanner.next();
 
         Users user = new Users(login, password);
         try {
@@ -498,7 +493,7 @@ public class AdminView {
         }
         EmployerProfiles profileTmp = new EmployerProfiles(user.id());
         LOGGER.info("input fullName");
-        profileTmp.fullName(scanner.nextLine());
+        profileTmp.fullName(scanner.next());
         profileTmp.phone("+375(25)...");
         profileTmp.experience(0);
 
@@ -559,7 +554,6 @@ public class AdminView {
                 var profile = serviceEP.get(id);
                 LOGGER.info(profile);
                 return profile;
-
             } else getWorker(list);
         }
         LOGGER.info("You can not get worker when any customer doesn't exist");
@@ -597,6 +591,7 @@ public class AdminView {
                 adminUI();
                 break;
         }
+        customerActions(list);
     }
 
     private static void deleteCustomer(ArrayList<CustomerProfiles> list) {
@@ -627,9 +622,9 @@ public class AdminView {
 
     private static void addCustomer(ArrayList<CustomerProfiles> profiles) {
         LOGGER.info("login ");
-        var login = scanner.nextLine();
+        var login = scanner.next();
         LOGGER.info("password ");
-        var password = scanner.nextLine();
+        var password = scanner.next();
 
         Users user = new Users(login, password);
         try {
@@ -647,9 +642,10 @@ public class AdminView {
 
     private static CustomerProfiles createCustomerProfile(Long id) {
         LOGGER.info("Nick");
-        var nick = scanner.nextLine();
+        var nick = scanner.next();
+        nick = scanner.next();
         LOGGER.info("Phone");
-        var phone = scanner.nextLine();
+        var phone = scanner.next();
 
         return new CustomerProfiles(id, nick, phone);
     }
@@ -678,7 +674,7 @@ public class AdminView {
         LOGGER.info("2: add");
         LOGGER.info("3: update");
         LOGGER.info("4: delete");
-        return scanner.nextLine();
+        return scanner.next();
     }
 
 }

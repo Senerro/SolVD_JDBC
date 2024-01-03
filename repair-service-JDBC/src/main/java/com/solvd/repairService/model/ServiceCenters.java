@@ -57,6 +57,6 @@ public class ServiceCenters extends AbstractModel {
     @Override
     public String toString()
     {
-        return "name: " + name + "location: " + address;
+        return "["+id()+"] "+ "name: " + name + ", location: " + address;
     }
 }

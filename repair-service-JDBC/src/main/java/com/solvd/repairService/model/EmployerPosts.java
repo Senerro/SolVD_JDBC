@@ -44,11 +44,17 @@ public class EmployerPosts extends AbstractModel {
     public int hashCode() {
         return id().hashCode() + role.hashCode() + 47;
     }
+
     @Override
     public boolean equals(Object object) {
-        if(this.role.equals(((EmployerPosts) object).role))
+        if (this.role.equals(((EmployerPosts) object).role))
             if (this.description.equals(((EmployerPosts) object).description))
                 return true;
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "["+id()+"]"+" post: " + role;
     }
 }

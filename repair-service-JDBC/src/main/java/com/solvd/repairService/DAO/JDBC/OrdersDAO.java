@@ -161,7 +161,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 order.userId(resultSet.getLong("userId"));
 
 
-                Equipments equipment = new Equipments(resultSet.getLong("equipmentId"));
+                Equipments equipment = new Equipments();
                 equipment.type(resultSet.getString("type"));
                 equipment.type(resultSet.getString("producer"));
                 equipment.model(resultSet.getString("model"));
@@ -224,10 +224,12 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 OrderExecutions orderExecutions = new OrderExecutions();
                 orderExecutions.cost(resultSet.getDouble("cost"));
                 orderExecutions.isReturned(resultSet.getInt("returned"));
+                order.orderExecution(orderExecutions);
 
                 ServiceCenters center = new ServiceCenters();
                 center.name(resultSet.getString("name"));
                 center.address(resultSet.getString("address"));
+                order.center(center);
             }
             connectionPool.returnConnection(connection);
         } catch (SQLException e) {
@@ -241,7 +243,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
 
     @Override
     public void update(Orders order, Orders newOrder) {
-        String query = "UPDATE orders SET userId = " + newOrder.userId() + " ,SET equipmentId = " + newOrder.equipmentId() + " ,SET executeId = " + newOrder.executeId() + " " +
+        String query = "UPDATE orders SET userId = " + newOrder.userId() + " , equipmentId = " + newOrder.equipmentId() + " , executeId = " + newOrder.executeId() + " " +
                 "WHERE id = " + newOrder.id();
         connection = connectionPool.getConnection();
 

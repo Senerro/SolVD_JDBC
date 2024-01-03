@@ -156,6 +156,7 @@ public class ServiceCentersDAO extends AbstractDAO implements IServiceCenterDAO 
                 ServiceCenters center = new ServiceCenters(resultSet.getLong("id"));
                 center.address(resultSet.getString("address"));
                 center.name(resultSet.getString("name"));
+                list.add(center);
             }
             connectionPool.returnConnection(connection);
             statement.close();
