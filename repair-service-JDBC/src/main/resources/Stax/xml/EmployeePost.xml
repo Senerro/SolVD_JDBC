@@ -1,0 +1,8 @@
+<EmployeePost xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns="file://C:/solvd/SolVD_JDBC/repair-service-JDBC/src/main/resources/Stax/xml/xsd/EmployeePost.xsd"
+                 xsi:noNamespaceSchemaLocation="xsd/EmployeePost.xsd">
+
+    <position>Omnissiah</position>
+    <description>machine God </description>
+</EmployeePost>
+

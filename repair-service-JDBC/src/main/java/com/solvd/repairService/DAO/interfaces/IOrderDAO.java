@@ -1,7 +1,7 @@
 package com.solvd.repairService.DAO.interfaces;
 
 import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.EmployerProfiles;
+import com.solvd.repairService.model.EmployeeProfiles;
 import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.model.ServiceCenters;
 
@@ -13,7 +13,7 @@ public interface IOrderDAO extends IAbstractDAO {
 
     void selectById(Orders order);
 
-    Orders changeRepairman(Orders order, EmployerProfiles repairman);
+    Orders changeRepairman(Orders order, EmployeeProfiles repairman);
 
     Orders changeServiceCenter(Orders order, ServiceCenters serviceCenter);
 

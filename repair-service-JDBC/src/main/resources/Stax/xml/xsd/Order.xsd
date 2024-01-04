@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="EquipmentType" >
+        <xs:choice>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="producer" type="xs:string"/>
+            <xs:element name="model" type="xs:string"/>
+            <xs:element name="cost" type="xs:double"/>
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="prohibited"/>
+    </xs:complexType>
+    <xs:complexType name="ServiceCenterType" >
+        <xs:choice>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="prohibited"/>
+    </xs:complexType>
+    <xs:complexType name="UserType" >
+        <xs:choice>
+            <xs:element name="login" type="xs:string"/>
+            <xs:element name="password" type="xs:string"/>
+            <xs:element name ="role" type="xs:boolean"/>
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="prohibited"/>
+    </xs:complexType>
+    <xs:complexType name="EmployeeProfileType" >
+        <xs:choice>
+            <xs:element name="fullName" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="postId" type="xs:long"/>
+            <xs:element name="experience" type="xs:double"/>
+            <xs:element name="serviceCenterId" type="xs:long"/>
+            <xs:element name="user" type="UserType" />
+            <xs:element name="post" type="EmployeePostsType"/>
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="prohibited"/>
+    </xs:complexType>
+    <xs:complexType name="EmployeePostsType" >
+        <xs:choice>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="position" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="prohibited"/>
+    </xs:complexType>
+    <xs:complexType name="CustomerType">
+        <xs:choice>
+            <xs:element name="nick" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="user" type="UserType" />
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="ProblemType">
+        <xs:sequence minOccurs="1" maxOccurs="unbounded">
+           <xs:element name="typeOfProblem" type="TypeOfProblemType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TypeOfProblemType">
+        <xs:choice>
+            <xs:element name="service"/>
+        </xs:choice>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="OrderType">
+        <xs:choice>
+            <xs:element name="equipment" type="EquipmentType" />
+            <xs:element name="center" type="ServiceCenterType" />
+            <xs:element name="employee" type="EmployeeProfileType" />
+            <xs:element name="customer" type="CustomerType"/>
+            <xs:element name="problem" type="ProblemType"/>
+
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="optional"/>
+    </xs:complexType>
+    <xs:element name="Order" type ="OrderType"/>
+</xs:schema>

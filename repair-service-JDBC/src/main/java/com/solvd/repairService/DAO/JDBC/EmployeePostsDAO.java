@@ -3,8 +3,7 @@ package com.solvd.repairService.DAO.JDBC;
 import com.solvd.repairService.DAO.interfaces.IEmployerPostDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
-import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.EmployerPosts;
+import com.solvd.repairService.model.EmployeePosts;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,7 +13,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class EmployerPostsDAO extends AbstractDAO implements IEmployerPostDAO {
+public class EmployeePostsDAO extends AbstractDAO implements IEmployerPostDAO {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
@@ -22,7 +21,7 @@ public class EmployerPostsDAO extends AbstractDAO implements IEmployerPostDAO {
     private static final Logger LOGGER = LogManager.getLogger(UsersDAO.class);
 
     @Override
-    public void create(EmployerPosts post) {
+    public void create(EmployeePosts post) {
 
         ArrayList<String> fields = new ArrayList<>();
         fields.add("role");
@@ -54,25 +53,25 @@ public class EmployerPostsDAO extends AbstractDAO implements IEmployerPostDAO {
     }
 
     @Override
-    public EmployerPosts selectById(EmployerPosts post) {
+    public EmployeePosts selectById(EmployeePosts post) {
         return null;
     }
 
     @Override
-    public EmployerPosts changePostName(EmployerPosts from, EmployerPosts to) {
+    public EmployeePosts changePostName(EmployeePosts from, EmployeePosts to) {
         return null;
     }
 
     @Override
-    public void get(ArrayList<EmployerPosts> list) {
+    public void get(ArrayList<EmployeePosts> list) {
 
-        String query = "SELECT * FROM employer_posts";
+        String query = "SELECT * FROM employee_posts";
         connection = connectionPool.getConnection();
         try {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                var post = new EmployerPosts(
+                var post = new EmployeePosts(
                         resultSet.getLong("id"),
                         resultSet.getString("role"),
                         resultSet.getString("description"));
@@ -89,8 +88,8 @@ public class EmployerPostsDAO extends AbstractDAO implements IEmployerPostDAO {
     }
 
     @Override
-    public void get(EmployerPosts post) {
-        String query = "SELECT * FROM employer_posts WHERE id = " + post.id();
+    public void get(EmployeePosts post) {
+        String query = "SELECT * FROM employee_posts WHERE id = " + post.id();
         connection = connectionPool.getConnection();
         try {
             Statement statement = connection.createStatement();
@@ -110,7 +109,7 @@ public class EmployerPostsDAO extends AbstractDAO implements IEmployerPostDAO {
     }
 
     @Override
-    public void update(EmployerPosts from, EmployerPosts to) {
+    public void update(EmployeePosts from, EmployeePosts to) {
         String query = UpdateStatements.get(from, to);
         connection = connectionPool.getConnection();
         try {

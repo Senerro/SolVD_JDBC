@@ -3,8 +3,6 @@ package com.solvd.repairService.DAO.JDBC;
 import com.solvd.repairService.DAO.interfaces.IServiceCenterDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
-import com.solvd.repairService.model.EmployerPosts;
-import com.solvd.repairService.model.EmployerProfiles;
 import com.solvd.repairService.model.ServiceCenters;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

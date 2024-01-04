@@ -6,7 +6,7 @@ public class Orders extends AbstractModel{
     private Long executeId;
 
     private Users user;
-    private EmployerProfiles employee;
+    private EmployeeProfiles employee;
     private CustomerProfiles customer;
     private ServiceCenters center;
     private Equipments equipment;
@@ -35,11 +35,11 @@ public class Orders extends AbstractModel{
         return equipment;
     }
 
-    public EmployerProfiles employee() {
+    public EmployeeProfiles employee() {
         return employee;
     }
 
-    public void employee(EmployerProfiles employee) {
+    public void employee(EmployeeProfiles employee) {
         this.employee = employee;
     }
 

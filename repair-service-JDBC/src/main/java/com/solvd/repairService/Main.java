@@ -1,16 +1,10 @@
 package com.solvd.repairService;
 
-import com.solvd.repairService.helpers.calculateData.Global;
+import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.views.ValidationView;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.sql.*;
-import java.util.Properties;
 import java.util.Scanner;
 
 public class Main {
@@ -25,14 +19,14 @@ public class Main {
 
         LOGGER.debug("JDBC or my batis?");
         LOGGER.debug("1: JDBC");
-        LOGGER.debug("2: MyBatis");
+        LOGGER.debug("2: Stax");
         String answer = scanner.nextLine();
         switch (answer) {
             case "1":
-                Global.state(false);
+                Global.stax(false);
                 break;
             case "2":
-                Global.state(true);
+                Global.stax(true);
                 break;
             default: main(new String[1]);
         }

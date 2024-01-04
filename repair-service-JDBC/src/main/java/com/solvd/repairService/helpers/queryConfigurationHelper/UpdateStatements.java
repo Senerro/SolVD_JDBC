@@ -46,7 +46,7 @@ public class UpdateStatements {
         }
         return makeQuery(from.tableName(), from.id());
     }
-    public static String get(EmployerPosts from, EmployerPosts to) {
+    public static String get(EmployeePosts from, EmployeePosts to) {
         if (!from.role().equals(to.role())) {
             fields.add("role");
             values.add(to.role());

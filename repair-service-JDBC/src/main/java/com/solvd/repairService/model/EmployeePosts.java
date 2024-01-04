@@ -1,26 +1,26 @@
 package com.solvd.repairService.model;
 
-public class EmployerPosts extends AbstractModel {
+public class EmployeePosts extends AbstractModel {
     private String role;
     private String description;
 
-    public EmployerPosts(Long id) {
-        super(id, EmployerPosts.class);
+    public EmployeePosts(Long id) {
+        super(id, EmployeePosts.class);
     }
 
-    public EmployerPosts(Long id, String role, String description) {
+    public EmployeePosts(Long id, String role, String description) {
         this(id);
         this.role = role;
         this.description = description;
     }
 
-    public EmployerPosts(String role, String description) {
+    public EmployeePosts(String role, String description) {
         this(0L);
         this.role = role;
         this.description = description;
     }
 
-    public EmployerPosts() {
+    public EmployeePosts() {
         this(0L);
     }
 
@@ -47,8 +47,8 @@ public class EmployerPosts extends AbstractModel {
 
     @Override
     public boolean equals(Object object) {
-        if (this.role.equals(((EmployerPosts) object).role))
-            if (this.description.equals(((EmployerPosts) object).description))
+        if (this.role.equals(((EmployeePosts) object).role))
+            if (this.description.equals(((EmployeePosts) object).description))
                 return true;
         return false;
     }

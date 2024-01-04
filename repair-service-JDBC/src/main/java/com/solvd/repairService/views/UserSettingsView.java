@@ -2,7 +2,7 @@ package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.JDBC.UsersDAO;
 import com.solvd.repairService.DAO.myBatisXML.UserBatisDAO;
-import com.solvd.repairService.helpers.calculateData.Global;
+import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;

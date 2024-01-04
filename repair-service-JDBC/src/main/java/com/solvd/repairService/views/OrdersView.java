@@ -2,7 +2,7 @@ package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.JDBC.*;
 import com.solvd.repairService.DAO.myBatisXML.*;
-import com.solvd.repairService.helpers.calculateData.Global;
+import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.model.CustomerProfiles;
 import com.solvd.repairService.model.Equipments;
 import com.solvd.repairService.service.*;
@@ -36,7 +36,7 @@ public class OrdersView {
             ? new OrderExecutionsService(new OrderExecutionsDAO())
             : new OrderExecutionsService(new OrderExecutionsBatisDAO());
     private static final EmployerProfileService serviceEP = Global.state()
-            ? new EmployerProfileService(new EmployerProfilesDAO())
+            ? new EmployerProfileService(new EmployeeProfilesDAO())
             : new EmployerProfileService(new EmployerProfilesBatisDAO());
 
     private static final ProblemService serviceP = Global.state()

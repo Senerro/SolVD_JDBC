@@ -1,11 +1,7 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
 import com.solvd.repairService.DAO.interfaces.IEmployerPostDAO;
-import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
-import com.solvd.repairService.DAO.interfaces.IEquipmentDAO;
-import com.solvd.repairService.model.AbstractModel;
-import com.solvd.repairService.model.EmployerPosts;
+import com.solvd.repairService.model.EmployeePosts;
 
 import java.util.ArrayList;
 
@@ -16,40 +12,40 @@ public class EmployerPostsService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(EmployerPosts model) {
+    public boolean checkAvailability(EmployeePosts model) {
         return dao.checkAvailability(model);
     }
 
-    public int delete(EmployerPosts model) {
+    public int delete(EmployeePosts model) {
         return dao.delete(model);
     }
 
-    public EmployerPosts create(EmployerPosts post) {
+    public EmployeePosts create(EmployeePosts post) {
          dao.create(post);
          return post;
     }
 
-    public EmployerPosts selectById(EmployerPosts post) {
+    public EmployeePosts selectById(EmployeePosts post) {
         return dao.selectById(post);
     }
-    public ArrayList<EmployerPosts> get()
+    public ArrayList<EmployeePosts> get()
     {
-        ArrayList<EmployerPosts> list = new ArrayList<>();
+        ArrayList<EmployeePosts> list = new ArrayList<>();
         dao.get(list);
         return list;
     }
-    public EmployerPosts get(Long id) {
-        EmployerPosts post = new EmployerPosts(id);
+    public EmployeePosts get(Long id) {
+        EmployeePosts post = new EmployeePosts(id);
         dao.get(post);
         return post;
     }
 
-    public EmployerPosts changePostName(EmployerPosts from, EmployerPosts to) {
+    public EmployeePosts changePostName(EmployeePosts from, EmployeePosts to) {
         return dao.changePostName(from, to);
     }
 
 
-    public void update(EmployerPosts post, EmployerPosts newPost) {
+    public void update(EmployeePosts post, EmployeePosts newPost) {
         dao.update(post, newPost);
     }
 }

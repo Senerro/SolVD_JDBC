@@ -1,24 +1,24 @@
 package com.solvd.repairService.model;
 
-public class EmployerProfiles extends AbstractModel {
+public class EmployeeProfiles extends AbstractModel {
     private String fullName;
     private String phone;
     private Long postId;
     private Long serviceCenterId;
     private double experience;
     private Users user;
-    private EmployerPosts post;
+    private EmployeePosts post;
     private ServiceCenters center;
 
-    public EmployerProfiles(Long id) {
-        super(id, EmployerProfiles.class);
+    public EmployeeProfiles(Long id) {
+        super(id, EmployeeProfiles.class);
     }
-    public EmployerProfiles()
+    public EmployeeProfiles()
         {
             this(0L);
         }
 
-    public EmployerProfiles(Long id, String fullName, String phone, Long postId, double experience, Long serviceCenterId) {
+    public EmployeeProfiles(Long id, String fullName, String phone, Long postId, double experience, Long serviceCenterId) {
         this(id);
         this.fullName = fullName;
         this.phone = phone;
@@ -27,7 +27,7 @@ public class EmployerProfiles extends AbstractModel {
         this.serviceCenterId = serviceCenterId;
     }
 
-    public void post(EmployerPosts post) {
+    public void post(EmployeePosts post) {
         this.post = post;
     }
 

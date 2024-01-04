@@ -2,7 +2,7 @@ package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.JDBC.CustomerProfilesDAO;
 import com.solvd.repairService.DAO.myBatisXML.CustomerProfilesBatisDAO;
-import com.solvd.repairService.helpers.calculateData.Global;
+import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;

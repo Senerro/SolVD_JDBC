@@ -2,7 +2,6 @@ package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IOrderExecuteDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
-import com.solvd.repairService.model.EmployerPosts;
 import com.solvd.repairService.model.OrderExecutions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

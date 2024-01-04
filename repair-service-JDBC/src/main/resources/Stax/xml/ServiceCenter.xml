@@ -1,0 +1,8 @@
+<ServiceCenter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="file://C:/solvd/SolVD_JDBC/repair-service-JDBC/src/main/resources/Stax/xml/xsd/ServiceCenter.xsd"
+              xsi:noNamespaceSchemaLocation="xsd/ServiceCenter.xsd">
+
+    <name>Mars</name>
+    <address>Mars, Sun system</address>
+</ServiceCenter>
+

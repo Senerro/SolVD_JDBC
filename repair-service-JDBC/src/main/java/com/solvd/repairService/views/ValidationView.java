@@ -2,7 +2,7 @@ package com.solvd.repairService.views;
 
 import com.solvd.repairService.DAO.JDBC.UsersDAO;
 import com.solvd.repairService.DAO.myBatisXML.UserBatisDAO;
-import com.solvd.repairService.helpers.calculateData.Global;
+import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.model.Users;
 import com.solvd.repairService.service.UsersService;
 import org.apache.logging.log4j.LogManager;
@@ -52,13 +52,13 @@ public class ValidationView {
 
     private static void loginUser() {
         Users user = null;
-        try {
+        /*try {
             user = service.findUserByLogin(receiveUserData().login());
         } catch (Exception e) {
             LOGGER.info("User isn't exist");
             loadValidationView();
-        }
-        // user = new Users(2L, "login@repairman.com", "1234", false);
+        }*/
+         user = new Users(2L, "login@repairman.com", "1234", false);
         if(user.role())
             CustomerProfileView.profileUI(user);
         else AdminView.adminUI();

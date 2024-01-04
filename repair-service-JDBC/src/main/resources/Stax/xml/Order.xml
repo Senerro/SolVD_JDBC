@@ -1,0 +1,54 @@
+<Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="file://C:/solvd/SolVD_JDBC/repair-service-JDBC/src/main/resources/Stax/xml/xsd/Order.xsd"
+       xsi:noNamespaceSchemaLocation="xsd/Order.xsd">
+    <center>
+        <id>4</id>
+        <name>name4</name>
+        <address>Kolotushkin house, Pushkin st</address>
+    </center>
+
+    <customer>
+        <nick>Staxon Statham</nick>
+        <phone>+44(819)...</phone>
+        <user>
+            <login>bigLogin@order.xml</login>
+            <password>bigPassword@order.xml</password>
+            <role>false</role>
+        </user>
+
+    </customer>
+
+    <employee>
+        <fullName>Radion AMDvov</fullName>
+        <phone>+375(29)...</phone>
+        <experience>8</experience>
+        <user>
+            <role>true</role>
+            <password>StaxPassword</password>
+            <login>StaxLogin</login>
+        </user>
+        <post>
+            <id>4</id>
+            <position>repairman</position>
+            <description>fix some thinks</description>
+        </post>
+    </employee>
+
+    <equipment>
+        <type>meme</type>
+        <producer>Statham picture</producer>
+        <model>Boyz quotes</model>
+        <cost>999.99</cost>
+    </equipment>
+
+    <problem>
+        <typeOfProblem>
+            <service>cleaning</service>
+        </typeOfProblem>
+        <typeOfProblem>
+            <service>modifying</service>
+        </typeOfProblem>
+    </problem>
+
+</Order>
+

@@ -2,7 +2,6 @@ package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
-import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.views.CustomerProfileView;
 import org.apache.logging.log4j.LogManager;
@@ -14,15 +13,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfileDAO {
+public class EmployeeProfilesDAO extends AbstractDAO implements IEmployerProfileDAO {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
     @Override
-    public void create(EmployerProfiles profile) {
+    public void create(EmployeeProfiles profile) {
 
         ArrayList<String> values = new ArrayList<>();
         values.add(String.valueOf(profile.id()));
@@ -32,7 +30,7 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
         values.add(String.valueOf(profile.experience()));
         values.add(String.format("%d", profile.serviceCenterId()));
 
-        String query = "INSERT INTO employer_profiles VALUES "+InsertValuesHelper.values(values);
+        String query = "INSERT INTO employee_profiles VALUES "+InsertValuesHelper.values(values);
 
         ResultSet result;
         PreparedStatement ps;
@@ -55,10 +53,10 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     }
 
     @Override
-    public void get(ArrayList<EmployerProfiles> list) {
+    public void get(ArrayList<EmployeeProfiles> list) {
         String query =
                 " SELECT w.id, fullName AS name, phone, ep.role, experience " +
-                " FROM employer_profiles AS w \n" +
+                " FROM employee_profiles AS w \n" +
                 " JOIN employer_posts AS ep ON ep.id = postId";
 
         connection = connectionPool.getConnection();
@@ -66,12 +64,12 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
+                EmployeeProfiles profile = new EmployeeProfiles(resultSet.getLong("id"));
                 profile.fullName(resultSet.getString("name"));
                 profile.phone(resultSet.getString("phone"));
                 profile.experience(resultSet.getInt("experience"));
 
-                EmployerPosts post = new EmployerPosts();
+                EmployeePosts post = new EmployeePosts();
                 post.role(resultSet.getString("role"));
 
                 profile.post(post);
@@ -88,10 +86,10 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     }
 
     @Override
-    public void get(EmployerProfiles model) {
+    public void get(EmployeeProfiles model) {
         String query =
                 " SELECT w.id, fullName AS name, phone, ep.role, experience, sc.id AS centerId," +
-                        " sc.name AS centerName, sc.address FROM employer_profiles AS w \n" +
+                        " sc.name AS centerName, sc.address FROM employee_profiles AS w \n" +
                         " LEFT JOIN service_centers AS sc ON sc.id = serviceCenterId \n" +
                         " LEFT JOIN employer_posts AS ep ON ep.id = postId \n" +
                         " WHERE w.id = " + model.id();
@@ -107,7 +105,7 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
                 model.experience(resultSet.getInt("experience"));
                 model.serviceCenterId(resultSet.getLong("centerId"));
 
-                EmployerPosts post = new EmployerPosts();
+                EmployeePosts post = new EmployeePosts();
                 post.role(resultSet.getString("role"));
 
                 ServiceCenters center = new ServiceCenters(resultSet.getLong("centerId"));
@@ -128,28 +126,28 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     }
 
     @Override
-    public EmployerProfiles selectById(EmployerProfiles profile) {
+    public EmployeeProfiles selectById(EmployeeProfiles profile) {
         return null;
     }
 
     @Override
-    public List<EmployerProfiles> findByFullname(String fullname) {
+    public List<EmployeeProfiles> findByFullname(String fullname) {
         return null;
     }
 
     @Override
-    public List<EmployerProfiles> findByPhone(String fullname) {
+    public List<EmployeeProfiles> findByPhone(String fullname) {
         return null;
     }
 
     @Override
-    public List<EmployerProfiles> selectByExperience(double role, boolean desc) {
+    public List<EmployeeProfiles> selectByExperience(double role, boolean desc) {
         return null;
     }
 
     @Override
-    public EmployerProfiles updateProfile(EmployerProfiles from, EmployerProfiles to) {
-        String query = "UPDATE employer_profiles SET fullName = '"+to.fullName()+"', phone = '"+to.phone()+"', experience = " + to.experience() +
+    public EmployeeProfiles updateProfile(EmployeeProfiles from, EmployeeProfiles to) {
+        String query = "UPDATE employee_profiles SET fullName = '"+to.fullName()+"', phone = '"+to.phone()+"', experience = " + to.experience() +
                 " WHERE id = " + to.id();
         connection = connectionPool.getConnection();
 
@@ -169,17 +167,17 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     }
 
     @Override
-    public EmployerProfiles updatePost(EmployerProfiles employee, EmployerPosts post) {
+    public EmployeeProfiles updatePost(EmployeeProfiles employee, EmployeePosts post) {
         return null;
     }
 
     @Override
-    public double setCost(EmployerProfiles employee, OrderExecutions orderExecution) {
+    public double setCost(EmployeeProfiles employee, OrderExecutions orderExecution) {
         return 0;
     }
     @Override
-    public int findFreeByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list) {
-        String query = " SELECT DISTINCT  ep.id, ep.fullName, ep.phone, ep.postId, ep.experience, ep.serviceCenterId from employer_profiles as ep\n" +
+    public int findFreeByServiceCenter(ServiceCenters center, ArrayList<EmployeeProfiles> list) {
+        String query = " SELECT DISTINCT  ep.id, ep.fullName, ep.phone, ep.postId, ep.experience, ep.serviceCenterId from employee_profiles as ep\n" +
                 " JOIN order_executions AS oe ON ep.id <> oe.employerId\n" +
                 " JOIN service_centers AS sc ON sc.id = ep.serviceCenterId\n" +
                 " WHERE sc.id = " + center.id();
@@ -189,7 +187,7 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
+                EmployeeProfiles profile = new EmployeeProfiles(resultSet.getLong("id"));
                 profile.fullName(resultSet.getString("fullName"));
                 profile.phone(resultSet.getString("phone"));
                 profile.postId(resultSet.getLong("postId"));
@@ -210,8 +208,8 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
     }
 
     @Override
-    public void findByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list) {
-        String query = " SELECT DISTINCT  ep.id, ep.fullName, ep.phone, ep.postId, ep.experience, ep.serviceCenterId from employer_profiles as ep\n" +
+    public void findByServiceCenter(ServiceCenters center, ArrayList<EmployeeProfiles> list) {
+        String query = " SELECT DISTINCT  ep.id, ep.fullName, ep.phone, ep.postId, ep.experience, ep.serviceCenterId from employee_profiles as ep\n" +
                 " JOIN service_centers AS sc ON sc.id = ep.serviceCenterId\n" +
                 " WHERE sc.id = " + center.id();
 
@@ -220,7 +218,7 @@ public class EmployerProfilesDAO extends AbstractDAO implements IEmployerProfile
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()) {
-                EmployerProfiles profile = new EmployerProfiles(resultSet.getLong("id"));
+                EmployeeProfiles profile = new EmployeeProfiles(resultSet.getLong("id"));
                 profile.fullName(resultSet.getString("fullName"));
                 profile.phone(resultSet.getString("phone"));
                 profile.postId(resultSet.getLong("postId"));

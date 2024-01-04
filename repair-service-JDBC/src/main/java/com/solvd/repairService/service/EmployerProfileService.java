@@ -10,15 +10,15 @@ import java.util.Random;
 public class EmployerProfileService {
     private final IEmployerProfileDAO dao;
 
-    public ArrayList<EmployerProfiles> get() throws Exception {
-        ArrayList<EmployerProfiles> profiles = new ArrayList<>();
+    public ArrayList<EmployeeProfiles> get() throws Exception {
+        ArrayList<EmployeeProfiles> profiles = new ArrayList<>();
         dao.get(profiles);
         if(profiles.isEmpty())
             throw new Exception("Workers aren't exist");
         return profiles;
     }
-    public EmployerProfiles get(Long id) {
-        EmployerProfiles profile = new EmployerProfiles(id);
+    public EmployeeProfiles get(Long id) {
+        EmployeeProfiles profile = new EmployeeProfiles(id);
         dao.get(profile);
         return profile;
     }
@@ -27,51 +27,51 @@ public class EmployerProfileService {
         this.dao = dao;
     }
 
-    public boolean checkAvailability(EmployerProfiles model) {
+    public boolean checkAvailability(EmployeeProfiles model) {
         return dao.checkAvailability(model);
     }
 
-    public int delete(EmployerProfiles model) {
+    public int delete(EmployeeProfiles model) {
         return dao.delete(model);
     }
 
-    public EmployerProfiles create(EmployerProfiles profile) {
+    public EmployeeProfiles create(EmployeeProfiles profile) {
 
          dao.create(profile);
          return profile;
     }
 
-    public EmployerProfiles selectById(EmployerProfiles profile) {
+    public EmployeeProfiles selectById(EmployeeProfiles profile) {
         return dao.selectById(profile);
     }
 
-    public List<EmployerProfiles> findByFullname(String fullname) {
+    public List<EmployeeProfiles> findByFullname(String fullname) {
         return dao.findByFullname(fullname);
     }
 
-    public List<EmployerProfiles> findByPhone(String phone) {
+    public List<EmployeeProfiles> findByPhone(String phone) {
         return dao.findByPhone(phone);
     }
 
-    public List<EmployerProfiles> selectByExperience(double role, boolean desc) {
+    public List<EmployeeProfiles> selectByExperience(double role, boolean desc) {
         return dao.selectByExperience(role, desc);
     }
 
-    public EmployerProfiles updateProfile(EmployerProfiles from, EmployerProfiles to) {
+    public EmployeeProfiles updateProfile(EmployeeProfiles from, EmployeeProfiles to) {
         return dao.updateProfile(from, to);
     }
 
-    public EmployerProfiles updatePost(EmployerProfiles employee, EmployerPosts post) {
+    public EmployeeProfiles updatePost(EmployeeProfiles employee, EmployeePosts post) {
         return dao.updatePost(employee, post);
     }
 
-    public double setCost(EmployerProfiles employee, OrderExecutions orderExecution) {
+    public double setCost(EmployeeProfiles employee, OrderExecutions orderExecution) {
         return dao.setCost(employee, orderExecution);
     }
 
-    public EmployerProfiles findByServiceCenter(ServiceCenters center) {
-        ArrayList<EmployerProfiles> list = new ArrayList<>();
-        EmployerProfiles profile = null;
+    public EmployeeProfiles findByServiceCenter(ServiceCenters center) {
+        ArrayList<EmployeeProfiles> list = new ArrayList<>();
+        EmployeeProfiles profile = null;
         dao.findFreeByServiceCenter(center, list);
         if (list.isEmpty())
             dao.findByServiceCenter(center, list);
@@ -80,12 +80,12 @@ public class EmployerProfileService {
         return profile;
     }
 
-    public void detectEquipmentProblem(EmployerProfiles employee, Equipments equipment, ServiceCenters center) {
+    public void detectEquipmentProblem(EmployeeProfiles employee, Equipments equipment, ServiceCenters center) {
 
 
     }
 
-    public void update(EmployerProfiles worker, EmployerProfiles newWorker) {
+    public void update(EmployeeProfiles worker, EmployeeProfiles newWorker) {
         dao.updateProfile(worker, newWorker);
     }
 }

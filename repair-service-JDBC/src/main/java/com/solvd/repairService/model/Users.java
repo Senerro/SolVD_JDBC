@@ -25,6 +25,10 @@ public class Users extends AbstractModel {
         this.password = password;
         role = false;
     }
+    public Users(String login, String password, boolean role) {
+        this(login, password);
+        this.role = role;
+    }
 
     public Users(Long id, String login, String password, boolean role) {
         this(id);

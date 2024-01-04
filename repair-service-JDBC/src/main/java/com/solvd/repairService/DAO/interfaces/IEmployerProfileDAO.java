@@ -1,7 +1,7 @@
 package com.solvd.repairService.DAO.interfaces;
 
-import com.solvd.repairService.model.EmployerPosts;
-import com.solvd.repairService.model.EmployerProfiles;
+import com.solvd.repairService.model.EmployeePosts;
+import com.solvd.repairService.model.EmployeeProfiles;
 import com.solvd.repairService.model.OrderExecutions;
 import com.solvd.repairService.model.ServiceCenters;
 
@@ -9,25 +9,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface IEmployerProfileDAO extends IAbstractDAO {
-    void create(EmployerProfiles profile);
-    void get(ArrayList<EmployerProfiles> list);
-    void get(EmployerProfiles list);
+    void create(EmployeeProfiles profile);
+    void get(ArrayList<EmployeeProfiles> list);
+    void get(EmployeeProfiles list);
 
-    EmployerProfiles selectById(EmployerProfiles profile);
+    EmployeeProfiles selectById(EmployeeProfiles profile);
 
-    List<EmployerProfiles> findByFullname(String fullname);
+    List<EmployeeProfiles> findByFullname(String fullname);
 
-    List<EmployerProfiles> findByPhone(String phone);
+    List<EmployeeProfiles> findByPhone(String phone);
 
-    List<EmployerProfiles> selectByExperience(double role, boolean desc);
+    List<EmployeeProfiles> selectByExperience(double role, boolean desc);
 
-    EmployerProfiles updateProfile(EmployerProfiles from, EmployerProfiles to);
+    EmployeeProfiles updateProfile(EmployeeProfiles from, EmployeeProfiles to);
 
-    EmployerProfiles updatePost(EmployerProfiles employee, EmployerPosts post);
+    EmployeeProfiles updatePost(EmployeeProfiles employee, EmployeePosts post);
 
-    double setCost(EmployerProfiles employee, OrderExecutions orderExecution);
+    double setCost(EmployeeProfiles employee, OrderExecutions orderExecution);
 
-    int findFreeByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list);
+    int findFreeByServiceCenter(ServiceCenters center, ArrayList<EmployeeProfiles> list);
 
-    void findByServiceCenter(ServiceCenters center, ArrayList<EmployerProfiles> list);
+    void findByServiceCenter(ServiceCenters center, ArrayList<EmployeeProfiles> list);
 }
