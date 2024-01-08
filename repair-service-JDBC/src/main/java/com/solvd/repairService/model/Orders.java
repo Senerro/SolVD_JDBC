@@ -14,6 +14,10 @@ public class Orders extends AbstractModel{
     public Orders(Long id) {
         super(id, Orders.class);
     }
+    public Orders()
+    {
+        this(0L);
+    }
     public Orders(Long id, Long userId, Long equipmentId, Long executeId)
     {
         this(id);

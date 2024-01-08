@@ -37,7 +37,7 @@ public class OrdersView {
             : new OrderExecutionsService(new OrderExecutionsBatisDAO());
     private static final EmployerProfileService serviceEP = Global.state()
             ? new EmployerProfileService(new EmployeeProfilesDAO())
-            : new EmployerProfileService(new EmployerProfilesBatisDAO());
+            : new EmployerProfileService(new EmployeeProfilesBatisDAO());
 
     private static final ProblemService serviceP = Global.state()
             ? new ProblemService(new ProblemsDAO())

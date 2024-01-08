@@ -26,9 +26,30 @@ public class EmployeeProfiles extends AbstractModel {
         this.experience = experience;
         this.serviceCenterId = serviceCenterId;
     }
+    public EmployeeProfiles(Long id, String fullName, String phone, double experience, Long serviceCenterId) {
+        this(id);
+        this.fullName = fullName;
+        this.phone = phone;
+        this.postId = postId;
+        this.experience = experience;
+        this.serviceCenterId = serviceCenterId;
+    }
+
+    public EmployeeProfiles(String fullname, String phone, double experience, Long serviceCenterId) {
+        this(0L, fullname, phone, experience, serviceCenterId);
+    }
+
+    public Users user() {
+        return user;
+    }
 
     public void post(EmployeePosts post) {
         this.post = post;
+        postId = post.id();
+    }
+
+    public EmployeePosts post() {
+        return post;
     }
 
     public double experience() {
@@ -41,6 +62,7 @@ public class EmployeeProfiles extends AbstractModel {
 
     public void serviceCenters(ServiceCenters center) {
         this.center = center;
+        this.serviceCenterId = center.id();
     }
 
     public void experience(double experience) {
@@ -73,6 +95,11 @@ public class EmployeeProfiles extends AbstractModel {
 
     public Long serviceCenterId() {
         return serviceCenterId;
+    }
+
+    public void user(Users user) {
+        this.user = user;
+        this.id(user.id());
     }
 
     public void serviceCenterId(Long serviceCenterId) {

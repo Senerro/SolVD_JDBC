@@ -24,8 +24,8 @@
         <experience>8</experience>
         <user>
             <role>true</role>
-            <password>StaxPassword</password>
             <login>StaxLogin</login>
+            <password>StaxPassword</password>
         </user>
         <post>
             <id>4</id>
@@ -35,7 +35,7 @@
     </employee>
 
     <equipment>
-        <type>meme</type>
+        <type>meme4</type>
         <producer>Statham picture</producer>
         <model>Boyz quotes</model>
         <cost>999.99</cost>

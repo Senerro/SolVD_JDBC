@@ -1,9 +1,9 @@
 package com.solvd.repairService;
 
-import com.solvd.repairService.DAO.JDBC.UsersDAO;
-import com.solvd.repairService.helpers.parsers.Stax;
+import com.solvd.repairService.helpers.parsers.StaxPath;
 import com.solvd.repairService.helpers.parsers.StaxStreamProcessor;
-import com.solvd.repairService.model.CustomerProfiles;
+import com.solvd.repairService.model.*;
+import com.solvd.repairService.model.dto.OrderDTO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,6 +11,8 @@ import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class testMAin {
@@ -33,7 +35,7 @@ public class testMAin {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }*/
-        var a = Stax.get(new CustomerProfiles());
-        LOGGER.debug(a);
+
     }
 }
+//

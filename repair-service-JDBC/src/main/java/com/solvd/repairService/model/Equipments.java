@@ -42,6 +42,9 @@ public class Equipments extends AbstractModel {
     public double price() {
         return price;
     }
+    public void price(Double price) {
+        this.price = price;
+    }
 
     public String type() {
         return type;

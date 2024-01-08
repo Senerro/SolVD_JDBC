@@ -24,6 +24,7 @@ public class EmployeePosts extends AbstractModel {
         this(0L);
     }
 
+
     public String description() {
         return description;
     }

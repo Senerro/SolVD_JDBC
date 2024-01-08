@@ -1,447 +1,804 @@
-[INFO ] 2024-01-04 15:53:34.447 [main] testMAin - xmlNick
-[INFO ] 2024-01-04 16:08:41.676 [main] testMAin - xmlLogin
-[INFO ] 2024-01-04 16:09:33.536 [main] testMAin - xmlLogin
-[INFO ] 2024-01-04 16:10:06.380 [main] testMAin - xmlPassword
-[INFO ] 2024-01-04 16:11:32.567 [main] testMAin - xmlLogin
-[INFO ] 2024-01-04 16:11:32.572 [main] testMAin - xmlPassword
-[INFO ] 2024-01-04 16:13:49.448 [main] testMAin - xmlLogin
-[INFO ] 2024-01-04 16:13:49.455 [main] testMAin - xmlPassword
-[DEBUG] 2024-01-04 17:37:52.795 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:37:52.812 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:37:52.812 [main] ValidationView - 2: MyBatis
-[INFO ] 2024-01-04 17:37:56.510 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:37:56.511 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:37:56.511 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:37:58.343 [main] ValidationView - Input login
-[DEBUG] 2024-01-04 17:39:15.334 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:39:15.351 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:39:15.351 [main] ValidationView - 2: MyBatis
-[INFO ] 2024-01-04 17:39:18.906 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:39:18.907 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:39:18.907 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:39:20.553 [main] AdminView - jdbc or XML?
-[INFO ] 2024-01-04 17:39:20.553 [main] AdminView - 1: jdbc
-[INFO ] 2024-01-04 17:39:20.554 [main] AdminView - 2: XML
-[INFO ] 2024-01-04 17:39:25.329 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:39:25.329 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:39:25.329 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:39:25.330 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:39:25.330 [main] AdminView - 5. Services
-[DEBUG] 2024-01-04 17:49:50.285 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:49:50.292 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:49:50.293 [main] ValidationView - 2: MyBatis
-[INFO ] 2024-01-04 17:49:52.632 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:49:52.632 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:49:52.632 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:49:53.799 [main] AdminView - jdbc or XML?
-[INFO ] 2024-01-04 17:49:53.800 [main] AdminView - 1: jdbc
-[INFO ] 2024-01-04 17:49:53.800 [main] AdminView - 2: XML
-[INFO ] 2024-01-04 17:50:17.231 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:50:17.232 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:50:17.233 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:50:17.233 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:50:17.234 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 17:50:18.876 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 17:50:18.876 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 17:50:18.877 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 17:50:18.877 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 17:50:18.877 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 17:50:18.879 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 17:50:18.879 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 17:50:18.879 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 17:50:18.880 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 17:50:18.880 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 17:50:18.881 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 17:50:18.881 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 17:50:18.881 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:50:18.882 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:50:18.882 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:50:18.883 [main] AdminView - 4: delete
-[ERROR] 2024-01-04 17:50:20.818 [main] CustomerProfilesDAO - Some error with table customer_profiles
-query is INSERT INTO customer_profiles  VALUES ( 0, 'xmlNick', '+375(25)...' )
-Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`customer_profiles`, CONSTRAINT `customer_profiles_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
-[DEBUG] 2024-01-04 17:52:38.158 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:52:38.163 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:52:38.164 [main] ValidationView - 2: MyBatis
-[INFO ] 2024-01-04 17:52:41.185 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:52:41.186 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:52:41.186 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:53:01.051 [main] AdminView - jdbc or XML?
-[INFO ] 2024-01-04 17:53:01.051 [main] AdminView - 1: jdbc
-[INFO ] 2024-01-04 17:53:01.052 [main] AdminView - 2: XML
-[INFO ] 2024-01-04 17:53:02.955 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:53:02.956 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:53:02.956 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:53:02.957 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:53:02.957 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 17:53:04.598 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 17:53:04.598 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 17:53:04.598 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 17:53:04.601 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 17:53:04.601 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 17:53:04.601 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 17:53:04.602 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 17:53:04.602 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 17:53:04.602 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:53:04.603 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:53:04.603 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:53:04.603 [main] AdminView - 4: delete
-[DEBUG] 2024-01-04 17:53:54.296 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:53:54.300 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:53:54.300 [main] ValidationView - 2: MyBatis
-[INFO ] 2024-01-04 17:53:56.892 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:53:56.893 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:53:56.893 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:53:57.714 [main] AdminView - jdbc or XML?
-[INFO ] 2024-01-04 17:53:57.715 [main] AdminView - 1: jdbc
-[INFO ] 2024-01-04 17:53:57.715 [main] AdminView - 2: XML
-[INFO ] 2024-01-04 17:53:58.809 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:53:58.810 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:53:58.810 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:53:58.810 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:53:58.811 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 17:54:00.703 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 17:54:00.703 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 17:54:00.704 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 17:54:00.704 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 17:54:00.704 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 17:54:00.707 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 17:54:00.707 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 17:54:00.707 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 4: delete
-[DEBUG] 2024-01-04 17:54:03.370 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
-[DEBUG] 2024-01-04 17:54:03.388 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:03.389 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:03.389 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:03.390 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:46.717 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:54:46.722 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:54:46.723 [main] ValidationView - 2: MyBatis
-[INFO ] 2024-01-04 17:54:48.009 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:54:48.010 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:54:48.010 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:54:50.307 [main] AdminView - jdbc or XML?
-[INFO ] 2024-01-04 17:54:50.307 [main] AdminView - 1: jdbc
-[INFO ] 2024-01-04 17:54:50.308 [main] AdminView - 2: XML
-[INFO ] 2024-01-04 17:54:52.048 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:54:52.049 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:54:52.049 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:54:52.050 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:54:52.050 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 17:54:53.744 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 17:54:53.744 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 17:54:53.744 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 17:54:53.745 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 17:54:53.745 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 17:54:53.745 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 17:54:53.747 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 17:54:53.747 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 17:54:53.747 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:54:53.749 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:54:53.749 [main] AdminView - 4: delete
-[DEBUG] 2024-01-04 17:54:55.827 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
-[DEBUG] 2024-01-04 17:54:55.844 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:55.845 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:55.845 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:54:55.845 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-[DEBUG] 2024-01-04 17:55:46.289 [main] testMAin - [0] - xmlNick
-+375(25)...
-[DEBUG] 2024-01-04 17:58:36.765 [main] testMAin - [0] - xmlNick
-+375(25)...
-[DEBUG] 2024-01-04 17:58:48.925 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:58:48.940 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:58:48.941 [main] ValidationView - 2: Stax
-[INFO ] 2024-01-04 17:58:52.094 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:58:52.094 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:58:52.094 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:58:52.934 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:58:52.934 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:58:52.935 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:58:52.935 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:58:52.935 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 17:58:54.523 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 17:58:54.524 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 17:58:54.524 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 17:58:54.525 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 17:58:54.525 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 17:58:54.525 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 17:58:54.526 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 17:58:54.526 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 17:58:54.527 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 17:58:54.527 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 17:58:54.528 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 17:58:54.528 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 17:58:54.529 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 17:58:54.530 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 17:58:54.531 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 17:58:54.531 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 17:58:54.532 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:58:54.532 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:58:54.533 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:58:54.533 [main] AdminView - 4: delete
-[INFO ] 2024-01-04 17:58:56.085 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:58:56.085 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:58:56.086 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:58:56.086 [main] AdminView - 4: delete
-[DEBUG] 2024-01-04 17:59:04.304 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 17:59:04.310 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 17:59:04.310 [main] ValidationView - 2: Stax
-[INFO ] 2024-01-04 17:59:05.766 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 17:59:05.767 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 17:59:05.767 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 17:59:09.098 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 17:59:10.624 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 17:59:10.624 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 17:59:10.624 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 17:59:10.628 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 17:59:10.628 [main] AdminView - [53] - xmlNick
-+375(25)...
-[INFO ] 2024-01-04 17:59:10.628 [main] AdminView - 1: get
-[INFO ] 2024-01-04 17:59:10.629 [main] AdminView - 2: add
-[INFO ] 2024-01-04 17:59:10.629 [main] AdminView - 3: update
-[INFO ] 2024-01-04 17:59:10.629 [main] AdminView - 4: delete
-[DEBUG] 2024-01-04 18:00:10.871 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-04 18:00:10.878 [main] ValidationView - 1: JDBC
-[DEBUG] 2024-01-04 18:00:10.878 [main] ValidationView - 2: Stax
-[INFO ] 2024-01-04 18:00:12.820 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-04 18:00:12.820 [main] ValidationView - 1: log in
-[INFO ] 2024-01-04 18:00:12.821 [main] ValidationView - 2: registration
-[INFO ] 2024-01-04 18:00:13.953 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 18:00:13.954 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 18:00:13.954 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 18:00:13.954 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 18:00:13.955 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 18:00:19.390 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 18:00:19.390 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 18:00:19.391 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 18:00:19.391 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 18:00:19.391 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 18:00:19.393 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 18:00:19.393 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 18:00:19.393 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - 1: get
-[INFO ] 2024-01-04 18:00:19.395 [main] AdminView - 2: add
-[INFO ] 2024-01-04 18:00:19.395 [main] AdminView - 3: update
-[INFO ] 2024-01-04 18:00:19.395 [main] AdminView - 4: delete
-[INFO ] 2024-01-04 18:01:01.991 [main] AdminView - 1: get
-[INFO ] 2024-01-04 18:01:01.994 [main] AdminView - 2: add
-[INFO ] 2024-01-04 18:01:01.998 [main] AdminView - 3: update
-[INFO ] 2024-01-04 18:01:02.002 [main] AdminView - 4: delete
-[INFO ] 2024-01-04 18:02:53.776 [main] AdminView - 1. Customers
-[INFO ] 2024-01-04 18:02:53.777 [main] AdminView - 2. Workers
-[INFO ] 2024-01-04 18:02:53.778 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-04 18:02:53.779 [main] AdminView - 4. Orders
-[INFO ] 2024-01-04 18:02:53.780 [main] AdminView - 5. Services
-[INFO ] 2024-01-04 18:02:56.828 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-[INFO ] 2024-01-04 18:02:56.829 [main] AdminView - [2] - User#2
-None
-[INFO ] 2024-01-04 18:02:56.830 [main] AdminView - [6] - pas2
-1
-[INFO ] 2024-01-04 18:02:56.831 [main] AdminView - [7] - pas3
-1
-[INFO ] 2024-01-04 18:02:56.832 [main] AdminView - [8] - pas4
-1
-[INFO ] 2024-01-04 18:02:56.833 [main] AdminView - [25] - User#25
-None
-[INFO ] 2024-01-04 18:02:56.834 [main] AdminView - [26] - User#26
-None
-[INFO ] 2024-01-04 18:02:56.835 [main] AdminView - [27] - User#27
-None
-[INFO ] 2024-01-04 18:02:56.836 [main] AdminView - [29] - User#29
-None
-[INFO ] 2024-01-04 18:02:56.837 [main] AdminView - [32] - User#32
-None
-[INFO ] 2024-01-04 18:02:56.838 [main] AdminView - [36] - User#36
-None
-[INFO ] 2024-01-04 18:02:56.839 [main] AdminView - [37] - User#37
-None
-[INFO ] 2024-01-04 18:02:56.840 [main] AdminView - [38] - User#38
-None
-[INFO ] 2024-01-04 18:02:56.841 [main] AdminView - [39] - User#39
-None
-[INFO ] 2024-01-04 18:02:56.842 [main] AdminView - [42] - Demonstration Nick
-some phone
-[INFO ] 2024-01-04 18:02:56.843 [main] AdminView - [43] - NewNick
-NewPhone
-[INFO ] 2024-01-04 18:02:56.844 [main] AdminView - [54] - xmlNick
-+375(25)...
-[INFO ] 2024-01-04 18:02:56.845 [main] AdminView - 1: get
-[INFO ] 2024-01-04 18:02:56.845 [main] AdminView - 2: add
-[INFO ] 2024-01-04 18:02:56.846 [main] AdminView - 3: update
-[INFO ] 2024-01-04 18:02:56.847 [main] AdminView - 4: delete
-[INFO ] 2024-01-04 18:03:04.882 [main] AdminView - Input id
-[INFO ] 2024-01-04 18:03:10.312 [main] AdminView - [54] - xmlNick
-+375(25)...
-[INFO ] 2024-01-04 18:03:10.313 [main] AdminView - 1: get
-[INFO ] 2024-01-04 18:03:10.314 [main] AdminView - 2: add
-[INFO ] 2024-01-04 18:03:10.315 [main] AdminView - 3: update
-[INFO ] 2024-01-04 18:03:10.316 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 12:52:48.043 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 12:52:48.055 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: 
+[INFO ] 2024-01-08 12:52:48.056 [main] testMAin - [0] post: 
+[INFO ] 2024-01-08 12:54:35.308 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 12:54:35.327 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: 
+[INFO ] 2024-01-08 12:54:35.329 [main] testMAin - [0] post: 
+[INFO ] 2024-01-08 12:55:46.007 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 12:55:46.013 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: 
+[INFO ] 2024-01-08 12:55:46.015 [main] testMAin - [0] post: 
+[INFO ] 2024-01-08 12:57:55.328 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 12:57:55.341 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: 
+[INFO ] 2024-01-08 12:57:55.343 [main] testMAin - [0] post: 
+[INFO ] 2024-01-08 12:59:02.084 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 12:59:02.091 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: 
+[INFO ] 2024-01-08 12:59:02.092 [main] testMAin - [0] post: 
+[INFO ] 2024-01-08 13:00:24.776 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 13:00:24.785 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: 
+[INFO ] 2024-01-08 13:00:24.786 [main] testMAin - [0] post: 
+[INFO ] 2024-01-08 13:01:38.276 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 13:01:38.281 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition:  repairman
+[INFO ] 2024-01-08 13:01:38.282 [main] testMAin - [4] post:  repairman
+[INFO ] 2024-01-08 13:13:50.490 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-08 13:13:50.497 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition:  repairman
+[INFO ] 2024-01-08 13:13:50.499 [main] testMAin - [4] post:  repairman
+[DEBUG] 2024-01-08 13:42:45.930 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 13:42:45.935 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 13:42:45.935 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 13:42:48.094 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 13:42:48.095 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 13:42:48.095 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 13:42:51.493 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 13:42:52.054 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 13:42:53.225 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 13:42:53.226 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 13:42:53.832 [main] AdminView - 5. Services
+[DEBUG] 2024-01-08 14:03:28.400 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:03:28.405 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:03:28.405 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:03:31.925 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:03:31.925 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:03:31.925 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:03:35.273 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:03:35.427 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:03:35.584 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:03:35.585 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:03:35.974 [main] AdminView - 5. Services
+[ERROR] 2024-01-08 14:03:41.450 [main] ConnectionPool - fail connection to database:
+url jdbc:mysql://localhost/equipment_repair_service?serverTimezone=Europe/Moscow&useSSL=false
+username root
+password 1234
+[DEBUG] 2024-01-08 14:04:15.910 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:04:15.917 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:04:15.917 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:04:17.845 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:04:17.846 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:04:17.846 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:04:20.116 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:04:20.263 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:04:20.428 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:04:20.430 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:04:20.591 [main] AdminView - 5. Services
+[ERROR] 2024-01-08 14:04:25.298 [main] CustomerProfileView - Some error with table users
+query is  SELECT w.id, fullName AS name, phone, ep.role, experience  FROM employee_profiles AS w 
+ JOIN employer_posts AS ep ON ep.id = postId
+Exception is java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.employer_posts' doesn't exist
+[DEBUG] 2024-01-08 14:06:43.925 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:06:43.932 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:06:43.933 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:06:48.268 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:06:48.269 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:06:48.269 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:06:57.798 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:06:57.963 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:06:58.170 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:06:58.171 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:06:58.346 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:07:01.462 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:07:01.463 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:07:01.463 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:07:01.464 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:07:01.464 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:07:01.465 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:07:01.465 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:07:01.465 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:07:01.466 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 14:07:29.813 [main] AdminView - User with this login already exist
+[INFO ] 2024-01-08 14:07:33.657 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:07:33.658 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:07:33.659 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:07:33.661 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 14:08:03.690 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:08:03.697 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:08:03.697 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:08:05.565 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:08:05.565 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:08:05.565 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:08:06.934 [main] ValidationView - Input login
+[DEBUG] 2024-01-08 14:08:12.310 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:08:12.316 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:08:12.316 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:08:13.538 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:08:13.539 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:08:13.539 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:08:15.823 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:08:15.987 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:08:16.129 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:08:16.130 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:08:16.290 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:08:22.416 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:22.416 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:22.417 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:22.417 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:22.417 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:22.418 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:08:22.418 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:08:22.418 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:08:22.418 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 14:08:31.803 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:08:31.804 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:08:31.804 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:08:31.805 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:08:31.805 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:08:35.955 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:35.955 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:35.956 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:35.957 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:35.957 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:08:35.958 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:08:35.958 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:08:35.959 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:08:35.960 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 14:13:50.138 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:13:50.146 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:13:50.147 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:14:07.159 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:14:07.159 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:14:07.159 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:14:10.039 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:14:10.040 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:14:10.040 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:14:10.040 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:14:10.041 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:14:12.243 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:14:12.243 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:14:12.244 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:14:12.244 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:14:12.244 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:14:12.245 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:14:12.245 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:14:12.245 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:14:12.246 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 14:14:35.785 [main] AdminView - profile for employee xmlFullName already exist
+[INFO ] 2024-01-08 14:14:38.410 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:14:38.411 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:14:38.413 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:14:38.414 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 14:15:06.949 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:15:06.957 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:15:06.958 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:15:08.687 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:15:08.688 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:15:08.688 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:15:09.973 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:15:09.974 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:15:09.974 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:15:09.974 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:15:09.975 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:15:14.895 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:15:14.895 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:15:14.896 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:15:14.896 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:15:14.897 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:15:14.897 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:15:14.897 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:15:14.898 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:15:14.898 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 14:15:16.560 [main] AdminView - Input id
+[INFO ] 2024-01-08 14:15:24.236 [main] AdminView - Input id
+[INFO ] 2024-01-08 14:15:31.004 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman, location: name 1 Kolotushkina st.
+[INFO ] 2024-01-08 14:15:31.005 [main] AdminView - You can not get worker when any customer doesn't exist
+[INFO ] 2024-01-08 14:15:31.005 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:15:31.005 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:15:31.005 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:15:31.006 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 14:18:38.298 [main] AdminView - profile for employee xmlFullName already exist
+[INFO ] 2024-01-08 14:18:38.299 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:18:38.300 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:18:38.301 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:18:38.303 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 14:22:40.407 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:22:40.411 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:22:40.412 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:22:43.899 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:22:43.900 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:22:43.900 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:23:19.191 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:23:19.192 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:23:19.192 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:23:19.192 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:23:19.193 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:23:21.570 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:23:21.571 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:23:21.571 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:23:21.571 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:23:21.572 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:23:21.572 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:23:21.572 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:23:21.573 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:23:21.573 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 14:23:40.257 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 4, 'xmlFullName', '+375(25)...', 'null', '5.0', 1 )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'postId' at row 1
+[DEBUG] 2024-01-08 14:24:32.644 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:24:32.649 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:24:32.650 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:24:35.831 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:24:35.831 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:24:35.832 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:24:37.019 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:24:37.020 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:24:37.020 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:24:37.020 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:24:37.020 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:24:38.484 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:24:38.485 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:24:38.485 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:24:38.486 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:24:38.486 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:24:38.486 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:24:38.487 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:24:38.487 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:24:38.487 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 14:25:33.428 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:25:33.433 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:25:33.434 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-08 14:26:38.828 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:26:38.834 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:26:38.835 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:26:51.252 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:26:51.253 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:26:51.253 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:26:52.148 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:26:52.149 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:26:52.149 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:26:52.149 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:26:52.150 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:26:52.994 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:26:52.995 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:26:52.996 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:26:52.996 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:26:52.996 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:26:52.997 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:26:52.997 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:26:52.997 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:26:52.998 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 14:27:06.105 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 0, 'xmlFullName', '+375(25)...', 4, '5.0', 1 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_3` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[DEBUG] 2024-01-08 14:28:52.677 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 14:28:52.683 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 14:28:52.683 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 14:28:55.882 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 14:28:55.882 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 14:28:55.882 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 14:28:56.776 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:28:56.776 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:28:56.777 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:28:56.777 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:28:56.777 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:29:01.267 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:01.267 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:01.268 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:01.268 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:01.269 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:01.269 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:29:01.270 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:29:01.270 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:29:01.271 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 14:29:13.329 [main] AdminView - profile was successfully created
+[INFO ] 2024-01-08 14:29:15.309 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:29:15.312 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:29:15.313 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:29:15.315 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 14:29:18.644 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 14:29:18.645 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 14:29:18.646 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 14:29:18.647 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 14:29:18.648 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 14:29:20.356 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:20.357 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:20.358 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:20.360 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:20.361 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:20.362 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 14:29:20.363 [main] AdminView - 1: get
+[INFO ] 2024-01-08 14:29:20.364 [main] AdminView - 2: add
+[INFO ] 2024-01-08 14:29:20.365 [main] AdminView - 3: update
+[INFO ] 2024-01-08 14:29:20.366 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 14:47:32.231 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition:  repairman
+[DEBUG] 2024-01-08 14:48:15.981 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition:  repairman
+[DEBUG] 2024-01-08 14:48:27.726 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition:  repairman
+[DEBUG] 2024-01-08 14:48:30.388 [main] testMAin - Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition:  repairman
+[DEBUG] 2024-01-08 15:55:10.591 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 15:55:10.599 [main] testMAin - Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, location: name4 Kolotushkin house, Pushkin st
+[DEBUG] 2024-01-08 15:55:10.599 [main] testMAin - com.solvd.repairService.model.Equipments@229c6181
+[DEBUG] 2024-01-08 15:55:10.600 [main] testMAin - [cleaning, modifying]
+[DEBUG] 2024-01-08 15:55:25.676 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 15:55:25.681 [main] testMAin - Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, location: name4 Kolotushkin house, Pushkin st
+[DEBUG] 2024-01-08 15:55:25.681 [main] testMAin - com.solvd.repairService.model.Equipments@46cdf8bd
+[DEBUG] 2024-01-08 15:56:30.630 [main] testMAin - [cleaning, modifying]
+[DEBUG] 2024-01-08 15:56:34.691 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 15:56:34.697 [main] testMAin - Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, location: name4 Kolotushkin house, Pushkin st
+[DEBUG] 2024-01-08 15:56:34.698 [main] testMAin - com.solvd.repairService.model.Equipments@3e27aa33
+[DEBUG] 2024-01-08 15:57:54.073 [main] testMAin - [cleaning, modifying]
+[DEBUG] 2024-01-08 16:00:57.808 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 16:00:57.814 [main] testMAin - Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 yearsposition: repairman, location: name4 Kolotushkin house, Pushkin st
+[DEBUG] 2024-01-08 16:00:57.815 [main] testMAin - com.solvd.repairService.model.Equipments@4686afc2
+[DEBUG] 2024-01-08 16:00:57.815 [main] testMAin - [cleaning, modifying]
+[DEBUG] 2024-01-08 16:01:08.048 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 16:01:08.059 [main] testMAin - Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 yearsposition: repairman, location: name4 Kolotushkin house, Pushkin st
+[DEBUG] 2024-01-08 16:01:08.060 [main] testMAin - com.solvd.repairService.model.Equipments@2e385cce
+[DEBUG] 2024-01-08 16:03:39.855 [main] testMAin - [cleaning, modifying]
+[DEBUG] 2024-01-08 16:03:44.013 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 16:03:44.019 [main] testMAin - Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 yearsposition: repairman, location: name4 Kolotushkin house, Pushkin st
+[DEBUG] 2024-01-08 16:03:44.020 [main] testMAin - com.solvd.repairService.model.Equipments@2e385cce
+[DEBUG] 2024-01-08 16:06:23.596 [main] testMAin - [cleaning, modifying]
+[DEBUG] 2024-01-08 16:09:46.509 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 16:11:11.898 [main] testMAin - [0] - Staxon Statham
++44(819)...
+[DEBUG] 2024-01-08 16:54:52.788 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 16:54:52.795 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 16:54:52.796 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 16:54:55.748 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 16:54:55.749 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 16:54:55.749 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 16:54:58.037 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 16:54:58.038 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 16:54:58.038 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 16:54:58.038 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 16:54:58.039 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 16:55:01.738 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:55:01.738 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:55:01.739 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:55:01.739 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 16:55:42.421 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 58, 'Radion AMDvov', '+375(29)...', 4, '8.0', 4 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[ERROR] 2024-01-08 16:55:48.639 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 16:55:49.146 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[ERROR] 2024-01-08 16:55:50.138 [main] AdminView - [Ljava.lang.StackTraceElement;@4ff4357f
+[INFO ] 2024-01-08 16:56:04.395 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:56:04.396 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:56:04.397 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:56:04.398 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 16:56:10.071 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 16:56:10.077 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 16:56:10.078 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 16:56:11.864 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 16:56:11.864 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 16:56:11.865 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 16:56:12.994 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 16:56:12.995 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 16:56:12.995 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 16:56:12.996 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 16:56:12.996 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 16:56:16.066 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 16:56:16.067 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-08 16:56:16.067 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-08 16:56:16.068 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 16:56:16.068 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-08 16:56:16.068 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-08 16:56:16.069 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:56:16.069 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:56:16.069 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:56:16.070 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 16:56:18.728 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 16:56:18.728 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 16:56:18.729 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 16:56:18.730 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 16:56:18.730 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 16:56:21.148 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:56:21.148 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:56:21.148 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:56:21.149 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 16:56:48.936 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-08 16:56:59.511 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 58, 'Radion AMDvov', '+375(29)...', 4, '8.0', 4 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[ERROR] 2024-01-08 16:57:02.137 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 16:57:02.480 [main] AdminView - User with loginStaxLogin is already existed
+[ERROR] 2024-01-08 16:57:02.652 [main] AdminView - [Ljava.lang.StackTraceElement;@2f40e5db
+[INFO ] 2024-01-08 16:57:02.979 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:57:02.980 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:57:02.981 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:57:02.982 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 16:57:50.976 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-08 16:57:50.987 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 58, 'Radion AMDvov', '+375(29)...', 4, '8.0', 4 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[ERROR] 2024-01-08 16:57:51.005 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 16:57:51.006 [main] AdminView - User with loginStaxLogin is already existed
+[ERROR] 2024-01-08 16:57:51.008 [main] AdminView - [Ljava.lang.StackTraceElement;@4ff4357f
+[INFO ] 2024-01-08 16:57:51.009 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:57:51.010 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:57:51.011 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:57:51.012 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 16:58:09.640 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-08 16:58:53.071 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 58, 'Radion AMDvov', '+375(29)...', 4, '8.0', 4 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[ERROR] 2024-01-08 16:59:15.993 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 16:59:15.995 [main] AdminView - User with loginStaxLogin is already existed
+[ERROR] 2024-01-08 16:59:15.996 [main] AdminView - [Ljava.lang.StackTraceElement;@146587a2
+[INFO ] 2024-01-08 16:59:15.997 [main] AdminView - 1: get
+[INFO ] 2024-01-08 16:59:15.998 [main] AdminView - 2: add
+[INFO ] 2024-01-08 16:59:15.999 [main] AdminView - 3: update
+[INFO ] 2024-01-08 16:59:16.000 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:02:23.515 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:02:23.520 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:02:23.520 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:02:25.187 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:02:25.187 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:02:25.188 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:02:42.562 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:02:42.563 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:02:42.563 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:02:42.563 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:02:42.564 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:02:45.345 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:02:45.346 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:02:45.346 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:02:45.346 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 17:03:07.122 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-08 17:03:08.675 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 58, 'Radion AMDvov', '+375(29)...', 4, '8.0', 4 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[ERROR] 2024-01-08 17:03:13.066 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:03:13.067 [main] AdminView - User with loginStaxLogin is already existed
+[ERROR] 2024-01-08 17:03:13.072 [main] AdminView - [Ljava.lang.StackTraceElement;@2f40e5db
+[INFO ] 2024-01-08 17:03:13.073 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:03:13.074 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:03:13.075 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:03:13.075 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 17:04:56.398 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-08 17:04:56.410 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 58, 'Radion AMDvov', '+375(29)...', 4, '8.0', 4 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[DEBUG] 2024-01-08 17:05:09.972 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:05:09.979 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:05:09.979 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:05:11.543 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:05:11.544 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:05:11.544 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:05:12.677 [main] ValidationView - Input login
+[DEBUG] 2024-01-08 17:05:18.877 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:05:18.884 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:05:18.885 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:05:22.059 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:05:22.059 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:05:22.060 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:05:22.955 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:05:22.956 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:05:22.956 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:05:22.956 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:05:22.957 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:05:25.030 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:05:25.031 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:05:25.031 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:05:25.031 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 17:06:46.816 [main] AdminView - profile for employee wasn't created
+[DEBUG] 2024-01-08 17:06:50.846 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:06:50.853 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:06:50.853 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:06:55.354 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:06:55.355 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:06:55.355 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:06:57.210 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:06:57.211 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:06:57.211 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:06:57.211 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:06:57.212 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:06:58.783 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:06:58.784 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:06:58.784 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:06:58.784 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 17:07:33.482 [main] AdminView - profile for employee wasn't created
+[DEBUG] 2024-01-08 17:07:38.362 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:07:38.366 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:07:38.367 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:07:46.030 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:07:46.031 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:07:46.031 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:07:48.530 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:07:48.530 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:07:48.530 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:07:48.531 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:07:48.531 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:07:49.994 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:07:49.994 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:07:49.994 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:07:49.995 [main] AdminView - 4: delete
+[WARN ] 2024-01-08 17:08:25.783 [main] AdminView - profile for employee wasn't created
+[WARN ] 2024-01-08 17:08:35.427 [main] AdminView - profile was created
+[ERROR] 2024-01-08 17:08:49.385 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:08:50.868 [main] AdminView - Index -1 out of bounds for length 0
+[ERROR] 2024-01-08 17:09:14.559 [main] AdminView - [Ljava.lang.StackTraceElement;@331acdad
+[INFO ] 2024-01-08 17:09:14.560 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:09:14.561 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:09:14.562 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:09:14.563 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:09:20.375 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( '999.99', 'null', 'null', '0.0' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '999.99-null-null' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:09:20.376 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:09:20.377 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '999.99-null-null' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:09:20.378 [main] AdminView - [Ljava.lang.StackTraceElement;@16c63f5
+[INFO ] 2024-01-08 17:09:20.379 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:09:20.380 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:09:20.381 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:09:20.382 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:09:36.871 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( '999.99', 'null', 'null', '0.0' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '999.99-null-null' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:09:36.872 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:09:36.873 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '999.99-null-null' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:09:36.874 [main] AdminView - [Ljava.lang.StackTraceElement;@28ec166e
+[INFO ] 2024-01-08 17:09:36.875 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:09:36.876 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:09:36.877 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:09:36.878 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:12:55.423 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:12:55.430 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:12:55.431 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:12:58.884 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:12:58.884 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:12:58.884 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:13:00.148 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:13:00.149 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:13:00.149 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:13:00.149 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:13:00.149 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:13:03.613 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:13:03.613 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:13:03.614 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:13:03.614 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:13:40.509 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:13:40.515 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:13:40.515 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:13:42.232 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:13:42.232 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:13:42.232 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:13:43.960 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:13:43.961 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:13:43.961 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:13:43.962 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:13:43.962 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:13:46.065 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:13:46.066 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:13:46.066 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:13:46.067 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:17:09.883 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:17:09.887 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:17:09.887 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:17:11.857 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:17:11.857 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:17:11.858 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:17:13.559 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:17:13.559 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:17:13.560 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:17:13.560 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:17:13.560 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:17:17.483 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:17:17.483 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:17:17.484 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:17:17.484 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:17:39.565 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:17:39.568 [main] AdminView - Index -1 out of bounds for length 0
+[ERROR] 2024-01-08 17:17:39.574 [main] AdminView - [Ljava.lang.StackTraceElement;@253d9f73
+[INFO ] 2024-01-08 17:17:39.575 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:17:39.576 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:17:39.577 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:17:39.577 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:18:14.562 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 'meme', 'Statham picture', 'Boyz quotes', '999.99' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:18:14.563 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:18:14.564 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:18:14.565 [main] AdminView - [Ljava.lang.StackTraceElement;@126945f9
+[INFO ] 2024-01-08 17:18:14.566 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:18:14.567 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:18:14.568 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:18:14.569 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:18:20.840 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 'meme', 'Statham picture', 'Boyz quotes', '999.99' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:18:20.842 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:18:20.843 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:18:20.844 [main] AdminView - [Ljava.lang.StackTraceElement;@4758820d
+[INFO ] 2024-01-08 17:18:20.844 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:18:20.845 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:18:20.846 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:18:20.847 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:28:27.811 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 'meme', 'Statham picture', 'Boyz quotes', '999.99' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:29:43.354 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:29:43.356 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:29:43.357 [main] AdminView - [Ljava.lang.StackTraceElement;@13d9b21f
+[INFO ] 2024-01-08 17:29:43.358 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:29:43.359 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:29:43.361 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:29:43.362 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:29:51.658 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:29:51.662 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:29:51.663 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:29:55.949 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:29:55.950 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:29:55.950 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:29:57.883 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:29:57.883 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:29:57.883 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:29:57.884 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:29:57.884 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:30:00.086 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:30:00.086 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:30:00.087 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:30:00.087 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:31:07.054 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:31:07.056 [main] AdminView - Index -1 out of bounds for length 0
+[ERROR] 2024-01-08 17:31:07.061 [main] AdminView - [Ljava.lang.StackTraceElement;@253d9f73
+[INFO ] 2024-01-08 17:31:07.062 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:31:07.064 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:31:07.065 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:31:07.066 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:33:07.278 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:33:07.287 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:33:07.287 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:33:09.351 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:33:09.352 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:33:09.352 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:33:10.893 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:33:10.893 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:33:10.893 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:33:10.893 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:33:10.894 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:33:12.960 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:33:12.960 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:33:12.961 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:33:12.961 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:33:16.050 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 'meme2', 'Statham picture', 'Boyz quotes', '999.99' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme2-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:33:16.050 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:33:16.050 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'meme2-Statham picture-Boyz quotes' for key 'EquipmentType'
+[ERROR] 2024-01-08 17:33:16.052 [main] AdminView - [Ljava.lang.StackTraceElement;@2df6226d
+[INFO ] 2024-01-08 17:33:16.052 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:33:16.053 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:33:16.053 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:33:16.053 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:33:43.074 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:33:43.081 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:33:43.082 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:33:45.480 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:33:45.481 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:33:45.481 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:33:47.023 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:33:47.023 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:33:47.024 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:33:47.024 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:33:47.024 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:33:49.235 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:33:49.235 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:33:49.235 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:33:49.236 [main] AdminView - 4: delete
+[ERROR] 2024-01-08 17:34:29.055 [main] UsersDAO - Some error with table order_executions
+query is INSERT INTO order_executions(employerId, cost, returned, serviceCenterId, finishDate)  VALUES ( 0, '644.9983', 0, 26, 2 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`order_executions`, CONSTRAINT `order_executions_ibfk_3` FOREIGN KEY (`employerId`) REFERENCES `users` (`id`))
+[ERROR] 2024-01-08 17:34:32.408 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-08 17:34:33.096 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`order_executions`, CONSTRAINT `order_executions_ibfk_3` FOREIGN KEY (`employerId`) REFERENCES `users` (`id`))
+[ERROR] 2024-01-08 17:35:37.019 [main] AdminView - [Ljava.lang.StackTraceElement;@5f0e9815
+[INFO ] 2024-01-08 17:35:37.022 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:35:37.025 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:35:37.026 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:35:37.027 [main] AdminView - 4: delete
+[DEBUG] 2024-01-08 17:36:07.120 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:36:07.125 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:36:07.125 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-08 17:36:27.534 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:36:27.541 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:36:27.542 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-08 17:36:36.720 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-08 17:36:36.728 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-08 17:36:36.729 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-08 17:36:38.113 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-08 17:36:38.114 [main] ValidationView - 1: log in
+[INFO ] 2024-01-08 17:36:38.114 [main] ValidationView - 2: registration
+[INFO ] 2024-01-08 17:36:39.587 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:36:39.588 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:36:39.588 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:36:39.588 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:36:39.588 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:36:41.463 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:36:41.463 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:36:41.464 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:36:41.464 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 17:37:13.771 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:37:13.772 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:37:13.773 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:37:13.774 [main] AdminView - 4: delete
+[INFO ] 2024-01-08 17:37:17.915 [main] AdminView - 1. Customers
+[INFO ] 2024-01-08 17:37:17.917 [main] AdminView - 2. Workers
+[INFO ] 2024-01-08 17:37:17.918 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-08 17:37:17.919 [main] AdminView - 4. Orders
+[INFO ] 2024-01-08 17:37:17.920 [main] AdminView - 5. Services
+[INFO ] 2024-01-08 17:37:20.865 [main] AdminView - Number of order is 13. Device is Statham picture null Boyz quotes
+ Status:  not returned , repair duration is 0, cost is 670.0
+
+[INFO ] 2024-01-08 17:37:20.866 [main] AdminView - 1: get
+[INFO ] 2024-01-08 17:37:20.867 [main] AdminView - 2: add
+[INFO ] 2024-01-08 17:37:20.868 [main] AdminView - 3: update
+[INFO ] 2024-01-08 17:37:20.869 [main] AdminView - 4: delete

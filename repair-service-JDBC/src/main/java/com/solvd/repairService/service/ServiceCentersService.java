@@ -52,6 +52,9 @@ public class ServiceCentersService {
     public ServiceCenters get(Long id) {
         ServiceCenters serviceCenter = new ServiceCenters(id);
         dao.get(serviceCenter);
+        if(serviceCenter.address() == null)
+            serviceCenter.id(0L);
+
         return serviceCenter;
     }
 

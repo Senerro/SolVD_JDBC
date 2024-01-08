@@ -36,15 +36,24 @@ public class AdminView {
             : new ServiceCentersService(new ServiceCentersBatisDAO());
     private static final EmployerProfileService serviceEP = Global.state()
             ? new EmployerProfileService(new EmployeeProfilesDAO())
-            : new EmployerProfileService(new EmployerProfilesBatisDAO());
+            : new EmployerProfileService(new EmployeeProfilesBatisDAO());
 
     private static final EmployerPostsService servicePost = Global.state()
             ? new EmployerPostsService(new EmployeePostsDAO())
             : new EmployerPostsService(new EmployerPostsBatisDAO());
 
+    private static final EquipmentsService serviceE = Global.state()
+            ? new EquipmentsService(new EquipmentsDAO())
+            : new EquipmentsService(new EquipmentsBatisDAO());
+
+    private static final OrderExecutionsService serviceOE = Global.state()
+            ? new OrderExecutionsService(new OrderExecutionsDAO())
+            : new OrderExecutionsService(new OrderExecutionsBatisDAO());
+    private static final ProblemService serviceP = Global.state()
+            ? new ProblemService(new ProblemsDAO())
+            : new ProblemService(new ProblemsBatisDAO());
 
     public static void adminUI() {
-
         LOGGER.info("1. Customers");
         LOGGER.info("2. Workers");
         LOGGER.info("3. Worker positions");
@@ -175,25 +184,84 @@ public class AdminView {
     }
 
     private static void addOrder(ArrayList<Orders> list) {
-        ArrayList<CustomerProfiles> customerProfiles = new ArrayList<>();
-        HashSet<Long> set = new HashSet<>();
-        try {
-            customerProfiles = serviceCP.get();
-            for (var element : customerProfiles) {
-                LOGGER.info(element);
-                set.add(element.id());
-            }
-        } catch (Exception e) {
-            LOGGER.info(e);
-        }
-        LOGGER.info("Input id");
-        var id = scanner.nextLong();
-        if (set.contains(id)) {
-            OrdersView.createNewOrder(serviceCP.get(id));
-            orderActions(list);
-        } else addOrder(list);
+        if (Global.stax()) {
+            try {
+                var dto = Stax.get(new Orders());
+                var serviceCenter = serviceSC.get(dto.center().id());
+                if(serviceCenter.id() <= 0) {
+                    serviceCenter = serviceSC.create(serviceCenter);
+                    dto.employee().serviceCenters(serviceCenter);
+                }
+                var customer = dto.customer();
+                try {
+                    Users user = serviceU.findUserByLogin(customer.user().login());
+                    var tmp = serviceCP.get(user.id());
+                    if (tmp == null) {
+                        LOGGER.warn("profile for user wasn't created");
+                        customer.user(user);
+                        customer = serviceCP.create(customer);
+                        LOGGER.warn("profile was created");
+                    }
+                    customer.user(user);
+                } catch (Exception e) {
+                    Users user = serviceU.create(customer.user());
+                    customer.user(user);
+                    serviceCP.create(customer);
+                }
 
-        LOGGER.info("we can not set customer when any customer doesn't exist");
+                var employee = dto.employee();
+                try {
+                    Users user = serviceU.findUserByLogin(employee.user().login());
+                    var tmp = serviceEP.get(user.id());
+                    if (tmp == null) {
+                        LOGGER.warn("profile for employee wasn't created");
+                        employee.user(user);
+                        employee = serviceEP.create(employee);
+                        LOGGER.warn("profile was created");
+                    }
+                    employee.user(user);
+                } catch (Exception e) {
+
+                    Users user = serviceU.create(employee.user());
+                    employee.user(user);
+                    serviceEP.create(employee);
+                }
+                var problem = serviceP.create();
+                dto.equipment().addProblem(problem);
+                var equipment = serviceE.create(dto.equipment());
+
+
+                var orderExecution = serviceOE.create(equipment, employee, serviceCenter);
+                serviceO.create(customer, equipment, orderExecution);
+
+            } catch (Exception e) {
+                LOGGER.error("Some error with creating order");
+                LOGGER.error(e.getMessage());
+                LOGGER.error(e.getStackTrace());
+
+                orderActions(list);
+            }
+        } else {
+            ArrayList<CustomerProfiles> customerProfiles = new ArrayList<>();
+            HashSet<Long> set = new HashSet<>();
+            try {
+                customerProfiles = serviceCP.get();
+                for (var element : customerProfiles) {
+                    LOGGER.info(element);
+                    set.add(element.id());
+                }
+            } catch (Exception e) {
+                LOGGER.info(e);
+            }
+            LOGGER.info("Input id");
+            var id = scanner.nextLong();
+            if (set.contains(id)) {
+                OrdersView.createNewOrder(serviceCP.get(id));
+                orderActions(list);
+            } else addOrder(list);
+
+            LOGGER.info("we can not set customer when any customer doesn't exist");
+        }
         orderActions(list);
     }
 
@@ -296,28 +364,36 @@ public class AdminView {
     }
 
     private static void addService(ArrayList<ServiceCenters> list) {
-        LOGGER.info("address ");
-        var address = scanner.next();
-        LOGGER.info("name ");
-        var name = scanner.next();
-        LOGGER.info("description ");
-        var description = scanner.next();
+        if (Global.stax()) {
+            try {
+                var center = Stax.get(new ServiceCenters());
+                serviceSC.create(center);
+                list.add(center);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            LOGGER.info("address ");
+            var address = scanner.next();
+            LOGGER.info("name ");
+            var name = scanner.next();
+            LOGGER.info("description ");
+            var description = scanner.next();
 
-        ServiceCenters model = new ServiceCenters();
-        model.name(name);
-        model.address(address);
-        model.description(description);
-        try {
-            var post = serviceSC.create(model);
-            LOGGER.info(post);
-            list.add(post);
-        } catch (Exception e) {
-            LOGGER.error(e);
-            addService(list);
+            ServiceCenters model = new ServiceCenters();
+            model.name(name);
+            model.address(address);
+            model.description(description);
+            try {
+                var post = serviceSC.create(model);
+                LOGGER.info(post);
+                list.add(post);
+            } catch (Exception e) {
+                LOGGER.error(e);
+                addService(list);
+            }
         }
-
         serviceActions(list);
-
     }
 
     private static ServiceCenters getService(ArrayList<ServiceCenters> list) {
@@ -390,21 +466,33 @@ public class AdminView {
     }
 
     private static void addPost(ArrayList<EmployeePosts> list) {
-        LOGGER.info("role ");
-        var role = scanner.next();
-        LOGGER.info("description ");
-        var description = scanner.next();
+        if (Global.stax()) {
+            try {
+                var post = Stax.get(new EmployeePosts());
+                servicePost.create(post);
+                LOGGER.info(post);
+                LOGGER.info("created");
 
-        EmployeePosts model = new EmployeePosts(role, description);
-        try {
-            var post = servicePost.create(model);
-            LOGGER.info(post);
-            list.add(post);
-        } catch (Exception e) {
-            LOGGER.error(e);
-            addPost(list);
+
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            LOGGER.info("role ");
+            var role = scanner.next();
+            LOGGER.info("description ");
+            var description = scanner.next();
+
+            EmployeePosts model = new EmployeePosts(role, description);
+            try {
+                var post = servicePost.create(model);
+                LOGGER.info(post);
+                list.add(post);
+            } catch (Exception e) {
+                LOGGER.error(e);
+                addPost(list);
+            }
         }
-
         postActions(list);
     }
 
@@ -498,65 +586,99 @@ public class AdminView {
     }
 
     private static void addWorker(ArrayList<EmployeeProfiles> list) {
-        LOGGER.info("login ");
-        var login = scanner.next();
-        LOGGER.info("password ");
-        var password = scanner.next();
+        if (Global.stax()) {
+            try {
+                var profile = Stax.get(new EmployeeProfiles());
+                var post = servicePost.get(profile.post().id());
+                if (post == null) {
+                    LOGGER.error("position " + post + "doesn't exist");
+                    post = servicePost.create(profile.post());
+                    LOGGER.debug("position " + post + "was created");
+                }
+                Users user = new Users();
+                try {
+                    user = serviceU.findUserByLogin(profile.user().login());
+                } catch (Exception e) {
+                    user = serviceU.create(profile.user());
+                }
+                var tmp = serviceEP.get(user.id());
+                if (tmp != null)
+                    LOGGER.error("profile for employee " + profile.fullName() + " already exist");
+                else {
+                    profile.id(user.id());
+                    var result = serviceEP.create(profile);
+                    if (result.id() > 0) {
+                        LOGGER.info("profile was successfully created");
+                        list.add(result);
+                    } else LOGGER.error("profile wasn't created");
+                }
+                workersActions(list);
 
-        Users user = new Users(login, password);
-        try {
-            user = serviceU.create(user);
-        } catch (Exception e) {
-            LOGGER.error(e);
-            addWorker(list);
-        }
-        EmployeeProfiles profileTmp = new EmployeeProfiles(user.id());
-        LOGGER.info("input fullName");
-        profileTmp.fullName(scanner.next());
-        profileTmp.phone("+375(25)...");
-        profileTmp.experience(0);
-
-        ArrayList<EmployeePosts> posts;
-        HashSet<Long> set = new HashSet<>();
-        posts = servicePost.get();
-        for (var element : posts) {
-            set.add(element.id());
-            LOGGER.info(element);
-        }
-        boolean flag1 = false;
-        do {
-            LOGGER.info("input post");
-            var id = scanner.nextLong();
-            if (set.contains(id)) {
-                profileTmp.postId(id);
-                flag1 = true;
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
-        } while (!flag1);
+        } else {
+            LOGGER.info("login ");
+            var login = scanner.next();
+            LOGGER.info("password ");
+            var password = scanner.next();
 
-        ArrayList<ServiceCenters> centers = new ArrayList<>();
-        HashSet<Long> ids = new HashSet<>();
-        try {
-            centers = serviceSC.get();
-        } catch (Exception e) {
-            LOGGER.info(e);
-        }
-        for (var element : centers) {
-            ids.add(element.id());
-            LOGGER.info(element);
-        }
-        boolean flag = false;
-        do {
-            LOGGER.info("input service center");
-            var id = scanner.nextLong();
-            if (ids.contains(id)) {
-                profileTmp.serviceCenterId(id);
-                flag = true;
+            Users user = new Users(login, password);
+            try {
+                user = serviceU.create(user);
+            } catch (Exception e) {
+                LOGGER.error(e);
+                addWorker(list);
             }
-        } while (!flag);
+            EmployeeProfiles profileTmp = new EmployeeProfiles(user.id());
+            LOGGER.info("input fullName");
+            profileTmp.fullName(scanner.next());
+            profileTmp.phone("+375(25)...");
+            profileTmp.experience(0);
 
-        var profile = serviceEP.create(profileTmp);
-        LOGGER.info(profile);
-        list.add(profile);
+            ArrayList<EmployeePosts> posts;
+            HashSet<Long> set = new HashSet<>();
+            posts = servicePost.get();
+            for (var element : posts) {
+                set.add(element.id());
+                LOGGER.info(element);
+            }
+            boolean flag1 = false;
+            do {
+                LOGGER.info("input post");
+                var id = scanner.nextLong();
+                if (set.contains(id)) {
+                    profileTmp.postId(id);
+                    flag1 = true;
+                }
+            } while (!flag1);
+
+            ArrayList<ServiceCenters> centers = new ArrayList<>();
+            HashSet<Long> ids = new HashSet<>();
+            try {
+                centers = serviceSC.get();
+            } catch (Exception e) {
+                LOGGER.info(e);
+            }
+            for (var element : centers) {
+                ids.add(element.id());
+                LOGGER.info(element);
+            }
+            boolean flag = false;
+            do {
+                LOGGER.info("input service center");
+                var id = scanner.nextLong();
+                if (ids.contains(id)) {
+                    profileTmp.serviceCenterId(id);
+                    flag = true;
+                }
+            } while (!flag);
+
+            var profile = serviceEP.create(profileTmp);
+            LOGGER.info(profile);
+            list.add(profile);
+        }
+
         workersActions(list);
 
     }

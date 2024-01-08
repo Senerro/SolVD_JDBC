@@ -49,6 +49,7 @@ public class CustomerProfiles extends AbstractModel
 
     public void user(Users user) {
         this.user = user;
+        this.id(user.id());
     }
     @Override
     public boolean equals(Object object)

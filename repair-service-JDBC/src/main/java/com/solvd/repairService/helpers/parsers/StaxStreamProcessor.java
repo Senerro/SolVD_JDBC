@@ -16,7 +16,6 @@ public class StaxStreamProcessor implements AutoCloseable {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
 
-    private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(StaxStreamProcessor.class);
     private static final XMLInputFactory FACTORY = XMLInputFactory.newInstance();
 
@@ -28,29 +27,6 @@ public class StaxStreamProcessor implements AutoCloseable {
 
     public XMLStreamReader getReader() {
         return reader;
-    }
-    public boolean doUntil(int stopEvent, String value) throws XMLStreamException {
-        while (reader.hasNext()) {
-            int event = reader.next();
-            if (event == stopEvent && value.equals(reader.getLocalName())) {
-                return true;
-            }
-        }
-        return false;
-    }
-    public boolean startElement(String element, String parent) throws XMLStreamException {
-        while (reader.hasNext()) {
-            int event = reader.next();
-            if (parent != null && event == XMLEvent.END_ELEMENT &&
-                    parent.equals(reader.getLocalName())) {
-                return false;
-            }
-            if (event == XMLEvent.START_ELEMENT &&
-                    element.equals(reader.getLocalName())) {
-                return true;
-            }
-        }
-        return false;
     }
 
     @Override

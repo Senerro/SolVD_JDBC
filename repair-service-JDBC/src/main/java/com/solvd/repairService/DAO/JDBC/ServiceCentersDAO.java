@@ -169,7 +169,7 @@ public class ServiceCentersDAO extends AbstractDAO implements IServiceCenterDAO 
 
     @Override
     public void get(ServiceCenters center) {
-        String query = " SELECT * FROM service_centers";
+        String query = " SELECT * FROM service_centers WHERE id = " + center.id();
         connection = connectionPool.getConnection();
         try {
             Statement statement = connection.createStatement();

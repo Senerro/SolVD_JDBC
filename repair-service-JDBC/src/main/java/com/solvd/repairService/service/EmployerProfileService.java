@@ -1,6 +1,6 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
+import com.solvd.repairService.DAO.interfaces.IEmployeeProfileDAO;
 import com.solvd.repairService.model.*;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Random;
 
 public class EmployerProfileService {
-    private final IEmployerProfileDAO dao;
+    private final IEmployeeProfileDAO dao;
 
     public ArrayList<EmployeeProfiles> get() throws Exception {
         ArrayList<EmployeeProfiles> profiles = new ArrayList<>();
@@ -20,10 +20,12 @@ public class EmployerProfileService {
     public EmployeeProfiles get(Long id) {
         EmployeeProfiles profile = new EmployeeProfiles(id);
         dao.get(profile);
+        if (profile.fullName() == null)
+            return null;
         return profile;
     }
 
-    public EmployerProfileService(IEmployerProfileDAO dao) {
+    public EmployerProfileService(IEmployeeProfileDAO dao) {
         this.dao = dao;
     }
 

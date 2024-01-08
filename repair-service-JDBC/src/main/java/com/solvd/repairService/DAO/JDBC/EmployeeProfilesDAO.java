@@ -1,6 +1,6 @@
 package com.solvd.repairService.DAO.JDBC;
 
-import com.solvd.repairService.DAO.interfaces.IEmployerProfileDAO;
+import com.solvd.repairService.DAO.interfaces.IEmployeeProfileDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.views.CustomerProfileView;
@@ -14,7 +14,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeProfilesDAO extends AbstractDAO implements IEmployerProfileDAO {
+public class EmployeeProfilesDAO extends AbstractDAO implements IEmployeeProfileDAO {
     static {
         System.setProperty("log4j.configurationFile", "log4j.xml");
     }
@@ -57,7 +57,7 @@ public class EmployeeProfilesDAO extends AbstractDAO implements IEmployerProfile
         String query =
                 " SELECT w.id, fullName AS name, phone, ep.role, experience " +
                 " FROM employee_profiles AS w \n" +
-                " JOIN employer_posts AS ep ON ep.id = postId";
+                " JOIN employee_posts AS ep ON ep.id = postId";
 
         connection = connectionPool.getConnection();
         try {
@@ -91,7 +91,7 @@ public class EmployeeProfilesDAO extends AbstractDAO implements IEmployerProfile
                 " SELECT w.id, fullName AS name, phone, ep.role, experience, sc.id AS centerId," +
                         " sc.name AS centerName, sc.address FROM employee_profiles AS w \n" +
                         " LEFT JOIN service_centers AS sc ON sc.id = serviceCenterId \n" +
-                        " LEFT JOIN employer_posts AS ep ON ep.id = postId \n" +
+                        " LEFT JOIN employee_posts AS ep ON ep.id = postId \n" +
                         " WHERE w.id = " + model.id();
 
         connection = connectionPool.getConnection();

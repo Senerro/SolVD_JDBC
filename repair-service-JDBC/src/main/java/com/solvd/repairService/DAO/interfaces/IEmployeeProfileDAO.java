@@ -8,7 +8,7 @@ import com.solvd.repairService.model.ServiceCenters;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface IEmployerProfileDAO extends IAbstractDAO {
+public interface IEmployeeProfileDAO extends IAbstractDAO {
     void create(EmployeeProfiles profile);
     void get(ArrayList<EmployeeProfiles> list);
     void get(EmployeeProfiles list);
