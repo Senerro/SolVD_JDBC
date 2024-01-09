@@ -1,11 +1,11 @@
 <EmployeeProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <fullName>xmlFullName</fullName>
-    <phone>+375(25)...</phone>
+    <fullName>xmlFullNameDEMO2</fullName>
+    <phone>+375(25)...DEMO2</phone>
     <experience>5</experience>
     <user >
-        <login>xmlLogin</login>
-        <password>xmlPassword</password>
+        <login>xmlLoginDEMO2</login>
+        <password>xmlPasswordDEMO2</password>
         <role>true</role>
     </user>
     <post>
