@@ -1,18 +1,18 @@
 <EmployeeProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns="file://C:/solvd/SolVD_JDBC/repair-service-JDBC/src/main/resources/Stax/xml/xsd/EmployeeProfile.xsd"
                  xsi:noNamespaceSchemaLocation="xsd/EmployeeProfile.xsd">
-    <fullName>xmlFullName</fullName>
-    <phone>+375(25)...</phone>
+    <fullName>xmlFullNameDEMO</fullName>
+    <phone>+375(25)...DEMO</phone>
     <experience>5</experience>
     <user >
-        <login>xmlLogin</login>
-        <password>xmlPassword</password>
+        <login>xmlLoginDEMO</login>
+        <password>xmlPasswordDEMO</password>
         <role>true</role>
     </user>
     <post>
         <id>4</id>
-        <position> repairman</position>
-        <description> </description>
+        <position> repairmanDEMO</position>
+        <description>DEMO </description>
     </post>
 
 </EmployeeProfile>
