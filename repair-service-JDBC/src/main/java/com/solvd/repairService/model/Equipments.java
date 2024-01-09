@@ -1,14 +1,37 @@
 package com.solvd.repairService.model;
 
+import com.solvd.repairService.model.dto.ProblemDTO;
+
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.bind.annotation.*;
+
+@XmlType(name = "equipment")
+@XmlRootElement
+@XmlSeeAlso({Problems.class, ProblemDTO.class})
+@XmlAccessorType(XmlAccessType.FIELD)
 
 public class Equipments extends AbstractModel {
+    @XmlElement
     private String type;
+    @XmlElement
     private String producer;
+    @XmlElement
     private String model;
+    @XmlElement
     private double price;
+    @XmlElementWrapper(nillable = true)
+    @XmlAnyElement
     private List<Problems> problemsList = new ArrayList<>();
+    @XmlElement (name = "list")
+    private ProblemDTO problemDTO;
+
+    public ProblemDTO problemDTO() {
+        return problemDTO;
+    }
+    public void problemDTO(ProblemDTO problemDTO) {
+       this.problemDTO = problemDTO;
+    }
 
     public Equipments(Long id) {
         super(id, Equipments.class);

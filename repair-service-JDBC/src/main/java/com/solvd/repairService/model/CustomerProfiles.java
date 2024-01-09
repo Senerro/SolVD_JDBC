@@ -1,9 +1,18 @@
 package com.solvd.repairService.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(name = "customerType")
+@XmlRootElement(name = "CustomerProfile")
 public class CustomerProfiles extends AbstractModel
 {
+    @XmlElement
     private String nick;
+    @XmlElement
     private String phone;
+    @XmlElement
     private Users user;
     public CustomerProfiles(Long id) {
         super(id, CustomerProfiles.class);
@@ -19,6 +28,12 @@ public class CustomerProfiles extends AbstractModel
         this(id);
         this.nick = nick;
         this.phone = phone;
+    }
+    public CustomerProfiles(String nick, String phone, Users user) {
+        this(user.id());
+        this.nick = nick;
+        this.phone = phone;
+        this.user = user;
     }
     public CustomerProfiles(CustomerProfiles profiles) {
         this(profiles.id());

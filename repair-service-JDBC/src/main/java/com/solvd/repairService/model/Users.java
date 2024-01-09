@@ -1,8 +1,17 @@
 package com.solvd.repairService.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(name = "userType")
+@XmlRootElement(name = "user" )
 public class Users extends AbstractModel {
+    @XmlElement
     private String login;
+    @XmlElement
     private String password;
+    @XmlElement
     private boolean role;
 
     public Users() {

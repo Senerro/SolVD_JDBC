@@ -1,7 +1,13 @@
 package com.solvd.repairService.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement (name ="ServiceCenter")
 public class ServiceCenters extends AbstractModel {
+    @XmlElement(name = "address")
     private String address;
+    @XmlElement(name = "name")
     private String name;
     private byte[] photo;
     private String description;

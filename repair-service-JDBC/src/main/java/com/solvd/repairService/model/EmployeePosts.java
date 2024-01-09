@@ -1,7 +1,15 @@
 package com.solvd.repairService.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(name = "EmployeePostType")
+@XmlRootElement(name = "EmployeePost")
 public class EmployeePosts extends AbstractModel {
+    @XmlElement(name = "position")
     private String role;
+    @XmlElement(name = "description")
     private String description;
 
     public EmployeePosts(Long id) {
@@ -56,6 +64,6 @@ public class EmployeePosts extends AbstractModel {
 
     @Override
     public String toString() {
-        return "["+id()+"]"+" post: " + role;
+        return "[" + id() + "]" + " post: " + role;
     }
 }

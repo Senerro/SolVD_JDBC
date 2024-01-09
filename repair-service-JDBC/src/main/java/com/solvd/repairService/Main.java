@@ -23,10 +23,10 @@ public class Main {
         String answer = scanner.nextLine();
         switch (answer) {
             case "1":
-                Global.stax(false);
+                Global.jaxb(false);
                 break;
             case "2":
-                Global.stax(true);
+                Global.jaxb(true);
                 break;
             default: main(new String[1]);
         }

@@ -1,13 +1,27 @@
 package com.solvd.repairService.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType (name = "EmployeeProfileType")
+@XmlRootElement (name = "EmployeeProfile")
 public class EmployeeProfiles extends AbstractModel {
+    @XmlElement(name = "fullName")
     private String fullName;
+    @XmlElement(name = "phone")
     private String phone;
+    @XmlElement(name = "postId")
     private Long postId;
+    @XmlElement(name = "serviceCenterId")
     private Long serviceCenterId;
+    @XmlElement(name = "experience")
     private double experience;
+    @XmlElement(name = "user")
     private Users user;
+    @XmlElement(name = "post")
     private EmployeePosts post;
+
     private ServiceCenters center;
 
     public EmployeeProfiles(Long id) {

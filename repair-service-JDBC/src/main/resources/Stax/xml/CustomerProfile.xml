@@ -1,6 +1,5 @@
 <CustomerProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns="file://C:/solvd/SolVD_JDBC/repair-service-JDBC/src/main/resources/Stax/xml/xsd/CustomerProfile.xsd"
-                 xsi:noNamespaceSchemaLocation="xsd/CustomerProfile.xsd">
+                 >
     <nick>xmlNick</nick>
     <phone>+375(25)...</phone>
     <user >

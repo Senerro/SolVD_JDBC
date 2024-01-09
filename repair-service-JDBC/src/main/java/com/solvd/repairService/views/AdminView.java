@@ -3,6 +3,7 @@ package com.solvd.repairService.views;
 import com.solvd.repairService.DAO.JDBC.*;
 import com.solvd.repairService.DAO.myBatisXML.*;
 import com.solvd.repairService.helpers.Global;
+import com.solvd.repairService.helpers.parsers.JAXB;
 import com.solvd.repairService.helpers.parsers.Stax;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
@@ -90,10 +91,10 @@ public class AdminView {
         var answer = scanner.next();
         switch (answer) {
             case "1":
-                Global.stax(false);
+                Global.jaxb(false);
                 break;
             case "2":
-                Global.stax(true);
+                Global.jaxb(true);
                 break;
             default:
                 chooseCreationType();
@@ -184,7 +185,7 @@ public class AdminView {
     }
 
     private static void addOrder(ArrayList<Orders> list) {
-        if (Global.stax()) {
+        if (Global.jaxb()) {
             try {
                 var dto = Stax.get(new Orders());
                 var serviceCenter = serviceSC.get(dto.center().id());
@@ -364,13 +365,13 @@ public class AdminView {
     }
 
     private static void addService(ArrayList<ServiceCenters> list) {
-        if (Global.stax()) {
+        if (Global.jaxb()) {
             try {
-                var center = Stax.get(new ServiceCenters());
+                var center = JAXB.get(new ServiceCenters());
                 serviceSC.create(center);
                 list.add(center);
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                serviceActions(list);
             }
         } else {
             LOGGER.info("address ");
@@ -466,14 +467,12 @@ public class AdminView {
     }
 
     private static void addPost(ArrayList<EmployeePosts> list) {
-        if (Global.stax()) {
+        if (Global.jaxb()) {
             try {
-                var post = Stax.get(new EmployeePosts());
-                servicePost.create(post);
+                var post = JAXB.get(new EmployeePosts());
+                post = servicePost.create(post);
                 LOGGER.info(post);
                 LOGGER.info("created");
-
-
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
@@ -586,9 +585,9 @@ public class AdminView {
     }
 
     private static void addWorker(ArrayList<EmployeeProfiles> list) {
-        if (Global.stax()) {
+        if (Global.jaxb()) {
             try {
-                var profile = Stax.get(new EmployeeProfiles());
+                var profile = JAXB.get(new EmployeeProfiles());
                 var post = servicePost.get(profile.post().id());
                 if (post == null) {
                     LOGGER.error("position " + post + "doesn't exist");
@@ -678,9 +677,7 @@ public class AdminView {
             LOGGER.info(profile);
             list.add(profile);
         }
-
         workersActions(list);
-
     }
 
     private static EmployeeProfiles getWorker(ArrayList<EmployeeProfiles> list) {
@@ -762,15 +759,15 @@ public class AdminView {
     }
 
     private static void addCustomer(ArrayList<CustomerProfiles> profiles) {
-        if (Global.stax()) {
+        if (Global.jaxb()) {
             try {
-                var profile = Stax.get(new CustomerProfiles());
+                var profile = JAXB.get(new CustomerProfiles());
                 var user = serviceU.create(profile.user());
                 profile.user().id(user.id());
                 profile.id(user.id());
                 serviceCP.create(profile);
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                customerActions(profiles);
             }
 
         } else {

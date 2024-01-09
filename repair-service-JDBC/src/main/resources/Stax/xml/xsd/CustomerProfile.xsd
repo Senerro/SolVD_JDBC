@@ -12,7 +12,7 @@
         <xs:choice>
             <xs:element name="nick" type="xs:string"/>
             <xs:element name="phone" type="xs:string"/>
-            <xs:element name="user" type="userType" />
+            <xs:element name="user" type="userType"/>
         </xs:choice>
         <xs:attribute name="id" type="xs:long" use="optional"/>
     </xs:complexType>

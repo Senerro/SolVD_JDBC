@@ -2,14 +2,14 @@ package com.solvd.repairService.helpers;
 
 public class Global {
     private static boolean isJDBC = true;
-    private static boolean isStax = true;
+    private static boolean isJAXB = true;
 
-    public static void stax(boolean isStax) {
-        Global.isStax = isStax;
+    public static void jaxb(boolean isStax) {
+        Global.isJAXB = isStax;
     }
 
-    public static boolean stax() {
-        return isStax;
+    public static boolean jaxb() {
+        return isJAXB;
     }
 
     public static boolean state() {

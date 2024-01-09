@@ -92,7 +92,7 @@ public class Stax {
         String position = "", description = "";
 
         boolean role = true;
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.EMPLOYYEE.path())))) {
+        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.EMPLOYEE.path())))) {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 if (reader.next() != XMLEvent.START_ELEMENT)

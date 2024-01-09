@@ -1,14 +1,30 @@
 package com.solvd.repairService.model;
 
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(name = "OrderType")
+@XmlRootElement(name = "Order")
 public class Orders extends AbstractModel{
     private Long userId;
     private Long equipmentId;
     private Long executeId;
 
+ @XmlElement(name = "user")
     private Users user;
+    @XmlElement(name = "employee")
+
     private EmployeeProfiles employee;
+    @XmlElement(name = "customer")
+
     private CustomerProfiles customer;
+    @XmlElement(name = "center")
+
     private ServiceCenters center;
+    @XmlElement(name = "equipment")
+
     private Equipments equipment;
     private OrderExecutions orderExecution;
     public Orders(Long id) {
@@ -81,7 +97,7 @@ public class Orders extends AbstractModel{
     public void userId(Long userId) {
         this.userId = userId;
     }
-    public OrderExecutions getOrderExecution() {
+    public OrderExecutions orderExecution() {
         return orderExecution;
     }
     public void orderExecution(OrderExecutions oe)

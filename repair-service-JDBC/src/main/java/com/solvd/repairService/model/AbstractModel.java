@@ -1,8 +1,10 @@
 package com.solvd.repairService.model;
 
+import javax.xml.bind.annotation.XmlElement;
 import java.util.ArrayList;
 
 public class AbstractModel {
+    @XmlElement
     private Long id;
     private final String tableName;
     private final Class<?> clazz;
