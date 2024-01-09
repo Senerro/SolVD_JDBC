@@ -1,0 +1,1108 @@
+[INFO ] 2023-12-28 16:57:39.120 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 16:57:39.132 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 16:57:39.133 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:00:45.692 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:00:45.698 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:00:45.699 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:00:59.690 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:00:59.697 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:00:59.697 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:01:11.577 [main] ValidationView - Input login
+[INFO ] 2023-12-28 17:01:26.342 [main] ValidationView - Input password
+[INFO ] 2023-12-28 17:01:40.179 [main] CustomerProfileView - nickname: User#36
+[INFO ] 2023-12-28 17:01:40.180 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 17:01:40.180 [main] CustomerProfileView - email: test@jdbc.com
+[INFO ] 2023-12-28 17:01:40.181 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:01:40.181 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:01:46.397 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:01:46.397 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:01:46.398 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:01:49.782 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:02:27.536 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:02:34.093 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:02:42.800 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 17:02:52.897 [main] ServiceCentersDAO - Some error with table users
+query is 
+ SELECT sc.id, sc.name, sc.address, sc.photo, sc. sc.description, MIN(myCount) FROM 
+ (SELECT *, COUNT(serviceCenterID) as myCount FROM order_executions WHERE returned = 0 GROUP BY serviceCenterID) 
+ AS result
+ JOIN service_centers AS sc ON sc.id = result.serviceCenterId
+Exception is java.sql.SQLSyntaxErrorException: Unknown column 'sc.sc.description' in 'field list'
+[INFO ] 2023-12-28 17:03:21.052 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:03:21.058 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:03:21.059 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:03:23.277 [main] ValidationView - Input login
+[INFO ] 2023-12-28 17:03:44.433 [main] ValidationView - Input password
+[INFO ] 2023-12-28 17:03:47.659 [main] CustomerProfileView - nickname: User#36
+[INFO ] 2023-12-28 17:03:47.660 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 17:03:47.660 [main] CustomerProfileView - email: test@jdbc.com
+[INFO ] 2023-12-28 17:03:47.661 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:03:47.661 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:04:13.780 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:04:13.780 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:04:13.781 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:04:15.296 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:04:24.062 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:04:29.675 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:04:33.002 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 17:04:35.644 [main] ProblemsDAO - Some error with table problems
+query is INSERT INTO problems(typeId)  VALUES ( 1 )
+Exception is java.sql.SQLException: Field 'description' doesn't have a default value
+[INFO ] 2023-12-28 17:08:43.374 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:08:43.382 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:08:43.382 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:08:45.711 [main] ValidationView - Input login
+[INFO ] 2023-12-28 17:08:49.266 [main] ValidationView - Input password
+[INFO ] 2023-12-28 17:08:51.372 [main] ValidationView - User with loginqwertyalready existed
+[INFO ] 2023-12-28 17:08:51.372 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:08:51.372 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:08:51.373 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:09:07.156 [main] ValidationView - Input login
+[INFO ] 2023-12-28 17:09:11.929 [main] ValidationView - Input password
+[INFO ] 2023-12-28 17:09:15.679 [main] CustomerProfileView - nickname: User#37
+[INFO ] 2023-12-28 17:09:15.680 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 17:09:15.680 [main] CustomerProfileView - email: zxcvbnm
+[INFO ] 2023-12-28 17:09:15.681 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:09:15.681 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:09:21.181 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:09:21.182 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:09:21.182 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:09:22.884 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:09:24.426 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:09:25.270 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:09:26.411 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-28 17:14:28.481 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:14:28.486 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:14:28.487 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:14:30.913 [main] ValidationView - Input login
+[INFO ] 2023-12-28 17:14:33.531 [main] ValidationView - Input password
+[INFO ] 2023-12-28 17:14:42.415 [main] CustomerProfileView - nickname: User#38
+[INFO ] 2023-12-28 17:14:42.416 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 17:14:42.416 [main] CustomerProfileView - email: ljshoijjl
+[INFO ] 2023-12-28 17:14:42.417 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:14:42.418 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:14:45.372 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:14:45.373 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:14:45.374 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:14:57.073 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:15:01.545 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:15:03.665 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:15:24.834 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-28 17:18:17.779 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:18:17.783 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:18:17.783 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:18:24.689 [main] ValidationView - Input login
+[INFO ] 2023-12-28 17:18:26.833 [main] ValidationView - Input password
+[INFO ] 2023-12-28 17:18:28.710 [main] CustomerProfileView - nickname: User#39
+[INFO ] 2023-12-28 17:18:28.711 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 17:18:28.711 [main] CustomerProfileView - email: okjm
+[INFO ] 2023-12-28 17:18:28.712 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:18:28.712 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:18:30.753 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:18:30.754 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:18:30.754 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:18:32.399 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:18:34.361 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:18:35.243 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:18:36.312 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 17:18:38.071 [main] UsersDAO - Some error with table order_executions
+query is INSERT INTO order_executions(employerId, cost, returned, serviceCenterId, finishDate)  VALUES ( 33, '173.67', 0, 'null', 16 )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'serviceCenterID' at row 1
+[INFO ] 2023-12-28 17:25:59.506 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:25:59.512 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:25:59.512 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:25:59.513 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:25:59.513 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:26:03.849 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:26:03.850 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:26:03.850 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:26:05.147 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:26:06.679 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:26:07.417 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:26:08.407 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 17:32:07.287 [main] UsersDAO - Some error with table order_executions
+query is INSERT INTO order_executions(employerId, cost, returned, serviceCenterId, finishDate)  VALUES ( 2, '179.58', 0, 'null', 2147483647 )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'serviceCenterID' at row 1
+[INFO ] 2023-12-28 17:34:07.390 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:34:07.395 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:34:07.396 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:34:07.397 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:34:07.397 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:34:11.826 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:34:11.826 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:34:11.827 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:34:13.790 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:34:16.931 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:34:18.255 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:34:19.082 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 17:34:48.378 [main] UsersDAO - Some error with table orders
+query is INSERT INTO orders(userId, equipmentId, executeId)  VALUES ( 6, 'com.solvd.repairService.model.Equipments@33fe57a9', 6 )
+Exception is java.sql.SQLException: Incorrect integer value: 'com.solvd.repairService.model.Equipments@33fe57a9' for column 'equipmentId' at row 1
+[INFO ] 2023-12-28 17:37:28.044 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:37:28.049 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:37:28.050 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:37:28.050 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:37:28.051 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:37:36.139 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:37:36.140 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:37:36.140 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 17:37:37.271 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 17:37:39.591 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 17:37:41.196 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 17:37:44.194 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-28 17:39:31.997 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 17:39:32.575 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 17:39:33.028 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 17:42:48.051 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:42:48.056 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:42:48.056 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:42:48.057 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:42:48.057 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:42:50.932 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:42:50.933 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:42:50.934 [main] CustomerProfileView - 3: return
+[ERROR] 2023-12-28 17:42:52.078 [main] UsersDAO - Some error with table users
+query is  SELECT o.id AS oId, userId, equipmentId, executeId, oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, e.id as eId, equipmentType, producer, model, price  from orders AS o JOIN order_executions AS oe on executeId = oe.id JOIN equipments AS e on equipmentId = e.id WHERE userId = 6
+Exception is java.sql.SQLSyntaxErrorException: Unknown column 'equipmentType' in 'field list'
+[INFO ] 2023-12-28 17:43:08.728 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:43:08.733 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:43:08.734 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:43:08.735 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:43:08.735 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:43:21.739 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:43:21.740 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:43:21.740 [main] CustomerProfileView - 3: return
+[ERROR] 2023-12-28 17:44:21.560 [main] UsersDAO - Some error with table users
+query is  SELECT o.id AS oId, userId, equipmentId, executeId, oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, e.id as eId, equipmentType, producer, model, price  from orders AS o JOIN order_executions AS oe on executeId = oe.id JOIN equipments AS e on equipmentId = e.id WHERE userId = 6
+Exception is java.sql.SQLSyntaxErrorException: Unknown column 'equipmentType' in 'field list'
+[INFO ] 2023-12-28 17:44:24.888 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:44:24.895 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:44:24.896 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:44:24.897 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:44:24.897 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:44:26.808 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:44:26.809 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:44:26.810 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-28 17:45:50.936 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:45:50.942 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:45:50.943 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:45:50.944 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:45:50.945 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:45:52.343 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:45:52.345 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:45:52.345 [main] CustomerProfileView - 3: return
+[ERROR] 2023-12-28 17:46:17.632 [main] UsersDAO - Some error with table users
+query is  SELECT o.id AS oId, userId, equipmentId, executeId, oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, e.id as eId, type, producer, model, price  from orders AS o JOIN order_executions AS oe on executeId = oe.id JOIN equipments AS e on equipmentId = e.id WHERE userId = 6
+Exception is java.sql.SQLException: Column 'equipmentType' not found.
+[INFO ] 2023-12-28 17:46:23.133 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 17:46:23.140 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 17:46:23.141 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 17:46:23.141 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 17:46:23.142 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 17:46:31.234 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 17:46:31.235 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 17:46:31.235 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-28 17:46:49.267 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-28 17:46:51.099 [main] CustomerProfileView - Number of order is 4. Device is yuiuio null dfghhdfghj
+ Status:  not returned, finish date is 2147483647, cost is 233.0
+
+[INFO ] 2023-12-28 18:14:12.060 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 18:14:12.062 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 18:14:12.063 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-28 18:20:51.407 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:51.424 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:51.425 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 18:20:55.316 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:55.317 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:55.318 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 18:20:56.208 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:56.209 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:56.209 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 18:20:57.108 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:20:57.108 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:20:57.109 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 18:20:58.952 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 18:20:58.952 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 18:20:58.953 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-28 18:37:04.139 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 18:37:04.145 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 18:37:04.145 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 18:37:08.830 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 18:37:08.831 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 18:37:08.831 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-28 20:11:23.105 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:11:23.112 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:11:23.113 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:11:25.264 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 20:11:25.265 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 20:11:25.265 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 20:11:26.787 [main] ValidationView - Input login
+[INFO ] 2023-12-28 20:11:30.307 [main] ValidationView - Input password
+[INFO ] 2023-12-28 20:11:33.155 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-28 20:11:33.156 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 20:11:33.156 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-28 20:11:33.156 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:11:33.157 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:11:58.555 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-28 20:11:58.555 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-28 20:11:58.556 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-28 20:12:03.466 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-28 20:12:03.467 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 20:12:03.467 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-28 20:12:03.467 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:12:03.468 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:12:08.259 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:12:08.259 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:12:08.259 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:12:10.569 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:12:15.647 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:12:20.915 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:12:37.186 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:15:14.863 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:15:14.869 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:15:14.869 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:15:16.478 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 20:15:16.479 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 20:15:16.479 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 20:15:17.638 [main] ValidationView - Input login
+[INFO ] 2023-12-28 20:15:28.084 [main] ValidationView - Input password
+[INFO ] 2023-12-28 20:15:30.276 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-28 20:15:30.276 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 20:15:30.277 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-28 20:15:30.277 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:15:30.278 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:15:31.968 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:15:31.968 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:15:31.969 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:15:35.212 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:15:39.011 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:15:39.784 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:15:40.393 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:34:14.965 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:34:14.971 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:34:14.972 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-28 20:34:20.498 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:34:20.504 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:34:20.505 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:34:22.458 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 20:34:22.459 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 20:34:22.459 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 20:34:23.342 [main] ValidationView - Input login
+[INFO ] 2023-12-28 20:34:30.109 [main] ValidationView - Input password
+[INFO ] 2023-12-28 20:34:32.939 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-28 20:34:32.939 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 20:34:32.940 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-28 20:34:32.940 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:34:32.940 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:34:37.045 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:34:37.046 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:34:37.046 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:34:38.338 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:34:39.889 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:34:40.520 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:34:41.436 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 20:35:22.867 [main] ServiceCentersDAO - Some error with table users
+query is SELECT *, MAX(myCount) FROM
+ ( 
+ SELECT sc.id, sc.name, sc.description, COUNT(sc.id) as myCount FROM service_centers AS sc
+ JOIN employer_profiles AS ep ON ep.serviceCenterId = sc.id
+ GROUP BY serviceCenterId
+ ) AS f
+Exception is java.sql.SQLException: Column 'address' not found.
+[DEBUG] 2023-12-28 20:36:56.225 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:36:56.233 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:36:56.234 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:36:58.196 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 20:36:58.196 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 20:36:58.197 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 20:37:03.915 [main] ValidationView - Input login
+[INFO ] 2023-12-28 20:37:06.272 [main] ValidationView - Input password
+[INFO ] 2023-12-28 20:37:08.429 [main] ValidationView - User isn't exist
+[INFO ] 2023-12-28 20:37:08.430 [main] ValidationView - Input login
+[INFO ] 2023-12-28 20:37:18.211 [main] ValidationView - Input password
+[INFO ] 2023-12-28 20:37:20.650 [main] ValidationView - User with loginMyUseralready existed
+[INFO ] 2023-12-28 20:37:20.651 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 20:37:20.651 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 20:37:20.652 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-28 20:38:41.963 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:38:41.968 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:38:41.969 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:38:46.719 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-28 20:38:46.720 [main] ValidationView - 1: log in
+[INFO ] 2023-12-28 20:38:46.720 [main] ValidationView - 2: registration
+[INFO ] 2023-12-28 20:38:48.419 [main] ValidationView - Input login
+[INFO ] 2023-12-28 20:38:50.777 [main] ValidationView - Input password
+[INFO ] 2023-12-28 20:38:53.569 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-28 20:38:53.569 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-28 20:38:53.570 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-28 20:38:53.570 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:38:53.571 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:38:56.090 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:38:56.091 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:38:56.091 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:38:57.569 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:38:58.363 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:38:58.911 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:39:01.730 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:39:46.286 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:39:46.289 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:39:46.290 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:39:50.561 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 20:39:50.562 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 20:39:50.562 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 20:39:50.563 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:39:50.563 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:39:52.542 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:39:52.542 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:39:52.543 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:39:54.256 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:39:55.580 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:39:55.953 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:39:56.321 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:40:27.662 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:40:27.669 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:40:27.670 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:40:30.051 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 20:40:30.051 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 20:40:30.051 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 20:40:30.052 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:40:30.052 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:40:32.667 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:40:32.668 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:40:32.668 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:40:33.695 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:40:34.479 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:40:34.789 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:40:35.104 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:41:22.637 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:41:22.641 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:41:22.642 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:41:26.054 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 20:41:26.055 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 20:41:26.055 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 20:41:26.056 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:41:26.056 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:41:28.086 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:41:28.086 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:41:28.087 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:41:29.095 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:41:29.757 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:41:30.129 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:41:30.515 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:50:59.344 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:50:59.351 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:50:59.352 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:51:02.355 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 20:51:02.355 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 20:51:02.356 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 20:51:02.356 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:51:02.356 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:51:05.274 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:51:05.274 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:51:05.275 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:51:06.970 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:51:07.802 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:51:08.140 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:51:08.561 [main] CustomerProfileView - Price: 
+[DEBUG] 2023-12-28 20:51:47.721 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-28 20:51:47.726 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-28 20:51:47.727 [main] ValidationView - 2: XML
+[INFO ] 2023-12-28 20:51:52.930 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-28 20:51:52.931 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-28 20:51:52.931 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-28 20:51:52.931 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-28 20:51:52.932 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-28 20:51:54.947 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:51:54.948 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:51:54.948 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:51:56.322 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:51:57.485 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:51:57.785 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:51:58.113 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-28 20:51:58.512 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 4, 4, 4, '4.0' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4-4-4' for key 'EquipmentType'
+[ERROR] 2023-12-28 20:51:58.515 [main] CustomerProfileView - java.lang.RuntimeException: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4-4-4' for key 'EquipmentType'
+[DEBUG] 2023-12-28 20:51:58.515 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:51:58.516 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:51:58.516 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:51:58.516 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:51:58.516 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:51:58.517 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:52:49.047 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-28 20:52:50.356 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-28 20:52:50.728 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-28 20:52:51.138 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-28 20:53:18.880 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-28 20:53:18.881 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:53:18.881 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:53:18.883 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-28 20:53:18.883 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-28 20:53:18.884 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-28 20:53:18.884 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-28 20:53:35.603 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-28 20:53:35.604 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-28 20:53:35.604 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-28 20:53:47.738 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-28 20:53:52.873 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-28 20:53:52.873 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-28 20:53:52.873 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-28 20:53:59.710 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-28 20:54:17.764 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-28 20:54:17.766 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-28 20:54:17.767 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:53:07.679 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 12:53:07.683 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 12:53:07.683 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 12:53:10.421 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 12:53:10.422 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 12:53:10.422 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 12:53:10.423 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 12:53:10.424 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 12:53:15.554 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 12:53:15.554 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 12:53:15.555 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 12:53:20.747 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:53:20.766 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:53:20.767 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:53:27.290 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 12:53:27.293 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:53:27.295 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:53:27.295 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:53:31.393 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 12:53:31.396 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:53:31.397 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:53:31.398 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:54:10.565 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 12:54:10.572 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 12:54:10.573 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 12:54:14.991 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 12:54:14.992 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 12:54:14.993 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 12:54:14.994 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 12:54:14.994 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 12:54:16.560 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 12:54:16.560 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 12:54:16.561 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 12:54:17.452 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:54:17.467 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:54:17.467 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:54:59.549 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 12:55:00.806 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:55:00.808 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:55:00.809 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:55:56.800 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 12:55:56.807 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:55:56.809 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:55:56.811 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:56:42.193 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 12:56:42.200 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 12:56:42.200 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 12:56:44.347 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 12:56:44.348 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 12:56:44.349 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 12:56:44.349 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 12:56:44.350 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 12:56:45.605 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 12:56:45.605 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 12:56:45.606 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 12:56:47.827 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:56:47.844 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:56:47.845 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:57:49.919 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 12:57:49.930 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:57:49.931 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:57:49.934 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 12:58:04.985 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 12:58:04.991 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 12:58:04.992 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 12:58:07.266 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 12:58:07.266 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 12:58:07.267 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 12:58:07.268 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 12:58:07.268 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 12:58:08.780 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 12:58:08.780 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 12:58:08.781 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 12:58:10.456 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 12:58:10.473 [main] CustomerProfileView - Number of order is 6. Device is 4 null 4
+ Status:  not returned , repair duration is 13, cost is 275.0
+
+[DEBUG] 2023-12-29 12:58:10.474 [main] CustomerProfileView - Input number 
+[ERROR] 2023-12-29 12:58:20.302 [main] UsersDAO - Some error with table users
+query is null
+Exception is java.sql.SQLException: Can not issue NULL query.
+[DEBUG] 2023-12-29 12:58:28.541 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 12:58:28.543 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 12:58:28.544 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:13:53.673 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 13:13:53.680 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 13:13:53.681 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 13:13:56.231 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 13:13:56.232 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 13:13:56.232 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 13:13:56.233 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 13:13:56.233 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 13:14:09.229 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:14:09.229 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:14:09.230 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:14:10.605 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 13:14:21.820 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 13:14:26.589 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 13:14:39.818 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-29 13:15:59.193 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-29 13:15:59.194 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:15:59.195 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:15:59.196 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:15:59.197 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:15:59.198 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:15:59.199 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:23:22.053 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 13:23:22.060 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 13:23:22.061 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 13:23:23.938 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 13:23:23.939 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 13:23:23.939 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 13:23:23.940 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 13:23:23.940 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 13:23:25.419 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:23:25.419 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:23:25.420 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:23:38.571 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 13:23:40.423 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 13:23:40.749 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 13:23:41.158 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-29 13:25:14.085 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-29 13:25:14.468 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:25:14.470 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:25:14.471 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:25:14.473 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:25:14.474 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:25:14.475 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:35:11.188 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 13:35:11.194 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 13:35:11.194 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 13:35:13.817 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 13:35:13.817 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 13:35:13.817 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 13:35:13.818 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 13:35:13.818 [main] CustomerProfileView - 2: orders
+[INFO ] 2023-12-29 13:35:16.871 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 13:35:16.871 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 13:35:16.872 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 13:35:16.872 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 13:35:16.873 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 13:35:18.375 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:35:18.376 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:35:18.376 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 13:35:19.480 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 13:35:19.481 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 13:35:30.595 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:35:30.596 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:35:30.597 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:35:34.651 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 13:35:35.238 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 13:35:35.690 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 13:35:36.044 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-29 13:36:34.762 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-29 13:36:35.735 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:36:35.738 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:36:35.739 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:36:35.740 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:36:35.741 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:36:35.742 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:46:22.337 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 13:46:22.342 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 13:46:22.343 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 13:46:24.439 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 13:46:24.439 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 13:46:24.440 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 13:46:24.440 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 13:46:24.441 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 13:46:25.712 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:46:25.712 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:46:25.713 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:46:33.082 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 13:46:34.652 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 13:46:34.936 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 13:46:35.284 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-29 13:46:57.611 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-29 13:46:57.612 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:46:57.612 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:46:57.612 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 13:46:57.612 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 13:46:57.613 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 13:46:57.613 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 13:47:00.780 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 13:47:00.794 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 13:47:00.795 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 13:49:34.092 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 13:49:34.094 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 13:49:34.095 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 14:01:54.318 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:01:54.325 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:01:54.325 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:01:58.277 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:01:58.278 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:01:58.278 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:01:58.278 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:01:58.279 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:02:00.712 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:02:00.713 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:02:00.713 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:02:01.621 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:02:01.638 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:02:01.638 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 14:03:10.893 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 14:03:10.893 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 14:03:10.893 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 14:05:11.820 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:05:11.826 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:05:11.827 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:05:14.191 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:05:14.192 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:05:14.192 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:05:14.192 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:05:14.193 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:05:28.105 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:05:28.106 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:05:28.106 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:05:29.764 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:05:29.780 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:05:29.780 [main] CustomerProfileView - Input number 
+[ERROR] 2023-12-29 14:06:15.369 [main] UsersDAO - Some error with table users
+query is SELECT e.type, e.producer, e.model, pt.type FROM orders AS o 
+ JOIN equipments AS e ON e.id = o.equipmentId
+ JOIN equipment_problem AS ep ON ep.equipmentId = e.id
+ JOIN problems AS p ON p.id = ep.problemId
+ JOIN problem_type AS pt ON pt.id = p.typeId; WHERE o.id = null 
+Exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE o.id = null' at line 5
+[DEBUG] 2023-12-29 14:06:15.370 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:06:15.370 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:06:15.371 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 14:06:40.327 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:06:40.331 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:06:40.332 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:06:47.033 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:06:47.034 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:06:47.034 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:06:47.034 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:06:47.035 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:06:47.994 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:06:47.995 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:06:47.995 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:06:49.204 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:06:49.220 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:06:49.221 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 14:07:10.646 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 14:07:10.647 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 14:07:10.647 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 14:08:21.321 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:08:21.327 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:08:21.327 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:08:23.289 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:08:23.289 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:08:23.290 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:08:23.290 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:08:23.290 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:08:24.595 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:08:24.596 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:08:24.596 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:08:25.427 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:08:25.440 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:08:25.440 [main] CustomerProfileView - Input number 
+[ERROR] 2023-12-29 14:08:54.933 [main] UsersDAO - Some error with table users
+query is SELECT e.type, e.producer, e.model, pt.type FROM orders AS o 
+ JOIN equipments AS e ON e.id = o.equipmentId
+ JOIN equipment_problem AS ep ON ep.equipmentId = e.id
+ JOIN problems AS p ON p.id = ep.problemId
+ JOIN problem_type AS pt ON pt.id = p.typeId  WHERE o.id = 10 
+Exception is java.sql.SQLException: Column 'userId' not found.
+[DEBUG] 2023-12-29 14:08:54.934 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:08:54.935 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:08:54.935 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 14:18:25.915 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:18:25.922 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:18:25.923 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:18:28.772 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:18:28.773 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:18:28.773 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:18:28.774 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:18:28.775 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:18:35.790 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:18:35.790 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:18:35.791 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:18:37.188 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:18:37.202 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:18:37.203 [main] CustomerProfileView - Input number 
+[ERROR] 2023-12-29 14:19:24.374 [main] UsersDAO - Some error with table users
+query is SELECT e.type, e.producer, e.model, pt.type FROM orders AS o 
+ JOIN equipments AS e ON e.id = o.equipmentId
+ JOIN equipment_problem AS ep ON ep.equipmentId = e.id
+ JOIN problems AS p ON p.id = ep.problemId
+ JOIN problem_type AS pt ON pt.id = p.typeId  WHERE o.id = 10 
+Exception is java.sql.SQLException: Column 'userId' not found.
+[DEBUG] 2023-12-29 14:19:24.375 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:19:24.376 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:19:24.376 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 14:19:28.481 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:19:28.486 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:19:28.487 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:19:31.009 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:19:31.009 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:19:31.010 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:19:31.010 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:19:31.010 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:19:33.219 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:19:33.219 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:19:33.219 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:19:36.456 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:19:36.471 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:19:36.471 [main] CustomerProfileView - Input number 
+[ERROR] 2023-12-29 14:20:17.090 [main] UsersDAO - Some error with table users
+query is SELECT e.type, e.producer, e.model, pt.type FROM orders AS o 
+ JOIN equipments AS e ON e.id = o.equipmentId
+ JOIN equipment_problem AS ep ON ep.equipmentId = e.id
+ JOIN problems AS p ON p.id = ep.problemId
+ JOIN problem_type AS pt ON pt.id = p.typeId  WHERE o.id = 10 
+Exception is java.sql.SQLException: Column 'equipmentId' not found.
+[DEBUG] 2023-12-29 14:20:17.091 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:20:17.091 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:20:17.092 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 14:20:21.295 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:20:21.302 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:20:21.303 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:20:24.214 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:20:24.214 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:20:24.215 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:20:24.215 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:20:24.215 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:20:26.366 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:20:26.367 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:20:26.367 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:20:27.810 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:20:27.826 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:20:27.827 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 14:22:13.474 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 14:22:13.477 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 14:22:13.480 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 14:24:43.438 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:24:43.445 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:24:43.445 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:24:47.168 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:24:47.168 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:24:47.168 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:24:47.169 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:24:47.169 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:24:48.927 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 14:24:48.927 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 14:24:48.928 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-29 14:24:51.028 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:24:51.029 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:24:51.029 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:24:51.029 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:24:51.030 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:24:53.287 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:24:53.287 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:24:53.288 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:24:54.783 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:24:54.798 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:24:54.798 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 14:25:04.912 [main] CustomerProfileView - 7
+[INFO ] 2023-12-29 14:25:04.912 [main] CustomerProfileView - 77
+[INFO ] 2023-12-29 14:25:04.913 [main] CustomerProfileView - need to 7
+[INFO ] 2023-12-29 14:25:04.914 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 14:25:04.914 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 14:25:04.914 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 14:27:28.640 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:27:28.647 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:27:28.648 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:27:30.913 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:27:30.913 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:27:30.914 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:27:30.914 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:27:30.914 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:27:40.476 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:27:40.477 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:27:40.477 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:27:46.441 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:27:46.456 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:27:46.456 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 14:27:48.539 [main] CustomerProfileView - type: 7
+[INFO ] 2023-12-29 14:27:48.539 [main] CustomerProfileView - device: 7 7
+[INFO ] 2023-12-29 14:27:48.540 [main] CustomerProfileView - need to 7
+[INFO ] 2023-12-29 14:27:48.540 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 14:27:48.541 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 14:27:48.541 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 14:28:04.180 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 14:28:04.188 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 14:28:04.189 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 14:28:06.402 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 14:28:06.403 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 14:28:06.404 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 14:28:06.405 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 14:28:06.405 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 14:28:07.766 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 14:28:07.766 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 14:28:07.767 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 14:28:21.715 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 14:28:21.730 [main] CustomerProfileView - Number of order is 10. Device is 7 null 7
+ Status:  not returned , repair duration is 2147483647, cost is 375.0
+
+[DEBUG] 2023-12-29 14:28:21.731 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 14:28:24.341 [main] CustomerProfileView - type: 7
+[INFO ] 2023-12-29 14:28:24.342 [main] CustomerProfileView - device: 7 7
+[INFO ] 2023-12-29 14:28:24.343 [main] CustomerProfileView - need to repairing
+[INFO ] 2023-12-29 14:28:24.343 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 14:28:24.343 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 14:28:24.344 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 15:38:17.678 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:38:17.698 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:38:17.699 [main] ValidationView - 2: XML
+[DEBUG] 2023-12-29 15:56:49.725 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:56:49.730 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:56:49.731 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:56:52.624 [main] CustomerProfileView - nickname: pas2
+[INFO ] 2023-12-29 15:56:52.625 [main] CustomerProfileView - phone: 1
+[INFO ] 2023-12-29 15:56:52.625 [main] CustomerProfileView - email: log2
+[INFO ] 2023-12-29 15:56:52.625 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 15:56:52.626 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 15:57:13.107 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:57:13.114 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:57:13.114 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:57:14.822 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:57:14.822 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:57:14.823 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:57:16.207 [main] ValidationView - Input login
+[INFO ] 2023-12-29 15:57:38.037 [main] ValidationView - Input password
+[INFO ] 2023-12-29 15:57:39.644 [main] ValidationView - java.io.IOException: Could not find resource myBatis.config.xml
+[INFO ] 2023-12-29 15:57:39.645 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:57:39.645 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:57:39.645 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 15:58:10.039 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:58:10.044 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:58:10.045 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:58:11.721 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:11.721 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:11.721 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:58:14.556 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:14.557 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:14.557 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:58:16.028 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:16.029 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:16.029 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 15:58:25.708 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 15:58:25.712 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 15:58:25.713 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 15:58:27.486 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:27.486 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:27.487 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 15:58:28.627 [main] ValidationView - Input login
+[INFO ] 2023-12-29 15:58:30.229 [main] ValidationView - Input password
+[INFO ] 2023-12-29 15:58:32.305 [main] ValidationView - 
+### Error building SqlSession.
+### The error may exist in SQL Mapper Configuration
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'POLED'.  Cause: java.lang.ClassNotFoundException: Cannot find class: POLED
+[INFO ] 2023-12-29 15:58:32.305 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 15:58:32.306 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 15:58:32.306 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 16:16:30.289 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 16:16:30.295 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 16:16:30.296 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 16:16:34.396 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:16:34.397 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:16:34.397 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 16:16:35.428 [main] ValidationView - Input login
+[INFO ] 2023-12-29 16:16:42.395 [main] ValidationView - Input password
+[DEBUG] 2023-12-29 16:16:45.194 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG] 2023-12-29 16:16:45.209 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2023-12-29 16:16:45.210 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2023-12-29 16:16:45.210 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2023-12-29 16:16:45.211 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[INFO ] 2023-12-29 16:16:45.283 [main] ValidationView - 
+### Error building SqlSession.
+### The error may exist in 
+### Cause: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: org.apache.ibatis.builder.BuilderException: Error creating document instance.  Cause: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+[INFO ] 2023-12-29 16:16:45.283 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:16:45.283 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:16:45.284 [main] ValidationView - 2: registration
+[DEBUG] 2023-12-29 16:52:38.615 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2023-12-29 16:52:38.621 [main] ValidationView - 1: JDBC
+[DEBUG] 2023-12-29 16:52:38.622 [main] ValidationView - 2: XML
+[INFO ] 2023-12-29 16:52:49.142 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:52:49.142 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:52:49.143 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 16:52:54.981 [main] ValidationView - Input login
+[INFO ] 2023-12-29 16:52:58.678 [main] ValidationView - Input password
+[INFO ] 2023-12-29 16:53:00.073 [main] CustomerProfileView - nickname: User#41
+[INFO ] 2023-12-29 16:53:00.073 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:53:00.074 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:53:00.074 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:53:00.074 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:53:12.102 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:53:12.102 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:53:12.103 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-29 16:53:13.975 [main] CustomerProfileView - Enter new nick
+[DEBUG] 2023-12-29 16:53:22.578 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:53:22.578 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:53:22.579 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-29 16:53:25.193 [main] CustomerProfileView - nickname: NewNock
+[INFO ] 2023-12-29 16:53:25.194 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:53:25.194 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:53:25.195 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:53:25.195 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:55:18.795 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:55:18.795 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:55:18.795 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:55:21.629 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:55:21.630 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:55:25.401 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:55:25.401 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:55:25.401 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:55:31.034 [main] CustomerProfileView - nickname: NewNock
+[INFO ] 2023-12-29 16:55:31.034 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:55:31.035 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:55:31.035 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:55:31.035 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:55:32.318 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:55:32.319 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:55:32.320 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-29 16:55:33.852 [main] CustomerProfileView - Enter new phone
+[DEBUG] 2023-12-29 16:55:35.769 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:55:35.770 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:55:35.771 [main] CustomerProfileView - 3: advanced settings
+[INFO ] 2023-12-29 16:55:38.605 [main] CustomerProfileView - nickname: NewNock
+[INFO ] 2023-12-29 16:55:38.606 [main] CustomerProfileView - phone: ssfdgsf
+[INFO ] 2023-12-29 16:55:38.607 [main] CustomerProfileView - email: SuperUser
+[INFO ] 2023-12-29 16:55:38.608 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:55:38.608 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:55:41.919 [main] CustomerProfileView - 1: change nickname
+[DEBUG] 2023-12-29 16:55:41.919 [main] CustomerProfileView - 2: change phone
+[DEBUG] 2023-12-29 16:55:41.919 [main] CustomerProfileView - 3: advanced settings
+[DEBUG] 2023-12-29 16:55:42.864 [main] CustomerProfileView - 1: change login
+[DEBUG] 2023-12-29 16:55:42.864 [main] CustomerProfileView - 2: change password
+[DEBUG] 2023-12-29 16:55:42.864 [main] CustomerProfileView - 3: delete account
+[INFO ] 2023-12-29 16:55:49.836 [main] CustomerProfileView - Are you sure? This action can't be iterated
+[INFO ] 2023-12-29 16:55:49.837 [main] CustomerProfileView - 1: yes
+[INFO ] 2023-12-29 16:55:49.837 [main] CustomerProfileView - 2: no, go back
+[INFO ] 2023-12-29 16:55:51.175 [main] CustomerProfileView - 1 account was successfully deleted
+[INFO ] 2023-12-29 16:55:51.175 [main] ValidationView - Log in or registration?
+[INFO ] 2023-12-29 16:55:51.176 [main] ValidationView - 1: log in
+[INFO ] 2023-12-29 16:55:51.176 [main] ValidationView - 2: registration
+[INFO ] 2023-12-29 16:55:57.109 [main] ValidationView - Input login
+[INFO ] 2023-12-29 16:56:01.035 [main] ValidationView - Input password
+[INFO ] 2023-12-29 16:56:03.057 [main] CustomerProfileView - nickname: User#40
+[INFO ] 2023-12-29 16:56:03.057 [main] CustomerProfileView - phone: None
+[INFO ] 2023-12-29 16:56:03.058 [main] CustomerProfileView - email: MyUser
+[INFO ] 2023-12-29 16:56:03.058 [main] CustomerProfileView - 1: profile
+[INFO ] 2023-12-29 16:56:03.058 [main] CustomerProfileView - 2: orders
+[DEBUG] 2023-12-29 16:56:06.393 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:06.393 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:06.394 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:56:07.635 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:07.636 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:09.851 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:09.851 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:09.851 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:11.498 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 16:56:13.199 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 16:56:13.441 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 16:56:13.835 [main] CustomerProfileView - Price: 
+[ERROR] 2023-12-29 16:56:14.391 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 4, 4, 4, '4.0' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4-4-4' for key 'EquipmentType'
+[ERROR] 2023-12-29 16:56:14.392 [main] CustomerProfileView - java.lang.RuntimeException: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '4-4-4' for key 'EquipmentType'
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:14.393 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:14.394 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:56:23.002 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:23.002 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:25.627 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 16:56:25.629 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:25.630 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:26.522 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 16:56:26.524 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:26.524 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:28.035 [main] CustomerProfileView - [redirect...]
+[INFO ] 2023-12-29 16:56:28.037 [main] CustomerProfileView - 0 of Orders
+[DEBUG] 2023-12-29 16:56:28.037 [main] CustomerProfileView - Input number 
+[DEBUG] 2023-12-29 16:56:30.784 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:30.784 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:30.785 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:31.833 [main] CustomerProfileView - Type: 
+[DEBUG] 2023-12-29 16:56:33.708 [main] CustomerProfileView - Producer: 
+[DEBUG] 2023-12-29 16:56:34.470 [main] CustomerProfileView - Model: 
+[DEBUG] 2023-12-29 16:56:35.353 [main] CustomerProfileView - Price: 
+[INFO ] 2023-12-29 16:56:36.255 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2023-12-29 16:56:36.256 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:36.256 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:36.256 [main] CustomerProfileView - 3: return
+[DEBUG] 2023-12-29 16:56:36.257 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2023-12-29 16:56:36.257 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2023-12-29 16:56:36.257 [main] CustomerProfileView - 3: return
+[INFO ] 2023-12-29 16:56:44.847 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 16:56:44.859 [main] CustomerProfileView - Number of order is 11. Device is 455 null 455
+ Status:  not returned , repair duration is 10, cost is 414.0
+
+[DEBUG] 2023-12-29 16:56:44.859 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 16:56:57.326 [main] CustomerProfileView - type: 455
+[INFO ] 2023-12-29 16:56:57.328 [main] CustomerProfileView - device: 455 455
+[INFO ] 2023-12-29 16:56:57.329 [main] CustomerProfileView - need to modifying
+[INFO ] 2023-12-29 16:56:57.331 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 16:56:57.332 [main] CustomerProfileView - Number of order is 11. Device is 455 null 455
+ Status:  not returned , repair duration is 10, cost is 414.0
+
+[DEBUG] 2023-12-29 16:56:57.333 [main] CustomerProfileView - Input number 
+[INFO ] 2023-12-29 16:57:07.899 [main] CustomerProfileView - type: 455
+[INFO ] 2023-12-29 16:57:07.900 [main] CustomerProfileView - device: 455 455
+[INFO ] 2023-12-29 16:57:07.900 [main] CustomerProfileView - need to modifying
+[INFO ] 2023-12-29 16:57:07.902 [main] CustomerProfileView - 1 of Orders
+[INFO ] 2023-12-29 16:57:07.903 [main] CustomerProfileView - Number of order is 11. Device is 455 null 455
+ Status:  not returned , repair duration is 10, cost is 414.0
+
+[DEBUG] 2023-12-29 16:57:07.903 [main] CustomerProfileView - Input number 

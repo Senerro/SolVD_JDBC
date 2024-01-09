@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="ServiceCenterType">
+        <xs:choice>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+        </xs:choice>
+        <xs:attribute name="id" type="xs:long" use="optional"/>
+    </xs:complexType>
+    <xs:element name="ServiceCenter" type ="ServiceCenterType"/>
+</xs:schema>

@@ -1,0 +1,633 @@
+[INFO ] 2024-01-04 15:53:34.447 [main] testMAin - xmlNick
+[INFO ] 2024-01-04 16:08:41.676 [main] testMAin - xmlLogin
+[INFO ] 2024-01-04 16:09:33.536 [main] testMAin - xmlLogin
+[INFO ] 2024-01-04 16:10:06.380 [main] testMAin - xmlPassword
+[INFO ] 2024-01-04 16:11:32.567 [main] testMAin - xmlLogin
+[INFO ] 2024-01-04 16:11:32.572 [main] testMAin - xmlPassword
+[INFO ] 2024-01-04 16:13:49.448 [main] testMAin - xmlLogin
+[INFO ] 2024-01-04 16:13:49.455 [main] testMAin - xmlPassword
+[DEBUG] 2024-01-04 17:37:52.795 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:37:52.812 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:37:52.812 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-04 17:37:56.510 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:37:56.511 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:37:56.511 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:37:58.343 [main] ValidationView - Input login
+[DEBUG] 2024-01-04 17:39:15.334 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:39:15.351 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:39:15.351 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-04 17:39:18.906 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:39:18.907 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:39:18.907 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:39:20.553 [main] AdminView - jdbc or XML?
+[INFO ] 2024-01-04 17:39:20.553 [main] AdminView - 1: jdbc
+[INFO ] 2024-01-04 17:39:20.554 [main] AdminView - 2: XML
+[INFO ] 2024-01-04 17:39:25.329 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:39:25.329 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:39:25.329 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:39:25.330 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:39:25.330 [main] AdminView - 5. Services
+[DEBUG] 2024-01-04 17:49:50.285 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:49:50.292 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:49:50.293 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-04 17:49:52.632 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:49:52.632 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:49:52.632 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:49:53.799 [main] AdminView - jdbc or XML?
+[INFO ] 2024-01-04 17:49:53.800 [main] AdminView - 1: jdbc
+[INFO ] 2024-01-04 17:49:53.800 [main] AdminView - 2: XML
+[INFO ] 2024-01-04 17:50:17.231 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:50:17.232 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:50:17.233 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:50:17.233 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:50:17.234 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 17:50:18.876 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 17:50:18.876 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 17:50:18.877 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 17:50:18.877 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 17:50:18.877 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 17:50:18.878 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 17:50:18.879 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 17:50:18.879 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 17:50:18.879 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 17:50:18.880 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 17:50:18.880 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 17:50:18.881 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 17:50:18.881 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 17:50:18.881 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:50:18.882 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:50:18.882 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:50:18.883 [main] AdminView - 4: delete
+[ERROR] 2024-01-04 17:50:20.818 [main] CustomerProfilesDAO - Some error with table customer_profiles
+query is INSERT INTO customer_profiles  VALUES ( 0, 'xmlNick', '+375(25)...' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`customer_profiles`, CONSTRAINT `customer_profiles_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[DEBUG] 2024-01-04 17:52:38.158 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:52:38.163 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:52:38.164 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-04 17:52:41.185 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:52:41.186 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:52:41.186 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:53:01.051 [main] AdminView - jdbc or XML?
+[INFO ] 2024-01-04 17:53:01.051 [main] AdminView - 1: jdbc
+[INFO ] 2024-01-04 17:53:01.052 [main] AdminView - 2: XML
+[INFO ] 2024-01-04 17:53:02.955 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:53:02.956 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:53:02.956 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:53:02.957 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:53:02.957 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 17:53:04.598 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 17:53:04.598 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 17:53:04.598 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 17:53:04.599 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 17:53:04.600 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 17:53:04.601 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 17:53:04.601 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 17:53:04.601 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 17:53:04.602 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 17:53:04.602 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 17:53:04.602 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:53:04.603 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:53:04.603 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:53:04.603 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 17:53:54.296 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:53:54.300 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:53:54.300 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-04 17:53:56.892 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:53:56.893 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:53:56.893 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:53:57.714 [main] AdminView - jdbc or XML?
+[INFO ] 2024-01-04 17:53:57.715 [main] AdminView - 1: jdbc
+[INFO ] 2024-01-04 17:53:57.715 [main] AdminView - 2: XML
+[INFO ] 2024-01-04 17:53:58.809 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:53:58.810 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:53:58.810 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:53:58.810 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:53:58.811 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 17:54:00.703 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 17:54:00.703 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 17:54:00.704 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 17:54:00.704 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 17:54:00.704 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 17:54:00.705 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 17:54:00.706 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 17:54:00.707 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 17:54:00.707 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 17:54:00.707 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:54:00.708 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 17:54:03.370 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG] 2024-01-04 17:54:03.388 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:03.389 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:03.389 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:03.390 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:46.717 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:54:46.722 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:54:46.723 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-04 17:54:48.009 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:54:48.010 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:54:48.010 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:54:50.307 [main] AdminView - jdbc or XML?
+[INFO ] 2024-01-04 17:54:50.307 [main] AdminView - 1: jdbc
+[INFO ] 2024-01-04 17:54:50.308 [main] AdminView - 2: XML
+[INFO ] 2024-01-04 17:54:52.048 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:54:52.049 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:54:52.049 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:54:52.050 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:54:52.050 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 17:54:53.744 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 17:54:53.744 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 17:54:53.744 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 17:54:53.745 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 17:54:53.745 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 17:54:53.745 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 17:54:53.746 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 17:54:53.747 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 17:54:53.747 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 17:54:53.747 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:54:53.748 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:54:53.749 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:54:53.749 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 17:54:55.827 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG] 2024-01-04 17:54:55.844 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:55.845 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:55.845 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:54:55.845 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-04 17:55:46.289 [main] testMAin - [0] - xmlNick
++375(25)...
+[DEBUG] 2024-01-04 17:58:36.765 [main] testMAin - [0] - xmlNick
++375(25)...
+[DEBUG] 2024-01-04 17:58:48.925 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:58:48.940 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:58:48.941 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 17:58:52.094 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:58:52.094 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:58:52.094 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:58:52.934 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:58:52.934 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:58:52.935 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:58:52.935 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:58:52.935 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 17:58:54.523 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 17:58:54.524 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 17:58:54.524 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 17:58:54.525 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 17:58:54.525 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 17:58:54.525 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 17:58:54.526 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 17:58:54.526 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 17:58:54.527 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 17:58:54.527 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 17:58:54.528 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 17:58:54.528 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 17:58:54.529 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 17:58:54.530 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 17:58:54.531 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 17:58:54.531 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 17:58:54.532 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:58:54.532 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:58:54.533 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:58:54.533 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 17:58:56.085 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:58:56.085 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:58:56.086 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:58:56.086 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 17:59:04.304 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 17:59:04.310 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 17:59:04.310 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 17:59:05.766 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 17:59:05.767 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 17:59:05.767 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 17:59:09.097 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 17:59:09.098 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 17:59:10.624 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 17:59:10.624 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 17:59:10.624 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 17:59:10.625 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 17:59:10.626 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 17:59:10.627 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 17:59:10.628 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 17:59:10.628 [main] AdminView - [53] - xmlNick
++375(25)...
+[INFO ] 2024-01-04 17:59:10.628 [main] AdminView - 1: get
+[INFO ] 2024-01-04 17:59:10.629 [main] AdminView - 2: add
+[INFO ] 2024-01-04 17:59:10.629 [main] AdminView - 3: update
+[INFO ] 2024-01-04 17:59:10.629 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 18:00:10.871 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 18:00:10.878 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 18:00:10.878 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 18:00:12.820 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 18:00:12.820 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 18:00:12.821 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 18:00:13.953 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 18:00:13.954 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 18:00:13.954 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 18:00:13.954 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 18:00:13.955 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 18:00:19.390 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 18:00:19.390 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 18:00:19.391 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 18:00:19.391 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 18:00:19.391 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 18:00:19.392 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 18:00:19.393 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 18:00:19.393 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 18:00:19.393 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 18:00:19.394 [main] AdminView - 1: get
+[INFO ] 2024-01-04 18:00:19.395 [main] AdminView - 2: add
+[INFO ] 2024-01-04 18:00:19.395 [main] AdminView - 3: update
+[INFO ] 2024-01-04 18:00:19.395 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 18:01:01.991 [main] AdminView - 1: get
+[INFO ] 2024-01-04 18:01:01.994 [main] AdminView - 2: add
+[INFO ] 2024-01-04 18:01:01.998 [main] AdminView - 3: update
+[INFO ] 2024-01-04 18:01:02.002 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 18:02:53.776 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 18:02:53.777 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 18:02:53.778 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 18:02:53.779 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 18:02:53.780 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 18:02:56.828 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-04 18:02:56.829 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-04 18:02:56.830 [main] AdminView - [6] - pas2
+1
+[INFO ] 2024-01-04 18:02:56.831 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-04 18:02:56.832 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-04 18:02:56.833 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-04 18:02:56.834 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-04 18:02:56.835 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-04 18:02:56.836 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-04 18:02:56.837 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-04 18:02:56.838 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-04 18:02:56.839 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-04 18:02:56.840 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-04 18:02:56.841 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-04 18:02:56.842 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-04 18:02:56.843 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-04 18:02:56.844 [main] AdminView - [54] - xmlNick
++375(25)...
+[INFO ] 2024-01-04 18:02:56.845 [main] AdminView - 1: get
+[INFO ] 2024-01-04 18:02:56.845 [main] AdminView - 2: add
+[INFO ] 2024-01-04 18:02:56.846 [main] AdminView - 3: update
+[INFO ] 2024-01-04 18:02:56.847 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 18:03:04.882 [main] AdminView - Input id
+[INFO ] 2024-01-04 18:03:10.312 [main] AdminView - [54] - xmlNick
++375(25)...
+[INFO ] 2024-01-04 18:03:10.313 [main] AdminView - 1: get
+[INFO ] 2024-01-04 18:03:10.314 [main] AdminView - 2: add
+[INFO ] 2024-01-04 18:03:10.315 [main] AdminView - 3: update
+[INFO ] 2024-01-04 18:03:10.316 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 21:20:59.916 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:20:59.920 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:20:59.920 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 21:21:03.401 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 21:21:03.401 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 21:21:03.402 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 21:21:04.523 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:21:04.524 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:21:04.524 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:21:04.524 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:21:04.524 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:21:08.351 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-04 21:21:08.351 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-04 21:21:08.351 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-04 21:21:08.352 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:21:08.352 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:21:08.352 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:21:08.353 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 21:21:39.796 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:21:39.804 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:21:39.805 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 21:21:44.577 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 21:21:44.578 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 21:21:44.578 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 21:21:48.692 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:21:48.692 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:21:48.692 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:21:48.693 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:21:48.693 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:21:51.825 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-04 21:21:51.826 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-04 21:21:51.826 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-04 21:21:51.827 [main] AdminView - [11] name: , location: 
+[INFO ] 2024-01-04 21:21:51.827 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:21:51.827 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:21:51.828 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:21:51.828 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 21:26:02.442 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:26:02.450 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:26:02.451 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 21:26:04.078 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 21:26:04.078 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 21:26:04.078 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 21:26:05.258 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:26:05.258 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:26:05.258 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:26:05.259 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:26:05.259 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:26:07.934 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-04 21:26:07.935 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-04 21:26:07.935 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-04 21:26:07.935 [main] AdminView - [11] name: , location: 
+[INFO ] 2024-01-04 21:26:07.936 [main] AdminView - [12] name: , location: 
+[INFO ] 2024-01-04 21:26:07.936 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:26:07.936 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:26:07.936 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:26:07.937 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 21:26:18.704 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:26:18.704 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:26:18.704 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:26:18.705 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 21:30:36.786 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:30:36.792 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:30:36.792 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 21:30:40.788 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 21:30:40.789 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 21:30:40.789 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 21:30:41.947 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:30:41.948 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:30:41.948 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:30:41.948 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:30:41.949 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:30:44.086 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-04 21:30:44.086 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-04 21:30:44.086 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-04 21:30:44.087 [main] AdminView - [11] name: , location: 
+[INFO ] 2024-01-04 21:30:44.087 [main] AdminView - [12] name: , location: 
+[INFO ] 2024-01-04 21:30:44.087 [main] AdminView - [13] name: , location: 
+[INFO ] 2024-01-04 21:30:44.087 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:30:44.088 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:30:44.088 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:30:44.088 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 21:31:12.199 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:31:12.200 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:31:12.200 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:31:12.200 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 21:32:06.024 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:32:06.024 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:32:06.025 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:32:06.025 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:32:06.026 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:32:07.615 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-04 21:32:07.616 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-04 21:32:07.616 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-04 21:32:07.616 [main] AdminView - [11] name: , location: 
+[INFO ] 2024-01-04 21:32:07.617 [main] AdminView - [12] name: , location: 
+[INFO ] 2024-01-04 21:32:07.617 [main] AdminView - [13] name: , location: 
+[INFO ] 2024-01-04 21:32:07.617 [main] AdminView - [14] name: Mars, location: Mars, Sun system
+[INFO ] 2024-01-04 21:32:07.618 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:32:07.618 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:32:07.619 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:32:07.619 [main] AdminView - 4: delete
+[DEBUG] 2024-01-04 21:44:21.381 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:44:21.387 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:44:21.387 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-04 21:56:04.853 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:56:04.859 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:56:04.859 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 21:56:06.879 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 21:56:06.880 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 21:56:06.880 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 21:56:11.148 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:56:11.151 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:56:11.718 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:56:11.719 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:56:12.107 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:56:17.174 [main] AdminView - [4] post: repairman
+[INFO ] 2024-01-04 21:56:17.174 [main] AdminView - [5] post: techpriest
+[INFO ] 2024-01-04 21:56:17.175 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:56:17.175 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:56:17.175 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:56:17.176 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 21:56:20.687 [main] AdminView - [9] post: 
+[INFO ] 2024-01-04 21:56:51.112 [main] AdminView - created
+[INFO ] 2024-01-04 21:56:53.479 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:56:53.480 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:56:53.481 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:56:53.483 [main] AdminView - 4: delete
+[ERROR] 2024-01-04 21:57:06.647 [main] UsersDAO - Some error with table employee_posts
+query is INSERT INTO employee_posts(role, description)  VALUES ( '', '' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'RoleName'
+[DEBUG] 2024-01-04 21:57:27.992 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-04 21:57:27.997 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-04 21:57:27.998 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-04 21:57:30.677 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-04 21:57:30.678 [main] ValidationView - 1: log in
+[INFO ] 2024-01-04 21:57:30.678 [main] ValidationView - 2: registration
+[INFO ] 2024-01-04 21:57:33.660 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:57:33.661 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:57:33.819 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:57:33.819 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:57:34.265 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:57:41.092 [main] AdminView - [4] post: repairman
+[INFO ] 2024-01-04 21:57:41.093 [main] AdminView - [5] post: techpriest
+[INFO ] 2024-01-04 21:57:41.093 [main] AdminView - [9] post: 
+[INFO ] 2024-01-04 21:57:41.093 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:57:41.094 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:57:41.094 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:57:41.094 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 21:57:45.471 [main] AdminView - [11] post: Omnissiah
+[INFO ] 2024-01-04 21:57:59.537 [main] AdminView - created
+[INFO ] 2024-01-04 21:57:59.539 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:57:59.540 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:57:59.541 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:57:59.543 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 21:58:04.447 [main] AdminView - 1. Customers
+[INFO ] 2024-01-04 21:58:04.448 [main] AdminView - 2. Workers
+[INFO ] 2024-01-04 21:58:04.605 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-04 21:58:04.605 [main] AdminView - 4. Orders
+[INFO ] 2024-01-04 21:58:04.749 [main] AdminView - 5. Services
+[INFO ] 2024-01-04 21:58:06.731 [main] AdminView - [4] post: repairman
+[INFO ] 2024-01-04 21:58:06.732 [main] AdminView - [5] post: techpriest
+[INFO ] 2024-01-04 21:58:06.732 [main] AdminView - [9] post: 
+[INFO ] 2024-01-04 21:58:06.732 [main] AdminView - [11] post: Omnissiah
+[INFO ] 2024-01-04 21:58:06.733 [main] AdminView - 1: get
+[INFO ] 2024-01-04 21:58:06.734 [main] AdminView - 2: add
+[INFO ] 2024-01-04 21:58:06.734 [main] AdminView - 3: update
+[INFO ] 2024-01-04 21:58:06.735 [main] AdminView - 4: delete
+[INFO ] 2024-01-04 22:14:42.044 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-04 22:14:42.053 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[INFO ] 2024-01-04 22:17:37.644 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-04 22:17:43.180 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[INFO ] 2024-01-04 22:19:49.500 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-04 22:19:54.779 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[INFO ] 2024-01-04 22:25:20.214 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-04 22:25:20.218 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[INFO ] 2024-01-04 22:25:23.013 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-04 22:25:23.018 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[INFO ] 2024-01-04 22:26:52.667 [main] testMAin - Employee with login [xmlLogin] And password [xmlPassword] 
+[INFO ] 2024-01-04 22:26:52.673 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
