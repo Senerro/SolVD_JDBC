@@ -11,6 +11,7 @@ public enum StaxPath {
     EMPLOYEE_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\EmployeeProfile.xsd"),
     ORDER("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\target\\classes\\Stax\\xml\\Order.xml"),
     ORDER_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\Order.xsd"),
+    EQUIPMENT("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\Equipment.xml"),
     ;private final String path;
     StaxPath(String string) {
         this.path = string;

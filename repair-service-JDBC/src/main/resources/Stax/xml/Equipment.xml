@@ -5,7 +5,6 @@
     <producer>some model</producer>
     <model>somesthing</model>
     <price>0.0</price>
-
     <list>
         <problem>
             <id>5</id>
@@ -16,5 +15,4 @@
             <typeId>2</typeId>
         </problem>
     </list>
-
 </equipments>

@@ -58,7 +58,8 @@ public class testMAin {
         }
         {
             //JAXB.set(new Equipments());
-              var a = JAXB.get(new Orders());
+              var a = JAXB.get(new Equipments());
+              var b = a.problemDTO();
             LOGGER.info(a);
 
 

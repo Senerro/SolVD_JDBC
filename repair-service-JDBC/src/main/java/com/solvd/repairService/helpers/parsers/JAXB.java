@@ -128,6 +128,13 @@ public class JAXB {
                         StaxPath.ORDER_XSD.path(),
                         model.getClass());
     }
+    public static Equipments get(Equipments model) {
+
+        return (Equipments)
+                set(StaxPath.EQUIPMENT.path(),
+                        StaxPath.ORDER_XSD.path(),
+                        model.getClass());
+    }
 
     private static Object setOrder(String path, String path1, Class<? extends Orders> aClass) {
         BufferedReader br = null;

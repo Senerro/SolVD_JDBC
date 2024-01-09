@@ -20,8 +20,6 @@ public class Equipments extends AbstractModel {
     private String model;
     @XmlElement
     private double price;
-    @XmlElementWrapper(nillable = true)
-    @XmlAnyElement
     private List<Problems> problemsList = new ArrayList<>();
     @XmlElement (name = "list")
     private ProblemDTO problemDTO;
