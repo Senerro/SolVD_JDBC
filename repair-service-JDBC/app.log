@@ -858,3 +858,140 @@ Exp 5.0 yearsposition:  repairman
 [INFO ] 2024-01-09 17:42:29.733 [main] testMAin - Name: xmlFullName ,phone +375(25)...
 Exp 5.0 yearsposition:  repairman
 [INFO ] 2024-01-09 19:52:08.391 [main] testMAin - com.solvd.repairService.model.Equipments@70f59913
+[DEBUG] 2024-01-09 20:43:00.972 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-09 20:43:00.979 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-09 20:43:00.980 [main] ValidationView - 2: Stax
+[INFO ] 2024-01-09 20:44:32.462 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-09 20:44:32.462 [main] ValidationView - 1: log in
+[INFO ] 2024-01-09 20:44:32.462 [main] ValidationView - 2: registration
+[INFO ] 2024-01-09 20:44:33.801 [main] AdminView - 1. Customers
+[INFO ] 2024-01-09 20:44:33.801 [main] AdminView - 2. Workers
+[INFO ] 2024-01-09 20:44:33.801 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-09 20:44:33.802 [main] AdminView - 4. Orders
+[INFO ] 2024-01-09 20:44:33.802 [main] AdminView - 5. Services
+[INFO ] 2024-01-09 20:44:42.320 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-09 20:44:42.320 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-09 20:44:42.321 [main] AdminView - [6] - NewMyNick
+1
+[INFO ] 2024-01-09 20:44:42.321 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-09 20:44:42.322 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-09 20:44:42.322 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-09 20:44:42.322 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-09 20:44:42.323 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-09 20:44:42.323 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-09 20:44:42.323 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-09 20:44:42.324 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-09 20:44:42.324 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-09 20:44:42.324 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-09 20:44:42.324 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-09 20:44:42.325 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-09 20:44:42.325 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-09 20:44:42.325 [main] AdminView - [54] - xmlNick
++375(25)...
+[INFO ] 2024-01-09 20:44:42.326 [main] AdminView - [57] - Staxon Statham
++44(819)...
+[INFO ] 2024-01-09 20:44:42.326 [main] AdminView - 1: get
+[INFO ] 2024-01-09 20:44:42.327 [main] AdminView - 2: add
+[INFO ] 2024-01-09 20:44:42.327 [main] AdminView - 3: update
+[INFO ] 2024-01-09 20:44:42.328 [main] AdminView - 4: delete
+[INFO ] 2024-01-09 20:44:50.522 [main] AdminView - 1: get
+[INFO ] 2024-01-09 20:44:50.523 [main] AdminView - 2: add
+[INFO ] 2024-01-09 20:44:50.523 [main] AdminView - 3: update
+[INFO ] 2024-01-09 20:44:50.523 [main] AdminView - 4: delete
+[INFO ] 2024-01-09 20:44:53.700 [main] AdminView - Input id
+[INFO ] 2024-01-09 20:44:56.825 [main] AdminView - Input id
+[INFO ] 2024-01-09 20:45:02.590 [main] AdminView - [57] - Staxon Statham
++44(819)...
+[INFO ] 2024-01-09 20:45:02.590 [main] AdminView - You can not get customer when any customer doesn't exist
+[INFO ] 2024-01-09 20:45:02.590 [main] AdminView - 1: get
+[INFO ] 2024-01-09 20:45:02.591 [main] AdminView - 2: add
+[INFO ] 2024-01-09 20:45:02.591 [main] AdminView - 3: update
+[INFO ] 2024-01-09 20:45:02.591 [main] AdminView - 4: delete
+[INFO ] 2024-01-09 20:45:04.189 [main] AdminView - 1. Customers
+[INFO ] 2024-01-09 20:45:04.189 [main] AdminView - 2. Workers
+[INFO ] 2024-01-09 20:45:04.190 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-09 20:45:04.190 [main] AdminView - 4. Orders
+[INFO ] 2024-01-09 20:45:04.191 [main] AdminView - 5. Services
+[INFO ] 2024-01-09 20:45:05.655 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-09 20:45:05.656 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-09 20:45:05.656 [main] AdminView - [6] - NewMyNick
+1
+[INFO ] 2024-01-09 20:45:05.657 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-09 20:45:05.657 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-09 20:45:05.658 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-09 20:45:05.658 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-09 20:45:05.658 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-09 20:45:05.659 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-09 20:45:05.659 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-09 20:45:05.659 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-09 20:45:05.660 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-09 20:45:05.660 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-09 20:45:05.660 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-09 20:45:05.661 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-09 20:45:05.661 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-09 20:45:05.661 [main] AdminView - [54] - xmlNick
++375(25)...
+[INFO ] 2024-01-09 20:45:05.661 [main] AdminView - [57] - Staxon Statham
++44(819)...
+[INFO ] 2024-01-09 20:45:05.661 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+[INFO ] 2024-01-09 20:45:05.662 [main] AdminView - 1: get
+[INFO ] 2024-01-09 20:45:05.662 [main] AdminView - 2: add
+[INFO ] 2024-01-09 20:45:05.662 [main] AdminView - 3: update
+[INFO ] 2024-01-09 20:45:05.662 [main] AdminView - 4: delete
+[INFO ] 2024-01-09 20:45:29.489 [main] AdminView - 1. Customers
+[INFO ] 2024-01-09 20:45:29.490 [main] AdminView - 2. Workers
+[INFO ] 2024-01-09 20:45:29.490 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-09 20:45:29.491 [main] AdminView - 4. Orders
+[INFO ] 2024-01-09 20:45:29.491 [main] AdminView - 5. Services
+[INFO ] 2024-01-09 20:45:30.924 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.925 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.925 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.925 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.926 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.926 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.926 [main] AdminView - [58] Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 yearsposition: repairman
+[INFO ] 2024-01-09 20:45:30.926 [main] AdminView - 1: get
+[INFO ] 2024-01-09 20:45:30.927 [main] AdminView - 2: add
+[INFO ] 2024-01-09 20:45:30.927 [main] AdminView - 3: update
+[INFO ] 2024-01-09 20:45:30.927 [main] AdminView - 4: delete
+[ERROR] 2024-01-09 20:45:31.911 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 59, 'xmlFullNameDEMO2', '+375(25)...DEMO2', 'null', '5.0', 'null' )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'postId' at row 1

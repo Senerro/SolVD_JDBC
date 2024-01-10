@@ -82,7 +82,7 @@ public class JAXB {
             JAXBContext context = JAXBContext.newInstance(model);
 
             Unmarshaller unmarshaller = context.createUnmarshaller();
-            schema.equals("");                                                                                                                               //unmarshaller.setSchema(schema);
+                                                                                                                                         //unmarshaller.setSchema(schema);
             Object tmp = unmarshaller.unmarshal(reader);
             return tmp;
         } catch (FileNotFoundException e) {
