@@ -1,5 +1,7 @@
 package com.solvd.repairService.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
@@ -23,6 +25,11 @@ public class EmployeeProfiles extends AbstractModel {
     private EmployeePosts post;
 
     private ServiceCenters center;
+
+    @JsonGetter
+    public ServiceCenters center() {
+        return center;
+    }
 
     public EmployeeProfiles(Long id) {
         super(id, EmployeeProfiles.class);
@@ -52,7 +59,14 @@ public class EmployeeProfiles extends AbstractModel {
     public EmployeeProfiles(String fullname, String phone, double experience, Long serviceCenterId) {
         this(0L, fullname, phone, experience, serviceCenterId);
     }
+    public EmployeeProfiles(String fullname, String phone, double experience, Users user, EmployeePosts post, ServiceCenters center) {
+        this(user.id(), fullname, phone, experience, center.id());
+        this.post = post;
+        this.center = center;
+        this.user = user;
+    }
 
+    @JsonGetter
     public Users user() {
         return user;
     }
@@ -62,14 +76,17 @@ public class EmployeeProfiles extends AbstractModel {
         postId = post.id();
     }
 
+    @JsonGetter
     public EmployeePosts post() {
         return post;
     }
 
+    @JsonGetter
     public double experience() {
         return experience;
     }
 
+    @JsonGetter
     public ServiceCenters serviceCenters() {
         return center;
     }
@@ -83,6 +100,7 @@ public class EmployeeProfiles extends AbstractModel {
         this.experience = experience;
     }
 
+    @JsonGetter
     public Long postId() {
         return postId;
     }
@@ -91,6 +109,7 @@ public class EmployeeProfiles extends AbstractModel {
         this.postId = postId;
     }
 
+    @JsonGetter
     public String fullName() {
         return fullName;
     }
@@ -99,14 +118,17 @@ public class EmployeeProfiles extends AbstractModel {
         this.fullName = fullName;
     }
 
+
     public void phone(String phone) {
         this.phone = phone;
     }
 
+    @JsonGetter
     public String phone() {
         return phone;
     }
 
+    @JsonGetter
     public Long serviceCenterId() {
         return serviceCenterId;
     }

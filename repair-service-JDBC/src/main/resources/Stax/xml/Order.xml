@@ -13,7 +13,6 @@
             <password>bigPassword@order.xml</password>
             <role>false</role>
         </user>
-
     </customer>
 
     <employee>

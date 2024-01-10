@@ -1,5 +1,7 @@
 package com.solvd.repairService.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
@@ -46,6 +48,7 @@ public class Users extends AbstractModel {
         this.role = role;
     }
 
+    @JsonGetter
     public String login() {
         return login;
     }
@@ -54,6 +57,7 @@ public class Users extends AbstractModel {
         this.login = login;
     }
 
+    @JsonGetter
     public String password() {
         return password;
     }
@@ -62,6 +66,7 @@ public class Users extends AbstractModel {
         this.password = password;
     }
 
+    @JsonGetter
     public boolean role() {
         return role;
     }

@@ -188,6 +188,7 @@ public class AdminView {
         if (Global.jaxb()) {
             try {
                 var dto = Stax.get(new Orders());
+
                 var serviceCenter = serviceSC.get(dto.center().id());
                 if(serviceCenter.id() <= 0) {
                     serviceCenter = serviceSC.create(serviceCenter);

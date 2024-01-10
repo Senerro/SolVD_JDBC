@@ -1,23 +1,16 @@
 package com.solvd.repairService;
 
-import com.solvd.repairService.helpers.parsers.JAXB;
-import com.solvd.repairService.helpers.parsers.StaxPath;
-import com.solvd.repairService.helpers.parsers.StaxStreamProcessor;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.solvd.repairService.helpers.parsers.Jackson;
+import com.solvd.repairService.helpers.parsers.Paths;
 import com.solvd.repairService.model.*;
-import com.solvd.repairService.model.dto.OrderDTO;
+import com.solvd.repairService.model.Test.A;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
-import javax.xml.stream.XMLStreamReader;
-import javax.xml.stream.events.XMLEvent;
-import java.io.StringWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
+import java.io.File;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class testMAin {
@@ -57,12 +50,24 @@ public class testMAin {
            // System.out.println(writer);*/
         }
         {
-            //JAXB.set(new Equipments());
-              var a = JAXB.get(new Equipments());
-              var b = a.problemDTO();
-            LOGGER.info(a);
+          /*  ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules();
+            objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
+            LocalDate date = LocalDate.now().plusDays(7L);
+            ServiceCenters center = new ServiceCenters(5L, "someAddress", "someName", null, null, date);
+            String json = objectMapper.writeValueAsString(center);
+            LOGGER.debug(json);*/
 
+            /*System.out.println("\n");
+            String a = "{\"id\":5,\"address\":\"someAddress\",\"name\":\"someName\",\"photo\":null,\"description\":null}";
+            ServiceCenters returnedServiceCenters = objectMapper.readValue(a, ServiceCenters.class);
+            LOGGER.debug(returnedServiceCenters);*/
+
+            /*File file = new File(Paths.SERVICE_JSON.path());
+            Object returnedServiceCenters = objectMapper.readValue(file, ServiceCenters.class);*/
+
+           var a = Jackson.set(new Orders());
+           LOGGER.debug(a);
         }
 
     }

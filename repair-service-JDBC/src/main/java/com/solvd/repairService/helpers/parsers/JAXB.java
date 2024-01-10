@@ -96,54 +96,54 @@ public class JAXB {
     public static CustomerProfiles get(CustomerProfiles model) {
 
         return (CustomerProfiles)
-                set(StaxPath.CUSTOMER.path(),
-                        StaxPath.CUSTOMER_XSD.path(),
+                set(Paths.CUSTOMER_XML.path(),
+                        Paths.CUSTOMER_XSD.path(),
                         model.getClass());
     }
     public static EmployeePosts get(EmployeePosts model) {
 
         return (EmployeePosts)
-                set(StaxPath.POST.path(),
-                        StaxPath.POST_XSD.path(),
+                set(Paths.POST_XML.path(),
+                        Paths.POST_XSD.path(),
                         model.getClass());
     }
     public static EmployeeProfiles get(EmployeeProfiles model) {
 
         return (EmployeeProfiles)
-                set(StaxPath.EMPLOYEE.path(),
-                        StaxPath.EMPLOYEE_XSD.path(),
+                set(Paths.EMPLOYEE_XML.path(),
+                        Paths.EMPLOYEE_XSD.path(),
                         model.getClass());
     }
     public static ServiceCenters get(ServiceCenters model) {
 
         return (ServiceCenters)
-                set(StaxPath.SERVICE.path(),
-                        StaxPath.SERVICE_XSD.path(),
+                set(Paths.SERVICE_XML.path(),
+                        Paths.SERVICE_XSD.path(),
                         model.getClass());
     }
     public static Orders get(Orders model) {
 
         return (Orders)
-                set(StaxPath.ORDER.path(),
-                        StaxPath.ORDER_XSD.path(),
+                set(Paths.ORDER_XML.path(),
+                        Paths.ORDER_XSD.path(),
                         model.getClass());
     }
     public static Equipments get(Equipments model) {
 
         return (Equipments)
-                set(StaxPath.EQUIPMENT.path(),
-                        StaxPath.ORDER_XSD.path(),
+                set(Paths.EQUIPMENT_XML.path(),
+                        Paths.ORDER_XSD.path(),
                         model.getClass());
     }
 
     private static Object setOrder(String path, String path1, Class<? extends Orders> aClass) {
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader(StaxPath.ORDER.path()));
+            br = new BufferedReader(new FileReader(Paths.ORDER_XML.path()));
             String body = br.lines().collect(Collectors.joining());
             StringReader reader = new StringReader(body);
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = sf.newSchema(new File(StaxPath.ORDER_XSD.path()));
+            Schema schema = sf.newSchema(new File(Paths.ORDER_XSD.path()));
             JAXBContext context = JAXBContext.newInstance(Orders.class);
 
             Unmarshaller unmarshaller = context.createUnmarshaller();

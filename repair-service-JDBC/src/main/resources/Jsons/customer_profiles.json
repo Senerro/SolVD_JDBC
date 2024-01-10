@@ -1,0 +1,11 @@
+{
+  "id": 0,
+  "nick": "CustomerJsonick",
+  "phone": "+375(44)...",
+  "user": {
+    "id": 0,
+    "login": "JsonloginCustomer",
+    "password": "jsonPassCustomer",
+    "role": false
+  }
+}

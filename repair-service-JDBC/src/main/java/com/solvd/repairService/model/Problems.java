@@ -1,5 +1,8 @@
 package com.solvd.repairService.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.xml.bind.annotation.*;
 import java.util.List;
 
@@ -11,7 +14,7 @@ public class Problems extends AbstractModel {
     private String description;
     @XmlElement (name = "typeId")
     private Long typeId;
-
+    @JsonIgnore
     private List<Equipments> equipmentsList;
 
     public Problems(Long id) {
@@ -28,6 +31,7 @@ public class Problems extends AbstractModel {
         this.typeId = typeId;
     }
 
+    @JsonGetter
     public String description() {
         return description;
     }
@@ -36,10 +40,12 @@ public class Problems extends AbstractModel {
         this.description = description;
     }
 
+    @JsonGetter
     public Long typeId() {
         return typeId;
     }
 
+    @JsonGetter
     public void typeId(Long typeId) {
         this.typeId = typeId;
     }

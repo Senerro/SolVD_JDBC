@@ -1,9 +1,14 @@
 package com.solvd.repairService.model;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.fasterxml.jackson.annotation.JsonAnyGetter;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonGetter;
 
-@XmlRootElement (name ="ServiceCenter")
+import javax.xml.bind.annotation.XmlElement;
+
+import javax.xml.bind.annotation.XmlRootElement;
+import java.time.LocalDate;
+
 public class ServiceCenters extends AbstractModel {
     @XmlElement(name = "address")
     private String address;
@@ -11,7 +16,6 @@ public class ServiceCenters extends AbstractModel {
     private String name;
     private byte[] photo;
     private String description;
-
     public ServiceCenters(Long id) {
         super(id, ServiceCenters.class);
     }
@@ -28,6 +32,7 @@ public class ServiceCenters extends AbstractModel {
         this(0L);
     }
 
+    @JsonGetter
     public String name() {
         return name;
     }
@@ -36,6 +41,7 @@ public class ServiceCenters extends AbstractModel {
         this.name = name;
     }
 
+    @JsonGetter
     public String address() {
         return address;
     }
@@ -44,6 +50,7 @@ public class ServiceCenters extends AbstractModel {
         this.address = address;
     }
 
+    @JsonGetter
     public byte[] photo() {
         return photo;
     }
@@ -57,12 +64,13 @@ public class ServiceCenters extends AbstractModel {
         this.description = description;
     }
 
+    @JsonGetter
     public String description() {
         return description;
     }
+
     @Override
-    public String toString()
-    {
-        return "["+id()+"] "+ "name: " + name + ", location: " + address;
+    public String toString() {
+        return "[" + id() + "] " + "name: " + name + ", location: " + address;
     }
 }

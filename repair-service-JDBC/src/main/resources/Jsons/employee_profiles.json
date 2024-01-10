@@ -1,0 +1,27 @@
+{
+  "id": 0,
+  "fullName": "SomeNick",
+  "phone": "somePhone",
+  "postId": null,
+  "serviceCenterId": 5,
+  "experience": 6.0,
+  "user": {
+    "id": 0,
+    "login": "Jsonlogin",
+    "password": "jsonPass",
+    "role": false
+  },
+  "post": {
+    "id": 12,
+    "role": "JsonPost",
+    "description": "some description"
+  },
+  "center": {
+    "id": 5,
+    "address": "someAddress",
+    "name": "someName",
+    "photo": null,
+    "description": null,
+    "date": null
+  }
+}

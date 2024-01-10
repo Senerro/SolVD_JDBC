@@ -1,5 +1,7 @@
 package com.solvd.repairService.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
+
 import javax.xml.bind.annotation.XmlElement;
 import java.util.ArrayList;
 
@@ -46,6 +48,7 @@ public class AbstractModel {
         return this.tableName;
     }
 
+    @JsonGetter
     public Long id() {
         return id;
     }

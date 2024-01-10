@@ -7,7 +7,6 @@ import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
 
 import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.HashSet;
 
 public class Stax {
@@ -15,7 +14,7 @@ public class Stax {
         String nick = "", phone = "", login = "", password = "";
         boolean role = false;
 
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.CUSTOMER.path())))) {
+        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(java.nio.file.Paths.get(Paths.CUSTOMER_XML.path())))) {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 if (reader.next() != XMLEvent.START_ELEMENT)
@@ -47,7 +46,7 @@ public class Stax {
     public static ServiceCenters get(ServiceCenters center) throws Exception {
         String name = "";
         String address = "";
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.SERVICE.path())))) {
+        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(java.nio.file.Paths.get(Paths.SERVICE_XML.path())))) {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 if (reader.next() != XMLEvent.START_ELEMENT)
@@ -67,7 +66,7 @@ public class Stax {
 
     public static EmployeePosts get(EmployeePosts post) throws Exception {
         String position = "", description = "";
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.POST.path())))) {
+        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(java.nio.file.Paths.get(Paths.POST_XML.path())))) {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 if (reader.next() != XMLEvent.START_ELEMENT)
@@ -92,7 +91,7 @@ public class Stax {
         String position = "", description = "";
 
         boolean role = true;
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.EMPLOYEE.path())))) {
+        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(java.nio.file.Paths.get(Paths.EMPLOYEE_XML.path())))) {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 if (reader.next() != XMLEvent.START_ELEMENT)
@@ -152,7 +151,7 @@ public class Stax {
 
         boolean customerEmpty = true, employeeEmpty = true, centerEmpty = true, equipmentEmpty = true;
         HashSet<String> problems = new HashSet<>();
-        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(Paths.get(StaxPath.ORDER.path())))) {
+        try (StaxStreamProcessor processor = new StaxStreamProcessor(Files.newInputStream(java.nio.file.Paths.get(Paths.ORDER_XML.path())))) {
             XMLStreamReader reader = processor.getReader();
             while (reader.hasNext()) {
                 if (reader.next() != XMLEvent.START_ELEMENT) {

@@ -1,5 +1,6 @@
 package com.solvd.repairService.model;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.solvd.repairService.model.dto.ProblemDTO;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class Equipments extends AbstractModel {
     @XmlElement (name = "list")
     private ProblemDTO problemDTO;
 
+    @JsonGetter
     public ProblemDTO problemDTO() {
         return problemDTO;
     }
@@ -60,6 +62,7 @@ public class Equipments extends AbstractModel {
         this(0L, type, producer, model, price);
     }
 
+    @JsonGetter
     public double price() {
         return price;
     }
@@ -67,6 +70,7 @@ public class Equipments extends AbstractModel {
         this.price = price;
     }
 
+    @JsonGetter
     public String type() {
         return type;
     }
@@ -75,6 +79,7 @@ public class Equipments extends AbstractModel {
         this.type = equipmentType;
     }
 
+    @JsonGetter
     public String model() {
         return model;
     }
@@ -83,6 +88,7 @@ public class Equipments extends AbstractModel {
         this.model = model;
     }
 
+    @JsonGetter
     public String producer() {
         return producer;
     }
@@ -96,5 +102,11 @@ public class Equipments extends AbstractModel {
     }
     public Problems getProblem() {
         return problemsList.get(problemsList.size()-1);
+    }
+    @JsonGetter
+
+    public ArrayList<Problems> getProblems()
+    {
+        return (ArrayList<Problems>) this.problemsList;
     }
 }
