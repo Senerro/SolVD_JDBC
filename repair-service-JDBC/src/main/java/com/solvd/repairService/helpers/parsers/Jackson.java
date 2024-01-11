@@ -63,31 +63,31 @@ public class Jackson {
     }
 
     public static ServiceCenters set(final ServiceCenters model) {
-        ServiceCenters entity = new ServiceCenters(5L, "someAddress", "someName", null, null);
+        ServiceCenters entity = new ServiceCenters(39L, "NewJson address", "JsonUnique company", null, null);
         write(genericName(model), converter(entity));
         return model;
     }
 
     public static EmployeePosts set(final EmployeePosts model) {
-        var entity = new EmployeePosts(12L, "JsonPost", "some description");
+        var entity = new EmployeePosts(14L, "NewUniqueJsonPost", "some json description");
         write(genericName(model), converter(entity));
         return model;
     }
 
     public static EmployeeProfiles set(final EmployeeProfiles model) {
 
-        var post = new EmployeePosts(12L, "JsonPost", "some description");
-        var user = new Users("Jsonlogin", "jsonPass");
-        var center = new ServiceCenters(5L, "someAddress", "someName", null, null);
+        var post = new EmployeePosts(64L, "NewUniqueJsonWorkerPost", "some json worker, no interesting moments");
+        var user = new Users("NewJsonlogin", "NewJsonPass");
+        var center = new ServiceCenters(39L, "Some json address", "new name", null, null);
 
-        var entity = new EmployeeProfiles("SomeNick", "somePhone", 6d, user, post, center);
+        var entity = new EmployeeProfiles("NewSomeJsonNick", "+375(json)...", 6d, user, post, center);
         write(genericName(model), converter(entity));
         return model;
     }
 
     public static CustomerProfiles set(final CustomerProfiles model) {
-        var user = new Users("JsonloginCustomer", "jsonPassCustomer");
-        var entity = new CustomerProfiles("CustomerJsonick", "+375(44)...", user);
+        var user = new Users("NewUinqueJsonloginCustomer", "NewUinqueJsonPassCustomer");
+        var entity = new CustomerProfiles("CustomerJsonick2", "+375(44)...", user);
         write(genericName(model), converter(entity));
         return model;
     }

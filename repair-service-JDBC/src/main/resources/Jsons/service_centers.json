@@ -1,8 +1,1 @@
-{
-  "id": 5,
-  "address": "someAddress",
-  "name": "someName",
-  "photo": null,
-  "description": null,
-  "date": "17/01/2024"
-}
+{"id":39,"address":"NewJson address","name":"JsonUnique company","photo":null,"description":null}

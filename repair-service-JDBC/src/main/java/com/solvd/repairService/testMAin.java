@@ -34,5 +34,11 @@ public class testMAin {
             var order = Jackson.get(new Orders());
             LOGGER.debug(order);
         }
+        /*Jackson.set(new Orders());
+        Jackson.set(new ServiceCenters());
+        Jackson.set(new EmployeePosts());
+        Jackson.set(new EmployeeProfiles());
+        Jackson.set(new CustomerProfiles());*/
+
     }
 }

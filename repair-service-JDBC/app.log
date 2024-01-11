@@ -1479,3 +1479,24 @@ status:  not returned , cost: 615.0
 [INFO ] 2024-01-11 19:17:06.390 [main] AdminView - 3. Worker positions
 [INFO ] 2024-01-11 19:17:06.390 [main] AdminView - 4. Orders
 [INFO ] 2024-01-11 19:17:06.391 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 20:01:59.936 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 20:01:59.959 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 20:01:59.961 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 20:01:59.962 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 20:02:00.010 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
