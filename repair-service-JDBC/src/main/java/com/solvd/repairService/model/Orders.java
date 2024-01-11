@@ -161,10 +161,10 @@ public class Orders extends AbstractModel {
         if (id() != 0L) {
             builder.append("[").append(id()).append("] ");
         }
-        if (user != null)
-            builder.append(user);
+        if (customer() != null)
+            builder.append("client: ").append(customer);
         if (employee != null)
-            builder.append(employee);
+            builder.append("worker: ").append(employee);
         if (equipment != null)
             builder.append(equipment);
         builder.append(", finish date is ").append(date);

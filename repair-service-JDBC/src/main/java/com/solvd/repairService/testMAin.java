@@ -1,11 +1,8 @@
 package com.solvd.repairService;
-
 import com.solvd.repairService.helpers.parsers.Jackson;
 import com.solvd.repairService.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.Scanner;
 
 public class testMAin {
     static {
