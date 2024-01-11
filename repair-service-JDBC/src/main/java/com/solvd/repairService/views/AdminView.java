@@ -4,6 +4,7 @@ import com.solvd.repairService.DAO.JDBC.*;
 import com.solvd.repairService.DAO.myBatisXML.*;
 import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.helpers.parsers.JAXB;
+import com.solvd.repairService.helpers.parsers.Jackson;
 import com.solvd.repairService.helpers.parsers.Stax;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
@@ -21,36 +22,36 @@ public class AdminView {
 
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(AdminView.class);
-    private static final CustomerProfilesService serviceCP = Global.state()
+    private static final CustomerProfilesService serviceCP = Global.jdbc()
             ? new CustomerProfilesService(new CustomerProfilesDAO())
             : new CustomerProfilesService(new CustomerProfilesBatisDAO());
-    private static final UsersService serviceU = Global.state()
+    private static final UsersService serviceU = Global.jdbc()
             ? new UsersService(new UsersDAO())
             : new UsersService(new UserBatisDAO());
 
-    private static final OrdersService serviceO = Global.state()
+    private static final OrdersService serviceO = Global.jdbc()
             ? new OrdersService(new OrdersDAO())
             : new OrdersService(new OrdersBatisDAO());
 
-    private static final ServiceCentersService serviceSC = Global.state()
+    private static final ServiceCentersService serviceSC = Global.jdbc()
             ? new ServiceCentersService(new ServiceCentersDAO())
             : new ServiceCentersService(new ServiceCentersBatisDAO());
-    private static final EmployerProfileService serviceEP = Global.state()
+    private static final EmployerProfileService serviceEP = Global.jdbc()
             ? new EmployerProfileService(new EmployeeProfilesDAO())
             : new EmployerProfileService(new EmployeeProfilesBatisDAO());
 
-    private static final EmployerPostsService servicePost = Global.state()
+    private static final EmployerPostsService servicePost = Global.jdbc()
             ? new EmployerPostsService(new EmployeePostsDAO())
             : new EmployerPostsService(new EmployerPostsBatisDAO());
 
-    private static final EquipmentsService serviceE = Global.state()
+    private static final EquipmentsService serviceE = Global.jdbc()
             ? new EquipmentsService(new EquipmentsDAO())
             : new EquipmentsService(new EquipmentsBatisDAO());
 
-    private static final OrderExecutionsService serviceOE = Global.state()
+    private static final OrderExecutionsService serviceOE = Global.jdbc()
             ? new OrderExecutionsService(new OrderExecutionsDAO())
             : new OrderExecutionsService(new OrderExecutionsBatisDAO());
-    private static final ProblemService serviceP = Global.state()
+    private static final ProblemService serviceP = Global.jdbc()
             ? new ProblemService(new ProblemsDAO())
             : new ProblemService(new ProblemsBatisDAO());
 
@@ -82,23 +83,6 @@ public class AdminView {
                 break;
         }
         adminUI();
-    }
-
-    private static void chooseCreationType() {
-        LOGGER.info("jdbc or XML?");
-        LOGGER.info("1: jdbc");
-        LOGGER.info("2: XML");
-        var answer = scanner.next();
-        switch (answer) {
-            case "1":
-                Global.jaxb(false);
-                break;
-            case "2":
-                Global.jaxb(true);
-                break;
-            default:
-                chooseCreationType();
-        }
     }
 
     private static void postActions(ArrayList<EmployeePosts> list) {
@@ -185,13 +169,13 @@ public class AdminView {
     }
 
     private static void addOrder(ArrayList<Orders> list) {
-        if (Global.jaxb()) {
+        if (!Global.console()) {
             try {
-                var dto = Stax.get(new Orders());
+                var dto = (Orders)getPreparedModel(new Orders());
 
                 var serviceCenter = serviceSC.get(dto.center().id());
-                if(serviceCenter.id() <= 0) {
-                    serviceCenter = serviceSC.create(serviceCenter);
+                if (serviceCenter.id() <= 0) {
+                    serviceCenter = serviceSC.create(dto.center());
                     dto.employee().serviceCenters(serviceCenter);
                 }
                 var customer = dto.customer();
@@ -210,6 +194,7 @@ public class AdminView {
                     customer.user(user);
                     serviceCP.create(customer);
                 }
+                var post = dto.employee().post();
 
                 var employee = dto.employee();
                 try {
@@ -218,6 +203,8 @@ public class AdminView {
                     if (tmp == null) {
                         LOGGER.warn("profile for employee wasn't created");
                         employee.user(user);
+                        employee.center(serviceCenter);
+                        employee.post(post);
                         employee = serviceEP.create(employee);
                         LOGGER.warn("profile was created");
                     }
@@ -226,8 +213,11 @@ public class AdminView {
 
                     Users user = serviceU.create(employee.user());
                     employee.user(user);
+                    employee.center(serviceCenter);
+                    employee.post(post);
                     serviceEP.create(employee);
                 }
+
                 var problem = serviceP.create();
                 dto.equipment().addProblem(problem);
                 var equipment = serviceE.create(dto.equipment());
@@ -366,14 +356,10 @@ public class AdminView {
     }
 
     private static void addService(ArrayList<ServiceCenters> list) {
-        if (Global.jaxb()) {
-            try {
-                var center = JAXB.get(new ServiceCenters());
-                serviceSC.create(center);
-                list.add(center);
-            } catch (Exception e) {
-                serviceActions(list);
-            }
+        if (!Global.console()) {
+            var center = (ServiceCenters) getPreparedModel(new ServiceCenters());
+            serviceSC.create(center);
+            list.add(center);
         } else {
             LOGGER.info("address ");
             var address = scanner.next();
@@ -410,12 +396,12 @@ public class AdminView {
                 var center = serviceSC.get(id);
                 LOGGER.info(center);
                 return center;
-            } else getService(list);
+            }
+            else getService(list);
         }
         LOGGER.info("You can not get customer when any customer doesn't exist");
         serviceActions(list);
         return null;
-
     }
 
     private static void getPosts() {
@@ -468,9 +454,9 @@ public class AdminView {
     }
 
     private static void addPost(ArrayList<EmployeePosts> list) {
-        if (Global.jaxb()) {
+        if (!Global.console()) {
             try {
-                var post = JAXB.get(new EmployeePosts());
+                var post = (EmployeePosts) getPreparedModel(new EmployeePosts());
                 post = servicePost.create(post);
                 LOGGER.info(post);
                 LOGGER.info("created");
@@ -586,26 +572,32 @@ public class AdminView {
     }
 
     private static void addWorker(ArrayList<EmployeeProfiles> list) {
-        if (Global.jaxb()) {
+        if (!Global.console()) {
             try {
-                var profile = JAXB.get(new EmployeeProfiles());
+                var profile = (EmployeeProfiles) getPreparedModel(new EmployeeProfiles());
                 var post = servicePost.get(profile.post().id());
                 if (post == null) {
                     LOGGER.error("position " + post + "doesn't exist");
                     post = servicePost.create(profile.post());
                     LOGGER.debug("position " + post + "was created");
                 }
+                profile.post(post);
                 Users user = new Users();
                 try {
                     user = serviceU.findUserByLogin(profile.user().login());
                 } catch (Exception e) {
                     user = serviceU.create(profile.user());
                 }
+                var center = serviceSC.get(profile.center().id());
+                if (center.id() <= 0)
+                    center = serviceSC.create(profile.center());
+
                 var tmp = serviceEP.get(user.id());
                 if (tmp != null)
                     LOGGER.error("profile for employee " + profile.fullName() + " already exist");
                 else {
                     profile.id(user.id());
+                    profile.center(center);
                     var result = serviceEP.create(profile);
                     if (result.id() > 0) {
                         LOGGER.info("profile was successfully created");
@@ -615,7 +607,9 @@ public class AdminView {
                 workersActions(list);
 
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                LOGGER.warn("profile wasn't created");
+                LOGGER.error(e.getMessage());
+                workersActions(list);
             }
         } else {
             LOGGER.info("login ");
@@ -760,9 +754,9 @@ public class AdminView {
     }
 
     private static void addCustomer(ArrayList<CustomerProfiles> profiles) {
-        if (Global.jaxb()) {
+        if (!Global.console()) {
             try {
-                var profile = JAXB.get(new CustomerProfiles());
+                var profile = (CustomerProfiles) getPreparedModel(new CustomerProfiles());
                 var user = serviceU.create(profile.user());
                 profile.user().id(user.id());
                 profile.id(user.id());
@@ -830,6 +824,42 @@ public class AdminView {
         LOGGER.info("3: update");
         LOGGER.info("4: delete");
         return scanner.next();
+    }
+
+    public static AbstractModel getPreparedModel(AbstractModel model) {
+        switch (model.getClass().getSimpleName()) {
+            case "CustomerProfiles":
+                if (Global.json())
+                    return Jackson.get(new CustomerProfiles());
+                if (Global.jaxb())
+                    return JAXB.get(new CustomerProfiles());
+                break;
+            case "EmployeeProfiles":
+                if (Global.json())
+                    return Jackson.get(new EmployeeProfiles());
+                if (Global.jaxb())
+                    return JAXB.get(new EmployeeProfiles());
+                break;
+            case "EmployeePosts":
+                if (Global.json())
+                    return Jackson.get(new EmployeePosts());
+                if (Global.jaxb())
+                    return JAXB.get(new EmployeePosts());
+                break;
+            case "ServiceCenters":
+                if (Global.json())
+                    return Jackson.get(new ServiceCenters());
+                if (Global.jaxb())
+                    return JAXB.get(new ServiceCenters());
+                break;
+            case "Orders":
+                if (Global.json())
+                    return Jackson.get(new Orders());
+                if (Global.jaxb())
+                    return JAXB.get(new Orders());
+                break;
+        }
+        return null;
     }
 
 }

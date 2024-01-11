@@ -18,15 +18,19 @@ public class Main {
     public static void main(String[] args) {
 
         LOGGER.debug("JDBC or my batis?");
-        LOGGER.debug("1: JDBC");
+        LOGGER.debug("1: console");
         LOGGER.debug("2: Stax");
+        LOGGER.debug("3: Json");
         String answer = scanner.nextLine();
         switch (answer) {
             case "1":
-                Global.jaxb(false);
+                Global.console(true);
                 break;
             case "2":
                 Global.jaxb(true);
+                break;
+            case "3":
+                Global.json(true);
                 break;
             default: main(new String[1]);
         }

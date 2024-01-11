@@ -30,6 +30,10 @@ public class EmployeeProfiles extends AbstractModel {
     public ServiceCenters center() {
         return center;
     }
+    public void center(ServiceCenters center) {
+        this.center = center;
+        this.serviceCenterId = center.id();
+    }
 
     public EmployeeProfiles(Long id) {
         super(id, EmployeeProfiles.class);

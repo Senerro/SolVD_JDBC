@@ -195,7 +195,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 " JOIN equipments AS e ON e.id = o.equipmentId\n" +
                 " JOIN order_executions AS oe ON oe.id = o.executeId\n" +
                 " JOIN customer_profiles AS cp ON cp.id = o.userId\n" +
-                " JOIN employer_profiles AS ep ON ep.id = oe.employerId\n" +
+                " JOIN employee_profiles AS ep ON ep.id = oe.employerId\n" +
                 " JOIN service_centers AS sc ON sc.id = oe.serviceCenterID" +
                 " WHERE o.id = " + order.id();
 

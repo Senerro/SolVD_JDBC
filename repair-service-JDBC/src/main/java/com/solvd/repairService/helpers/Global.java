@@ -1,8 +1,14 @@
 package com.solvd.repairService.helpers;
 
 public class Global {
+    private static boolean isConsole = false;
+    private static boolean isJAXB = false;
+    private static boolean isJson = false;
     private static boolean isJDBC = true;
-    private static boolean isJAXB = true;
+
+    public static boolean jdbc() {
+        return isJDBC;
+    }
 
     public static void jaxb(boolean isStax) {
         Global.isJAXB = isStax;
@@ -12,11 +18,20 @@ public class Global {
         return isJAXB;
     }
 
-    public static boolean state() {
-        return isJDBC;
+    public static boolean console() {
+        return isConsole;
     }
 
-    public static void state(boolean b) {
-        isJDBC = b;
+    public static void console(boolean b) {
+        isConsole = b;
     }
+
+    public static boolean json() {
+        return isJson;
+    }
+
+    public static void json(boolean b) {
+        isJson = b;
+    }
+
 }

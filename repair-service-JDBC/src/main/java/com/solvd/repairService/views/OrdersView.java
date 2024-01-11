@@ -21,29 +21,29 @@ public class OrdersView {
 
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
-    private static final OrdersService serviceO = Global.state()
+    private static final OrdersService serviceO = Global.console()
             ? new OrdersService(new OrdersDAO())
             : new OrdersService(new OrdersBatisDAO());
 
-    private static final EquipmentsService serviceE = Global.state()
+    private static final EquipmentsService serviceE = Global.console()
             ? new EquipmentsService(new EquipmentsDAO())
             : new EquipmentsService(new EquipmentsBatisDAO());
 
-    private static final ServiceCentersService serviceSC = Global.state()
+    private static final ServiceCentersService serviceSC = Global.console()
             ? new ServiceCentersService(new ServiceCentersDAO())
             : new ServiceCentersService(new ServiceCentersBatisDAO());
-    private static final OrderExecutionsService serviceOE = Global.state()
+    private static final OrderExecutionsService serviceOE = Global.console()
             ? new OrderExecutionsService(new OrderExecutionsDAO())
             : new OrderExecutionsService(new OrderExecutionsBatisDAO());
-    private static final EmployerProfileService serviceEP = Global.state()
+    private static final EmployerProfileService serviceEP = Global.console()
             ? new EmployerProfileService(new EmployeeProfilesDAO())
             : new EmployerProfileService(new EmployeeProfilesBatisDAO());
 
-    private static final ProblemService serviceP = Global.state()
+    private static final ProblemService serviceP = Global.console()
             ? new ProblemService(new ProblemsDAO())
             : new ProblemService(new ProblemsBatisDAO());
 
-    private static final EquipmentProblemService serviceEqPr = Global.state()
+    private static final EquipmentProblemService serviceEqPr = Global.console()
             ? new EquipmentProblemService(new EquipmentProblemDAO())
             : new EquipmentProblemService(new EquipmentProblemBatisDAO());
 

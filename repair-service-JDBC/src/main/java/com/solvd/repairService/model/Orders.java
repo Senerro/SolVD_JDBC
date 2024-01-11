@@ -167,7 +167,8 @@ public class Orders extends AbstractModel {
             builder.append("worker: ").append(employee);
         if (equipment != null)
             builder.append(equipment);
-        builder.append(", finish date is ").append(date);
+        if (date != null)
+            builder.append(", finish date is ").append(date);
 
         builder.append("\n");
 

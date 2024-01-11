@@ -18,7 +18,7 @@ public class CustomerProfileView {
     }
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
-    private static CustomerProfilesService serviceCP = Global.state()
+    private static CustomerProfilesService serviceCP = Global.console()
             ? new CustomerProfilesService(new CustomerProfilesDAO())
             : new CustomerProfilesService(new CustomerProfilesBatisDAO());
     public static void profileUI(Users user) {

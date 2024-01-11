@@ -18,7 +18,7 @@ public class UserSettingsView {
 
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
-    private static UsersService service = Global.state()
+    private static UsersService service = Global.console()
             ? new UsersService(new UsersDAO())
             : new UsersService(new UserBatisDAO());
 

@@ -17,7 +17,7 @@ public class ValidationView {
 
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(ValidationView.class);
-    private static final UsersService service = Global.state()
+    private static final UsersService service = Global.console()
             ? new UsersService(new UsersDAO())
             : new UsersService(new UserBatisDAO());
 
