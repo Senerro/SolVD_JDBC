@@ -33,9 +33,9 @@ public class AdminView {
     private static final ServiceCentersService serviceSC = Global.state()
             ? new ServiceCentersService(new ServiceCentersDAO())
             : new ServiceCentersService(new ServiceCentersBatisDAO());
-    private static final EmployerProfileService serviceEP = Global.state()
-            ? new EmployerProfileService(new EmployerProfilesDAO())
-            : new EmployerProfileService(new EmployerProfilesBatisDAO());
+    private static final EmployeeProfileService serviceEP = Global.state()
+            ? new EmployeeProfileService(new EmployerProfilesDAO())
+            : new EmployeeProfileService(new EmployerProfilesBatisDAO());
 
     private static final EmployerPostsService servicePost = Global.state()
             ? new EmployerPostsService(new EmployerPostsDAO())
@@ -72,7 +72,7 @@ public class AdminView {
         adminUI();
     }
 
-    private static void postActions(ArrayList<EmployerPosts> list) {
+    private static void postActions(ArrayList<EmployeePosts> list) {
         switch (actions()) {
             case "1":
                 getPost(list);
@@ -322,7 +322,7 @@ public class AdminView {
     }
 
     private static void getPosts() {
-        ArrayList<EmployerPosts> list = new ArrayList<>();
+        ArrayList<EmployeePosts> list = new ArrayList<>();
         try {
             list = servicePost.get();
             for (var element : list)
@@ -334,7 +334,7 @@ public class AdminView {
     }
 
 
-    private static void deletePost(ArrayList<EmployerPosts> list) {
+    private static void deletePost(ArrayList<EmployeePosts> list) {
         var post = getPost(list);
         servicePost.delete(post);
         list.remove(post);
@@ -342,7 +342,7 @@ public class AdminView {
 
     }
 
-    private static void updatePost(ArrayList<EmployerPosts> list) {
+    private static void updatePost(ArrayList<EmployeePosts> list) {
         var post = getPost(list);
         var newPost = createEmployerPost(post.id());
         try {
@@ -361,22 +361,22 @@ public class AdminView {
         postActions(list);
     }
 
-    private static EmployerPosts createEmployerPost(Long id) {
+    private static EmployeePosts createEmployerPost(Long id) {
         LOGGER.info("input role");
         var role = scanner.next();
         LOGGER.info("input description");
         var description = scanner.next();
-        return new EmployerPosts(id, role, description);
+        return new EmployeePosts(id, role, description);
 
     }
 
-    private static void addPost(ArrayList<EmployerPosts> list) {
+    private static void addPost(ArrayList<EmployeePosts> list) {
         LOGGER.info("role ");
         var role = scanner.next();
         LOGGER.info("description ");
         var description = scanner.next();
 
-        EmployerPosts model = new EmployerPosts(role, description);
+        EmployeePosts model = new EmployeePosts(role, description);
         try {
             var post = servicePost.create(model);
             LOGGER.info(post);
@@ -389,7 +389,7 @@ public class AdminView {
         postActions(list);
     }
 
-    private static EmployerPosts getPost(ArrayList<EmployerPosts> list) {
+    private static EmployeePosts getPost(ArrayList<EmployeePosts> list) {
         if (!list.isEmpty()) {
             HashSet<Long> set = new HashSet<>();
             for (var element : list)
@@ -409,7 +409,7 @@ public class AdminView {
     }
 
     private static void getWorkers() {
-        ArrayList<EmployerProfiles> list;
+        ArrayList<EmployeeProfiles> list;
         try {
             list = serviceEP.get();
             for (var element : list)
@@ -420,7 +420,7 @@ public class AdminView {
         workersActions(list);
     }
 
-    private static void workersActions(ArrayList<EmployerProfiles> list) {
+    private static void workersActions(ArrayList<EmployeeProfiles> list) {
         switch (actions()) {
             case "1":
                 getWorker(list);
@@ -440,14 +440,14 @@ public class AdminView {
         }
     }
 
-    private static void deleteWorker(ArrayList<EmployerProfiles> list) {
+    private static void deleteWorker(ArrayList<EmployeeProfiles> list) {
         var profile = getWorker(list);
         serviceEP.delete(profile);
         list.remove(profile);
         workersActions(list);
     }
 
-    private static void updateWorker(ArrayList<EmployerProfiles> list) {
+    private static void updateWorker(ArrayList<EmployeeProfiles> list) {
         var worker = getWorker(list);
         var newWorker = createWorker(worker.id());
         try {
@@ -466,9 +466,9 @@ public class AdminView {
         workersActions(list);
     }
 
-    private static EmployerProfiles createWorker(Long id) {
+    private static EmployeeProfiles createWorker(Long id) {
 
-        EmployerProfiles profile = new EmployerProfiles(id);
+        EmployeeProfiles profile = new EmployeeProfiles(id);
         LOGGER.info("input fullName");
         profile.fullName(scanner.next());
         LOGGER.info("input phone");
@@ -478,7 +478,7 @@ public class AdminView {
         return profile;
     }
 
-    private static void addWorker(ArrayList<EmployerProfiles> list) {
+    private static void addWorker(ArrayList<EmployeeProfiles> list) {
         LOGGER.info("login ");
         var login = scanner.next();
         LOGGER.info("password ");
@@ -491,13 +491,13 @@ public class AdminView {
             LOGGER.error(e);
             addWorker(list);
         }
-        EmployerProfiles profileTmp = new EmployerProfiles(user.id());
+        EmployeeProfiles profileTmp = new EmployeeProfiles(user.id());
         LOGGER.info("input fullName");
         profileTmp.fullName(scanner.next());
         profileTmp.phone("+375(25)...");
         profileTmp.experience(0);
 
-        ArrayList<EmployerPosts> posts;
+        ArrayList<EmployeePosts> posts;
         HashSet<Long> set = new HashSet<>();
         posts = servicePost.get();
         for (var element : posts) {
@@ -542,7 +542,7 @@ public class AdminView {
 
     }
 
-    private static EmployerProfiles getWorker(ArrayList<EmployerProfiles> list) {
+    private static EmployeeProfiles getWorker(ArrayList<EmployeeProfiles> list) {
         if (!list.isEmpty()) {
             HashSet<Long> set = new HashSet<>();
             for (var element : list)

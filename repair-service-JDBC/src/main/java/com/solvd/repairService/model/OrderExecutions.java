@@ -1,7 +1,7 @@
 package com.solvd.repairService.model;
 
 public class OrderExecutions extends AbstractModel {
-    private Long employerId;
+    private Long employeeId;
     private double cost;
     private int finishDate;
     private int returned;
@@ -18,9 +18,9 @@ public class OrderExecutions extends AbstractModel {
         super(0L, OrderExecutions.class);
     }
 
-    public OrderExecutions(Long id, Long employerId, double cost, int date, int returned, Long serviceId) {
+    public OrderExecutions(Long id, Long employeeId, double cost, int date, int returned, Long serviceId) {
         this(id);
-        this.employerId = employerId;
+        this.employeeId = employeeId;
         this.cost = cost;
         this.finishDate = date;
         this.returned = returned;
@@ -43,12 +43,12 @@ public class OrderExecutions extends AbstractModel {
         this.cost = cost;
     }
 
-    public Long employerId() {
-        return employerId;
+    public Long employeeId() {
+        return employeeId;
     }
 
-    public void employerId(Long employerId) {
-        this.employerId = employerId;
+    public void employeeId(Long employeeId) {
+        this.employeeId = employeeId;
     }
 
     public Long serviceCenterId() {

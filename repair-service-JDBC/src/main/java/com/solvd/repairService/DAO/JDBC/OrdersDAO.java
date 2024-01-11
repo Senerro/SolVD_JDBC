@@ -2,7 +2,6 @@ package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
-import com.solvd.repairService.helpers.queryConfigurationHelper.UpdateStatements;
 import com.solvd.repairService.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -93,7 +92,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
     }
 
     @Override
-    public Orders changeRepairman(Orders order, EmployerProfiles repairman) {
+    public Orders changeRepairman(Orders order, EmployeeProfiles repairman) {
         return null;
     }
 
@@ -122,7 +121,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 order.executeId(resultSet.getLong("executeId"));
 
                 OrderExecutions orderExecutions = new OrderExecutions(order.executeId());
-                orderExecutions.employerId(resultSet.getLong("employerId"));
+                orderExecutions.employeeId(resultSet.getLong("employerId"));
                 orderExecutions.cost(resultSet.getDouble("cost"));
                 orderExecutions.finishDate(resultSet.getInt("finishDate"));
                 orderExecutions.isReturned(resultSet.getInt("returned"));
@@ -210,7 +209,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
                 customer.phone(resultSet.getString("customerPhone"));
                 order.customer(customer);
 
-                EmployerProfiles employee = new EmployerProfiles();
+                EmployeeProfiles employee = new EmployeeProfiles();
                 employee.fullName(resultSet.getString("fullName"));
                 employee.phone(resultSet.getString("phone"));
                 order.employee(employee);

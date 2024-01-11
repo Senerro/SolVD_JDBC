@@ -1,7 +1,5 @@
 package com.solvd.repairService.service;
 
-import com.solvd.repairService.DAO.interfaces.IAbstractDAO;
-import com.solvd.repairService.DAO.interfaces.IOrderDAO;
 import com.solvd.repairService.DAO.interfaces.IOrderExecuteDAO;
 import com.solvd.repairService.helpers.calculateData.Calculate;
 import com.solvd.repairService.model.*;
@@ -27,10 +25,10 @@ public class OrderExecutionsService {
         return dao.selectById(orderExecution);
     }
 
-    public OrderExecutions create(Equipments equipment, EmployerProfiles employee, ServiceCenters center) {
+    public OrderExecutions create(Equipments equipment, EmployeeProfiles employee, ServiceCenters center) {
         OrderExecutions orderExecution = new OrderExecutions();
         orderExecution.cost(Calculate.orderCost(equipment, employee));
-        orderExecution.employerId(employee.id());
+        orderExecution.employeeId(employee.id());
         orderExecution.finishDate(Calculate.workDayCount(employee));
         orderExecution.setReturned(false);
         orderExecution.serviceCenterId(center.id());

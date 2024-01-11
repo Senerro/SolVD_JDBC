@@ -2,7 +2,6 @@ package com.solvd.repairService.DAO.JDBC;
 
 import com.solvd.repairService.DAO.interfaces.IOrderExecuteDAO;
 import com.solvd.repairService.helpers.queryConfigurationHelper.InsertValuesHelper;
-import com.solvd.repairService.model.EmployerPosts;
 import com.solvd.repairService.model.OrderExecutions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,14 +26,14 @@ public class OrderExecutionsDAO extends AbstractDAO implements IOrderExecuteDAO 
     @Override
     public void create(OrderExecutions orderExecution) {
         ArrayList<String> fields = new ArrayList<>();
-        fields.add("employerId");
+        fields.add("employeeId");
         fields.add("cost");
         fields.add("returned");
         fields.add("serviceCenterId");
         fields.add("finishDate");
 
         ArrayList<String> values = new ArrayList<>();
-        values.add(String.valueOf(orderExecution.employerId()));
+        values.add(String.valueOf(orderExecution.employeeId()));
         values.add(String.valueOf(orderExecution.cost()));
         values.add(String.valueOf(orderExecution.isReturned()));
         values.add(String.valueOf(orderExecution.serviceCenterId()));

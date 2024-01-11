@@ -34,7 +34,7 @@ public class OrdersService {
         return order;
     }
 
-    public Orders changeRepairman(Orders order, EmployerProfiles repairman) {
+    public Orders changeRepairman(Orders order, EmployeeProfiles repairman) {
         return dao.changeRepairman(order, repairman);
     }
 
