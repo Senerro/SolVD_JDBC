@@ -49,4 +49,9 @@ public class Problems extends AbstractModel {
     public void typeId(Long typeId) {
         this.typeId = typeId;
     }
+
+    @Override
+    public String toString() {
+        return "id = " + id() +" , typeId=" + typeId;
+    }
 }

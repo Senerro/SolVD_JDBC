@@ -61,13 +61,19 @@ public class EmployeePosts extends AbstractModel {
     @Override
     public boolean equals(Object object) {
         if (this.role.equals(((EmployeePosts) object).role))
-            if (this.description.equals(((EmployeePosts) object).description))
-                return true;
+            return this.description.equals(((EmployeePosts) object).description);
         return false;
     }
 
     @Override
     public String toString() {
-        return "[" + id() + "]" + " post: " + role;
+        StringBuilder builder = new StringBuilder();
+        builder.append("[").append(id()).append("]").append("position is ").append(role).append(", ");
+        if(description.isEmpty())
+            builder.append("no description");
+        builder.append(description);
+        builder.append("\n");
+
+        return builder.toString();
     }
 }

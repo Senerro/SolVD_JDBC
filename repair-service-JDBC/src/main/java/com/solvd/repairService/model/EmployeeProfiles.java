@@ -151,10 +151,10 @@ public class EmployeeProfiles extends AbstractModel {
         builder.append("Exp ").append(experience).append(" years");
 
         if(post != null)
-            builder.append("position: ").append(post.role());
-        if(serviceCenters() != null)
-            builder.append(", location: ").append(center.name() + " " + center.address());
-
+            builder.append(", position: ").append(post.role());
+        if(center != null)
+            builder.append(", on service center: ").append(center.name()).append(" ").append(center.address());
+        builder.append("\n");
         return builder.toString();
     }
 

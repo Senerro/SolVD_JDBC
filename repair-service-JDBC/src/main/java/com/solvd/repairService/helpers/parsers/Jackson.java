@@ -4,106 +4,39 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.repairService.model.*;
-import com.solvd.repairService.model.Test.A;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Jackson {
     private static final ObjectMapper objectMapper = new ObjectMapper().findAndRegisterModules()
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-    private static String genericName(final AbstractModel model) {
-        return Paths.FOLDER_JSON.path() + model.tableName() + ".json";
-    }
-
     private static ArrayList<String> converter(final AbstractModel model) {
-        String json = null;
         try {
-            ArrayList<String> value = new ArrayList<>();
-            json = objectMapper.writeValueAsString(model);
+            var value = new ArrayList<String>();
+            var json = objectMapper.writeValueAsString(model);
             value.add(json);
             return value;
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-
     }
 
-    private static ArrayList<String> converter(final A model) {
-        String json = null;
-        try {
-            ArrayList<String> value = new ArrayList<>();
-            json = objectMapper.writeValueAsString(model);
-            var fields = StringUtils.split(json, ",");
-
-            Collections.addAll(value, json);
-            return value;
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
-
-    }
-
-    private static void write(final AbstractModel model, String name, ArrayList<String> value) {
-        File file = new File(name);
+    private static void write(final String name, final ArrayList<String> value) {
+        var file = new File(name);
         try {
             FileUtils.writeLines(file, value);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("file " + name + "wasn't written");
         }
     }
 
-    private static void write(final A model, String name, ArrayList<String> value) {
-        File file = new File(name);
-        try {
-            FileUtils.writeLines(file, value);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static ServiceCenters set(final ServiceCenters model) {
-        ServiceCenters entity = new ServiceCenters(5L, "someAddress", "someName", null, null);
-        write(entity, genericName(model), converter(entity));
-        return model;
-    }
-
-    public static A set(final A model) {
-        write(model, "test.json", converter(model));
-        return model;
-    }
-
-    public static EmployeePosts set(final EmployeePosts model) {
-        var entity = new EmployeePosts(12L, "JsonPost", "some description");
-        write(entity, genericName(model), converter(model));
-        return model;
-    }
-
-    public static EmployeeProfiles set(final EmployeeProfiles model) {
-
-        var post = new EmployeePosts(12L, "JsonPost", "some description");
-        var user = new Users("Jsonlogin", "jsonPass");
-        var center = new ServiceCenters(5L, "someAddress", "someName", null, null);
-
-        var entity = new EmployeeProfiles("SomeNick", "somePhone", 6d, user, post, center);
-        write(entity, genericName(model), converter(entity));
-        return model;
-    }
-
-    public static CustomerProfiles set(final CustomerProfiles model) {
-
-
-        var user = new Users("JsonloginCustomer", "jsonPassCustomer");
-        var entity = new CustomerProfiles("CustomerJsonick", "+375(44)...", user);
-        write(entity, genericName(model), converter(entity));
-        return model;
+    private static String genericName(final AbstractModel model) {
+        return Paths.FOLDER_JSON.path() + model.tableName() + ".json";
     }
 
     public static Orders set(final Orders model) {
@@ -117,7 +50,6 @@ public class Jackson {
         equipment.addProblem(new Problems(6L, 2L));
         equipment.addProblem(new Problems(7L, 3L));
 
-
         var entity = new Orders();
         LocalDate date = LocalDate.now().plusDays(7);
         entity.center(center);
@@ -126,26 +58,71 @@ public class Jackson {
         entity.equipment(equipment);
         entity.date(date);
 
-        write(entity, genericName(model), converter(entity));
+        write(genericName(model), converter(entity));
         return model;
     }
 
-    public ServiceCenters get(final ServiceCenters center) {
+    public static ServiceCenters set(final ServiceCenters model) {
+        ServiceCenters entity = new ServiceCenters(5L, "someAddress", "someName", null, null);
+        write(genericName(model), converter(entity));
+        return model;
+    }
+
+    public static EmployeePosts set(final EmployeePosts model) {
+        var entity = new EmployeePosts(12L, "JsonPost", "some description");
+        write(genericName(model), converter(entity));
+        return model;
+    }
+
+    public static EmployeeProfiles set(final EmployeeProfiles model) {
+
+        var post = new EmployeePosts(12L, "JsonPost", "some description");
+        var user = new Users("Jsonlogin", "jsonPass");
+        var center = new ServiceCenters(5L, "someAddress", "someName", null, null);
+
+        var entity = new EmployeeProfiles("SomeNick", "somePhone", 6d, user, post, center);
+        write(genericName(model), converter(entity));
+        return model;
+    }
+
+    public static CustomerProfiles set(final CustomerProfiles model) {
+        var user = new Users("JsonloginCustomer", "jsonPassCustomer");
+        var entity = new CustomerProfiles("CustomerJsonick", "+375(44)...", user);
+        write(genericName(model), converter(entity));
+        return model;
+    }
+
+    public static ServiceCenters get(final ServiceCenters model) {
         var file = new File(Paths.SERVICE_JSON.path());
-        try {
-            return objectMapper.readValue(file, ServiceCenters.class);
-        } catch (IOException e) {
-            return null;
-        }
+        return (ServiceCenters) readValue(file, model.getClass());
     }
 
-    public static EmployeeProfiles get(final EmployeeProfiles center) {
-        var file = new File("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\employee_profiles.json");
-        try {
-            return objectMapper.readValue(file, EmployeeProfiles.class);
-        } catch (IOException e) {
-            return null;
-        }
+    public static EmployeeProfiles get(final EmployeeProfiles model) {
+        var file = new File(Paths.EMPLOYEE_JSON.path());
+        return (EmployeeProfiles) readValue(file, model.getClass());
     }
 
+    public static CustomerProfiles get(final CustomerProfiles model) {
+        var file = new File(Paths.CUSTOMER_JSON.path());
+        return (CustomerProfiles) readValue(file, model.getClass());
+    }
+
+    public static EmployeePosts get(final EmployeePosts model) {
+        var file = new File(Paths.POST_JSON.path());
+        return (EmployeePosts) readValue(file, model.getClass());
+    }
+
+    public static Orders get(final Orders model) {
+        var file = new File(Paths.ORDER_JSON.path());
+        return (Orders) readValue(file, model.getClass());
+
+    }
+
+    private static Object readValue(File file, Class<?> clazz) {
+        try {
+            return objectMapper.readValue(file, clazz);
+        } catch (IOException e) {
+            throw new RuntimeException("couldn't create " + clazz.getSimpleName());
+        }
+    }
 }

@@ -22,15 +22,16 @@ public class Equipments extends AbstractModel {
     @XmlElement
     private double price;
     private List<Problems> problemsList = new ArrayList<>();
-    @XmlElement (name = "list")
+    @XmlElement(name = "list")
     private ProblemDTO problemDTO;
 
     @JsonGetter
     public ProblemDTO problemDTO() {
         return problemDTO;
     }
+
     public void problemDTO(ProblemDTO problemDTO) {
-       this.problemDTO = problemDTO;
+        this.problemDTO = problemDTO;
     }
 
     public Equipments(Long id) {
@@ -66,6 +67,7 @@ public class Equipments extends AbstractModel {
     public double price() {
         return price;
     }
+
     public void price(Double price) {
         this.price = price;
     }
@@ -100,13 +102,28 @@ public class Equipments extends AbstractModel {
     public void addProblem(Problems problem) {
         problemsList.add(problem);
     }
+
     public Problems getProblem() {
-        return problemsList.get(problemsList.size()-1);
+        return problemsList.get(problemsList.size() - 1);
     }
+
     @JsonGetter
 
-    public ArrayList<Problems> getProblems()
-    {
+    public ArrayList<Problems> getProblems() {
         return (ArrayList<Problems>) this.problemsList;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Equipment: \n");
+        builder.append(type).append(", ").append(producer).append(", ").append(model).append(", ");
+        if (!problemsList.isEmpty()) {
+            builder.append("problems: \n");
+            for (var element: problemsList)
+                builder.append("[").append(element).append("]");
+        }
+
+        return builder.toString();
     }
 }

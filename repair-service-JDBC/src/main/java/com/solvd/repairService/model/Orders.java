@@ -11,7 +11,7 @@ import java.time.LocalDate;
 
 @XmlType(name = "OrderType")
 @XmlRootElement(name = "Order")
-public class Orders extends AbstractModel{
+public class Orders extends AbstractModel {
     private Long userId;
     private Long equipmentId;
     private Long executeId;
@@ -42,22 +42,23 @@ public class Orders extends AbstractModel{
 
     private Equipments equipment;
     private OrderExecutions orderExecution;
+
     public Orders(Long id) {
         super(id, Orders.class);
     }
-    public Orders()
-    {
+
+    public Orders() {
         this(0L);
     }
-    public Orders(Long id, Long userId, Long equipmentId, Long executeId)
-    {
+
+    public Orders(Long id, Long userId, Long equipmentId, Long executeId) {
         this(id);
         this.equipmentId = equipmentId;
         this.userId = userId;
         this.executeId = executeId;
     }
-    public Orders(Long userId, Equipments equipment, OrderExecutions oe)
-    {
+
+    public Orders(Long userId, Equipments equipment, OrderExecutions oe) {
         this(0L);
         this.equipment = equipment;
         this.equipmentId = equipment.id();
@@ -106,8 +107,9 @@ public class Orders extends AbstractModel{
     public Long executeId() {
         return executeId;
     }
+
     public void executeId(Long executeId) {
-       this.executeId = executeId;
+        this.executeId = executeId;
     }
 
 
@@ -115,17 +117,20 @@ public class Orders extends AbstractModel{
     public Long userId() {
         return userId;
     }
+
     public void userId(Long userId) {
         this.userId = userId;
     }
+
     @JsonGetter
     public OrderExecutions orderExecution() {
         return orderExecution;
     }
-    public void orderExecution(OrderExecutions oe)
-    {
+
+    public void orderExecution(OrderExecutions oe) {
         this.orderExecution = oe;
     }
+
     @JsonGetter
     public Users user() {
         return user;
@@ -148,17 +153,30 @@ public class Orders extends AbstractModel{
     public void user(Users user) {
         this.user = user;
     }
+
     @Override
     public String toString() {
-        String status = "";
-        if(this.orderExecution != null) {
-             status = this.orderExecution.isReturned() > 0 ? " returned "
-                    : " not returned ";
-            return "Number of order is " + this.id() + ". Device is " + this.equipment.type() + " " + this.equipment.producer() + " " + this.equipment.model() + "\n"
-                    + " Status: " + status + ", repair duration is " + this.orderExecution.finishDate() + ", cost is " + this.orderExecution.cost() + "\n";
-
+        StringBuilder builder = new StringBuilder();
+        builder.append("order information:").append("\n");
+        if (id() != 0L) {
+            builder.append("[").append(id()).append("] ");
         }
-        else return "Number of order is " + this.id() + ". Device is " + this.equipment.type() + " " + this.equipment.producer() + " " + this.equipment.model() + "\n"
-                + " Status: unknown, repair duration is unknown, cost is unknown" + "\n";
+        if (user != null)
+            builder.append(user);
+        if (employee != null)
+            builder.append(employee);
+        if (equipment != null)
+            builder.append(equipment);
+        builder.append(", finish date is ").append(date);
+
+        builder.append("\n");
+
+        if (orderExecution != null) {
+            String status = "";
+            status = this.orderExecution.isReturned() > 0 ? " returned "
+                    : " not returned ";
+            builder.append("status: ").append(status).append(", cost: ").append(orderExecution.cost()).append("\n");
+        }
+        return builder.toString();
     }
 }

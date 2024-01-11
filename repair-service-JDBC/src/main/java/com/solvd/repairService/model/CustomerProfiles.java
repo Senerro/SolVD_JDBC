@@ -89,8 +89,12 @@ public class CustomerProfiles extends AbstractModel
     public String toString()
     {
         StringBuilder builder = new StringBuilder();
-        return builder.append("[").append(id()).append("]")
+        builder.append("[").append(id()).append("]")
                 .append(" - ").append(nick).append("\n")
-                .append(phone()).toString();
+                .append(phone()).append("\n");
+        if(this.user != null)
+            builder.append(user).append("\n");
+
+        return builder.toString();
     }
 }
