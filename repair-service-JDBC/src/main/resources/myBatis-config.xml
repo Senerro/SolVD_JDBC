@@ -16,6 +16,14 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource=""/>
+        <mapper resource="CustomerProfileMapper.xml"/>
+        <mapper resource="EmployerPostsMapper.xml"/>
+        <mapper resource="EmployerProfilesMapper.xml"/>
+        <mapper resource="EquipmentProblemMapper.xml"/>
+        <mapper resource="OrderExecutionsMapper.xml"/>
+        <mapper resource="OrdersMapper.xml"/>
+        <mapper resource="ProblemsMapper.xml"/>
+        <mapper resource="ServiceCentersMapper.xml"/>
+        <mapper resource="UsersMapper.xml"/>
     </mappers>
 </configuration>
