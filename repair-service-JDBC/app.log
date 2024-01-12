@@ -1500,3 +1500,30 @@ Equipment:
 JsonType, Producer from json, json model, problems: 
 [id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
 
+[DEBUG] 2024-01-12 15:13:27.155 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-12 15:59:15.276 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-12 15:59:15.281 [main] ValidationView - 1: console
+[DEBUG] 2024-01-12 15:59:15.281 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-12 15:59:15.282 [main] ValidationView - 3: Json
+[INFO ] 2024-01-12 15:59:56.992 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-12 15:59:57.018 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-12 15:59:57.019 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-12 15:59:57.021 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-12 15:59:57.066 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
