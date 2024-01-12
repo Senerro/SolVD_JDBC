@@ -26,7 +26,7 @@ public class OrderExecutionsDAO extends AbstractDAO implements IOrderExecuteDAO 
     @Override
     public void create(OrderExecutions orderExecution) {
         ArrayList<String> fields = new ArrayList<>();
-        fields.add("employeeId");
+        fields.add("employerId");
         fields.add("cost");
         fields.add("returned");
         fields.add("serviceCenterId");
