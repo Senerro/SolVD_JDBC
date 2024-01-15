@@ -40,6 +40,7 @@ public class Jackson {
     }
 
     public static Orders set(final Orders model) {
+        /*
         var client = new Users("JsonloginCustomer2", "jsonPassCustomer2");
         var worker = new Users("JsonloginWorker", "jsonPassWorker");
         var center = new ServiceCenters(5L, "someAddress", "someName", null, null);
@@ -57,65 +58,60 @@ public class Jackson {
         entity.employee(workerProfile);
         entity.equipment(equipment);
         entity.date(date);
-
-        write(genericName(model), converter(entity));
+       */
+        write(genericName(model), converter(model));
         return model;
     }
 
     public static ServiceCenters set(final ServiceCenters model) {
-        ServiceCenters entity = new ServiceCenters(39L, "NewJson address", "JsonUnique company", null, null);
-        write(genericName(model), converter(entity));
+       // ServiceCenters entity = new ServiceCenters(39L, "NewJson address", "JsonUnique company", null, null);
+        write(genericName(model), converter(model));
         return model;
     }
 
     public static EmployeePosts set(final EmployeePosts model) {
-        var entity = new EmployeePosts(14L, "NewUniqueJsonPost", "some json description");
-        write(genericName(model), converter(entity));
+       // var entity = new EmployeePosts(14L, "NewUniqueJsonPost", "some json description");
+        write(genericName(model), converter(model));
         return model;
     }
 
     public static EmployeeProfiles set(final EmployeeProfiles model) {
 
-        var post = new EmployeePosts(64L, "NewUniqueJsonWorkerPost", "some json worker, no interesting moments");
+      /*  var post = new EmployeePosts(64L, "NewUniqueJsonWorkerPost", "some json worker, no interesting moments");
         var user = new Users("NewJsonlogin", "NewJsonPass");
         var center = new ServiceCenters(39L, "Some json address", "new name", null, null);
 
         var entity = new EmployeeProfiles("NewSomeJsonNick", "+375(json)...", 6d, user, post, center);
-        write(genericName(model), converter(entity));
+        */
+        write(genericName(model), converter(model));
         return model;
     }
 
     public static CustomerProfiles set(final CustomerProfiles model) {
-        var user = new Users("NewUinqueJsonloginCustomer", "NewUinqueJsonPassCustomer");
-        var entity = new CustomerProfiles("CustomerJsonick2", "+375(44)...", user);
-        write(genericName(model), converter(entity));
+       /* var user = new Users("NewUinqueJsonloginCustomer", "NewUinqueJsonPassCustomer");
+        var entity = new CustomerProfiles("CustomerJsonick2", "+375(44)...", user);*/
+        write(genericName(model), converter(model));
         return model;
     }
 
     public static ServiceCenters get(final ServiceCenters model) {
-        var file = new File(Paths.SERVICE_JSON.path());
-        return (ServiceCenters) readValue(file, model.getClass());
+        return (ServiceCenters) readValue(new File(Paths.SERVICE_JSON.path()), model.getClass());
     }
 
     public static EmployeeProfiles get(final EmployeeProfiles model) {
-        var file = new File(Paths.EMPLOYEE_JSON.path());
-        return (EmployeeProfiles) readValue(file, model.getClass());
+        return (EmployeeProfiles) readValue(new File(Paths.EMPLOYEE_JSON.path()), model.getClass());
     }
 
     public static CustomerProfiles get(final CustomerProfiles model) {
-        var file = new File(Paths.CUSTOMER_JSON.path());
-        return (CustomerProfiles) readValue(file, model.getClass());
+        return (CustomerProfiles) readValue(new File(Paths.CUSTOMER_JSON.path()), model.getClass());
     }
 
     public static EmployeePosts get(final EmployeePosts model) {
-        var file = new File(Paths.POST_JSON.path());
-        return (EmployeePosts) readValue(file, model.getClass());
+        return (EmployeePosts) readValue( new File(Paths.POST_JSON.path()), model.getClass());
     }
 
     public static Orders get(final Orders model) {
-        var file = new File(Paths.ORDER_JSON.path());
-        return (Orders) readValue(file, model.getClass());
-
+        return (Orders) readValue(new File(Paths.ORDER_JSON.path()), model.getClass());
     }
 
     private static Object readValue(File file, Class<?> clazz) {

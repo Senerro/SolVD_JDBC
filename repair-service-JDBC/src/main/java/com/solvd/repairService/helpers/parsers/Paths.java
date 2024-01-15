@@ -3,21 +3,21 @@ package com.solvd.repairService.helpers.parsers;
 public enum Paths {
     CUSTOMER_XML("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\target\\classes\\Stax\\xml\\CustomerProfile.xml"),
     CUSTOMER_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\CustomerProfile.xsd"),
-    CUSTOMER_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\customer_profiles.json"),
+    CUSTOMER_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\jsons\\customer_profiles.json"),
     SERVICE_XML("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\target\\classes\\Stax\\xml\\ServiceCenter.xml"),
     SERVICE_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\ServiceCenter.xsd"),
-    SERVICE_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\service_centers.json"),
+    SERVICE_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\jsons\\service_centers.json"),
     POST_XML("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\target\\classes\\Stax\\xml\\EmployeePost.xml"),
     POST_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\EmployeePost.xsd"),
-    POST_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\employee_posts.json"),
+    POST_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\jsons\\employee_posts.json"),
     EMPLOYEE_XML("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\target\\classes\\Stax\\xml\\EmployeeProfile.xml"),
     EMPLOYEE_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\EmployeeProfile.xsd"),
-    EMPLOYEE_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\employee_profiles.json"),
+    EMPLOYEE_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\jsons\\employee_profiles.json"),
     ORDER_XML("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\target\\classes\\Stax\\xml\\Order.xml"),
     ORDER_XSD("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\xsd\\Order.xsd"),
-    ORDER_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\orders.json"),
+    ORDER_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\jsons\\orders.json"),
     EQUIPMENT_XML("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Stax\\xml\\Equipment.xml"),
-    FOLDER_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\Jsons\\")
+    FOLDER_JSON("C:\\solvd\\SolVD_JDBC\\repair-service-JDBC\\src\\main\\resources\\jsons\\")
     ;private final String path;
     Paths(String string) {
         this.path = string;

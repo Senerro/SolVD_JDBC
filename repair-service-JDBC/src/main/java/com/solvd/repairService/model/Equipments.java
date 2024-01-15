@@ -1,5 +1,6 @@
 package com.solvd.repairService.model;
 
+import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.solvd.repairService.model.dto.ProblemDTO;
 
@@ -99,12 +100,22 @@ public class Equipments extends AbstractModel {
         this.producer = producer;
     }
 
+    @JsonAnySetter()
     public void addProblem(Problems problem) {
+        if (problemsList == null)
+            problemsList = new ArrayList<>();
         problemsList.add(problem);
     }
 
+    @JsonAnySetter
+    public void setProblems(ArrayList<Problems> problems) {
+        this.problemsList = problems;
+    }
+
     public Problems getProblem() {
-        return problemsList.get(problemsList.size() - 1);
+        if (!problemsList.isEmpty())
+            return problemsList.get(problemsList.size() - 1);
+        else return new Problems();
     }
 
     @JsonGetter
@@ -120,7 +131,7 @@ public class Equipments extends AbstractModel {
         builder.append(type).append(", ").append(producer).append(", ").append(model).append(", ");
         if (!problemsList.isEmpty()) {
             builder.append("problems: \n");
-            for (var element: problemsList)
+            for (var element : problemsList)
                 builder.append("[").append(element).append("]");
         }
 

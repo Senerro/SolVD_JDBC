@@ -23,6 +23,7 @@ public class Problems extends AbstractModel {
 
     public Problems() {
         super(0L, Problems.class);
+        this.typeId = 0L;
     }
 
 

@@ -1,7 +1,7 @@
 package com.solvd.repairService;
 import com.solvd.repairService.helpers.parsers.Jackson;
+import com.solvd.repairService.helpers.sampleContainer.Container;
 import com.solvd.repairService.model.*;
-import com.solvd.repairService.views.AdminView;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,7 +13,6 @@ public class testMAin {
     private static final Logger LOGGER = LogManager.getLogger(testMAin.class);
 
     public static void main(String[] args) {
-
         {
             var customer = Jackson.get(new CustomerProfiles());
             LOGGER.info(customer);
@@ -34,11 +33,11 @@ public class testMAin {
             var order = Jackson.get(new Orders());
             LOGGER.debug(order);
         }
-        /*Jackson.set(new Orders());
-        Jackson.set(new ServiceCenters());
-        Jackson.set(new EmployeePosts());
-        Jackson.set(new EmployeeProfiles());
-        Jackson.set(new CustomerProfiles());*/
 
+        Jackson.set(Container.order());
+        Jackson.set(Container.serviceCenter());
+        Jackson.set(Container.post());
+        Jackson.set(Container.employee());
+        Jackson.set(Container.customer());
     }
 }

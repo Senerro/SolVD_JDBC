@@ -67,6 +67,14 @@ public class Orders extends AbstractModel {
         this.executeId = oe.id();
     }
 
+    public Orders(CustomerProfiles customer, EmployeeProfiles employee, Equipments equipment, ServiceCenters center){
+        this(0L);
+        this.customer = customer;
+        this.employee = employee;
+        this.equipment = equipment;
+        this.center = center;
+    }
+
     @JsonGetter
     public Equipments equipment() {
         return equipment;
@@ -88,6 +96,7 @@ public class Orders extends AbstractModel {
 
     public void customer(CustomerProfiles customer) {
         this.customer = customer;
+        this.userId = customer.id();
     }
 
     @JsonGetter
@@ -101,6 +110,7 @@ public class Orders extends AbstractModel {
 
     public void equipment(Equipments equipment) {
         this.equipment = equipment;
+        this.equipmentId = equipment.id();
     }
 
     @JsonGetter
