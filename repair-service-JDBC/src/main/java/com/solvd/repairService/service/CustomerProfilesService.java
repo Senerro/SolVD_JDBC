@@ -1,12 +1,14 @@
 package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
+import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.CustomerProfiles;
+import com.solvd.repairService.service.interfaces.IService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerProfilesService {
+public class CustomerProfilesService implements IService {
     private final ICustomerProfileDAO dao;
 
     public CustomerProfilesService(ICustomerProfileDAO dao) {
@@ -30,6 +32,21 @@ public class CustomerProfilesService {
         CustomerProfiles profile = new CustomerProfiles(id);
          dao.get(profile);
          return profile;
+    }
+
+    @Override
+    public void add(AbstractModel model) {
+
+    }
+
+    @Override
+    public void update(AbstractModel model) {
+
+    }
+
+    @Override
+    public void delete(AbstractModel model) {
+
     }
 
     public List<CustomerProfiles> selectByNick(String nick) {

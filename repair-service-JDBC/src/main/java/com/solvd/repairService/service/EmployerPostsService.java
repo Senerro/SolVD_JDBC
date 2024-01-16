@@ -1,11 +1,13 @@
 package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IEmployerPostDAO;
+import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.EmployeePosts;
+import com.solvd.repairService.service.interfaces.IService;
 
 import java.util.ArrayList;
 
-public class EmployerPostsService {
+public class EmployerPostsService implements IService {
     private final IEmployerPostDAO dao;
 
     public EmployerPostsService(IEmployerPostDAO dao) {
@@ -38,6 +40,21 @@ public class EmployerPostsService {
         EmployeePosts post = new EmployeePosts(id);
         dao.get(post);
         return post;
+    }
+
+    @Override
+    public void add(AbstractModel model) {
+
+    }
+
+    @Override
+    public void update(AbstractModel model) {
+
+    }
+
+    @Override
+    public void delete(AbstractModel model) {
+
     }
 
     public EmployeePosts changePostName(EmployeePosts from, EmployeePosts to) {

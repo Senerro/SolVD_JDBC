@@ -2,11 +2,12 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IOrderDAO;
 import com.solvd.repairService.model.*;
+import com.solvd.repairService.service.interfaces.IService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrdersService {
+public class OrdersService implements IService {
     private final IOrderDAO dao;
 
     public OrdersService(IOrderDAO dao) {
@@ -57,6 +58,21 @@ public class OrdersService {
         Orders order = new Orders(id);
         dao.get(order);
         return order;
+    }
+
+    @Override
+    public void add(AbstractModel model) {
+
+    }
+
+    @Override
+    public void update(AbstractModel model) {
+
+    }
+
+    @Override
+    public void delete(AbstractModel model) {
+
     }
 
     public void update(Orders order, Orders newOrder) {

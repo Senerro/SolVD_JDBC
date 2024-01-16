@@ -1,12 +1,14 @@
 package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IServiceCenterDAO;
+import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.ServiceCenters;
+import com.solvd.repairService.service.interfaces.IService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServiceCentersService {
+public class ServiceCentersService implements IService {
     private final IServiceCenterDAO dao;
 
     public ServiceCentersService(IServiceCenterDAO dao) {
@@ -56,6 +58,22 @@ public class ServiceCentersService {
             serviceCenter.id(0L);
 
         return serviceCenter;
+    }
+
+    @Override
+    public void add(AbstractModel model) {
+        create((ServiceCenters) model);
+
+    }
+
+    @Override
+    public void update(AbstractModel model) {
+
+    }
+
+    @Override
+    public void delete(AbstractModel model) {
+
     }
 
     public void update(ServiceCenters center, ServiceCenters newCenter) {

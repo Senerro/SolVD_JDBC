@@ -1,0 +1,235 @@
+[DEBUG] 2024-01-15 14:26:44.090 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-15 14:26:44.108 [main] ValidationView - 1: console
+[DEBUG] 2024-01-15 14:26:44.109 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-15 14:26:44.110 [main] ValidationView - 3: Json
+[INFO ] 2024-01-15 14:38:04.849 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 14:38:04.877 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 14:38:04.878 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 14:38:04.880 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 14:38:04.921 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
+[INFO ] 2024-01-15 14:42:39.834 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 14:42:39.859 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 14:42:39.861 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 14:42:39.862 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 14:42:39.911 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
+[INFO ] 2024-01-15 14:43:23.796 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 14:43:23.823 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 14:43:23.824 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 14:43:23.825 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 14:43:23.881 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
+[INFO ] 2024-01-15 14:45:42.896 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 14:45:42.921 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 14:45:42.923 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 14:45:42.924 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[INFO ] 2024-01-15 14:47:16.805 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[INFO ] 2024-01-15 14:47:49.011 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 14:47:49.037 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 14:47:49.039 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 14:47:49.040 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[INFO ] 2024-01-15 14:52:26.350 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 14:52:26.382 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 14:52:26.384 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 14:52:26.385 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 14:52:26.427 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
+[INFO ] 2024-01-15 15:01:08.781 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 15:01:08.804 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 15:01:08.805 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 15:01:08.808 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 15:01:08.860 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
+[INFO ] 2024-01-15 15:16:34.204 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 15:16:34.231 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 15:16:34.233 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 15:16:34.234 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 15:16:34.278 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, 
+
+[INFO ] 2024-01-15 15:18:29.471 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-15 15:18:29.497 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-15 15:18:29.499 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-15 15:18:29.500 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-15 15:18:29.550 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, 
+
+[INFO ] 2024-01-15 15:18:35.228 [main] testMAin - [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+
+[DEBUG] 2024-01-15 15:18:35.252 [main] testMAin - Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-15 15:18:35.253 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-15 15:18:35.255 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-15 15:18:35.298 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, 
+
+[INFO ] 2024-01-15 15:31:23.914 [main] testMAin - [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+
+[DEBUG] 2024-01-15 15:31:23.948 [main] testMAin - Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-15 15:31:23.949 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-15 15:31:23.952 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-15 15:31:24.006 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, 
+
+[INFO ] 2024-01-15 16:39:10.640 [main] testMAin - [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+
+[DEBUG] 2024-01-15 16:39:10.665 [main] testMAin - Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-15 16:39:10.666 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-15 16:39:10.667 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-15 16:39:10.714 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, 
+

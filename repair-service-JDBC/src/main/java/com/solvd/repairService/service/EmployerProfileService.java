@@ -2,12 +2,13 @@ package com.solvd.repairService.service;
 
 import com.solvd.repairService.DAO.interfaces.IEmployeeProfileDAO;
 import com.solvd.repairService.model.*;
+import com.solvd.repairService.service.interfaces.IService;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class EmployerProfileService {
+public class EmployerProfileService implements IService {
     private final IEmployeeProfileDAO dao;
 
     public ArrayList<EmployeeProfiles> get() throws Exception {
@@ -23,6 +24,21 @@ public class EmployerProfileService {
         if (profile.fullName() == null)
             return null;
         return profile;
+    }
+
+    @Override
+    public void add(AbstractModel model) {
+
+    }
+
+    @Override
+    public void update(AbstractModel model) {
+
+    }
+
+    @Override
+    public void delete(AbstractModel model) {
+
     }
 
     public EmployerProfileService(IEmployeeProfileDAO dao) {
