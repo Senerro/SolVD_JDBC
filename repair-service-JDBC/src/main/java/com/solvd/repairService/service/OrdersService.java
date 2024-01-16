@@ -35,23 +35,14 @@ public class OrdersService implements IService {
         return order;
     }
 
-    public Orders changeRepairman(Orders order, EmployeeProfiles repairman) {
-        return dao.changeRepairman(order, repairman);
-    }
-
-    public Orders changeServiceCenter(Orders order, ServiceCenters serviceCenter) {
-        return dao.changeServiceCenter(order, serviceCenter);
-    }
-
     public List<Orders> ordersHistory(CustomerProfiles profiles) {
         return dao.orderHistory(profiles);
 
     }
-
-    public ArrayList<Orders> get() {
+    public ArrayList<AbstractModel> get() {
         ArrayList<Orders> orders = new ArrayList<>();
         dao.get(orders);
-        return orders;
+        return new ArrayList<>(orders);
     }
 
     public Orders get(Long id) {
@@ -59,17 +50,6 @@ public class OrdersService implements IService {
         dao.get(order);
         return order;
     }
-
-    @Override
-    public void add(AbstractModel model) {
-
-    }
-
-    @Override
-    public void update(AbstractModel model) {
-
-    }
-
     @Override
     public void delete(AbstractModel model) {
 

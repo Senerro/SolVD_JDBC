@@ -30,26 +30,22 @@ public class EmployerPostsService implements IService {
     public EmployeePosts selectById(EmployeePosts post) {
         return dao.selectById(post);
     }
-    public ArrayList<EmployeePosts> get()
+    /*public ArrayList<EmployeePosts> get()
     {
         ArrayList<EmployeePosts> list = new ArrayList<>();
         dao.get(list);
         return list;
+    }*/
+    public ArrayList<AbstractModel> get()
+    {
+        ArrayList<EmployeePosts> list = new ArrayList<>();
+        dao.get(list);
+        return new ArrayList<>(list);
     }
     public EmployeePosts get(Long id) {
         EmployeePosts post = new EmployeePosts(id);
         dao.get(post);
         return post;
-    }
-
-    @Override
-    public void add(AbstractModel model) {
-
-    }
-
-    @Override
-    public void update(AbstractModel model) {
-
     }
 
     @Override

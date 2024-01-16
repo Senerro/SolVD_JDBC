@@ -35,16 +35,6 @@ public class CustomerProfilesService implements IService {
     }
 
     @Override
-    public void add(AbstractModel model) {
-
-    }
-
-    @Override
-    public void update(AbstractModel model) {
-
-    }
-
-    @Override
     public void delete(AbstractModel model) {
 
     }
@@ -64,11 +54,20 @@ public class CustomerProfilesService implements IService {
 
         return dao.updateProfile(from, to);
     }
-    public ArrayList<CustomerProfiles> get() throws Exception {
+   /* public ArrayList<CustomerProfiles> get() throws Exception {
         ArrayList<CustomerProfiles>  profiles = new ArrayList<>();
         dao.get(profiles);
         if(profiles.isEmpty())
             throw new Exception("empty customers list");
         return profiles;
+    }*/
+    @Override
+    public ArrayList<AbstractModel> get() throws Exception {
+        ArrayList<CustomerProfiles>  profiles = new ArrayList<>();
+        dao.get(profiles);
+        if(profiles.isEmpty())
+            throw new Exception("empty customers list");
+
+        return new ArrayList<>(profiles);
     }
 }

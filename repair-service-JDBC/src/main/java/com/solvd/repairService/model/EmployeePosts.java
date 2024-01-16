@@ -69,7 +69,7 @@ public class EmployeePosts extends AbstractModel {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("[").append(id()).append("]").append("position is ").append(role).append(", ");
-        if(description.isEmpty())
+        if(description == null || description.isEmpty())
             builder.append("no description");
         builder.append(description);
         builder.append("\n");

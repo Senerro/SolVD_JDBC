@@ -46,6 +46,7 @@ public class AdminService  {
         throw new RuntimeException("Illegal class " + model.clazz() + " in getPreparedModel() method");
     }
 
+
     public static ServiceCenters createServiceCenter(Long id, String name, String descr, String address) {
         ServiceCenters center = new ServiceCenters(id);
         center.description(descr);
@@ -63,6 +64,5 @@ public class AdminService  {
         }
       else return null;
     }
-
 
 }

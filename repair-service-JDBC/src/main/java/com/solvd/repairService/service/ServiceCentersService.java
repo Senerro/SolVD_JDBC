@@ -4,9 +4,7 @@ import com.solvd.repairService.DAO.interfaces.IServiceCenterDAO;
 import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.ServiceCenters;
 import com.solvd.repairService.service.interfaces.IService;
-
 import java.util.ArrayList;
-import java.util.List;
 
 public class ServiceCentersService implements IService {
     private final IServiceCenterDAO dao;
@@ -28,14 +26,6 @@ public class ServiceCentersService implements IService {
         return serviceCenter;
     }
 
-    public boolean updateServiceCenter(ServiceCenters from, ServiceCenters to) {
-        return dao.update(from, to);
-    }
-
-    public List<ServiceCenters> orderByBusing(boolean desc) {
-        return dao.orderByBusing(desc);
-    }
-
     public ServiceCenters findUnoccupied() {
         ServiceCenters centers = new ServiceCenters();
         dao.findUnoccupied(centers);
@@ -45,12 +35,11 @@ public class ServiceCentersService implements IService {
             throw new RuntimeException("center isn't spotted");
         return centers;
     }
-
-    public ArrayList<ServiceCenters> get() {
-        ArrayList<ServiceCenters> serviceCenters = new ArrayList<>();
-        dao.get(serviceCenters);
-        return serviceCenters;
-    }
+   public ArrayList<AbstractModel> get() {
+       ArrayList<ServiceCenters> serviceCenters = new ArrayList<>();
+       dao.get(serviceCenters);
+       return new ArrayList<>(serviceCenters);
+   }
     public ServiceCenters get(Long id) {
         ServiceCenters serviceCenter = new ServiceCenters(id);
         dao.get(serviceCenter);
@@ -58,17 +47,6 @@ public class ServiceCentersService implements IService {
             serviceCenter.id(0L);
 
         return serviceCenter;
-    }
-
-    @Override
-    public void add(AbstractModel model) {
-        create((ServiceCenters) model);
-
-    }
-
-    @Override
-    public void update(AbstractModel model) {
-
     }
 
     @Override

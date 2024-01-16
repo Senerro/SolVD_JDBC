@@ -3,12 +3,12 @@ package com.solvd.repairService.views;
 import com.solvd.repairService.DAO.JDBC.*;
 import com.solvd.repairService.DAO.myBatisXML.*;
 import com.solvd.repairService.helpers.Global;
+import com.solvd.repairService.helpers.parsers.ArrayGenericConverter;
 import com.solvd.repairService.model.*;
 import com.solvd.repairService.service.*;
 import com.solvd.repairService.service.interfaces.IService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -52,11 +52,6 @@ public class AdminView {
     private static final ProblemService serviceP = Global.jdbc()
             ? new ProblemService(new ProblemsDAO())
             : new ProblemService(new ProblemsBatisDAO());
-    private static ArrayList<CustomerProfiles> customerList;
-    private static ArrayList<EmployeeProfiles> employeeList;
-    private static ArrayList<EmployeePosts> postList;
-    private static ArrayList<ServiceCenters> centerList;
-    private static ArrayList<Orders> ordersList;
 
     public static void adminUI() {
         LOGGER.info("1. Customers");
@@ -67,19 +62,19 @@ public class AdminView {
         var result = scanner.next();
         switch (result) {
             case "1":
-                getCustomers();
+                getModels(serviceCP, CustomerProfiles.class);
                 break;
             case "2":
-                getWorkers();
+                getModels(serviceEP, EmployeeProfiles.class);
                 break;
             case "3":
-                getPosts();
+                getModels(servicePost, EmployeePosts.class);
                 break;
             case "4":
-                getOrders();
+                getModels(serviceO, Orders.class);
                 break;
             case "5":
-                getServices();
+                getModels(serviceSC, ServiceCenters.class);
                 break;
             default:
                 adminUI();
@@ -88,63 +83,7 @@ public class AdminView {
         adminUI();
     }
 
-
-    private static void postActions(ArrayList<EmployeePosts> list) {
-        switch (actions()) {
-            case "1":
-                LOGGER.info(getModel(new ArrayList<>(list), servicePost));
-                break;
-            case "2":
-                addPost(list);
-                break;
-            case "3":
-                updatePost(list);
-                break;
-            case "4":
-                deletePost(list);
-                break;
-            default:
-                adminUI();
-                break;
-        }
-    }
-
-    private static void getOrders() {
-        ArrayList<Orders> list = new ArrayList<>();
-        try {
-            list = serviceO.get();
-            for (var element : list)
-                LOGGER.info(element);
-            ordersList = list;
-        } catch (Exception e) {
-            LOGGER.info(e);
-        }
-        orderActions(list);
-    }
-
-    private static void orderActions(ArrayList<Orders> list) {
-        switch (actions()) {
-            case "1":
-                LOGGER.info(getModel(new ArrayList<>(list), serviceO));
-                //getOrder(list);
-                break;
-            case "2":
-                addOrder(list);
-                break;
-            case "3":
-                updateOrder(list);
-                break;
-            case "4":
-                deleteOrder(list);
-                break;
-            default:
-                adminUI();
-                break;
-        }
-    }
-
     private static void updateOrder(ArrayList<Orders> list) {
-//        var order = getOrder(list);
         var order = (Orders) getModel(new ArrayList<>(list), serviceO);
 
         var newOrder = createOrder(order.id());
@@ -161,7 +100,7 @@ public class AdminView {
                 LOGGER.debug("new version: " + element + "\n");
             }
         }
-        orderActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceO, Orders.class);
     }
 
     private static Orders createOrder(Long id) {
@@ -239,13 +178,13 @@ public class AdminView {
                 LOGGER.error(e.getMessage());
                 LOGGER.error(e.getStackTrace());
 
-                orderActions(list);
+                modelActions(ArrayGenericConverter.reconvert(list), serviceO, Orders.class);
             }
         } else {
-            ArrayList<CustomerProfiles> customerProfiles = new ArrayList<>();
+            ArrayList<CustomerProfiles> customerProfiles;
             HashSet<Long> set = new HashSet<>();
             try {
-                customerProfiles = serviceCP.get();
+                customerProfiles = ArrayGenericConverter.convert(serviceCP.get());
                 for (var element : customerProfiles) {
                     LOGGER.info(element);
                     set.add(element.id());
@@ -257,83 +196,16 @@ public class AdminView {
             var id = scanner.nextLong();
             if (set.contains(id)) {
                 OrdersView.createNewOrder(serviceCP.get(id));
-                orderActions(list);
+                modelActions(ArrayGenericConverter.reconvert(list), serviceO, Orders.class);
             } else addOrder(list);
 
             LOGGER.info("we can not set customer when any customer doesn't exist");
         }
-        orderActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceO, Orders.class);
     }
 
-
-    private static void deleteOrder(ArrayList<Orders> list) {
-        //var order = getOrder(list);
-        var order = (Orders) getModel(new ArrayList<>(list), serviceO);
-        serviceO.delete(order);
-        list.remove(order);
-        orderActions(list);
-    }
-
-   /* private static Orders getOrder(ArrayList<Orders> list) {
-        Orders order = null;
-        if (!list.isEmpty()) {
-            HashSet<Long> set = new HashSet<>();
-            for (var element : list)
-                set.add(element.id());
-
-            LOGGER.info("Input id");
-            var id = scanner.nextLong();
-            if (set.contains(id)) {
-                order = serviceO.get(id);
-                LOGGER.info(order);
-                return order;
-            } else getOrder(list);
-        }
-        return order;
-    }*/
-
-    private static void getServices() {
-        ArrayList<ServiceCenters> list = new ArrayList<>();
-        try {
-            list = serviceSC.get();
-            for (var element : list)
-                LOGGER.info(element);
-            centerList = list;
-        } catch (Exception e) {
-            LOGGER.info(e);
-        }
-        serviceActions(list);
-    }
-
-    private static void serviceActions(ArrayList<ServiceCenters> list) {
-        switch (actions()) {
-            case "1":
-               LOGGER.info(getModel(new ArrayList<>(list), serviceSC));
-                break;
-            case "2":
-                addServiceCenter(list);
-                break;
-            case "3":
-                updateService(list);
-                break;
-            case "4":
-                deleteService(list);
-                break;
-            default:
-                adminUI();
-                break;
-        }
-    }
-
-    private static void deleteService(ArrayList<ServiceCenters> list) {
-//      var service = getServiceCenter(list);
-        var service = (ServiceCenters) getModel(new ArrayList<>(list), serviceSC);
-        serviceSC.delete(service);
-        serviceActions(list);
-    }
 
     private static void updateService(ArrayList<ServiceCenters> list) {
-        //      var center = getServiceCenter(list);
         var center = (ServiceCenters) getModel(new ArrayList<>(list), serviceSC);
         var newCenter = createServiceCenter(center.id());
         try {
@@ -349,7 +221,7 @@ public class AdminView {
                 LOGGER.debug("new version: " + element + "\n");
             }
         }
-        serviceActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceSC, ServiceCenters.class);
     }
 
     public static ServiceCenters createServiceCenter(Long id) {
@@ -379,49 +251,9 @@ public class AdminView {
                 addServiceCenter(list);
             }
         }
-        serviceActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceSC, ServiceCenters.class);
     }
 
-    private static ServiceCenters getServiceCenter(ArrayList<ServiceCenters> list) {
-        if (!list.isEmpty()) {
-            HashSet<Long> set = new HashSet<>();
-            for (var element : list)
-                set.add(element.id());
-
-            LOGGER.info("Input id");
-            var id = scanner.nextLong();
-            if (set.contains(id)) {
-                var center = serviceSC.get(id);
-                LOGGER.info(center);
-                return center;
-            } else getServiceCenter(list);
-        }
-        LOGGER.info("You can not get customer when any customer doesn't exist");
-        serviceActions(list);
-        return null;
-    }
-
-    private static void getPosts() {
-        ArrayList<EmployeePosts> list = new ArrayList<>();
-        try {
-            list = servicePost.get();
-            for (var element : list)
-                LOGGER.info(element);
-            postList = list;
-        } catch (Exception e) {
-            LOGGER.info(e);
-        }
-        postActions(list);
-    }
-
-
-    private static void deletePost(ArrayList<EmployeePosts> list) {
-        var post = (EmployeePosts) getModel(new ArrayList<>(list), servicePost);
-        servicePost.delete(post);
-        list.remove(post);
-        postActions(list);
-
-    }
 
     private static void updatePost(ArrayList<EmployeePosts> list) {
         var post = (EmployeePosts) getModel(new ArrayList<>(list), servicePost);
@@ -439,7 +271,7 @@ public class AdminView {
                 LOGGER.debug("new version: " + element + "\n");
             }
         }
-        postActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), servicePost, EmployeePosts.class);
     }
 
     private static EmployeePosts createEmployerPost(Long id) {
@@ -477,47 +309,7 @@ public class AdminView {
                 addPost(list);
             }
         }
-        postActions(list);
-    }
-
-    private static void getWorkers() {
-        ArrayList<EmployeeProfiles> list;
-        try {
-            list = serviceEP.get();
-            for (var element : list)
-                LOGGER.info(element);
-            employeeList = list;
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        workersActions(list);
-    }
-
-    private static void workersActions(ArrayList<EmployeeProfiles> list) {
-        switch (actions()) {
-            case "1":
-                LOGGER.info(getModel(new ArrayList<>(list), serviceEP));
-                break;
-            case "2":
-                addWorker(list);
-                break;
-            case "3":
-                updateWorker(list);
-                break;
-            case "4":
-                deleteWorker(list);
-                break;
-            default:
-                adminUI();
-                break;
-        }
-    }
-
-    private static void deleteWorker(ArrayList<EmployeeProfiles> list) {
-        var profile = (EmployeeProfiles) getModel(new ArrayList<>(list), serviceEP);
-        serviceEP.delete(profile);
-        list.remove(profile);
-        workersActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), servicePost, EmployeePosts.class);
     }
 
     private static void updateWorker(ArrayList<EmployeeProfiles> list) {
@@ -536,11 +328,10 @@ public class AdminView {
                 LOGGER.debug("new version: " + element + "\n");
             }
         }
-        workersActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceEP, EmployeeProfiles.class);
     }
 
     private static EmployeeProfiles createWorker(Long id) {
-
         EmployeeProfiles profile = new EmployeeProfiles(id);
         LOGGER.info("input fullName");
         profile.fullName(scanner.next());
@@ -557,12 +348,12 @@ public class AdminView {
                 var profile = (EmployeeProfiles) AdminService.getPreparedModel(new EmployeeProfiles());
                 var post = servicePost.get(profile.post().id());
                 if (post == null) {
-                    LOGGER.error("position " + post + "doesn't exist");
+                    LOGGER.error("position of " + profile + " doesn't exist");
                     post = servicePost.create(profile.post());
                     LOGGER.debug("position " + post + "was created");
                 }
                 profile.post(post);
-                Users user = new Users();
+                Users user;
                 try {
                     user = serviceU.findUserByLogin(profile.user().login());
                 } catch (Exception e) {
@@ -584,12 +375,12 @@ public class AdminView {
                         list.add(result);
                     } else LOGGER.error("profile wasn't created");
                 }
-                workersActions(list);
+                modelActions(ArrayGenericConverter.reconvert(list), serviceEP, EmployeeProfiles.class);
 
             } catch (Exception e) {
                 LOGGER.warn("profile wasn't created");
                 LOGGER.error(e.getMessage());
-                workersActions(list);
+                modelActions(ArrayGenericConverter.reconvert(list), serviceEP, EmployeeProfiles.class);
             }
         } else {
             LOGGER.info("login ");
@@ -612,7 +403,7 @@ public class AdminView {
 
             ArrayList<EmployeePosts> posts;
             HashSet<Long> set = new HashSet<>();
-            posts = servicePost.get();
+            posts = ArrayGenericConverter.convert(servicePost.get());
             for (var element : posts) {
                 set.add(element.id());
                 LOGGER.info(element);
@@ -630,7 +421,7 @@ public class AdminView {
             ArrayList<ServiceCenters> centers = new ArrayList<>();
             HashSet<Long> ids = new HashSet<>();
             try {
-                centers = serviceSC.get();
+                centers = ArrayGenericConverter.convert(serviceSC.get());
             } catch (Exception e) {
                 LOGGER.info(e);
             }
@@ -652,48 +443,7 @@ public class AdminView {
             LOGGER.info(profile);
             list.add(profile);
         }
-        workersActions(list);
-    }
-
-    private static void getCustomers() {
-        ArrayList<CustomerProfiles> list = new ArrayList<>();
-        try {
-            list = serviceCP.get();
-            for (var element : list)
-                LOGGER.info(element);
-            customerList = list;
-        } catch (Exception e) {
-            LOGGER.info(e);
-        }
-        customerActions(list);
-    }
-
-    private static void customerActions(ArrayList<CustomerProfiles> list) {
-        switch (actions()) {
-            case "1":
-                LOGGER.info(getModel(new ArrayList<>(list), serviceCP));
-                break;
-            case "2":
-                addCustomer(list);
-                break;
-            case "3":
-                updateCustomer(list);
-                break;
-            case "4":
-                deleteCustomer(list);
-                break;
-            default:
-                adminUI();
-                break;
-        }
-        customerActions(list);
-    }
-
-    private static void deleteCustomer(ArrayList<CustomerProfiles> list) {
-        var profile = (CustomerProfiles) getModel(new ArrayList<>(list), serviceCP);
-        serviceCP.delete(profile);
-        list.remove(profile);
-        customerActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceEP, EmployeeProfiles.class);
     }
 
     private static void updateCustomer(ArrayList<CustomerProfiles> list) {
@@ -712,7 +462,7 @@ public class AdminView {
                 LOGGER.debug("new version: " + element + "\n");
             }
         }
-        customerActions(list);
+        modelActions(ArrayGenericConverter.reconvert(list), serviceCP, CustomerProfiles.class);
     }
 
     private static void addCustomer(ArrayList<CustomerProfiles> profiles) {
@@ -724,9 +474,8 @@ public class AdminView {
                 profile.id(user.id());
                 serviceCP.create(profile);
             } catch (Exception e) {
-                customerActions(profiles);
+                modelActions(ArrayGenericConverter.reconvert(profiles), serviceCP, CustomerProfiles.class);
             }
-
         } else {
             LOGGER.info("login ");
             var login = scanner.next();
@@ -746,8 +495,7 @@ public class AdminView {
             profiles.add(profile);
             LOGGER.debug("User + " + profile + "was successfully added");
         }
-        customerActions(profiles);
-
+        modelActions(ArrayGenericConverter.reconvert(profiles), serviceCP, CustomerProfiles.class);
     }
 
     private static CustomerProfiles createCustomerProfile(Long id) {
@@ -762,14 +510,94 @@ public class AdminView {
 
     private static AbstractModel getModel(ArrayList<AbstractModel> list, IService service) {
         var set = AdminService.getIdFromList(new ArrayList<>(list));
-        if(set != null) {
-            LOGGER.info("Input id");
-            var id = scanner.nextLong();
-            if (set.contains(id)) {
-                return service.get(id);
-            } else getModel(list, service);
+        assert set != null;
+        LOGGER.info("Input id");
+        var id = scanner.nextLong();
+        if (!set.contains(id)) {
+            getModel(list, service);
         }
-        return null;
+        return service.get(id);
+    }
+
+    private static void getModels(IService service, Class<? extends AbstractModel> clazz) {
+        ArrayList<AbstractModel> list = new ArrayList<>();
+        try {
+            list = service.get();
+            for (var element : list)
+                LOGGER.info(element);
+        } catch (Exception e) {
+            LOGGER.info(e);
+        }
+        modelActions(list, service, clazz);
+    }
+
+    private static void modelActions(ArrayList<AbstractModel> list, IService service, Class<? extends AbstractModel> clazz) {
+        switch (actions()) {
+            case "1":
+                printModel(getModel(new ArrayList<>(list), service));
+                break;
+            case "2":
+                addModel(list, clazz);
+                break;
+            case "3":
+                updateModel(list, clazz);
+                break;
+            case "4":
+                deleteModelA(list, service, clazz);
+                break;
+            default:
+                adminUI();
+                break;
+        }
+        adminUI();
+    }
+
+    private static void printModel(AbstractModel model) {
+        LOGGER.info(model);
+    }
+
+    private static void addModel(ArrayList<AbstractModel> list, Class<? extends AbstractModel> clazz) {
+        if (clazz.equals(CustomerProfiles.class)) {
+            addCustomer(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(EmployeeProfiles.class)) {
+            addWorker(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(EmployeePosts.class)) {
+            addPost(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(Orders.class)) {
+            addOrder(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(ServiceCenters.class)) {
+            addServiceCenter(ArrayGenericConverter.convert(list));
+        }
+    }
+
+    private static void updateModel(ArrayList<AbstractModel> list, Class<? extends AbstractModel> clazz) {
+        if (clazz.equals(CustomerProfiles.class)) {
+            updateCustomer(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(EmployeeProfiles.class)) {
+            updateWorker(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(EmployeePosts.class)) {
+            updatePost(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(Orders.class)) {
+            updateOrder(ArrayGenericConverter.convert(list));
+        }
+        if (clazz.equals(ServiceCenters.class)) {
+            updateService(ArrayGenericConverter.convert(list));
+        }
+    }
+
+    private static void deleteModelA(ArrayList<AbstractModel> list, IService service, Class<? extends AbstractModel> clazz) {
+
+        var model = getModel(new ArrayList<>(list), service);
+        service.delete(model);
+        list.remove(model);
+        modelActions(list, service, clazz);
     }
 
     private static String actions() {
