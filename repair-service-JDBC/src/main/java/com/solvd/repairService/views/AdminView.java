@@ -11,6 +11,7 @@ import com.solvd.repairService.service.*;
 import com.solvd.repairService.service.interfaces.IService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.util.*;
 
 public class AdminView {
@@ -252,7 +253,7 @@ public class AdminView {
                 addModel(list, modelsContainer);
                 break;
             case "3":
-                modelActions(updateModel (list, modelsContainer, service),
+                modelActions(updateModel(list, modelsContainer, service),
                         service, modelsContainer);
                 break;
             case "4":

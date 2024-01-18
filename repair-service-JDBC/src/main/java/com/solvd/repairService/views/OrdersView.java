@@ -10,6 +10,7 @@ import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -111,7 +112,7 @@ public class OrdersView {
     private static void checkOrderHistory(CustomerProfiles profile) {
 
         ArrayList<Orders> orders = serviceO.ordersHistory(profile);
-        for (var element:orders) {
+        for (var element : orders) {
             LOGGER.info(element);
         }
         LOGGER.info(AdminView.getModel(ArrayGenericConverter.reconvert(orders), serviceO));
