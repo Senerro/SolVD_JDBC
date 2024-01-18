@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.solvd.repairService.DAO.myBatisXML.OrderExecutionsBatisDAO">
+    <sql id="selectAllStudents">
+        SELECT * FROM students s
+    </sql>
+
+    <select id="findAll" resultMap="AllStudentsResultMap">
+        <include refid="selectAllStudents"/>
+        LEFT JOIN enrollments e ON s.student_id = e.student_id
+    </select>
+
+    <insert id="create" keyColumn="student_id" keyProperty="studentId" useGeneratedKeys="true">
+        INSERT
+        INTO students (first_name, last_name, date_of_birth, student_contact_id)
+        VALUES (#{firstName}, #{lastName}, #{dateOfBirth}, #{studentContactId})
+    </insert>
+
+    <select id="findById" resultMap="findByIdResultMap">
+        <include refid="selectAllStudents"/>
+        WHERE student_id = #{studentId}
+    </select>
+
+    <update id="update">
+        UPDATE students
+        SET first_name = #{firstName}
+        WHERE student_id = #{studentId}
+    </update>
+
+    <delete id="deleteById">
+        DELETE
+        FROM students
+        WHERE student_id = #{student_id}
+    </delete>
+
+    <select id="countOfEntries" resultMap="CountOfEntriesStudentResultMap">
+        SELECT
+        COUNT(*) AS students_count
+        FROM students
+    </select>
+
+    <resultMap id="AllStudentsResultMap" type="com.solvd.university.domain.Student" autoMapping="false">
+        <id column="student_id" property="studentId"/>
+        <result column="first_name" property="firstName"/>
+        <result column="last_name" property="lastName"/>
+        <result column="date_of_birth" property="dateOfBirth"/>
+        <result column="grade" property="averageScore"/>
+        <collection property="subjects"
+                    resultMap="com.solvd.university.persistence.SubjectRepository.allSubjectsResultMap">
+
+        </collection>
+    </resultMap>
+
+    <resultMap id="findByIdResultMap" type="com.solvd.university.domain.Student" autoMapping="false">
+        <id column="student_id" property="studentId"/>
+        <result column="first_name" property="firstName"/>
+        <result column="last_name" property="lastName"/>
+    </resultMap>
+
+    <resultMap id="CountOfEntriesStudentResultMap" type="Long" autoMapping="false">
+        <result column="students_count" property="id"/>
+    </resultMap>
+</mapper>

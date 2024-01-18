@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="database.properties"/>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="CustomerProfileMapper.xml"/>
+        <mapper resource="EmployerPostsMapper.xml"/>
+        <mapper resource="EmployerProfilesMapper.xml"/>
+        <mapper resource="EquipmentProblemMapper.xml"/>
+        <mapper resource="OrderExecutionsMapper.xml"/>
+        <mapper resource="OrdersMapper.xml"/>
+        <mapper resource="ProblemsMapper.xml"/>
+        <mapper resource="ServiceCentersMapper.xml"/>
+        <mapper resource="UsersMapper.xml"/>
+    </mappers>
+</configuration>

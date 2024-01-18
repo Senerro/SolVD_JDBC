@@ -1,93 +1,235 @@
-[INFO ] 2023-12-20 13:56:03.029 [main] Main - test_message
-[INFO ] 2023-12-20 13:57:35.457 [main] Main - test_message
-[INFO ] 2023-12-20 13:57:39.763 [main] Main - test_message
-[INFO ] 2023-12-20 14:07:39.408 [main] Main - test_message
-[INFO ] 2023-12-20 14:08:58.225 [main] Main - test_message
-[INFO ] 2023-12-20 14:10:09.938 [main] Main - test_message
-[DEBUG] 2023-12-20 14:10:09.968 [main] Main - Connection successful!
-[INFO ] 2023-12-20 14:40:00.397 [main] Main - test_message
-[DEBUG] 2023-12-20 14:40:00.416 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:40:01.436 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:52:26.500 [main] Main - test_message
-[DEBUG] 2023-12-20 14:52:26.518 [main] Main - Connection successful!
-[INFO ] 2023-12-20 14:53:26.064 [main] Main - test_message
-[DEBUG] 2023-12-20 14:53:26.093 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:53:26.403 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:54:03.727 [main] Main - test_message
-[DEBUG] 2023-12-20 14:54:03.748 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:54:04.027 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:56:31.494 [main] Main - test_message
-[DEBUG] 2023-12-20 14:56:31.524 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:56:31.842 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:58:15.997 [main] Main - test_message
-[DEBUG] 2023-12-20 14:58:16.025 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:58:16.332 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:04:12.605 [main] Main - test_message
-[DEBUG] 2023-12-20 15:04:12.634 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:04:12.949 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:06:23.471 [main] Main - test_message
-[DEBUG] 2023-12-20 15:06:23.502 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:06:23.795 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:07:51.262 [main] Main - test_message
-[DEBUG] 2023-12-20 15:07:51.276 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:07:51.621 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:07:51.645 [main] Main - Connection failed...
-java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' doesn't exist
-[INFO ] 2023-12-20 15:08:14.099 [main] Main - test_message
-[DEBUG] 2023-12-20 15:08:14.129 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:08:14.424 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:08:50.618 [main] Main - test_message
-[DEBUG] 2023-12-20 15:08:50.649 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:08:50.968 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:08:50.994 [main] Main - Connection failed...
-java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' doesn't exist
-[INFO ] 2023-12-20 15:09:03.554 [main] Main - test_message
-[DEBUG] 2023-12-20 15:09:03.589 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:09:03.920 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:12:57.431 [main] Main - test_message
-[DEBUG] 2023-12-20 15:12:57.460 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:12:57.778 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:12:57.801 [main] Main - Connection failed...
-java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' doesn't exist
-[INFO ] 2023-12-20 15:13:31.915 [main] Main - test_message
-[DEBUG] 2023-12-20 15:13:31.940 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:13:32.241 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:13:32.281 [main] Main - %d. %s - %d 
+[DEBUG] 2024-01-11 20:18:26.772 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 20:18:26.777 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-11 20:18:26.778 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-11 20:18:29.009 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 20:18:29.010 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 20:18:29.010 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 20:18:30.475 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 20:18:30.476 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 20:18:30.476 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 20:18:30.476 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 20:18:30.477 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 20:18:34.774 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-11 20:18:34.775 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-11 20:18:34.775 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-11 20:18:34.776 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-11 20:18:34.776 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-11 20:18:34.776 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-11 20:18:34.777 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+Exp 6.0 yearsposition: JsonPost
+[INFO ] 2024-01-11 20:18:34.777 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 yearsposition: JsonPost
+[INFO ] 2024-01-11 20:18:34.777 [main] AdminView - 1: get
+[INFO ] 2024-01-11 20:18:34.778 [main] AdminView - 2: add
+[INFO ] 2024-01-11 20:18:34.778 [main] AdminView - 3: update
+[INFO ] 2024-01-11 20:18:34.778 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 20:18:47.784 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 20:18:47.785 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 20:18:47.785 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 20:18:47.786 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 20:18:47.786 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 20:18:50.647 [main] AdminView - Number of order is 14. Device is Producer from json null json model
+ Status:  not returned , repair duration is 0, cost is 615.0
 
-[DEBUG] 2023-12-20 15:13:32.281 [main] Main - %d. %s - %d 
+[INFO ] 2024-01-11 20:18:50.648 [main] AdminView - 1: get
+[INFO ] 2024-01-11 20:18:50.648 [main] AdminView - 2: add
+[INFO ] 2024-01-11 20:18:50.648 [main] AdminView - 3: update
+[INFO ] 2024-01-11 20:18:50.649 [main] AdminView - 4: delete
+[DEBUG] 2024-01-12 14:46:39.602 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-12 14:46:39.610 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-12 14:46:39.610 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-12 14:46:41.432 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-12 14:46:41.432 [main] ValidationView - 1: log in
+[INFO ] 2024-01-12 14:46:41.433 [main] ValidationView - 2: registration
+[INFO ] 2024-01-12 14:46:43.416 [main] AdminView - 1. Customers
+[INFO ] 2024-01-12 14:46:43.417 [main] AdminView - 2. Workers
+[INFO ] 2024-01-12 14:46:43.417 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-12 14:46:43.417 [main] AdminView - 4. Orders
+[INFO ] 2024-01-12 14:46:43.418 [main] AdminView - 5. Services
+[INFO ] 2024-01-12 14:46:46.097 [main] AdminView - Number of order is 14. Device is Producer from json null json model
+ Status:  not returned , repair duration is 0, cost is 615.0
 
-[INFO ] 2023-12-20 15:14:17.506 [main] Main - test_message
-[DEBUG] 2023-12-20 15:14:17.539 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:14:17.846 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:14:17.889 [main] Main - %i. %s - %i
-[DEBUG] 2023-12-20 15:14:17.890 [main] Main - %i. %s - %i
-[INFO ] 2023-12-20 15:15:32.580 [main] Main - test_message
-[DEBUG] 2023-12-20 15:15:32.611 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:15:32.906 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:15:32.941 [main] Main - id 1, name iPhone X
-[DEBUG] 2023-12-20 15:15:32.942 [main] Main - id 2, name Galaxy S9
-[INFO ] 2023-12-20 15:16:19.989 [main] Main - test_message
-[DEBUG] 2023-12-20 15:16:20.007 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:16:20.328 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:16:31.907 [main] Main - id 1, name iPhone X
-[DEBUG] 2023-12-20 15:16:55.194 [main] Main - id 2, name Galaxy S9
-[INFO ] 2023-12-20 15:17:00.002 [main] Main - test_message
-[DEBUG] 2023-12-20 15:17:00.030 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:17:00.330 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:17:00.365 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:17:00.366 [main] Main - id 2, name Galaxy S9,price 30000
-[INFO ] 2023-12-20 15:18:44.257 [main] Main - test_message
-[DEBUG] 2023-12-20 15:18:44.275 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:18:44.612 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:18:44.653 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:18:44.653 [main] Main - id 2, name Galaxy S9,price 30000
-[INFO ] 2023-12-20 15:19:01.396 [main] Main - test_message
-[DEBUG] 2023-12-20 15:19:01.426 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:19:01.743 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:19:01.779 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:19:01.780 [main] Main - id 2, name Galaxy S9,price 30000
-[INFO ] 2023-12-20 15:19:10.971 [main] Main - test_message
-[DEBUG] 2023-12-20 15:19:10.994 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:19:11.277 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:19:11.312 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:19:11.313 [main] Main - id 2, name Galaxy S9,price 30000
+[INFO ] 2024-01-12 14:46:46.097 [main] AdminView - 1: get
+[INFO ] 2024-01-12 14:46:46.098 [main] AdminView - 2: add
+[INFO ] 2024-01-12 14:46:46.098 [main] AdminView - 3: update
+[INFO ] 2024-01-12 14:46:46.098 [main] AdminView - 4: delete
+[INFO ] 2024-01-12 14:46:59.925 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-12 14:46:59.926 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-12 14:46:59.926 [main] AdminView - [6] - NewMyNick
+1
+[INFO ] 2024-01-12 14:46:59.926 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-12 14:46:59.927 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-12 14:46:59.927 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-12 14:46:59.927 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-12 14:46:59.927 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-12 14:46:59.928 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-12 14:46:59.928 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-12 14:46:59.928 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-12 14:46:59.928 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-12 14:46:59.929 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-12 14:46:59.929 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-12 14:46:59.929 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-12 14:46:59.929 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-12 14:46:59.930 [main] AdminView - [54] - xmlNick
++375(25)...
+[INFO ] 2024-01-12 14:46:59.930 [main] AdminView - [57] - Staxon Statham
++44(819)...
+[INFO ] 2024-01-12 14:46:59.930 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+[INFO ] 2024-01-12 14:46:59.931 [main] AdminView - [60] - CustomerJsonick
++375(44)...
+[INFO ] 2024-01-12 14:46:59.931 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+[INFO ] 2024-01-12 14:46:59.931 [main] AdminView - Input id
+[DEBUG] 2024-01-12 14:47:13.704 [main] CustomerProfileView - Type: 
+[DEBUG] 2024-01-12 14:47:21.314 [main] CustomerProfileView - Producer: 
+[DEBUG] 2024-01-12 14:47:26.430 [main] CustomerProfileView - Model: 
+[DEBUG] 2024-01-12 14:47:30.667 [main] CustomerProfileView - Price: 
+[ERROR] 2024-01-12 14:47:33.313 [main] UsersDAO - Some error with table order_executions
+query is INSERT INTO order_executions(employeeId, cost, returned, serviceCenterId, finishDate)  VALUES ( 36, '653.54', 0, 1, 2147483647 )
+Exception is java.sql.SQLSyntaxErrorException: Unknown column 'employeeId' in 'field list'
+[DEBUG] 2024-01-12 14:47:59.288 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-12 14:47:59.293 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-12 14:47:59.293 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-12 14:48:01.519 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-12 14:48:01.519 [main] ValidationView - 1: log in
+[INFO ] 2024-01-12 14:48:01.520 [main] ValidationView - 2: registration
+[INFO ] 2024-01-12 14:48:08.120 [main] AdminView - 1. Customers
+[INFO ] 2024-01-12 14:48:08.120 [main] AdminView - 2. Workers
+[INFO ] 2024-01-12 14:48:08.120 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-12 14:48:08.121 [main] AdminView - 4. Orders
+[INFO ] 2024-01-12 14:48:08.121 [main] AdminView - 5. Services
+[INFO ] 2024-01-12 14:48:10.578 [main] AdminView - Number of order is 14. Device is Producer from json null json model
+ Status:  not returned , repair duration is 0, cost is 615.0
+
+[INFO ] 2024-01-12 14:48:10.579 [main] AdminView - 1: get
+[INFO ] 2024-01-12 14:48:10.579 [main] AdminView - 2: add
+[INFO ] 2024-01-12 14:48:10.579 [main] AdminView - 3: update
+[INFO ] 2024-01-12 14:48:10.580 [main] AdminView - 4: delete
+[INFO ] 2024-01-12 14:48:12.395 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+[INFO ] 2024-01-12 14:48:12.396 [main] AdminView - [2] - User#2
+None
+[INFO ] 2024-01-12 14:48:12.396 [main] AdminView - [6] - NewMyNick
+1
+[INFO ] 2024-01-12 14:48:12.397 [main] AdminView - [7] - pas3
+1
+[INFO ] 2024-01-12 14:48:12.397 [main] AdminView - [8] - pas4
+1
+[INFO ] 2024-01-12 14:48:12.398 [main] AdminView - [25] - User#25
+None
+[INFO ] 2024-01-12 14:48:12.398 [main] AdminView - [26] - User#26
+None
+[INFO ] 2024-01-12 14:48:12.398 [main] AdminView - [27] - User#27
+None
+[INFO ] 2024-01-12 14:48:12.399 [main] AdminView - [29] - User#29
+None
+[INFO ] 2024-01-12 14:48:12.399 [main] AdminView - [32] - User#32
+None
+[INFO ] 2024-01-12 14:48:12.400 [main] AdminView - [36] - User#36
+None
+[INFO ] 2024-01-12 14:48:12.400 [main] AdminView - [37] - User#37
+None
+[INFO ] 2024-01-12 14:48:12.401 [main] AdminView - [38] - User#38
+None
+[INFO ] 2024-01-12 14:48:12.401 [main] AdminView - [39] - User#39
+None
+[INFO ] 2024-01-12 14:48:12.401 [main] AdminView - [42] - Demonstration Nick
+some phone
+[INFO ] 2024-01-12 14:48:12.402 [main] AdminView - [43] - NewNick
+NewPhone
+[INFO ] 2024-01-12 14:48:12.402 [main] AdminView - [54] - xmlNick
++375(25)...
+[INFO ] 2024-01-12 14:48:12.403 [main] AdminView - [57] - Staxon Statham
++44(819)...
+[INFO ] 2024-01-12 14:48:12.403 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+[INFO ] 2024-01-12 14:48:12.403 [main] AdminView - [60] - CustomerJsonick
++375(44)...
+[INFO ] 2024-01-12 14:48:12.403 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+[INFO ] 2024-01-12 14:48:12.404 [main] AdminView - Input id
+[DEBUG] 2024-01-12 14:48:18.021 [main] CustomerProfileView - Type: 
+[DEBUG] 2024-01-12 14:48:34.943 [main] CustomerProfileView - Producer: 
+[DEBUG] 2024-01-12 14:48:36.983 [main] CustomerProfileView - Model: 
+[DEBUG] 2024-01-12 14:48:39.551 [main] CustomerProfileView - Price: 
+[INFO ] 2024-01-12 14:48:41.409 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2024-01-12 14:48:41.409 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-12 14:48:41.409 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-12 14:48:41.409 [main] CustomerProfileView - 3: return
+[DEBUG] 2024-01-12 14:48:41.410 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-12 14:48:41.410 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-12 14:48:41.410 [main] CustomerProfileView - 3: return
+[DEBUG] 2024-01-12 14:49:21.406 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-12 14:49:21.412 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-12 14:49:21.413 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-12 14:49:22.954 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-12 14:49:22.954 [main] ValidationView - 1: log in
+[INFO ] 2024-01-12 14:49:22.955 [main] ValidationView - 2: registration
+[INFO ] 2024-01-12 14:49:25.433 [main] AdminView - 1. Customers
+[INFO ] 2024-01-12 14:49:25.433 [main] AdminView - 2. Workers
+[INFO ] 2024-01-12 14:49:25.433 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-12 14:49:25.434 [main] AdminView - 4. Orders
+[INFO ] 2024-01-12 14:49:25.434 [main] AdminView - 5. Services
+[INFO ] 2024-01-12 14:49:27.214 [main] AdminView - Number of order is 14. Device is Producer from json null json model
+ Status:  not returned , repair duration is 0, cost is 615.0
+
+[INFO ] 2024-01-12 14:49:27.215 [main] AdminView - Number of order is 15. Device is NewTestProd null NewTestModel
+ Status:  not returned , repair duration is 0, cost is 626.0
+
+[INFO ] 2024-01-12 14:49:27.215 [main] AdminView - 1: get
+[INFO ] 2024-01-12 14:49:27.216 [main] AdminView - 2: add
+[INFO ] 2024-01-12 14:49:27.216 [main] AdminView - 3: update
+[INFO ] 2024-01-12 14:49:27.216 [main] AdminView - 4: delete
+[DEBUG] 2024-01-12 14:52:55.112 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-12 14:52:55.119 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-12 14:52:55.119 [main] ValidationView - 2: MyBatis
+[INFO ] 2024-01-12 14:52:57.320 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-12 14:52:57.320 [main] ValidationView - 1: log in
+[INFO ] 2024-01-12 14:52:57.320 [main] ValidationView - 2: registration
+[INFO ] 2024-01-12 14:52:59.570 [main] AdminView - 1. Customers
+[INFO ] 2024-01-12 14:52:59.570 [main] AdminView - 2. Workers
+[INFO ] 2024-01-12 14:52:59.571 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-12 14:52:59.571 [main] AdminView - 4. Orders
+[INFO ] 2024-01-12 14:52:59.571 [main] AdminView - 5. Services
+[INFO ] 2024-01-12 14:53:01.761 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-12 14:53:01.762 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 yearsposition: repairman
+[INFO ] 2024-01-12 14:53:01.762 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 yearsposition: repairman
+[INFO ] 2024-01-12 14:53:01.762 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-12 14:53:01.763 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 yearsposition: repairman
+[INFO ] 2024-01-12 14:53:01.763 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 yearsposition: repairman
+[INFO ] 2024-01-12 14:53:01.763 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+Exp 6.0 yearsposition: JsonPost
+[INFO ] 2024-01-12 14:53:01.764 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 yearsposition: JsonPost
+[INFO ] 2024-01-12 14:53:01.764 [main] AdminView - 1: get
+[INFO ] 2024-01-12 14:53:01.764 [main] AdminView - 2: add
+[INFO ] 2024-01-12 14:53:01.765 [main] AdminView - 3: update
+[INFO ] 2024-01-12 14:53:01.765 [main] AdminView - 4: delete
