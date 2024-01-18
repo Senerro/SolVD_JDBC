@@ -53,6 +53,11 @@ public class EmployerPostsService implements IService {
 
     }
 
+    @Override
+    public void update(AbstractModel previos, AbstractModel next) {
+        update((EmployeePosts) previos, (EmployeePosts) next);
+    }
+
     public EmployeePosts changePostName(EmployeePosts from, EmployeePosts to) {
         return dao.changePostName(from, to);
     }

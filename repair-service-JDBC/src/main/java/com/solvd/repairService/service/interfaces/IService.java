@@ -8,6 +8,7 @@ public interface IService {
     ArrayList<AbstractModel> get() throws Exception;
     AbstractModel get(Long id);
     void delete(AbstractModel model);
+    void update(AbstractModel previos, AbstractModel next);
 
 
 

@@ -3,13 +3,14 @@ package com.solvd.repairService.views;
 import com.solvd.repairService.DAO.JDBC.*;
 import com.solvd.repairService.DAO.myBatisXML.*;
 import com.solvd.repairService.helpers.Global;
+import com.solvd.repairService.helpers.ModelService;
+import com.solvd.repairService.helpers.parsers.ArrayGenericConverter;
 import com.solvd.repairService.model.CustomerProfiles;
-import com.solvd.repairService.model.Equipments;
+import com.solvd.repairService.model.Orders;
 import com.solvd.repairService.service.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import static com.solvd.repairService.views.CustomerProfileView.profileUI;
@@ -35,9 +36,9 @@ public class OrdersView {
     private static final OrderExecutionsService serviceOE = Global.console()
             ? new OrderExecutionsService(new OrderExecutionsDAO())
             : new OrderExecutionsService(new OrderExecutionsBatisDAO());
-    private static final EmployerProfileService serviceEP = Global.console()
-            ? new EmployerProfileService(new EmployeeProfilesDAO())
-            : new EmployerProfileService(new EmployeeProfilesBatisDAO());
+    private static final EmployeeProfileService serviceEP = Global.console()
+            ? new EmployeeProfileService(new EmployeeProfilesDAO())
+            : new EmployeeProfileService(new EmployeeProfilesBatisDAO());
 
     private static final ProblemService serviceP = Global.console()
             ? new ProblemService(new ProblemsDAO())
@@ -46,6 +47,34 @@ public class OrdersView {
     private static final EquipmentProblemService serviceEqPr = Global.console()
             ? new EquipmentProblemService(new EquipmentProblemDAO())
             : new EquipmentProblemService(new EquipmentProblemBatisDAO());
+
+    public static EmployeeProfileService employeeProfileService() {
+        return serviceEP;
+    }
+
+    public static ServiceCentersService serviceCentersService() {
+        return serviceSC;
+    }
+
+    public static ProblemService problemService() {
+        return serviceP;
+    }
+
+    public static EquipmentsService equipmentsService() {
+        return serviceE;
+    }
+
+    public static OrderExecutionsService orderExecutionsService() {
+        return serviceOE;
+    }
+
+    public static OrdersService ordersService() {
+        return serviceO;
+    }
+
+    public static EquipmentProblemService equipmentProblemService() {
+        return serviceEqPr;
+    }
 
     public static void ordersActions(CustomerProfiles profile) {
         LOGGER.debug("1: create new order");
@@ -56,9 +85,11 @@ public class OrdersView {
         switch (answer) {
             case "1":
                 createNewOrder(profile);
+                ordersActions(profile);
                 break;
             case "2":
                 checkOrderHistory(profile);
+                ordersActions(profile);
                 break;
             case "3":
                 profileUI(profile.user());
@@ -70,74 +101,19 @@ public class OrdersView {
     }
 
     public static void createNewOrder(CustomerProfiles profile) {
-        LOGGER.debug("Type: ");
-        String type = scanner.nextLine();
-        LOGGER.debug("Producer: ");
-        String producer = scanner.nextLine();
-        LOGGER.debug("Model: ");
-        String model = scanner.nextLine();
-        LOGGER.debug("Price: ");
-        double price = scanner.nextDouble();
 
-        var equipment = new Equipments(type, producer, model, price);
-        try {
-            equipment = serviceE.create(equipment);
-        } catch (Exception e) {
-            LOGGER.error(e);
-            ordersActions(profile);
-        }
-        var center = serviceSC.findUnoccupied();
-        var employee = serviceEP.findByServiceCenter(center);
-        var problem = serviceP.create();
-        equipment.addProblem(problem);
-
-        serviceEqPr.create(equipment, problem);
-
-        var orderExecution = serviceOE.create(equipment, employee, center);
-
-        serviceO.create(profile, equipment, orderExecution);
-        LOGGER.info("Order was successfully created");
-        ordersActions(profile);
-
+        var equipment = ModelService.addEquipment(LOGGER, profile);
+        var order = ModelService.addOrder(profile, equipment, ModelService.addOrderExecution(equipment));
+        if (order.id() != 0)
+            LOGGER.info("Order was successfully created");
     }
 
     private static void checkOrderHistory(CustomerProfiles profile) {
-        var orders = serviceO.ordersHistory(profile);
-        HashSet<Long> hashSetId = new HashSet<>();
-        if (orders != null) {
-            LOGGER.info(orders.size() + " of Orders");
-            for (var element : orders) {
-                hashSetId.add(element.id());
-                LOGGER.info(element);
-            }
-            System.out.println();
-            LOGGER.debug("Input number ");
-            String answer = scanner.nextLine();
-            try {
-                var a = Long.parseLong(answer);
-                if (hashSetId.contains(a)) {
-                    checkOrder(Long.parseLong(answer), profile);
-                }
-                else {
-                    LOGGER.debug("[redirect...]");
-                    checkOrderHistory(profile);
-                }
-            } catch (Exception e) {
-                ordersActions(profile);
-            }
 
-        } else {
-            LOGGER.info("History is empty");
-            ordersActions(profile);
+        ArrayList<Orders> orders = serviceO.ordersHistory(profile);
+        for (var element:orders) {
+            LOGGER.info(element);
         }
-    }
-
-    private static void checkOrder(Long id, CustomerProfiles profile) {
-        var order = serviceO.selectById(id);
-        LOGGER.info("type: " + order.equipment().type());
-        LOGGER.info("device: " + order.equipment().producer() + " " + order.equipment().model());
-        LOGGER.info("need to " + order.equipment().getProblem().description());
-
-        checkOrderHistory(profile);
+        LOGGER.info(AdminView.getModel(ArrayGenericConverter.reconvert(orders), serviceO));
     }
 }

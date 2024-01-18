@@ -3,6 +3,7 @@ package com.solvd.repairService.service;
 import com.solvd.repairService.DAO.interfaces.ICustomerProfileDAO;
 import com.solvd.repairService.model.AbstractModel;
 import com.solvd.repairService.model.CustomerProfiles;
+import com.solvd.repairService.model.ServiceCenters;
 import com.solvd.repairService.service.interfaces.IService;
 
 import java.util.ArrayList;
@@ -36,6 +37,16 @@ public class CustomerProfilesService implements IService {
 
     @Override
     public void delete(AbstractModel model) {
+
+    }
+
+    @Override
+    public void update(AbstractModel previos, AbstractModel next) {
+        try {
+            updateProfile((CustomerProfiles) previos, (CustomerProfiles) next);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

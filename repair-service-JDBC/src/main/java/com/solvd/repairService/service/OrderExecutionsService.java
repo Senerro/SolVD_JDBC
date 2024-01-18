@@ -33,16 +33,27 @@ public class OrderExecutionsService {
         orderExecution.setReturned(false);
         orderExecution.serviceCenterId(center.id());
 
-         dao.create(orderExecution);
-         return orderExecution;
+        dao.create(orderExecution);
+        return orderExecution;
+    }
+
+    public OrderExecutions create(Double cost, EmployeeProfiles employee, ServiceCenters center) {
+        OrderExecutions orderExecution = new OrderExecutions();
+        orderExecution.cost(cost);
+        orderExecution.employerId(employee.id());
+        orderExecution.finishDate(Calculate.workDayCount(employee));
+        orderExecution.setReturned(false);
+        orderExecution.serviceCenterId(center.id());
+
+        dao.create(orderExecution);
+        return orderExecution;
     }
 
     public boolean updateOrderExecution(OrderExecutions from, OrderExecutions to) {
         return dao.updateOrderExecution(from, to);
     }
 
-    public ArrayList<OrderExecutions> get()
-    {
+    public ArrayList<OrderExecutions> get() {
         ArrayList<OrderExecutions> list = new ArrayList<>();
         dao.get(list);
         return list;

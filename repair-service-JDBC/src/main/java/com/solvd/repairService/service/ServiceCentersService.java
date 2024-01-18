@@ -54,6 +54,11 @@ public class ServiceCentersService implements IService {
 
     }
 
+    @Override
+    public void update(AbstractModel previos, AbstractModel next) {
+        update((ServiceCenters) previos, (ServiceCenters) next);
+    }
+
     public void update(ServiceCenters center, ServiceCenters newCenter) {
         dao.update(center, newCenter);
     }

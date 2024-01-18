@@ -4,6 +4,7 @@ import com.solvd.repairService.DAO.JDBC.UsersDAO;
 import com.solvd.repairService.DAO.myBatisXML.UserBatisDAO;
 import com.solvd.repairService.helpers.Global;
 import com.solvd.repairService.model.Users;
+import com.solvd.repairService.helpers.ModelService;
 import com.solvd.repairService.service.UsersService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,11 +23,12 @@ public class ValidationView {
             : new UsersService(new UserBatisDAO());
 
     public static void loadValidationView() {
-        //CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
+        CustomerProfileView.profileUI(new Users(6L, "log2", "pas2", false));
         LOGGER.info("Log in or registration?");
         LOGGER.info("1: log in");
         LOGGER.info("2: registration");
-        var answer = scanner.nextLine();
+        LOGGER.info("0: Quit");
+        var answer = scanner.next();
         switch (answer) {
             case "1":
                 loginUser();
@@ -34,49 +36,36 @@ public class ValidationView {
             case "2":
                 registrationUser();
                 break;
+            case "3":
+                System.exit(200);
+                break;
             default:
                 loadValidationView();
         }
     }
 
     private static void registrationUser() {
-        Users user = null;
         try {
-            user = service.create(receiveUserData());
+            Users user = service.create(ModelService.createUser(LOGGER));
+            CustomerProfileView.profileUI(user);
         } catch (Exception e) {
             LOGGER.info(e.getMessage());
             loadValidationView();
         }
-        CustomerProfileView.profileUI(user);
     }
 
     private static void loginUser() {
-        Users user = null;
-        /*try {
-            user = service.findUserByLogin(receiveUserData().login());
+        Users user;
+        try {
+            //user = service.findUserByLogin(receiveUserData().login());
+            user = new Users(2L, "login@repairman.com", "1234", false);
+            if (user.role())
+                CustomerProfileView.profileUI(user);
+            else
+                AdminView.adminUI();
         } catch (Exception e) {
             LOGGER.info("User isn't exist");
             loadValidationView();
-        }*/
-         user = new Users(2L, "login@repairman.com", "1234", false);
-        if(user.role())
-            CustomerProfileView.profileUI(user);
-        else AdminView.adminUI();
-    }
-
-    private static Users receiveUserData() {
-        String login;
-        String password;
-        do {
-            LOGGER.info("Input login");
-            login = scanner.nextLine();
         }
-        while (login.length() < 4);
-        do {
-            LOGGER.info("Input password");
-            password = scanner.nextLine();
-        }
-        while (password.length() < 4);
-        return new Users(login, password);
     }
 }

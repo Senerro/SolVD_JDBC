@@ -35,7 +35,7 @@ public class OrdersService implements IService {
         return order;
     }
 
-    public List<Orders> ordersHistory(CustomerProfiles profiles) {
+    public ArrayList<Orders> ordersHistory(CustomerProfiles profiles) {
         return dao.orderHistory(profiles);
 
     }
@@ -53,6 +53,10 @@ public class OrdersService implements IService {
     @Override
     public void delete(AbstractModel model) {
 
+    }
+    @Override
+    public void update(AbstractModel previos, AbstractModel next) {
+        update((Orders) previos, (Orders) next);
     }
 
     public void update(Orders order, Orders newOrder) {

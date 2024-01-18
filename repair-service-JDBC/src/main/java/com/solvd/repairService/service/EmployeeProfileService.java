@@ -6,7 +6,7 @@ import com.solvd.repairService.service.interfaces.IService;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class EmployerProfileService implements IService {
+public class EmployeeProfileService implements IService {
     private final IEmployeeProfileDAO dao;
     public ArrayList<AbstractModel> get() throws Exception {
         ArrayList<EmployeeProfiles> profiles = new ArrayList<>();
@@ -28,7 +28,12 @@ public class EmployerProfileService implements IService {
 
     }
 
-    public EmployerProfileService(IEmployeeProfileDAO dao) {
+    @Override
+    public void update(AbstractModel previos, AbstractModel next) {
+        update((EmployeeProfiles) previos, (EmployeeProfiles) next);
+    }
+
+    public EmployeeProfileService(IEmployeeProfileDAO dao) {
         this.dao = dao;
     }
 
@@ -52,12 +57,13 @@ public class EmployerProfileService implements IService {
 
     public EmployeeProfiles findByServiceCenter(ServiceCenters center) {
         ArrayList<EmployeeProfiles> list = new ArrayList<>();
-        EmployeeProfiles profile;
+
         dao.findFreeByServiceCenter(center, list);
         if (list.isEmpty())
             dao.findByServiceCenter(center, list);
 
-        profile = list.get(new Random().nextInt(list.size()));
+        var profile = list.get(new Random().nextInt(list.size()));
+        profile.center(center);
         return profile;
     }
 

@@ -17,7 +17,7 @@ public interface IOrderDAO extends IAbstractDAO {
 
     Orders changeServiceCenter(Orders order, ServiceCenters serviceCenter);
 
-    List<Orders> orderHistory(CustomerProfiles profiles);
+    ArrayList<Orders> orderHistory(CustomerProfiles profiles);
 
     void get(ArrayList<Orders> list);
     void get(Orders order);

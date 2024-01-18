@@ -102,7 +102,7 @@ public class OrdersDAO extends AbstractDAO implements IOrderDAO {
     }
 
     @Override
-    public List<Orders> orderHistory(CustomerProfiles profiles) {
+    public ArrayList<Orders> orderHistory(CustomerProfiles profiles) {
         String query = " SELECT o.id AS oId, userId, equipmentId, executeId, " +
                 "oe.id AS oeID, employerId, cost, finishDate, returned, serviceCenterID, " +
                 "e.id as eId, type, producer, model, price  FROM orders AS o " +

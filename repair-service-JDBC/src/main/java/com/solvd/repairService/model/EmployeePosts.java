@@ -62,9 +62,8 @@ public class EmployeePosts extends AbstractModel {
     public boolean equals(Object object) {
         if (this.role.equals(((EmployeePosts) object).role))
             return this.description.equals(((EmployeePosts) object).description);
-        return false;
+        else return false;
     }
-
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();

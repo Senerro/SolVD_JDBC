@@ -18,20 +18,18 @@ public class CustomerProfileView {
     }
     private final static Scanner scanner = new Scanner(System.in);
     private static final Logger LOGGER = LogManager.getLogger(CustomerProfileView.class);
-    private static CustomerProfilesService serviceCP = Global.console()
+    private static final CustomerProfilesService serviceCP = Global.console()
             ? new CustomerProfilesService(new CustomerProfilesDAO())
             : new CustomerProfilesService(new CustomerProfilesBatisDAO());
     public static void profileUI(Users user) {
 
-        CustomerProfiles profile = null;
+        CustomerProfiles profile;
 
         var isDetected = serviceCP.checkAvailability(new CustomerProfiles(user.id()));
         profile = isDetected ? serviceCP.get(user.id())
                 : serviceCP.create(new CustomerProfiles(user.id()));
         profile.user(user);
-        LOGGER.info("nickname: " + profile.nick());
-        LOGGER.info("phone: " + profile.phone());
-        LOGGER.info("email: " + user.login());
+        LOGGER.info(profile);
 
         System.out.print("\n");
         LOGGER.info("1: profile");
@@ -47,8 +45,6 @@ public class CustomerProfileView {
             default:profileUI(user);
         }
     }
-
-
 
     private static void profileActions(CustomerProfiles profile) {
         LOGGER.debug("1: change nickname");
@@ -99,5 +95,4 @@ public class CustomerProfileView {
         }
         profileActions(profile);
     }
-
 }

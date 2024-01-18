@@ -1,1376 +1,1354 @@
-[DEBUG] 2024-01-16 13:39:55.296 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 13:39:55.308 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 13:39:55.309 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 13:39:55.310 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 13:40:01.092 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 13:40:01.093 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 13:40:01.093 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 13:40:03.415 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 13:40:03.415 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 13:40:03.415 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 13:40:03.416 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 13:40:03.416 [main] AdminView - 5. Services
-[ERROR] 2024-01-16 13:40:06.838 [main] ConnectionPool - fail connection to database:
-url jdbc:mysql://localhost/equipment_repair_service?serverTimezone=Europe/Moscow&useSSL=false
-username root
-password 1234
-[INFO ] 2024-01-16 13:40:06.840 [main] AdminView - java.lang.RuntimeException: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-[INFO ] 2024-01-16 13:40:06.840 [main] AdminView - 1: get
-[INFO ] 2024-01-16 13:40:06.841 [main] AdminView - 2: add
-[INFO ] 2024-01-16 13:40:06.841 [main] AdminView - 3: update
-[INFO ] 2024-01-16 13:40:06.842 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 13:40:26.880 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 13:40:26.880 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 13:40:26.881 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 13:40:26.881 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 13:40:26.882 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 13:40:28.561 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
-
-[INFO ] 2024-01-16 13:40:28.561 [main] AdminView - [2] name: name 2, location: adress 2
-
-[INFO ] 2024-01-16 13:40:28.562 [main] AdminView - [3] name: name 3, location: adress 3
-
-[INFO ] 2024-01-16 13:40:28.562 [main] AdminView - [28] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:28.562 [main] AdminView - [29] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.563 [main] AdminView - [30] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.563 [main] AdminView - [31] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.564 [main] AdminView - [32] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:28.564 [main] AdminView - [33] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:28.564 [main] AdminView - [34] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:28.564 [main] AdminView - [35] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:28.565 [main] AdminView - [36] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.565 [main] AdminView - [37] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.565 [main] AdminView - [38] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.565 [main] AdminView - [39] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.566 [main] AdminView - [40] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.566 [main] AdminView - [41] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.566 [main] AdminView - [42] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:28.566 [main] AdminView - 1: get
-[INFO ] 2024-01-16 13:40:28.567 [main] AdminView - 2: add
-[INFO ] 2024-01-16 13:40:28.567 [main] AdminView - 3: update
-[INFO ] 2024-01-16 13:40:28.567 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 13:40:44.483 [main] AdminView - Input id
-[INFO ] 2024-01-16 13:40:47.797 [main] AdminView - null
-[INFO ] 2024-01-16 13:40:47.797 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 13:40:47.798 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 13:40:47.798 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 13:40:47.799 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 13:40:47.799 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 13:40:54.174 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
-
-[INFO ] 2024-01-16 13:40:54.174 [main] AdminView - [2] name: name 2, location: adress 2
-
-[INFO ] 2024-01-16 13:40:54.175 [main] AdminView - [3] name: name 3, location: adress 3
-
-[INFO ] 2024-01-16 13:40:54.175 [main] AdminView - [28] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:54.176 [main] AdminView - [29] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.176 [main] AdminView - [30] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.176 [main] AdminView - [31] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.177 [main] AdminView - [32] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:54.177 [main] AdminView - [33] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:54.178 [main] AdminView - [34] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:54.178 [main] AdminView - [35] name: null, location: null
-
-[INFO ] 2024-01-16 13:40:54.179 [main] AdminView - [36] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.179 [main] AdminView - [37] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.179 [main] AdminView - [38] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.179 [main] AdminView - [39] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.180 [main] AdminView - [40] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.180 [main] AdminView - [41] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.180 [main] AdminView - [42] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:40:54.181 [main] AdminView - 1: get
-[INFO ] 2024-01-16 13:40:54.181 [main] AdminView - 2: add
-[INFO ] 2024-01-16 13:40:54.181 [main] AdminView - 3: update
-[INFO ] 2024-01-16 13:40:54.181 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 13:40:55.834 [main] AdminView - Input id
-[INFO ] 2024-01-16 13:41:09.360 [main] AdminView - [42] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 13:41:09.361 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 13:41:09.361 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 13:41:09.362 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 13:41:09.362 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 13:41:09.362 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 14:01:22.119 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 14:01:22.125 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 14:01:22.125 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 14:01:22.125 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 14:01:24.948 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 14:01:24.949 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 14:01:24.949 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 14:01:26.092 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 14:01:26.093 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 14:01:26.093 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 14:01:27.645 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:01:27.645 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:01:27.646 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:01:27.646 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:01:27.646 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 14:01:31.558 [main] AdminView - order information:
-[14] Equipment: 
-Producer from json, null, json model, 
-status:  not returned , cost: 615.0
-
-[INFO ] 2024-01-16 14:01:31.559 [main] AdminView - order information:
-[15] Equipment: 
-NewTestProd, null, NewTestModel, 
-status:  not returned , cost: 626.0
-
-[INFO ] 2024-01-16 14:01:31.559 [main] AdminView - order information:
-[16] Equipment: 
-Producer from json1, null, json model1, 
-status:  not returned , cost: 1600.0
-
-[INFO ] 2024-01-16 14:01:31.559 [main] AdminView - order information:
-[17] Equipment: 
-dgssfdg, null, sdfgfdg, 
-status:  not returned , cost: 861.0
-
-[INFO ] 2024-01-16 14:01:31.560 [main] AdminView - 1: get
-[INFO ] 2024-01-16 14:01:31.560 [main] AdminView - 2: add
-[INFO ] 2024-01-16 14:01:31.560 [main] AdminView - 3: update
-[INFO ] 2024-01-16 14:01:31.561 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 14:01:35.594 [main] AdminView - Input id
-[INFO ] 2024-01-16 14:01:37.663 [main] AdminView - order information:
-[17] client: [0] - NewNick
-NewPhone
-worker: Name: Alex Isaev ,phone +375(25)...
-Exp 0.0 years
-Equipment: 
-Ыщьуе, dgssfdg, sdfgfdg, 
-status:  not returned , cost: 861.0
-
-[INFO ] 2024-01-16 14:01:37.664 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:01:37.664 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:01:37.664 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:01:37.665 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:01:37.665 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 14:01:53.968 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
-
-[INFO ] 2024-01-16 14:01:53.969 [main] AdminView - [2] name: name 2, location: adress 2
-
-[INFO ] 2024-01-16 14:01:53.970 [main] AdminView - [3] name: name 3, location: adress 3
-
-[INFO ] 2024-01-16 14:01:53.970 [main] AdminView - [28] name: null, location: null
-
-[INFO ] 2024-01-16 14:01:53.971 [main] AdminView - [29] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.971 [main] AdminView - [30] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.972 [main] AdminView - [31] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.972 [main] AdminView - [32] name: null, location: null
-
-[INFO ] 2024-01-16 14:01:53.972 [main] AdminView - [33] name: null, location: null
-
-[INFO ] 2024-01-16 14:01:53.973 [main] AdminView - [34] name: null, location: null
-
-[INFO ] 2024-01-16 14:01:53.973 [main] AdminView - [35] name: null, location: null
-
-[INFO ] 2024-01-16 14:01:53.973 [main] AdminView - [36] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.973 [main] AdminView - [37] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.974 [main] AdminView - [38] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.974 [main] AdminView - [39] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.974 [main] AdminView - [40] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.974 [main] AdminView - [41] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.975 [main] AdminView - [42] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:53.975 [main] AdminView - 1: get
-[INFO ] 2024-01-16 14:01:53.975 [main] AdminView - 2: add
-[INFO ] 2024-01-16 14:01:53.975 [main] AdminView - 3: update
-[INFO ] 2024-01-16 14:01:53.976 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 14:01:55.757 [main] AdminView - Input id
-[INFO ] 2024-01-16 14:01:57.169 [main] AdminView - [42] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 14:01:57.170 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:01:57.170 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:01:57.171 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:01:57.172 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:01:57.172 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 14:52:11.256 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 14:52:11.262 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 14:52:11.263 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 14:52:11.263 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 14:52:14.713 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 14:52:14.714 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 14:52:14.715 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 14:52:15.706 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:52:15.706 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:52:15.707 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:52:15.707 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:52:15.707 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 14:52:17.513 [main] AdminView - [1] - Somebofy
+[DEBUG] 2024-01-18 16:24:34.314 [main] testMAin - com.solvd.repairService.model.Users
+[DEBUG] 2024-01-18 16:25:48.518 [main] testMAin - com.solvd.repairService.model.Users
+[DEBUG] 2024-01-18 16:25:48.525 [main] testMAin - class com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:26:06.395 [main] testMAin - com.solvd.repairService.model.Users
+[DEBUG] 2024-01-18 16:26:06.401 [main] testMAin - class com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:26:24.595 [main] testMAin - com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:26:24.603 [main] testMAin - class com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:27:02.514 [main] testMAin - com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:27:02.521 [main] testMAin - class com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:27:02.522 [main] testMAin - work
+[DEBUG] 2024-01-18 16:27:32.614 [main] testMAin - com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:27:32.621 [main] testMAin - class com.solvd.repairService.model.Orders
+[DEBUG] 2024-01-18 16:58:50.753 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 16:58:50.760 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 16:58:50.760 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 16:58:50.761 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 16:58:53.437 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 16:58:53.437 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 16:58:53.438 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 16:58:54.754 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 16:58:54.754 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 16:58:54.754 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 16:58:54.754 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 16:58:54.755 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 16:58:56.691 [main] AdminView - [1] - Somebofy
 +375-25-124-39-52
 
-[INFO ] 2024-01-16 14:52:17.514 [main] AdminView - [2] - User#2
+[INFO ] 2024-01-18 16:58:56.691 [main] AdminView - [2] - User#2
 None
 
-[INFO ] 2024-01-16 14:52:17.514 [main] AdminView - [6] - NewMyNick
+[INFO ] 2024-01-18 16:58:56.692 [main] AdminView - [6] - NewMyNick
 1
 
-[INFO ] 2024-01-16 14:52:17.515 [main] AdminView - [7] - pas3
+[INFO ] 2024-01-18 16:58:56.692 [main] AdminView - [7] - pas3
 1
 
-[INFO ] 2024-01-16 14:52:17.515 [main] AdminView - [8] - pas4
+[INFO ] 2024-01-18 16:58:56.693 [main] AdminView - [8] - pas4
 1
 
-[INFO ] 2024-01-16 14:52:17.516 [main] AdminView - [25] - User#25
+[INFO ] 2024-01-18 16:58:56.693 [main] AdminView - [25] - User#25
 None
 
-[INFO ] 2024-01-16 14:52:17.516 [main] AdminView - [26] - User#26
+[INFO ] 2024-01-18 16:58:56.694 [main] AdminView - [26] - User#26
 None
 
-[INFO ] 2024-01-16 14:52:17.517 [main] AdminView - [27] - User#27
+[INFO ] 2024-01-18 16:58:56.694 [main] AdminView - [27] - User#27
 None
 
-[INFO ] 2024-01-16 14:52:17.518 [main] AdminView - [29] - User#29
+[INFO ] 2024-01-18 16:58:56.695 [main] AdminView - [29] - User#29
 None
 
-[INFO ] 2024-01-16 14:52:17.518 [main] AdminView - [32] - User#32
+[INFO ] 2024-01-18 16:58:56.696 [main] AdminView - [32] - User#32
 None
 
-[INFO ] 2024-01-16 14:52:17.519 [main] AdminView - [36] - User#36
+[INFO ] 2024-01-18 16:58:56.696 [main] AdminView - [36] - User#36
 None
 
-[INFO ] 2024-01-16 14:52:17.519 [main] AdminView - [37] - User#37
+[INFO ] 2024-01-18 16:58:56.697 [main] AdminView - [37] - User#37
 None
 
-[INFO ] 2024-01-16 14:52:17.520 [main] AdminView - [38] - User#38
+[INFO ] 2024-01-18 16:58:56.697 [main] AdminView - [38] - User#38
 None
 
-[INFO ] 2024-01-16 14:52:17.521 [main] AdminView - [39] - User#39
+[INFO ] 2024-01-18 16:58:56.698 [main] AdminView - [39] - User#39
 None
 
-[INFO ] 2024-01-16 14:52:17.521 [main] AdminView - [42] - Demonstration Nick
+[INFO ] 2024-01-18 16:58:56.699 [main] AdminView - [42] - Demonstration Nick
 some phone
 
-[INFO ] 2024-01-16 14:52:17.522 [main] AdminView - [43] - NewNick
+[INFO ] 2024-01-18 16:58:56.699 [main] AdminView - [43] - NewNick
 NewPhone
 
-[INFO ] 2024-01-16 14:52:17.523 [main] AdminView - [54] - xmlNick
+[INFO ] 2024-01-18 16:58:56.700 [main] AdminView - [54] - xmlNick
 +375(25)...
 
-[INFO ] 2024-01-16 14:52:17.523 [main] AdminView - [57] - Staxon Statham
+[INFO ] 2024-01-18 16:58:56.700 [main] AdminView - [57] - Staxon Statham
 +44(819)...
 
-[INFO ] 2024-01-16 14:52:17.523 [main] AdminView - [59] - xmlNickDEMO2
+[INFO ] 2024-01-18 16:58:56.701 [main] AdminView - [59] - xmlNickDEMO2
 +375(25)...DEMO2
 
-[INFO ] 2024-01-16 14:52:17.524 [main] AdminView - [60] - CustomerJsonick
+[INFO ] 2024-01-18 16:58:56.701 [main] AdminView - [60] - CustomerJsonick
 +375(44)...
 
-[INFO ] 2024-01-16 14:52:17.524 [main] AdminView - [62] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 16:58:56.702 [main] AdminView - [62] - CustomerFRomOrderJson
 phoneFromOrderJson
 
-[INFO ] 2024-01-16 14:52:17.525 [main] AdminView - 1: get
-[INFO ] 2024-01-16 14:52:17.525 [main] AdminView - 2: add
-[INFO ] 2024-01-16 14:52:17.525 [main] AdminView - 3: update
-[INFO ] 2024-01-16 14:52:17.526 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 14:52:21.894 [main] AdminView - Input id
-[INFO ] 2024-01-16 14:52:24.368 [main] AdminView - [62] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 16:58:56.704 [main] AdminView - 1: get
+[INFO ] 2024-01-18 16:58:56.704 [main] AdminView - 2: add
+[INFO ] 2024-01-18 16:58:56.705 [main] AdminView - 3: update
+[INFO ] 2024-01-18 16:58:56.705 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 16:58:57.956 [main] AdminView - Input id
+[INFO ] 2024-01-18 16:58:59.497 [main] AdminView - [62] - CustomerFRomOrderJson
 phoneFromOrderJson
 
-[INFO ] 2024-01-16 14:52:24.369 [main] AdminView - 1: get
-[INFO ] 2024-01-16 14:52:24.369 [main] AdminView - 2: add
-[INFO ] 2024-01-16 14:52:24.369 [main] AdminView - 3: update
-[INFO ] 2024-01-16 14:52:24.370 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 14:52:31.949 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:52:31.950 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:52:31.950 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:52:31.951 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:52:31.951 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 14:52:32.964 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+[INFO ] 2024-01-18 16:58:59.497 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 16:58:59.498 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 16:58:59.498 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 16:58:59.499 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 16:58:59.499 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 16:59:02.513 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 14:52:32.965 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+[INFO ] 2024-01-18 16:59:02.513 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
 Exp 1.0 years, position: repairman
 
-[INFO ] 2024-01-16 14:52:32.965 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+[INFO ] 2024-01-18 16:59:02.514 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
 Exp 2.0 years, position: repairman
 
-[INFO ] 2024-01-16 14:52:32.966 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+[INFO ] 2024-01-18 16:59:02.514 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 14:52:32.966 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+[INFO ] 2024-01-18 16:59:02.514 [main] AdminView - [36] Name: 1 ,phone +375(25)...
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 14:52:32.966 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+[INFO ] 2024-01-18 16:59:02.514 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 14:52:32.966 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+[INFO ] 2024-01-18 16:59:02.515 [main] AdminView - [61] Name: SomeNick ,phone somePhone
 Exp 6.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 14:52:32.967 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+[INFO ] 2024-01-18 16:59:02.515 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
 Exp 4.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 14:52:32.967 [main] AdminView - 1: get
-[INFO ] 2024-01-16 14:52:32.967 [main] AdminView - 2: add
-[INFO ] 2024-01-16 14:52:32.968 [main] AdminView - 3: update
-[INFO ] 2024-01-16 14:52:32.968 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 14:52:41.154 [main] AdminView - Input id
-[INFO ] 2024-01-16 14:52:42.774 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+[INFO ] 2024-01-18 16:59:02.516 [main] AdminView - 1: get
+[INFO ] 2024-01-18 16:59:02.516 [main] AdminView - 2: add
+[INFO ] 2024-01-18 16:59:02.516 [main] AdminView - 3: update
+[INFO ] 2024-01-18 16:59:02.516 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 16:59:03.640 [main] AdminView - Input id
+[INFO ] 2024-01-18 16:59:05.551 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
 Exp 4.0 years, position: JsonPost, on service center: someName someAddress
 
-[INFO ] 2024-01-16 14:52:42.775 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:52:42.776 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:52:42.776 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:52:42.776 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:52:42.776 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 14:52:52.276 [main] AdminView - [4]position is repairman, demostratyuon of update
+[INFO ] 2024-01-18 16:59:05.551 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 16:59:05.551 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 16:59:05.551 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 16:59:05.552 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 16:59:05.552 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 16:59:08.594 [main] AdminView - [4]position is repairman, demostratyuon of update
 
-[INFO ] 2024-01-16 14:52:52.287 [main] AdminView - [9]position is , no description
+[INFO ] 2024-01-18 16:59:08.595 [main] AdminView - [5]position is techpriest, no descriptionnull
 
-[INFO ] 2024-01-16 14:52:52.287 [main] AdminView - [11]position is Omnissiah, machine God 
+[INFO ] 2024-01-18 16:59:08.595 [main] AdminView - [9]position is , no description
 
-[INFO ] 2024-01-16 14:52:52.288 [main] AdminView - [12]position is JsonPost, some description
+[INFO ] 2024-01-18 16:59:08.596 [main] AdminView - [11]position is Omnissiah, machine God 
 
-[INFO ] 2024-01-16 14:52:52.288 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+[INFO ] 2024-01-18 16:59:08.596 [main] AdminView - [12]position is JsonPost, some description
 
-[INFO ] 2024-01-16 14:52:52.288 [main] AdminView - 1: get
-[INFO ] 2024-01-16 14:52:52.289 [main] AdminView - 2: add
-[INFO ] 2024-01-16 14:52:52.289 [main] AdminView - 3: update
-[INFO ] 2024-01-16 14:52:52.289 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 14:54:40.572 [main] AdminView - Input id
-[INFO ] 2024-01-16 14:54:42.430 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+[INFO ] 2024-01-18 16:59:08.597 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
 
-[INFO ] 2024-01-16 14:54:42.430 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 14:54:42.430 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 14:54:42.431 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 14:54:42.431 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 14:54:42.431 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 15:07:30.622 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 15:07:30.629 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 15:07:30.629 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 15:07:30.630 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 15:07:33.251 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 15:07:33.251 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 15:07:33.251 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 15:07:34.595 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 15:07:34.595 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 15:07:34.595 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 15:07:34.596 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 15:07:34.596 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 15:07:36.571 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
+[INFO ] 2024-01-18 16:59:08.597 [main] AdminView - 1: get
+[INFO ] 2024-01-18 16:59:08.597 [main] AdminView - 2: add
+[INFO ] 2024-01-18 16:59:08.598 [main] AdminView - 3: update
+[INFO ] 2024-01-18 16:59:08.598 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 16:59:10.767 [main] AdminView - Input id
+[INFO ] 2024-01-18 16:59:12.718 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
 
-[INFO ] 2024-01-16 15:07:36.572 [main] AdminView - [2] - User#2
-None
-
-[INFO ] 2024-01-16 15:07:36.573 [main] AdminView - [6] - NewMyNick
-1
-
-[INFO ] 2024-01-16 15:07:36.573 [main] AdminView - [7] - pas3
-1
-
-[INFO ] 2024-01-16 15:07:36.573 [main] AdminView - [8] - pas4
-1
-
-[INFO ] 2024-01-16 15:07:36.573 [main] AdminView - [25] - User#25
-None
-
-[INFO ] 2024-01-16 15:07:36.574 [main] AdminView - [26] - User#26
-None
-
-[INFO ] 2024-01-16 15:07:36.574 [main] AdminView - [27] - User#27
-None
-
-[INFO ] 2024-01-16 15:07:36.574 [main] AdminView - [29] - User#29
-None
-
-[INFO ] 2024-01-16 15:07:36.575 [main] AdminView - [32] - User#32
-None
-
-[INFO ] 2024-01-16 15:07:36.575 [main] AdminView - [36] - User#36
-None
-
-[INFO ] 2024-01-16 15:07:36.575 [main] AdminView - [37] - User#37
-None
-
-[INFO ] 2024-01-16 15:07:36.576 [main] AdminView - [38] - User#38
-None
-
-[INFO ] 2024-01-16 15:07:36.576 [main] AdminView - [39] - User#39
-None
-
-[INFO ] 2024-01-16 15:07:36.576 [main] AdminView - [42] - Demonstration Nick
-some phone
-
-[INFO ] 2024-01-16 15:07:36.577 [main] AdminView - [43] - NewNick
-NewPhone
-
-[INFO ] 2024-01-16 15:07:36.577 [main] AdminView - [54] - xmlNick
-+375(25)...
-
-[INFO ] 2024-01-16 15:07:36.577 [main] AdminView - [57] - Staxon Statham
-+44(819)...
-
-[INFO ] 2024-01-16 15:07:36.578 [main] AdminView - [59] - xmlNickDEMO2
-+375(25)...DEMO2
-
-[INFO ] 2024-01-16 15:07:36.578 [main] AdminView - [60] - CustomerJsonick
-+375(44)...
-
-[INFO ] 2024-01-16 15:07:36.578 [main] AdminView - [62] - CustomerFRomOrderJson
-phoneFromOrderJson
-
-[INFO ] 2024-01-16 15:07:36.578 [main] AdminView - 1: get
-[INFO ] 2024-01-16 15:07:36.579 [main] AdminView - 2: add
-[INFO ] 2024-01-16 15:07:36.579 [main] AdminView - 3: update
-[INFO ] 2024-01-16 15:07:36.579 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 15:07:37.701 [main] AdminView - Input id
-[INFO ] 2024-01-16 15:07:39.160 [main] AdminView - [62] - CustomerFRomOrderJson
-phoneFromOrderJson
-
-[INFO ] 2024-01-16 15:07:39.161 [main] AdminView - 1: get
-[INFO ] 2024-01-16 15:07:39.161 [main] AdminView - 2: add
-[INFO ] 2024-01-16 15:07:39.161 [main] AdminView - 3: update
-[INFO ] 2024-01-16 15:07:39.162 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 15:07:43.280 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 15:07:43.280 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 15:07:43.280 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 15:07:43.281 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 15:07:43.281 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 15:07:44.540 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
-Exp 0.0 years, position: repairman
-
-[INFO ] 2024-01-16 15:07:44.540 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
-Exp 1.0 years, position: repairman
-
-[INFO ] 2024-01-16 15:07:44.541 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
-Exp 2.0 years, position: repairman
-
-[INFO ] 2024-01-16 15:07:44.541 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
-Exp 5.0 years, position: repairman
-
-[INFO ] 2024-01-16 15:07:44.541 [main] AdminView - [36] Name: 1 ,phone +375(25)...
-Exp 0.0 years, position: repairman
-
-[INFO ] 2024-01-16 15:07:44.541 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
-Exp 5.0 years, position: repairman
-
-[INFO ] 2024-01-16 15:07:44.542 [main] AdminView - [61] Name: SomeNick ,phone somePhone
-Exp 6.0 years, position: JsonPost
-
-[INFO ] 2024-01-16 15:07:44.542 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
-Exp 4.0 years, position: JsonPost
-
-[INFO ] 2024-01-16 15:07:44.542 [main] AdminView - 1: get
-[INFO ] 2024-01-16 15:07:44.542 [main] AdminView - 2: add
-[INFO ] 2024-01-16 15:07:44.543 [main] AdminView - 3: update
-[INFO ] 2024-01-16 15:07:44.543 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 15:07:46.447 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 15:07:46.447 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 15:07:46.448 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 15:07:46.448 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 15:07:46.448 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 15:07:53.521 [main] AdminView - [4]position is repairman, demostratyuon of update
-
-[INFO ] 2024-01-16 15:07:53.530 [main] AdminView - [9]position is , no description
-
-[INFO ] 2024-01-16 15:07:53.530 [main] AdminView - [11]position is Omnissiah, machine God 
-
-[INFO ] 2024-01-16 15:07:53.530 [main] AdminView - [12]position is JsonPost, some description
-
-[INFO ] 2024-01-16 15:07:53.531 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
-
-[INFO ] 2024-01-16 15:07:53.531 [main] AdminView - 1: get
-[INFO ] 2024-01-16 15:07:53.531 [main] AdminView - 2: add
-[INFO ] 2024-01-16 15:07:53.531 [main] AdminView - 3: update
-[INFO ] 2024-01-16 15:07:53.532 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 15:08:07.302 [main] AdminView - Input id
-[INFO ] 2024-01-16 15:08:08.480 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
-
-[INFO ] 2024-01-16 15:08:08.480 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 15:08:08.480 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 15:08:08.481 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 15:08:08.481 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 15:08:08.482 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 15:08:12.120 [main] AdminView - order information:
+[INFO ] 2024-01-18 16:59:12.719 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 16:59:12.719 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 16:59:12.720 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 16:59:12.720 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 16:59:12.721 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 16:59:18.080 [main] AdminView - order information:
 [14] Equipment: 
 Producer from json, null, json model, 
 status:  not returned , cost: 615.0
 
-[INFO ] 2024-01-16 15:08:12.121 [main] AdminView - order information:
+[INFO ] 2024-01-18 16:59:18.080 [main] AdminView - order information:
 [15] Equipment: 
 NewTestProd, null, NewTestModel, 
 status:  not returned , cost: 626.0
 
-[INFO ] 2024-01-16 15:08:12.121 [main] AdminView - order information:
+[INFO ] 2024-01-18 16:59:18.081 [main] AdminView - order information:
 [16] Equipment: 
 Producer from json1, null, json model1, 
 status:  not returned , cost: 1600.0
 
-[INFO ] 2024-01-16 15:08:12.121 [main] AdminView - order information:
+[INFO ] 2024-01-18 16:59:18.081 [main] AdminView - order information:
 [17] Equipment: 
 dgssfdg, null, sdfgfdg, 
 status:  not returned , cost: 861.0
 
-[INFO ] 2024-01-16 15:08:12.122 [main] AdminView - 1: get
-[INFO ] 2024-01-16 15:08:12.122 [main] AdminView - 2: add
-[INFO ] 2024-01-16 15:08:12.122 [main] AdminView - 3: update
-[INFO ] 2024-01-16 15:08:12.122 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 15:08:19.827 [main] AdminView - Input id
-[INFO ] 2024-01-16 15:08:24.105 [main] AdminView - order information:
-[17] client: [0] - NewNick
-NewPhone
-worker: Name: Alex Isaev ,phone +375(25)...
+[INFO ] 2024-01-18 16:59:18.081 [main] AdminView - order information:
+[18] Equipment: 
+SomeThingIDontKnow, null, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
+
+[INFO ] 2024-01-18 16:59:18.082 [main] AdminView - 1: get
+[INFO ] 2024-01-18 16:59:18.082 [main] AdminView - 2: add
+[INFO ] 2024-01-18 16:59:18.082 [main] AdminView - 3: update
+[INFO ] 2024-01-18 16:59:18.082 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 16:59:19.206 [main] AdminView - Input id
+[INFO ] 2024-01-18 16:59:23.958 [main] AdminView - order information:
+[18] client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+worker: Name: xmlFullName ,phone +375(25)...
 Exp 0.0 years
 Equipment: 
-Ыщьуе, dgssfdg, sdfgfdg, 
-status:  not returned , cost: 861.0
+SomeThingIDontKnow, SomeThingIDontKnow, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
 
-[INFO ] 2024-01-16 15:08:24.106 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 15:08:24.107 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 15:08:24.107 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 15:08:24.107 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 15:08:24.107 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 15:08:49.898 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-18 16:59:23.959 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 16:59:23.959 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 16:59:23.960 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 16:59:23.960 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 16:59:23.960 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 16:59:28.611 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
 
-[INFO ] 2024-01-16 15:08:49.899 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-18 16:59:28.611 [main] AdminView - [2] name: name 2, location: adress 2
 
-[INFO ] 2024-01-16 15:08:49.899 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-18 16:59:28.612 [main] AdminView - [3] name: name 3, location: adress 3
 
-[INFO ] 2024-01-16 15:08:49.900 [main] AdminView - [28] name: null, location: null
+[INFO ] 2024-01-18 16:59:28.612 [main] AdminView - [28] name: null, location: null
 
-[INFO ] 2024-01-16 15:08:49.900 [main] AdminView - [29] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.612 [main] AdminView - [29] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.900 [main] AdminView - [30] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.613 [main] AdminView - [30] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.900 [main] AdminView - [31] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.613 [main] AdminView - [31] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.901 [main] AdminView - [32] name: null, location: null
+[INFO ] 2024-01-18 16:59:28.613 [main] AdminView - [32] name: null, location: null
 
-[INFO ] 2024-01-16 15:08:49.901 [main] AdminView - [33] name: null, location: null
+[INFO ] 2024-01-18 16:59:28.613 [main] AdminView - [33] name: null, location: null
 
-[INFO ] 2024-01-16 15:08:49.901 [main] AdminView - [34] name: null, location: null
+[INFO ] 2024-01-18 16:59:28.614 [main] AdminView - [34] name: null, location: null
 
-[INFO ] 2024-01-16 15:08:49.901 [main] AdminView - [35] name: null, location: null
+[INFO ] 2024-01-18 16:59:28.614 [main] AdminView - [35] name: null, location: null
 
-[INFO ] 2024-01-16 15:08:49.902 [main] AdminView - [36] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.615 [main] AdminView - [36] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.902 [main] AdminView - [37] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.615 [main] AdminView - [37] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.902 [main] AdminView - [38] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.615 [main] AdminView - [38] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.902 [main] AdminView - [39] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.615 [main] AdminView - [39] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.903 [main] AdminView - [40] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.615 [main] AdminView - [40] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.903 [main] AdminView - [41] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.616 [main] AdminView - [41] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.903 [main] AdminView - [42] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.616 [main] AdminView - [42] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:49.903 [main] AdminView - 1: get
-[INFO ] 2024-01-16 15:08:49.903 [main] AdminView - 2: add
-[INFO ] 2024-01-16 15:08:49.904 [main] AdminView - 3: update
-[INFO ] 2024-01-16 15:08:49.904 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 15:08:53.886 [main] AdminView - Input id
-[INFO ] 2024-01-16 15:08:55.632 [main] AdminView - [42] name: someName, location: someAddress
+[INFO ] 2024-01-18 16:59:28.616 [main] AdminView - 1: get
+[INFO ] 2024-01-18 16:59:28.616 [main] AdminView - 2: add
+[INFO ] 2024-01-18 16:59:28.617 [main] AdminView - 3: update
+[INFO ] 2024-01-18 16:59:28.617 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 16:59:30.868 [main] AdminView - Input id
+[INFO ] 2024-01-18 16:59:32.687 [main] AdminView - [42] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 15:08:55.632 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 15:08:55.632 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 15:08:55.633 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 15:08:55.633 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 15:08:55.633 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 17:32:07.837 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 17:32:07.842 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 17:32:07.842 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 17:32:07.843 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 17:32:10.080 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 17:32:10.080 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 17:32:10.081 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 17:32:10.886 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 17:32:10.886 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 17:32:10.886 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 17:32:10.887 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 17:32:10.887 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 17:32:12.361 [main] AdminView - [1] - Somebofy
+[INFO ] 2024-01-18 16:59:32.687 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 16:59:32.687 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 16:59:32.688 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 16:59:32.688 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 16:59:32.688 [main] AdminView - 5. Services
+[DEBUG] 2024-01-18 18:26:33.725 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 18:26:33.730 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 18:26:33.730 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 18:26:33.731 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 18:26:38.702 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 18:26:38.702 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 18:26:38.703 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 18:26:38.703 [main] ValidationView - 0: Quit
+[INFO ] 2024-01-18 18:26:39.279 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 18:26:39.279 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 18:26:39.279 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 18:26:39.280 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 18:26:39.280 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 18:26:39.280 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 18:26:43.869 [main] AdminView - [1] - Somebofy
 +375-25-124-39-52
 
-[INFO ] 2024-01-16 17:32:12.361 [main] AdminView - [2] - User#2
+[INFO ] 2024-01-18 18:26:43.869 [main] AdminView - [2] - User#2
 None
 
-[INFO ] 2024-01-16 17:32:12.362 [main] AdminView - [6] - NewMyNick
+[INFO ] 2024-01-18 18:26:43.870 [main] AdminView - [6] - NewMyNick
 1
 
-[INFO ] 2024-01-16 17:32:12.362 [main] AdminView - [7] - pas3
+[INFO ] 2024-01-18 18:26:43.870 [main] AdminView - [7] - pas3
 1
 
-[INFO ] 2024-01-16 17:32:12.362 [main] AdminView - [8] - pas4
+[INFO ] 2024-01-18 18:26:43.870 [main] AdminView - [8] - pas4
 1
 
-[INFO ] 2024-01-16 17:32:12.362 [main] AdminView - [25] - User#25
+[INFO ] 2024-01-18 18:26:43.870 [main] AdminView - [25] - User#25
 None
 
-[INFO ] 2024-01-16 17:32:12.363 [main] AdminView - [26] - User#26
+[INFO ] 2024-01-18 18:26:43.871 [main] AdminView - [26] - User#26
 None
 
-[INFO ] 2024-01-16 17:32:12.363 [main] AdminView - [27] - User#27
+[INFO ] 2024-01-18 18:26:43.871 [main] AdminView - [27] - User#27
 None
 
-[INFO ] 2024-01-16 17:32:12.363 [main] AdminView - [29] - User#29
+[INFO ] 2024-01-18 18:26:43.871 [main] AdminView - [29] - User#29
 None
 
-[INFO ] 2024-01-16 17:32:12.363 [main] AdminView - [32] - User#32
+[INFO ] 2024-01-18 18:26:43.872 [main] AdminView - [32] - User#32
 None
 
-[INFO ] 2024-01-16 17:32:12.364 [main] AdminView - [36] - User#36
+[INFO ] 2024-01-18 18:26:43.872 [main] AdminView - [36] - User#36
 None
 
-[INFO ] 2024-01-16 17:32:12.364 [main] AdminView - [37] - User#37
+[INFO ] 2024-01-18 18:26:43.872 [main] AdminView - [37] - User#37
 None
 
-[INFO ] 2024-01-16 17:32:12.364 [main] AdminView - [38] - User#38
+[INFO ] 2024-01-18 18:26:43.873 [main] AdminView - [38] - User#38
 None
 
-[INFO ] 2024-01-16 17:32:12.365 [main] AdminView - [39] - User#39
+[INFO ] 2024-01-18 18:26:43.873 [main] AdminView - [39] - User#39
 None
 
-[INFO ] 2024-01-16 17:32:12.365 [main] AdminView - [42] - Demonstration Nick
+[INFO ] 2024-01-18 18:26:43.874 [main] AdminView - [42] - Demonstration Nick
 some phone
 
-[INFO ] 2024-01-16 17:32:12.365 [main] AdminView - [43] - NewNick
+[INFO ] 2024-01-18 18:26:43.874 [main] AdminView - [43] - NewNick
 NewPhone
 
-[INFO ] 2024-01-16 17:32:12.366 [main] AdminView - [54] - xmlNick
+[INFO ] 2024-01-18 18:26:43.874 [main] AdminView - [54] - xmlNick
 +375(25)...
 
-[INFO ] 2024-01-16 17:32:12.366 [main] AdminView - [57] - Staxon Statham
+[INFO ] 2024-01-18 18:26:43.875 [main] AdminView - [57] - Staxon Statham
 +44(819)...
 
-[INFO ] 2024-01-16 17:32:12.366 [main] AdminView - [59] - xmlNickDEMO2
+[INFO ] 2024-01-18 18:26:43.875 [main] AdminView - [59] - xmlNickDEMO2
 +375(25)...DEMO2
 
-[INFO ] 2024-01-16 17:32:12.366 [main] AdminView - [60] - CustomerJsonick
+[INFO ] 2024-01-18 18:26:43.875 [main] AdminView - [60] - CustomerJsonick
 +375(44)...
 
-[INFO ] 2024-01-16 17:32:12.367 [main] AdminView - [62] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 18:26:43.875 [main] AdminView - [62] - CustomerFRomOrderJson
 phoneFromOrderJson
 
-[INFO ] 2024-01-16 17:32:12.367 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 17:32:12.367 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 17:32:12.367 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 17:32:12.368 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 17:32:12.368 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 17:32:18.635 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+[INFO ] 2024-01-18 18:26:43.877 [main] AdminView - 1: get
+[INFO ] 2024-01-18 18:26:43.878 [main] AdminView - 2: add
+[INFO ] 2024-01-18 18:26:43.878 [main] AdminView - 3: update
+[INFO ] 2024-01-18 18:26:43.878 [main] AdminView - 4: delete
+[DEBUG] 2024-01-18 20:00:37.733 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:00:37.738 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:00:37.739 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:00:37.740 [main] ValidationView - 3: Json
+[DEBUG] 2024-01-18 20:07:26.759 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:07:26.764 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:07:26.765 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:07:26.765 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:07:28.209 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 20:07:28.210 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 20:07:28.210 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 20:07:28.210 [main] ValidationView - 0: Quit
+[INFO ] 2024-01-18 20:07:29.080 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:07:29.080 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:07:29.081 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:07:29.081 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:07:29.081 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:07:29.082 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:07:33.548 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-18 20:07:33.548 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-18 20:07:33.549 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-18 20:07:33.549 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-18 20:07:33.549 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-18 20:07:33.550 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-18 20:07:33.550 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-18 20:07:33.550 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-18 20:07:33.550 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-18 20:07:33.550 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-18 20:07:33.551 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-18 20:07:33.551 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-18 20:07:33.551 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-18 20:07:33.552 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-18 20:07:33.552 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-18 20:07:33.552 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-18 20:07:33.552 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-18 20:07:33.553 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-18 20:07:33.553 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-18 20:07:33.553 [main] AdminView - [60] - CustomerJsonick
++375(44)...
+
+[INFO ] 2024-01-18 20:07:33.554 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+
+[INFO ] 2024-01-18 20:07:33.555 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:07:33.555 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:07:33.556 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:07:33.556 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:07:35.531 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:07:40.911 [main] AdminView - Nick
+[INFO ] 2024-01-18 20:08:08.769 [main] AdminView - Phone
+[ERROR] 2024-01-18 20:08:14.057 [main] AdminView - java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "com.solvd.repairService.model.Users.id()" because the return value of "com.solvd.repairService.model.CustomerProfiles.user()" is null
+[INFO ] 2024-01-18 20:08:14.058 [main] AdminView - Input id
+[DEBUG] 2024-01-18 20:22:03.411 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:22:03.417 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:22:03.418 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:22:03.418 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:22:05.630 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 20:22:05.631 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 20:22:05.631 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 20:22:05.631 [main] ValidationView - 0: Quit
+[INFO ] 2024-01-18 20:22:06.832 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:22:06.833 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:22:06.833 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:22:06.833 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:22:06.834 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:22:06.834 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:22:08.608 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-18 20:22:08.609 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-18 20:22:08.609 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-18 20:22:08.610 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-18 20:22:08.610 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-18 20:22:08.610 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-18 20:22:08.611 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-18 20:22:08.611 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-18 20:22:08.612 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-18 20:22:08.612 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-18 20:22:08.612 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-18 20:22:08.613 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-18 20:22:08.613 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-18 20:22:08.614 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-18 20:22:08.614 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-18 20:22:08.614 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-18 20:22:08.615 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-18 20:22:08.615 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-18 20:22:08.615 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-18 20:22:08.616 [main] AdminView - [60] - CustomerJsonick
++375(44)...
+
+[INFO ] 2024-01-18 20:22:08.616 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+
+[INFO ] 2024-01-18 20:22:08.618 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:22:08.619 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:22:08.619 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:22:08.620 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:22:09.837 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:22:11.720 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+
+[INFO ] 2024-01-18 20:22:11.722 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:22:11.722 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:22:11.722 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:22:11.722 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:22:11.722 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:22:11.722 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:22:13.188 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 17:32:18.636 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:13.189 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
 Exp 1.0 years, position: repairman
 
-[INFO ] 2024-01-16 17:32:18.636 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:13.189 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
 Exp 2.0 years, position: repairman
 
-[INFO ] 2024-01-16 17:32:18.636 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:13.189 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 17:32:18.637 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:13.190 [main] AdminView - [36] Name: 1 ,phone +375(25)...
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 17:32:18.637 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:13.190 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 17:32:18.637 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+[INFO ] 2024-01-18 20:22:13.190 [main] AdminView - [61] Name: SomeNick ,phone somePhone
 Exp 6.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 17:32:18.637 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+[INFO ] 2024-01-18 20:22:13.190 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
 Exp 4.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 17:32:18.638 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 17:32:18.638 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 17:32:18.638 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 17:32:18.638 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 17:32:18.639 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 17:32:22.580 [main] AdminView - [4]position is repairman, demostratyuon of update
+[INFO ] 2024-01-18 20:22:13.191 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:22:13.191 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:22:13.191 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:22:13.191 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:22:15.751 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:22:15.751 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:22:15.751 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:22:15.752 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:22:15.752 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:22:15.752 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:22:24.335 [main] AdminView - [4]position is repairman, demostratyuon of update
 
-[INFO ] 2024-01-16 17:32:22.590 [main] AdminView - [9]position is , no description
+[INFO ] 2024-01-18 20:22:24.336 [main] AdminView - [5]position is techpriest, no descriptionnull
 
-[INFO ] 2024-01-16 17:32:22.590 [main] AdminView - [11]position is Omnissiah, machine God 
+[INFO ] 2024-01-18 20:22:24.337 [main] AdminView - [9]position is , no description
 
-[INFO ] 2024-01-16 17:32:22.591 [main] AdminView - [12]position is JsonPost, some description
+[INFO ] 2024-01-18 20:22:24.338 [main] AdminView - [11]position is Omnissiah, machine God 
 
-[INFO ] 2024-01-16 17:32:22.591 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+[INFO ] 2024-01-18 20:22:24.338 [main] AdminView - [12]position is JsonPost, some description
 
-[INFO ] 2024-01-16 17:32:22.592 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 17:32:22.592 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 17:32:22.592 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 17:32:22.592 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 17:32:22.593 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 17:32:28.953 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:22:24.339 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+
+[INFO ] 2024-01-18 20:22:24.339 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:22:24.339 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:22:24.340 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:22:24.340 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:22:27.495 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:22:30.211 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+
+[INFO ] 2024-01-18 20:22:30.212 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:22:30.213 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:22:30.214 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:22:30.215 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:22:30.215 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:22:30.216 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:22:36.761 [main] AdminView - order information:
 [14] Equipment: 
 Producer from json, null, json model, 
 status:  not returned , cost: 615.0
 
-[INFO ] 2024-01-16 17:32:28.954 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:22:36.762 [main] AdminView - order information:
 [15] Equipment: 
 NewTestProd, null, NewTestModel, 
 status:  not returned , cost: 626.0
 
-[INFO ] 2024-01-16 17:32:28.954 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:22:36.762 [main] AdminView - order information:
 [16] Equipment: 
 Producer from json1, null, json model1, 
 status:  not returned , cost: 1600.0
 
-[INFO ] 2024-01-16 17:32:28.955 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:22:36.762 [main] AdminView - order information:
 [17] Equipment: 
 dgssfdg, null, sdfgfdg, 
 status:  not returned , cost: 861.0
 
-[INFO ] 2024-01-16 17:32:28.955 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 17:32:28.955 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 17:32:28.955 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 17:32:28.956 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 17:32:28.956 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 17:32:32.956 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-18 20:22:36.763 [main] AdminView - order information:
+[18] Equipment: 
+SomeThingIDontKnow, null, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
 
-[INFO ] 2024-01-16 17:32:32.957 [main] AdminView - [2] name: name 2, location: adress 2
-
-[INFO ] 2024-01-16 17:32:32.958 [main] AdminView - [3] name: name 3, location: adress 3
-
-[INFO ] 2024-01-16 17:32:32.958 [main] AdminView - [28] name: null, location: null
-
-[INFO ] 2024-01-16 17:32:32.958 [main] AdminView - [29] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.959 [main] AdminView - [30] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.959 [main] AdminView - [31] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.959 [main] AdminView - [32] name: null, location: null
-
-[INFO ] 2024-01-16 17:32:32.959 [main] AdminView - [33] name: null, location: null
-
-[INFO ] 2024-01-16 17:32:32.960 [main] AdminView - [34] name: null, location: null
-
-[INFO ] 2024-01-16 17:32:32.960 [main] AdminView - [35] name: null, location: null
-
-[INFO ] 2024-01-16 17:32:32.960 [main] AdminView - [36] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.960 [main] AdminView - [37] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.960 [main] AdminView - [38] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.961 [main] AdminView - [39] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.961 [main] AdminView - [40] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.961 [main] AdminView - [41] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.961 [main] AdminView - [42] name: someName, location: someAddress
-
-[INFO ] 2024-01-16 17:32:32.962 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 17:32:32.962 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 17:32:32.962 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 17:32:32.962 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 17:32:32.962 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 18:40:34.465 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 18:40:34.471 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 18:40:34.472 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 18:40:34.472 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 18:40:36.236 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 18:40:36.237 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 18:40:36.237 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 18:40:36.823 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 18:40:36.823 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 18:40:36.823 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 18:40:36.824 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 18:40:36.824 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 18:40:37.994 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
-
-[INFO ] 2024-01-16 18:40:37.994 [main] AdminView - [2] - User#2
-None
-
-[INFO ] 2024-01-16 18:40:37.995 [main] AdminView - [6] - NewMyNick
-1
-
-[INFO ] 2024-01-16 18:40:37.995 [main] AdminView - [7] - pas3
-1
-
-[INFO ] 2024-01-16 18:40:37.995 [main] AdminView - [8] - pas4
-1
-
-[INFO ] 2024-01-16 18:40:37.996 [main] AdminView - [25] - User#25
-None
-
-[INFO ] 2024-01-16 18:40:37.996 [main] AdminView - [26] - User#26
-None
-
-[INFO ] 2024-01-16 18:40:37.996 [main] AdminView - [27] - User#27
-None
-
-[INFO ] 2024-01-16 18:40:37.996 [main] AdminView - [29] - User#29
-None
-
-[INFO ] 2024-01-16 18:40:37.997 [main] AdminView - [32] - User#32
-None
-
-[INFO ] 2024-01-16 18:40:37.997 [main] AdminView - [36] - User#36
-None
-
-[INFO ] 2024-01-16 18:40:37.997 [main] AdminView - [37] - User#37
-None
-
-[INFO ] 2024-01-16 18:40:37.997 [main] AdminView - [38] - User#38
-None
-
-[INFO ] 2024-01-16 18:40:37.998 [main] AdminView - [39] - User#39
-None
-
-[INFO ] 2024-01-16 18:40:37.998 [main] AdminView - [42] - Demonstration Nick
-some phone
-
-[INFO ] 2024-01-16 18:40:37.998 [main] AdminView - [43] - NewNick
-NewPhone
-
-[INFO ] 2024-01-16 18:40:37.998 [main] AdminView - [54] - xmlNick
-+375(25)...
-
-[INFO ] 2024-01-16 18:40:37.999 [main] AdminView - [57] - Staxon Statham
-+44(819)...
-
-[INFO ] 2024-01-16 18:40:37.999 [main] AdminView - [59] - xmlNickDEMO2
-+375(25)...DEMO2
-
-[INFO ] 2024-01-16 18:40:37.999 [main] AdminView - [60] - CustomerJsonick
-+375(44)...
-
-[INFO ] 2024-01-16 18:40:38.000 [main] AdminView - [62] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 20:22:36.763 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:22:36.763 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:22:36.764 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:22:36.764 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:22:39.016 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:22:45.233 [main] AdminView - order information:
+[18] client: [0] - CustomerFRomOrderJson
 phoneFromOrderJson
+worker: Name: xmlFullName ,phone +375(25)...
+Exp 0.0 years
+Equipment: 
+SomeThingIDontKnow, SomeThingIDontKnow, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
 
-[INFO ] 2024-01-16 18:40:38.000 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 18:40:38.000 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 18:40:38.000 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 18:40:38.001 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 18:40:38.001 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 18:40:43.824 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-18 20:22:45.234 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:22:45.234 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:22:45.234 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:22:45.235 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:22:45.235 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:22:45.235 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:22:53.154 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
 
-[INFO ] 2024-01-16 18:40:43.824 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-18 20:22:53.154 [main] AdminView - [2] name: name 2, location: adress 2
 
-[INFO ] 2024-01-16 18:40:43.825 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-18 20:22:53.155 [main] AdminView - [3] name: name 3, location: adress 3
 
-[INFO ] 2024-01-16 18:40:43.825 [main] AdminView - [28] name: null, location: null
+[INFO ] 2024-01-18 20:22:53.155 [main] AdminView - [28] name: null, location: null
 
-[INFO ] 2024-01-16 18:40:43.825 [main] AdminView - [29] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.155 [main] AdminView - [29] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.825 [main] AdminView - [30] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.155 [main] AdminView - [30] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.826 [main] AdminView - [31] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.156 [main] AdminView - [31] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.826 [main] AdminView - [32] name: null, location: null
+[INFO ] 2024-01-18 20:22:53.156 [main] AdminView - [32] name: null, location: null
 
-[INFO ] 2024-01-16 18:40:43.826 [main] AdminView - [33] name: null, location: null
+[INFO ] 2024-01-18 20:22:53.156 [main] AdminView - [33] name: null, location: null
 
-[INFO ] 2024-01-16 18:40:43.826 [main] AdminView - [34] name: null, location: null
+[INFO ] 2024-01-18 20:22:53.156 [main] AdminView - [34] name: null, location: null
 
-[INFO ] 2024-01-16 18:40:43.827 [main] AdminView - [35] name: null, location: null
+[INFO ] 2024-01-18 20:22:53.156 [main] AdminView - [35] name: null, location: null
 
-[INFO ] 2024-01-16 18:40:43.827 [main] AdminView - [36] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.157 [main] AdminView - [36] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.827 [main] AdminView - [37] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.157 [main] AdminView - [37] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.827 [main] AdminView - [38] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.158 [main] AdminView - [38] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.828 [main] AdminView - [39] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.158 [main] AdminView - [39] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.828 [main] AdminView - [40] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.158 [main] AdminView - [40] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.828 [main] AdminView - [41] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.159 [main] AdminView - [41] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.828 [main] AdminView - [42] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:22:53.159 [main] AdminView - [42] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 18:40:43.829 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 18:40:43.829 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 18:40:43.829 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 18:40:43.829 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 18:40:43.829 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 19:06:36.619 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 19:06:36.626 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 19:06:36.627 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 19:06:36.628 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 19:06:39.379 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 19:06:39.379 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 19:06:39.380 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 19:06:40.684 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:06:40.684 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:06:40.684 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:06:40.685 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:06:40.685 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:06:42.344 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
+[INFO ] 2024-01-18 20:22:53.159 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:22:53.160 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:22:53.160 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:22:53.160 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:22:54.800 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:22:56.105 [main] AdminView - [42] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:06:42.345 [main] AdminView - [2] - User#2
-None
-
-[INFO ] 2024-01-16 19:06:42.345 [main] AdminView - [6] - NewMyNick
-1
-
-[INFO ] 2024-01-16 19:06:42.346 [main] AdminView - [7] - pas3
-1
-
-[INFO ] 2024-01-16 19:06:42.346 [main] AdminView - [8] - pas4
-1
-
-[INFO ] 2024-01-16 19:06:42.346 [main] AdminView - [25] - User#25
-None
-
-[INFO ] 2024-01-16 19:06:42.346 [main] AdminView - [26] - User#26
-None
-
-[INFO ] 2024-01-16 19:06:42.347 [main] AdminView - [27] - User#27
-None
-
-[INFO ] 2024-01-16 19:06:42.347 [main] AdminView - [29] - User#29
-None
-
-[INFO ] 2024-01-16 19:06:42.347 [main] AdminView - [32] - User#32
-None
-
-[INFO ] 2024-01-16 19:06:42.347 [main] AdminView - [36] - User#36
-None
-
-[INFO ] 2024-01-16 19:06:42.348 [main] AdminView - [37] - User#37
-None
-
-[INFO ] 2024-01-16 19:06:42.348 [main] AdminView - [38] - User#38
-None
-
-[INFO ] 2024-01-16 19:06:42.348 [main] AdminView - [39] - User#39
-None
-
-[INFO ] 2024-01-16 19:06:42.349 [main] AdminView - [42] - Demonstration Nick
-some phone
-
-[INFO ] 2024-01-16 19:06:42.349 [main] AdminView - [43] - NewNick
-NewPhone
-
-[INFO ] 2024-01-16 19:06:42.349 [main] AdminView - [54] - xmlNick
-+375(25)...
-
-[INFO ] 2024-01-16 19:06:42.349 [main] AdminView - [57] - Staxon Statham
-+44(819)...
-
-[INFO ] 2024-01-16 19:06:42.350 [main] AdminView - [59] - xmlNickDEMO2
-+375(25)...DEMO2
-
-[INFO ] 2024-01-16 19:06:42.350 [main] AdminView - [60] - CustomerJsonick
-+375(44)...
-
-[INFO ] 2024-01-16 19:06:42.350 [main] AdminView - [62] - CustomerFRomOrderJson
-phoneFromOrderJson
-
-[INFO ] 2024-01-16 19:06:42.350 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:06:42.351 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:06:42.351 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:06:42.351 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:06:47.253 [main] AdminView - Input id
-[INFO ] 2024-01-16 19:06:48.614 [main] AdminView - [62] - CustomerFRomOrderJson
-phoneFromOrderJson
-
-[INFO ] 2024-01-16 19:06:48.615 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:06:48.615 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:06:48.616 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:06:48.617 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:06:48.617 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:06:52.834 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+[INFO ] 2024-01-18 20:22:56.106 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:22:56.106 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:22:56.106 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:22:56.107 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:22:56.107 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:22:56.108 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:22:57.648 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:06:52.835 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:57.648 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
 Exp 1.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:06:52.835 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:57.648 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
 Exp 2.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:06:52.836 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:57.649 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:06:52.836 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:57.649 [main] AdminView - [36] Name: 1 ,phone +375(25)...
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:06:52.836 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+[INFO ] 2024-01-18 20:22:57.649 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:06:52.836 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+[INFO ] 2024-01-18 20:22:57.650 [main] AdminView - [61] Name: SomeNick ,phone somePhone
 Exp 6.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 19:06:52.837 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+[INFO ] 2024-01-18 20:22:57.650 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
 Exp 4.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 19:06:52.837 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:06:52.837 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:06:52.837 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:06:52.838 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:06:55.093 [main] AdminView - Input id
-[INFO ] 2024-01-16 19:06:56.786 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+[INFO ] 2024-01-18 20:22:57.650 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:22:57.651 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:22:57.651 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:22:57.651 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:23:01.709 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:03.530 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
 Exp 4.0 years, position: JsonPost, on service center: someName someAddress
 
-[INFO ] 2024-01-16 19:06:56.787 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:06:56.787 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:06:56.787 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:06:56.788 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:06:56.788 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:06:59.827 [main] AdminView - [4]position is repairman, demostratyuon of update
+[INFO ] 2024-01-18 20:23:03.531 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:23:03.531 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:23:03.531 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:23:03.532 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:23:03.532 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:23:03.532 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:23:07.741 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
 
-[INFO ] 2024-01-16 19:06:59.836 [main] AdminView - [9]position is , no description
+[INFO ] 2024-01-18 20:23:07.742 [main] AdminView - [2] - User#2
+None
 
-[INFO ] 2024-01-16 19:06:59.837 [main] AdminView - [11]position is Omnissiah, machine God 
+[INFO ] 2024-01-18 20:23:07.744 [main] AdminView - [6] - NewMyNick
+1
 
-[INFO ] 2024-01-16 19:06:59.837 [main] AdminView - [12]position is JsonPost, some description
+[INFO ] 2024-01-18 20:23:07.745 [main] AdminView - [7] - pas3
+1
 
-[INFO ] 2024-01-16 19:06:59.837 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+[INFO ] 2024-01-18 20:23:07.745 [main] AdminView - [8] - pas4
+1
 
-[INFO ] 2024-01-16 19:06:59.837 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:06:59.837 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:06:59.838 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:06:59.838 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:07:03.781 [main] AdminView - Input id
-[INFO ] 2024-01-16 19:07:05.066 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+[INFO ] 2024-01-18 20:23:07.745 [main] AdminView - [25] - User#25
+None
 
-[INFO ] 2024-01-16 19:07:05.066 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:07:05.066 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:07:05.067 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:07:05.067 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:07:05.067 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:07:08.688 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:23:07.746 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-18 20:23:07.746 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-18 20:23:07.746 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-18 20:23:07.747 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-18 20:23:07.747 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-18 20:23:07.747 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-18 20:23:07.747 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-18 20:23:07.747 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-18 20:23:07.748 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-18 20:23:07.748 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-18 20:23:07.748 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-18 20:23:07.748 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-18 20:23:07.748 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-18 20:23:07.748 [main] AdminView - [60] - CustomerJsonick
++375(44)...
+
+[INFO ] 2024-01-18 20:23:07.749 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+
+[INFO ] 2024-01-18 20:23:07.749 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:23:07.749 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:23:07.749 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:23:07.749 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:23:08.743 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:12.254 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+
+[INFO ] 2024-01-18 20:23:12.254 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:23:12.255 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:23:12.255 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:23:12.255 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:23:12.255 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:23:12.256 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:23:24.102 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-18 20:23:24.103 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-18 20:23:24.103 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-18 20:23:24.103 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-18 20:23:24.103 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-18 20:23:24.104 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-18 20:23:24.104 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost
+
+[INFO ] 2024-01-18 20:23:24.104 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost
+
+[INFO ] 2024-01-18 20:23:24.105 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:23:24.105 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:23:24.105 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:23:24.106 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:23:25.695 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:27.002 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+
+[INFO ] 2024-01-18 20:23:27.003 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:23:27.003 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:23:27.003 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:23:27.004 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:23:27.004 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:23:27.004 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:23:29.371 [main] AdminView - [4]position is repairman, demostratyuon of update
+
+[INFO ] 2024-01-18 20:23:29.372 [main] AdminView - [5]position is techpriest, no descriptionnull
+
+[INFO ] 2024-01-18 20:23:29.372 [main] AdminView - [9]position is , no description
+
+[INFO ] 2024-01-18 20:23:29.372 [main] AdminView - [11]position is Omnissiah, machine God 
+
+[INFO ] 2024-01-18 20:23:29.373 [main] AdminView - [12]position is JsonPost, some description
+
+[INFO ] 2024-01-18 20:23:29.373 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+
+[INFO ] 2024-01-18 20:23:29.373 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:23:29.373 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:23:29.374 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:23:29.374 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:23:32.944 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:34.025 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:40.723 [main] AdminView - [1]position is null, no descriptionnull
+
+[INFO ] 2024-01-18 20:23:40.724 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:23:40.724 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:23:40.724 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:23:40.725 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:23:40.725 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:23:40.725 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:23:44.039 [main] AdminView - order information:
 [14] Equipment: 
 Producer from json, null, json model, 
 status:  not returned , cost: 615.0
 
-[INFO ] 2024-01-16 19:07:08.689 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:23:44.039 [main] AdminView - order information:
 [15] Equipment: 
 NewTestProd, null, NewTestModel, 
 status:  not returned , cost: 626.0
 
-[INFO ] 2024-01-16 19:07:08.689 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:23:44.040 [main] AdminView - order information:
 [16] Equipment: 
 Producer from json1, null, json model1, 
 status:  not returned , cost: 1600.0
 
-[INFO ] 2024-01-16 19:07:08.690 [main] AdminView - order information:
+[INFO ] 2024-01-18 20:23:44.040 [main] AdminView - order information:
 [17] Equipment: 
 dgssfdg, null, sdfgfdg, 
 status:  not returned , cost: 861.0
 
-[INFO ] 2024-01-16 19:07:08.690 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:07:08.690 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:07:08.690 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:07:08.691 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:07:09.935 [main] AdminView - Input id
-[INFO ] 2024-01-16 19:07:13.777 [main] AdminView - order information:
-[16] client: [0] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 20:23:44.040 [main] AdminView - order information:
+[18] Equipment: 
+SomeThingIDontKnow, null, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
+
+[INFO ] 2024-01-18 20:23:44.041 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:23:44.041 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:23:44.041 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:23:44.041 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:23:45.589 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:50.573 [main] AdminView - order information:
+[18] client: [0] - CustomerFRomOrderJson
 phoneFromOrderJson
-worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+worker: Name: xmlFullName ,phone +375(25)...
 Exp 0.0 years
 Equipment: 
-JsonType1, Producer from json1, json model1, 
-status:  not returned , cost: 1600.0
+SomeThingIDontKnow, SomeThingIDontKnow, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
 
-[INFO ] 2024-01-16 19:07:13.777 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:07:13.778 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:07:13.778 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:07:13.778 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:07:13.778 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:07:19.108 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+[INFO ] 2024-01-18 20:23:50.573 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:23:50.573 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:23:50.574 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:23:50.574 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:23:50.574 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:23:50.574 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:23:52.616 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
 
-[INFO ] 2024-01-16 19:07:19.108 [main] AdminView - [2] name: name 2, location: adress 2
+[INFO ] 2024-01-18 20:23:52.616 [main] AdminView - [2] name: name 2, location: adress 2
 
-[INFO ] 2024-01-16 19:07:19.108 [main] AdminView - [3] name: name 3, location: adress 3
+[INFO ] 2024-01-18 20:23:52.616 [main] AdminView - [3] name: name 3, location: adress 3
 
-[INFO ] 2024-01-16 19:07:19.109 [main] AdminView - [28] name: null, location: null
+[INFO ] 2024-01-18 20:23:52.616 [main] AdminView - [28] name: null, location: null
 
-[INFO ] 2024-01-16 19:07:19.109 [main] AdminView - [29] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.617 [main] AdminView - [29] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.109 [main] AdminView - [30] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.617 [main] AdminView - [30] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.110 [main] AdminView - [31] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.617 [main] AdminView - [31] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.110 [main] AdminView - [32] name: null, location: null
+[INFO ] 2024-01-18 20:23:52.618 [main] AdminView - [32] name: null, location: null
 
-[INFO ] 2024-01-16 19:07:19.110 [main] AdminView - [33] name: null, location: null
+[INFO ] 2024-01-18 20:23:52.618 [main] AdminView - [33] name: null, location: null
 
-[INFO ] 2024-01-16 19:07:19.111 [main] AdminView - [34] name: null, location: null
+[INFO ] 2024-01-18 20:23:52.618 [main] AdminView - [34] name: null, location: null
 
-[INFO ] 2024-01-16 19:07:19.111 [main] AdminView - [35] name: null, location: null
+[INFO ] 2024-01-18 20:23:52.618 [main] AdminView - [35] name: null, location: null
 
-[INFO ] 2024-01-16 19:07:19.111 [main] AdminView - [36] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.618 [main] AdminView - [36] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.111 [main] AdminView - [37] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.619 [main] AdminView - [37] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.111 [main] AdminView - [38] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.619 [main] AdminView - [38] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.112 [main] AdminView - [39] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.619 [main] AdminView - [39] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.112 [main] AdminView - [40] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.619 [main] AdminView - [40] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.112 [main] AdminView - [41] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.620 [main] AdminView - [41] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.112 [main] AdminView - [42] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.620 [main] AdminView - [42] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:19.113 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:07:19.113 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:07:19.113 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:07:19.113 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:07:20.182 [main] AdminView - Input id
-[INFO ] 2024-01-16 19:07:23.765 [main] AdminView - [42] name: someName, location: someAddress
+[INFO ] 2024-01-18 20:23:52.621 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:23:52.621 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:23:52.621 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:23:52.622 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:23:56.038 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:23:57.678 [main] AdminView - [42] name: someName, location: someAddress
 
-[INFO ] 2024-01-16 19:07:23.765 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:07:23.766 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:07:23.766 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:07:23.766 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:07:23.766 [main] AdminView - 5. Services
-[DEBUG] 2024-01-16 19:40:03.997 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 19:40:04.001 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 19:40:04.001 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 19:40:04.001 [main] ValidationView - 3: Json
-[DEBUG] 2024-01-16 19:44:36.484 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 19:44:36.490 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 19:44:36.491 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 19:44:36.491 [main] ValidationView - 3: Json
-[DEBUG] 2024-01-16 19:55:14.692 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 19:55:14.698 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 19:55:14.699 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 19:55:14.699 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 19:55:17.797 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 19:55:17.798 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 19:55:17.798 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 19:55:18.826 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:55:18.827 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:55:18.827 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:55:18.827 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:55:18.828 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:55:22.477 [main] AdminView - [1] - Somebofy
+[INFO ] 2024-01-18 20:23:57.679 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:23:57.679 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:23:57.679 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:23:57.679 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:23:57.680 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:23:57.680 [main] AdminView - 0. logout
+[DEBUG] 2024-01-18 20:24:07.609 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:24:07.616 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:24:07.617 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:24:07.617 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:24:09.275 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 20:24:09.275 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 20:24:09.275 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 20:24:09.276 [main] ValidationView - 0: Quit
+[INFO ] 2024-01-18 20:24:11.188 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:24:11.188 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:24:11.189 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:24:11.189 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:24:11.189 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:11.190 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:24:13.315 [main] AdminView - [1] - Somebofy
 +375-25-124-39-52
 
-[INFO ] 2024-01-16 19:55:22.478 [main] AdminView - [2] - User#2
+[INFO ] 2024-01-18 20:24:13.316 [main] AdminView - [2] - User#2
 None
 
-[INFO ] 2024-01-16 19:55:22.478 [main] AdminView - [6] - NewMyNick
+[INFO ] 2024-01-18 20:24:13.316 [main] AdminView - [6] - NewMyNick
 1
 
-[INFO ] 2024-01-16 19:55:22.479 [main] AdminView - [7] - pas3
+[INFO ] 2024-01-18 20:24:13.316 [main] AdminView - [7] - pas3
 1
 
-[INFO ] 2024-01-16 19:55:22.479 [main] AdminView - [8] - pas4
+[INFO ] 2024-01-18 20:24:13.317 [main] AdminView - [8] - pas4
 1
 
-[INFO ] 2024-01-16 19:55:22.479 [main] AdminView - [25] - User#25
+[INFO ] 2024-01-18 20:24:13.317 [main] AdminView - [25] - User#25
 None
 
-[INFO ] 2024-01-16 19:55:22.480 [main] AdminView - [26] - User#26
+[INFO ] 2024-01-18 20:24:13.318 [main] AdminView - [26] - User#26
 None
 
-[INFO ] 2024-01-16 19:55:22.480 [main] AdminView - [27] - User#27
+[INFO ] 2024-01-18 20:24:13.318 [main] AdminView - [27] - User#27
 None
 
-[INFO ] 2024-01-16 19:55:22.480 [main] AdminView - [29] - User#29
+[INFO ] 2024-01-18 20:24:13.318 [main] AdminView - [29] - User#29
 None
 
-[INFO ] 2024-01-16 19:55:22.481 [main] AdminView - [32] - User#32
+[INFO ] 2024-01-18 20:24:13.318 [main] AdminView - [32] - User#32
 None
 
-[INFO ] 2024-01-16 19:55:22.481 [main] AdminView - [36] - User#36
+[INFO ] 2024-01-18 20:24:13.319 [main] AdminView - [36] - User#36
 None
 
-[INFO ] 2024-01-16 19:55:22.481 [main] AdminView - [37] - User#37
+[INFO ] 2024-01-18 20:24:13.319 [main] AdminView - [37] - User#37
 None
 
-[INFO ] 2024-01-16 19:55:22.482 [main] AdminView - [38] - User#38
+[INFO ] 2024-01-18 20:24:13.319 [main] AdminView - [38] - User#38
 None
 
-[INFO ] 2024-01-16 19:55:22.482 [main] AdminView - [39] - User#39
+[INFO ] 2024-01-18 20:24:13.320 [main] AdminView - [39] - User#39
 None
 
-[INFO ] 2024-01-16 19:55:22.482 [main] AdminView - [42] - Demonstration Nick
+[INFO ] 2024-01-18 20:24:13.320 [main] AdminView - [42] - Demonstration Nick
 some phone
 
-[INFO ] 2024-01-16 19:55:22.483 [main] AdminView - [43] - NewNick
+[INFO ] 2024-01-18 20:24:13.320 [main] AdminView - [43] - NewNick
 NewPhone
 
-[INFO ] 2024-01-16 19:55:22.483 [main] AdminView - [54] - xmlNick
+[INFO ] 2024-01-18 20:24:13.321 [main] AdminView - [54] - xmlNick
 +375(25)...
 
-[INFO ] 2024-01-16 19:55:22.483 [main] AdminView - [57] - Staxon Statham
+[INFO ] 2024-01-18 20:24:13.321 [main] AdminView - [57] - Staxon Statham
 +44(819)...
 
-[INFO ] 2024-01-16 19:55:22.484 [main] AdminView - [59] - xmlNickDEMO2
+[INFO ] 2024-01-18 20:24:13.321 [main] AdminView - [59] - xmlNickDEMO2
 +375(25)...DEMO2
 
-[INFO ] 2024-01-16 19:55:22.484 [main] AdminView - [60] - CustomerJsonick
+[INFO ] 2024-01-18 20:24:13.321 [main] AdminView - [60] - CustomerJsonick
 +375(44)...
 
-[INFO ] 2024-01-16 19:55:22.484 [main] AdminView - [62] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 20:24:13.322 [main] AdminView - [62] - CustomerFRomOrderJson
 phoneFromOrderJson
 
-[INFO ] 2024-01-16 19:55:22.485 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:55:22.485 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:55:22.486 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:55:22.486 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:55:24.769 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:55:24.770 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:55:24.771 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:55:24.771 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:55:26.812 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:55:26.813 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:55:26.813 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:55:26.814 [main] AdminView - 4: delete
-[DEBUG] 2024-01-16 19:55:38.710 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 19:55:38.716 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 19:55:38.717 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 19:55:38.717 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 19:55:41.231 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 19:55:41.231 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 19:55:41.232 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 19:55:42.295 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:55:42.295 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:55:42.295 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:55:42.296 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:55:42.296 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:55:50.092 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+[INFO ] 2024-01-18 20:24:13.324 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:24:13.324 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:24:13.324 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:24:13.325 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:24:14.530 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:24:15.898 [main] AdminView - [62] - CustomerFRomOrderJson
+phoneFromOrderJson
+
+[INFO ] 2024-01-18 20:24:15.899 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:24:15.899 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:24:15.899 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:24:15.900 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:24:15.900 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:15.900 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:24:16.955 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:55:50.092 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+[INFO ] 2024-01-18 20:24:16.955 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
 Exp 1.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:55:50.092 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+[INFO ] 2024-01-18 20:24:16.956 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
 Exp 2.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:55:50.093 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+[INFO ] 2024-01-18 20:24:16.956 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:55:50.093 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+[INFO ] 2024-01-18 20:24:16.957 [main] AdminView - [36] Name: 1 ,phone +375(25)...
 Exp 0.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:55:50.093 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+[INFO ] 2024-01-18 20:24:16.957 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
 Exp 5.0 years, position: repairman
 
-[INFO ] 2024-01-16 19:55:50.094 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+[INFO ] 2024-01-18 20:24:16.958 [main] AdminView - [61] Name: SomeNick ,phone somePhone
 Exp 6.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 19:55:50.094 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+[INFO ] 2024-01-18 20:24:16.958 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
 Exp 4.0 years, position: JsonPost
 
-[INFO ] 2024-01-16 19:55:50.094 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:55:50.095 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:55:50.095 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:55:50.095 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:55:52.092 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:55:52.092 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:55:52.093 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:55:52.093 [main] AdminView - 4: delete
-[DEBUG] 2024-01-16 19:56:45.053 [main] ValidationView - JDBC or my batis?
-[DEBUG] 2024-01-16 19:56:45.057 [main] ValidationView - 1: console
-[DEBUG] 2024-01-16 19:56:45.058 [main] ValidationView - 2: Stax
-[DEBUG] 2024-01-16 19:56:45.058 [main] ValidationView - 3: Json
-[INFO ] 2024-01-16 19:56:49.840 [main] ValidationView - Log in or registration?
-[INFO ] 2024-01-16 19:56:49.841 [main] ValidationView - 1: log in
-[INFO ] 2024-01-16 19:56:49.841 [main] ValidationView - 2: registration
-[INFO ] 2024-01-16 19:56:50.889 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:56:50.889 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:56:50.889 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:56:50.889 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:56:50.890 [main] AdminView - 5. Services
-[INFO ] 2024-01-16 19:56:52.007 [main] AdminView - [1] - Somebofy
-+375-25-124-39-52
+[INFO ] 2024-01-18 20:24:16.959 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:24:16.959 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:24:16.959 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:24:16.960 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:24:19.993 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:24:21.556 [main] AdminView - [63] Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
 
-[INFO ] 2024-01-16 19:56:52.007 [main] AdminView - [2] - User#2
-None
+[INFO ] 2024-01-18 20:24:21.557 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:24:21.557 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:24:21.558 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:24:21.558 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:24:21.558 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:21.558 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:24:23.203 [main] AdminView - [4]position is repairman, demostratyuon of update
 
-[INFO ] 2024-01-16 19:56:52.007 [main] AdminView - [6] - NewMyNick
-1
+[INFO ] 2024-01-18 20:24:23.203 [main] AdminView - [5]position is techpriest, no descriptionnull
 
-[INFO ] 2024-01-16 19:56:52.008 [main] AdminView - [7] - pas3
-1
+[INFO ] 2024-01-18 20:24:23.204 [main] AdminView - [9]position is , no description
 
-[INFO ] 2024-01-16 19:56:52.008 [main] AdminView - [8] - pas4
-1
+[INFO ] 2024-01-18 20:24:23.204 [main] AdminView - [11]position is Omnissiah, machine God 
 
-[INFO ] 2024-01-16 19:56:52.008 [main] AdminView - [25] - User#25
-None
+[INFO ] 2024-01-18 20:24:23.204 [main] AdminView - [12]position is JsonPost, some description
 
-[INFO ] 2024-01-16 19:56:52.009 [main] AdminView - [26] - User#26
-None
+[INFO ] 2024-01-18 20:24:23.205 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
 
-[INFO ] 2024-01-16 19:56:52.009 [main] AdminView - [27] - User#27
-None
+[INFO ] 2024-01-18 20:24:23.205 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:24:23.205 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:24:23.205 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:24:23.206 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:24:27.189 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:24:29.369 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
 
-[INFO ] 2024-01-16 19:56:52.009 [main] AdminView - [29] - User#29
-None
+[INFO ] 2024-01-18 20:24:29.370 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:24:29.370 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:24:29.370 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:24:29.371 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:24:29.371 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:29.371 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:24:32.521 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, 
+status:  not returned , cost: 615.0
 
-[INFO ] 2024-01-16 19:56:52.010 [main] AdminView - [32] - User#32
-None
+[INFO ] 2024-01-18 20:24:32.522 [main] AdminView - order information:
+[15] Equipment: 
+NewTestProd, null, NewTestModel, 
+status:  not returned , cost: 626.0
 
-[INFO ] 2024-01-16 19:56:52.010 [main] AdminView - [36] - User#36
-None
+[INFO ] 2024-01-18 20:24:32.522 [main] AdminView - order information:
+[16] Equipment: 
+Producer from json1, null, json model1, 
+status:  not returned , cost: 1600.0
 
-[INFO ] 2024-01-16 19:56:52.010 [main] AdminView - [37] - User#37
-None
+[INFO ] 2024-01-18 20:24:32.522 [main] AdminView - order information:
+[17] Equipment: 
+dgssfdg, null, sdfgfdg, 
+status:  not returned , cost: 861.0
 
-[INFO ] 2024-01-16 19:56:52.010 [main] AdminView - [38] - User#38
-None
+[INFO ] 2024-01-18 20:24:32.523 [main] AdminView - order information:
+[18] Equipment: 
+SomeThingIDontKnow, null, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
 
-[INFO ] 2024-01-16 19:56:52.011 [main] AdminView - [39] - User#39
-None
-
-[INFO ] 2024-01-16 19:56:52.011 [main] AdminView - [42] - Demonstration Nick
-some phone
-
-[INFO ] 2024-01-16 19:56:52.012 [main] AdminView - [43] - NewNick
-NewPhone
-
-[INFO ] 2024-01-16 19:56:52.012 [main] AdminView - [54] - xmlNick
-+375(25)...
-
-[INFO ] 2024-01-16 19:56:52.012 [main] AdminView - [57] - Staxon Statham
-+44(819)...
-
-[INFO ] 2024-01-16 19:56:52.013 [main] AdminView - [59] - xmlNickDEMO2
-+375(25)...DEMO2
-
-[INFO ] 2024-01-16 19:56:52.013 [main] AdminView - [60] - CustomerJsonick
-+375(44)...
-
-[INFO ] 2024-01-16 19:56:52.013 [main] AdminView - [62] - CustomerFRomOrderJson
+[INFO ] 2024-01-18 20:24:32.523 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:24:32.523 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:24:32.523 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:24:32.524 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:24:34.106 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:24:40.825 [main] AdminView - order information:
+[18] client: [0] - CustomerFRomOrderJson
 phoneFromOrderJson
+worker: Name: xmlFullName ,phone +375(25)...
+Exp 0.0 years
+Equipment: 
+SomeThingIDontKnow, SomeThingIDontKnow, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
 
-[INFO ] 2024-01-16 19:56:52.014 [main] AdminView - 1: get
-[INFO ] 2024-01-16 19:56:52.014 [main] AdminView - 2: add
-[INFO ] 2024-01-16 19:56:52.014 [main] AdminView - 3: update
-[INFO ] 2024-01-16 19:56:52.014 [main] AdminView - 4: delete
-[INFO ] 2024-01-16 19:56:53.423 [main] AdminView - 1. Customers
-[INFO ] 2024-01-16 19:56:53.424 [main] AdminView - 2. Workers
-[INFO ] 2024-01-16 19:56:53.425 [main] AdminView - 3. Worker positions
-[INFO ] 2024-01-16 19:56:53.425 [main] AdminView - 4. Orders
-[INFO ] 2024-01-16 19:56:53.425 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:40.825 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:24:40.826 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:24:40.826 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:24:40.826 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:24:40.827 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:40.827 [main] AdminView - 0. logout
+[INFO ] 2024-01-18 20:24:43.948 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+
+[INFO ] 2024-01-18 20:24:43.948 [main] AdminView - [2] name: name 2, location: adress 2
+
+[INFO ] 2024-01-18 20:24:43.948 [main] AdminView - [3] name: name 3, location: adress 3
+
+[INFO ] 2024-01-18 20:24:43.949 [main] AdminView - [28] name: null, location: null
+
+[INFO ] 2024-01-18 20:24:43.949 [main] AdminView - [29] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.949 [main] AdminView - [30] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.950 [main] AdminView - [31] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.950 [main] AdminView - [32] name: null, location: null
+
+[INFO ] 2024-01-18 20:24:43.950 [main] AdminView - [33] name: null, location: null
+
+[INFO ] 2024-01-18 20:24:43.950 [main] AdminView - [34] name: null, location: null
+
+[INFO ] 2024-01-18 20:24:43.951 [main] AdminView - [35] name: null, location: null
+
+[INFO ] 2024-01-18 20:24:43.951 [main] AdminView - [36] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.951 [main] AdminView - [37] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.952 [main] AdminView - [38] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.952 [main] AdminView - [39] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.952 [main] AdminView - [40] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.952 [main] AdminView - [41] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.952 [main] AdminView - [42] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:43.953 [main] AdminView - 1: get
+[INFO ] 2024-01-18 20:24:43.953 [main] AdminView - 2: add
+[INFO ] 2024-01-18 20:24:43.953 [main] AdminView - 3: update
+[INFO ] 2024-01-18 20:24:43.953 [main] AdminView - 4: delete
+[INFO ] 2024-01-18 20:24:46.161 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:24:47.836 [main] AdminView - [42] name: someName, location: someAddress
+
+[INFO ] 2024-01-18 20:24:47.836 [main] AdminView - 1. Customers
+[INFO ] 2024-01-18 20:24:47.837 [main] AdminView - 2. Workers
+[INFO ] 2024-01-18 20:24:47.838 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-18 20:24:47.838 [main] AdminView - 4. Orders
+[INFO ] 2024-01-18 20:24:47.839 [main] AdminView - 5. Services
+[INFO ] 2024-01-18 20:24:47.839 [main] AdminView - 0. logout
+[DEBUG] 2024-01-18 20:33:30.049 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:33:30.054 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:33:30.054 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:33:30.055 [main] ValidationView - 3: Json
+[DEBUG] 2024-01-18 20:34:22.019 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:34:22.024 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:34:22.025 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:34:22.025 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:34:24.362 [main] CustomerProfileView - [6] - NewMyNick
+1
+Customer with login [log2] And password [pas2] 
+
+[INFO ] 2024-01-18 20:34:24.363 [main] CustomerProfileView - 1: profile
+[INFO ] 2024-01-18 20:34:24.364 [main] CustomerProfileView - 2: orders
+[DEBUG] 2024-01-18 20:34:26.240 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:34:26.240 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:34:26.240 [main] CustomerProfileView - 3: return
+[INFO ] 2024-01-18 20:34:29.922 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, 
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-18 20:34:29.924 [main] AdminView - order information:
+[15] Equipment: 
+NewTestProd, null, NewTestModel, 
+status:  not returned , cost: 626.0
+
+[INFO ] 2024-01-18 20:34:29.925 [main] AdminView - order information:
+[16] Equipment: 
+Producer from json1, null, json model1, 
+status:  not returned , cost: 1600.0
+
+[INFO ] 2024-01-18 20:34:29.927 [main] AdminView - order information:
+[17] Equipment: 
+dgssfdg, null, sdfgfdg, 
+status:  not returned , cost: 861.0
+
+[INFO ] 2024-01-18 20:34:29.929 [main] AdminView - order information:
+[18] Equipment: 
+SomeThingIDontKnow, null, SomeThingIDontKnow, 
+status:  not returned , cost: 751.0
+
+[INFO ] 2024-01-18 20:34:29.935 [main] AdminView - Input id
+[DEBUG] 2024-01-18 20:35:14.059 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:35:14.060 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:35:14.061 [main] CustomerProfileView - 3: return
+[DEBUG] 2024-01-18 20:38:12.552 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:38:12.558 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:38:12.559 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:38:12.560 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:38:16.202 [main] CustomerProfileView - [6] - NewMyNick
+1
+Customer with login [log2] And password [pas2] 
+
+[INFO ] 2024-01-18 20:38:16.203 [main] CustomerProfileView - 1: profile
+[INFO ] 2024-01-18 20:38:16.203 [main] CustomerProfileView - 2: orders
+[DEBUG] 2024-01-18 20:38:25.807 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:38:25.807 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:38:25.807 [main] CustomerProfileView - 3: return
+[DEBUG] 2024-01-18 20:38:26.861 [main] CustomerProfileView - Type: 
+[DEBUG] 2024-01-18 20:38:28.745 [main] CustomerProfileView - Producer: 
+[DEBUG] 2024-01-18 20:38:29.510 [main] CustomerProfileView - Model: 
+[DEBUG] 2024-01-18 20:38:30.357 [main] CustomerProfileView - Price: 
+[INFO ] 2024-01-18 20:38:31.657 [main] CustomerProfileView - Order was successfully created
+[DEBUG] 2024-01-18 20:38:31.657 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:38:31.657 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:38:31.658 [main] CustomerProfileView - 3: return
+[INFO ] 2024-01-18 20:38:34.455 [main] AdminView - Input id
+[DEBUG] 2024-01-18 20:39:54.249 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:39:54.255 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:39:54.255 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:39:54.256 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:39:58.941 [main] CustomerProfileView - [6] - NewMyNick
+1
+Customer with login [log2] And password [pas2] 
+
+[INFO ] 2024-01-18 20:39:58.942 [main] CustomerProfileView - 1: profile
+[INFO ] 2024-01-18 20:39:58.942 [main] CustomerProfileView - 2: orders
+[DEBUG] 2024-01-18 20:40:09.563 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:40:09.564 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:40:09.564 [main] CustomerProfileView - 3: return
+[INFO ] 2024-01-18 20:40:10.371 [main] CustomerProfileView - order information:
+[19] Equipment: 
+arg, null, dtyghf, 
+status:  not returned , cost: 801.0
+
+[INFO ] 2024-01-18 20:40:10.385 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:40:14.289 [main] CustomerProfileView - order information:
+[19] client: [0] - NewMyNick
+1
+worker: Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years
+Equipment: 
+arg, sthd, dtyghf, 
+status:  not returned , cost: 801.0
+
+[INFO ] 2024-01-18 20:40:14.290 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 20:40:14.291 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 20:40:14.291 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 20:40:14.292 [main] ValidationView - 0: Quit
+[DEBUG] 2024-01-18 20:40:32.171 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:40:32.177 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:40:32.178 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:40:32.178 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:40:34.768 [main] CustomerProfileView - [6] - NewMyNick
+1
+Customer with login [log2] And password [pas2] 
+
+[INFO ] 2024-01-18 20:40:34.769 [main] CustomerProfileView - 1: profile
+[INFO ] 2024-01-18 20:40:34.770 [main] CustomerProfileView - 2: orders
+[DEBUG] 2024-01-18 20:40:35.946 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:40:35.947 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:40:35.947 [main] CustomerProfileView - 3: return
+[INFO ] 2024-01-18 20:40:37.017 [main] CustomerProfileView - order information:
+[19] Equipment: 
+arg, null, dtyghf, 
+status:  not returned , cost: 801.0
+
+[INFO ] 2024-01-18 20:40:37.028 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:40:38.610 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:40:39.647 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:40:42.020 [main] CustomerProfileView - order information:
+[4] 
+
+[INFO ] 2024-01-18 20:40:42.020 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-18 20:40:42.020 [main] ValidationView - 1: log in
+[INFO ] 2024-01-18 20:40:42.021 [main] ValidationView - 2: registration
+[INFO ] 2024-01-18 20:40:42.021 [main] ValidationView - 0: Quit
+[DEBUG] 2024-01-18 20:41:41.931 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-18 20:41:41.938 [main] ValidationView - 1: console
+[DEBUG] 2024-01-18 20:41:41.938 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-18 20:41:41.939 [main] ValidationView - 3: Json
+[INFO ] 2024-01-18 20:41:44.338 [main] CustomerProfileView - [6] - NewMyNick
+1
+Customer with login [log2] And password [pas2] 
+
+[INFO ] 2024-01-18 20:41:44.339 [main] CustomerProfileView - 1: profile
+[INFO ] 2024-01-18 20:41:44.339 [main] CustomerProfileView - 2: orders
+[DEBUG] 2024-01-18 20:41:47.274 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:41:47.274 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:41:47.275 [main] CustomerProfileView - 3: return
+[INFO ] 2024-01-18 20:41:48.060 [main] CustomerProfileView - order information:
+[19] Equipment: 
+arg, null, dtyghf, 
+status:  not returned , cost: 801.0
+
+[INFO ] 2024-01-18 20:41:48.070 [main] AdminView - Input id
+[INFO ] 2024-01-18 20:41:50.908 [main] CustomerProfileView - order information:
+[19] client: [0] - NewMyNick
+1
+worker: Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years
+Equipment: 
+arg, sthd, dtyghf, 
+status:  not returned , cost: 801.0
+
+[DEBUG] 2024-01-18 20:41:50.909 [main] CustomerProfileView - 1: create new order
+[DEBUG] 2024-01-18 20:41:50.909 [main] CustomerProfileView - 2: check order history
+[DEBUG] 2024-01-18 20:41:50.909 [main] CustomerProfileView - 3: return
+[INFO ] 2024-01-18 20:41:54.385 [main] CustomerProfileView - [6] - NewMyNick
+1
+Customer with login [log2] And password [pas2] 
+
+[INFO ] 2024-01-18 20:41:54.385 [main] CustomerProfileView - 1: profile
+[INFO ] 2024-01-18 20:41:54.385 [main] CustomerProfileView - 2: orders
