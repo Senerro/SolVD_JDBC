@@ -37,7 +37,7 @@ public class CustomerProfilesService implements IService {
 
     @Override
     public void delete(AbstractModel model) {
-
+        delete((CustomerProfiles) model);
     }
 
     @Override
@@ -50,28 +50,12 @@ public class CustomerProfilesService implements IService {
 
     }
 
-    public List<CustomerProfiles> selectByNick(String nick) {
-        return dao.selectByNick(nick);
-    }
-
-
-    public List<CustomerProfiles> selectByPhone(String phone) {
-        return dao.selectByPhone(phone);
-    }
-
     public CustomerProfiles updateProfile(CustomerProfiles from, CustomerProfiles to) throws Exception {
         if(from.equals(to))
             throw new Exception("similar profiles. Id " + from.user().id());
 
         return dao.updateProfile(from, to);
     }
-   /* public ArrayList<CustomerProfiles> get() throws Exception {
-        ArrayList<CustomerProfiles>  profiles = new ArrayList<>();
-        dao.get(profiles);
-        if(profiles.isEmpty())
-            throw new Exception("empty customers list");
-        return profiles;
-    }*/
     @Override
     public ArrayList<AbstractModel> get() throws Exception {
         ArrayList<CustomerProfiles>  profiles = new ArrayList<>();
