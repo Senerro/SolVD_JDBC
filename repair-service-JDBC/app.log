@@ -1352,3 +1352,7 @@ Customer with login [log2] And password [pas2]
 
 [INFO ] 2024-01-18 20:41:54.385 [main] CustomerProfileView - 1: profile
 [INFO ] 2024-01-18 20:41:54.385 [main] CustomerProfileView - 2: orders
+[DEBUG] 2024-01-19 19:37:09.047 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-19 19:37:09.053 [main] ValidationView - 1: console
+[DEBUG] 2024-01-19 19:37:09.054 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-19 19:37:09.055 [main] ValidationView - 3: Json

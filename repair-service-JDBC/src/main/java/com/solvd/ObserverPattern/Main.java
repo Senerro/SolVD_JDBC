@@ -2,6 +2,8 @@ package com.solvd.ObserverPattern;
 
 import com.solvd.ObserverPattern.classes.TradeRobot;
 import com.solvd.ObserverPattern.classes.TradeSpace;
+import com.solvd.nav.classes.Node;
+import com.solvd.nav.classes.Ref;
 
 import java.util.ArrayList;
 
@@ -17,10 +19,11 @@ public class Main {
         TradeRobot broker2 = new TradeRobot("[Second]", burse, 500, 7);
         robots.add(broker2);
 
-       /* while (!burse.endTrades() )
+       /*while (!burse.endTrades() )
         {
             burse.saleImitation();
         }*/
+
 
         burse.saleImitation();
         broker.stopTrade();
