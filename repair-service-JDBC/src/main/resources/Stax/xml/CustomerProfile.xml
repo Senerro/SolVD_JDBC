@@ -1,0 +1,11 @@
+<CustomerProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 >
+    <nick>xmlNickDEMO2</nick>
+    <phone>+375(25)...DEMO2</phone>
+    <user >
+        <login>xmlLoginDEMO2</login>
+        <password>xmlPasswordDEMO2</password>
+        <role>true</role>
+    </user>
+</CustomerProfile>
+

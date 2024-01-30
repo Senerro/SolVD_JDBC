@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<equipments>
+    <id>0</id>
+    <type>some typeDEMO2</type>
+    <producer>some modelDEMO2</producer>
+    <model>somesthingDEMO2</model>
+    <price>0.0</price>
+    <list>
+        <problem>
+            <id>5</id>
+            <typeId>3</typeId>
+        </problem>
+        <problem>
+            <id>6</id>
+            <typeId>2</typeId>
+        </problem>
+    </list>
+</equipments>

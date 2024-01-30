@@ -1,93 +1,1529 @@
-[INFO ] 2023-12-20 13:56:03.029 [main] Main - test_message
-[INFO ] 2023-12-20 13:57:35.457 [main] Main - test_message
-[INFO ] 2023-12-20 13:57:39.763 [main] Main - test_message
-[INFO ] 2023-12-20 14:07:39.408 [main] Main - test_message
-[INFO ] 2023-12-20 14:08:58.225 [main] Main - test_message
-[INFO ] 2023-12-20 14:10:09.938 [main] Main - test_message
-[DEBUG] 2023-12-20 14:10:09.968 [main] Main - Connection successful!
-[INFO ] 2023-12-20 14:40:00.397 [main] Main - test_message
-[DEBUG] 2023-12-20 14:40:00.416 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:40:01.436 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:52:26.500 [main] Main - test_message
-[DEBUG] 2023-12-20 14:52:26.518 [main] Main - Connection successful!
-[INFO ] 2023-12-20 14:53:26.064 [main] Main - test_message
-[DEBUG] 2023-12-20 14:53:26.093 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:53:26.403 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:54:03.727 [main] Main - test_message
-[DEBUG] 2023-12-20 14:54:03.748 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:54:04.027 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:56:31.494 [main] Main - test_message
-[DEBUG] 2023-12-20 14:56:31.524 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:56:31.842 [main] Main - connection successfully added
-[INFO ] 2023-12-20 14:58:15.997 [main] Main - test_message
-[DEBUG] 2023-12-20 14:58:16.025 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 14:58:16.332 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:04:12.605 [main] Main - test_message
-[DEBUG] 2023-12-20 15:04:12.634 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:04:12.949 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:06:23.471 [main] Main - test_message
-[DEBUG] 2023-12-20 15:06:23.502 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:06:23.795 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:07:51.262 [main] Main - test_message
-[DEBUG] 2023-12-20 15:07:51.276 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:07:51.621 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:07:51.645 [main] Main - Connection failed...
-java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' doesn't exist
-[INFO ] 2023-12-20 15:08:14.099 [main] Main - test_message
-[DEBUG] 2023-12-20 15:08:14.129 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:08:14.424 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:08:50.618 [main] Main - test_message
-[DEBUG] 2023-12-20 15:08:50.649 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:08:50.968 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:08:50.994 [main] Main - Connection failed...
-java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' doesn't exist
-[INFO ] 2023-12-20 15:09:03.554 [main] Main - test_message
-[DEBUG] 2023-12-20 15:09:03.589 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:09:03.920 [main] Main - connection successfully added
-[INFO ] 2023-12-20 15:12:57.431 [main] Main - test_message
-[DEBUG] 2023-12-20 15:12:57.460 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:12:57.778 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:12:57.801 [main] Main - Connection failed...
-java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.products' doesn't exist
-[INFO ] 2023-12-20 15:13:31.915 [main] Main - test_message
-[DEBUG] 2023-12-20 15:13:31.940 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:13:32.241 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:13:32.281 [main] Main - %d. %s - %d 
+[DEBUG] 2024-01-10 13:29:55.686 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-10 13:29:55.702 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-10 13:29:55.703 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-10 13:41:14.567 [main] testMAin - {"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:42:36.045 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:48:32.640 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:48:32.689 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:48:43.055 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:48:49.868 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:49:12.138 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:49:12.203 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:50:05.973 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:50:06.029 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:51:12.995 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 13:51:34.683 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:51:49.934 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:52:20.225 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 13:52:48.112 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:12:15.900 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:13:37.952 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:14:22.509 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:14:33.711 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 14:14:33.760 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:21:49.924 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"10/01/2024"}
+[DEBUG] 2024-01-10 14:21:49.983 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:39:56.822 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"10/01/2024"}
+[DEBUG] 2024-01-10 14:39:56.903 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:40:16.348 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 14:40:16.441 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:40:39.303 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null}
+[DEBUG] 2024-01-10 14:40:39.395 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:41:51.725 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"10/01/2024"}
+[DEBUG] 2024-01-10 14:41:51.810 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:42:10.811 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"10/01/2024"}
+[DEBUG] 2024-01-10 14:42:10.886 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:42:26.078 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"10/01/2024"}
+[DEBUG] 2024-01-10 14:42:26.152 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:43:35.892 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 14:43:35.972 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:44:22.729 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 14:44:22.822 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:44:35.997 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 14:44:56.894 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-10 14:56:07.167 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 14:57:05.445 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 14:57:19.817 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 15:05:38.422 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 15:09:04.610 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 15:57:44.919 [main] testMAin - {"id":5,"address":"someAddress","name":"someName","photo":null,"description":null,"date":"17/01/2024"}
+[DEBUG] 2024-01-10 17:06:23.163 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 yearsposition: JsonPost
+[DEBUG] 2024-01-10 17:06:47.536 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 yearsposition: JsonPost
+[DEBUG] 2024-01-10 17:11:08.038 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[DEBUG] 2024-01-10 17:14:27.095 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[DEBUG] 2024-01-10 17:16:07.390 [main] testMAin - Name: null ,phone null
+Exp 0.0 years
+[DEBUG] 2024-01-10 17:27:43.772 [main] testMAin - com.solvd.repairService.model.Test.A@736caf7a
+[DEBUG] 2024-01-10 17:28:44.127 [main] testMAin - com.solvd.repairService.model.Test.A@736caf7a
+[DEBUG] 2024-01-10 17:37:46.709 [main] testMAin - com.solvd.repairService.model.Test.A@3da05287
+[DEBUG] 2024-01-10 17:39:18.970 [main] testMAin - com.solvd.repairService.model.Test.A@1e636ea3
+[DEBUG] 2024-01-10 17:39:52.222 [main] testMAin - com.solvd.repairService.model.Test.A@3da05287
+[DEBUG] 2024-01-10 17:41:45.319 [main] testMAin - com.solvd.repairService.model.Test.A@736caf7a
+[DEBUG] 2024-01-10 17:43:49.804 [main] testMAin - com.solvd.repairService.model.Test.A@115667d
+[DEBUG] 2024-01-10 17:44:38.693 [main] testMAin - com.solvd.repairService.model.Test.A@115667d
+[DEBUG] 2024-01-10 17:45:38.925 [main] testMAin - com.solvd.repairService.model.Test.A@115667d
+[DEBUG] 2024-01-10 18:07:39.078 [main] testMAin - [0] - User#0
+None
+[DEBUG] 2024-01-10 18:39:05.742 [main] testMAin - [0] - User#0
+None
+[DEBUG] 2024-01-11 13:54:35.894 [main] testMAin - Number of order is 0. Device is JsonType Producer from json json model
+ Status: unknown, repair duration is unknown, cost is unknown
 
-[DEBUG] 2023-12-20 15:13:32.281 [main] Main - %d. %s - %d 
+[DEBUG] 2024-01-11 13:57:14.242 [main] testMAin - Number of order is 0. Device is JsonType Producer from json json model
+ Status: unknown, repair duration is unknown, cost is unknown
 
-[INFO ] 2023-12-20 15:14:17.506 [main] Main - test_message
-[DEBUG] 2023-12-20 15:14:17.539 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:14:17.846 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:14:17.889 [main] Main - %i. %s - %i
-[DEBUG] 2023-12-20 15:14:17.890 [main] Main - %i. %s - %i
-[INFO ] 2023-12-20 15:15:32.580 [main] Main - test_message
-[DEBUG] 2023-12-20 15:15:32.611 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:15:32.906 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:15:32.941 [main] Main - id 1, name iPhone X
-[DEBUG] 2023-12-20 15:15:32.942 [main] Main - id 2, name Galaxy S9
-[INFO ] 2023-12-20 15:16:19.989 [main] Main - test_message
-[DEBUG] 2023-12-20 15:16:20.007 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:16:20.328 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:16:31.907 [main] Main - id 1, name iPhone X
-[DEBUG] 2023-12-20 15:16:55.194 [main] Main - id 2, name Galaxy S9
-[INFO ] 2023-12-20 15:17:00.002 [main] Main - test_message
-[DEBUG] 2023-12-20 15:17:00.030 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:17:00.330 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:17:00.365 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:17:00.366 [main] Main - id 2, name Galaxy S9,price 30000
-[INFO ] 2023-12-20 15:18:44.257 [main] Main - test_message
-[DEBUG] 2023-12-20 15:18:44.275 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:18:44.612 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:18:44.653 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:18:44.653 [main] Main - id 2, name Galaxy S9,price 30000
-[INFO ] 2023-12-20 15:19:01.396 [main] Main - test_message
-[DEBUG] 2023-12-20 15:19:01.426 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:19:01.743 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:19:01.779 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:19:01.780 [main] Main - id 2, name Galaxy S9,price 30000
-[INFO ] 2023-12-20 15:19:10.971 [main] Main - test_message
-[DEBUG] 2023-12-20 15:19:10.994 [main] Main - Connection successful!
-[DEBUG] 2023-12-20 15:19:11.277 [main] Main - connection successfully added
-[DEBUG] 2023-12-20 15:19:11.312 [main] Main - id 1, name iPhone X,price 61000
-[DEBUG] 2023-12-20 15:19:11.313 [main] Main - id 2, name Galaxy S9,price 30000
+[DEBUG] 2024-01-11 14:19:28.353 [main] testMAin - Number of order is 0. Device is JsonType Producer from json json model
+ Status: unknown, repair duration is unknown, cost is unknown
+
+[DEBUG] 2024-01-11 14:19:55.004 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-11 14:20:33.434 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+[DEBUG] 2024-01-11 14:21:18.210 [main] testMAin - [12] post: JsonPost
+[DEBUG] 2024-01-11 14:22:12.871 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 yearsposition: JsonPost, location: someName someAddress
+[DEBUG] 2024-01-11 14:33:09.412 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+[DEBUG] 2024-01-11 14:38:05.774 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:39:04.216 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:39:04.243 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 yearsposition: JsonPost, location: someName someAddress
+[INFO ] 2024-01-11 14:40:37.599 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:40:37.625 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, location: someName someAddress
+[INFO ] 2024-01-11 14:40:59.054 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:40:59.077 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+[INFO ] 2024-01-11 14:42:15.451 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:42:15.476 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+[DEBUG] 2024-01-11 14:42:15.479 [main] testMAin - [12] post: JsonPost
+[INFO ] 2024-01-11 14:42:50.763 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:42:50.789 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 14:42:50.790 [main] testMAin - [12] post: JsonPost
+[INFO ] 2024-01-11 14:44:14.242 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:44:14.269 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 14:44:14.271 [main] testMAin - [12] post: JsonPost
+[DEBUG] 2024-01-11 14:44:14.285 [main] testMAin - [5] name: someName, location: someAddress
+[INFO ] 2024-01-11 14:44:49.942 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:44:49.967 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 14:44:49.969 [main] testMAin - [12] post: JsonPost
+
+[DEBUG] 2024-01-11 14:44:49.971 [main] testMAin - [5] name: someName, location: someAddress
+[INFO ] 2024-01-11 14:46:29.153 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 14:46:29.177 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 14:46:29.179 [main] testMAin - [12] post: JsonPost
+
+[DEBUG] 2024-01-11 14:46:29.180 [main] testMAin - [5] name: someName, location: someAddress
+[DEBUG] 2024-01-11 14:46:29.232 [main] testMAin - Number of order is 0. Device is JsonType Producer from json json model
+ Status: unknown, repair duration is unknown, cost is unknown
+
+[INFO ] 2024-01-11 15:10:43.855 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 15:10:43.879 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 15:10:43.881 [main] testMAin - [12] post: JsonPost
+
+[DEBUG] 2024-01-11 15:10:43.882 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 15:10:43.924 [main] testMAin - order information:
+Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6typeId=2][id = 7typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 15:14:48.915 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 15:14:48.940 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 15:14:48.941 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 15:14:48.942 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 15:14:48.991 [main] testMAin - order information:
+Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6typeId=2][id = 7typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 15:15:29.254 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 15:15:29.278 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 15:15:29.279 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 15:15:29.281 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 15:15:29.325 [main] testMAin - order information:
+Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:15:56.997 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 16:15:57.030 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 16:15:57.039 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 16:15:57.049 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 16:15:57.105 [main] testMAin - order information:
+Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:17:29.891 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 16:17:29.915 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 16:17:29.916 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 16:17:29.918 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 16:17:59.441 [main] testMAin - order information:
+Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:18:05.310 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 16:18:05.334 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 16:18:05.335 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 16:18:05.337 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 16:18:09.246 [main] testMAin - order information:
+[0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:19:14.518 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 16:19:14.551 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 16:19:14.552 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 16:19:14.554 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 16:19:14.608 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:41:48.037 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 16:41:48.074 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 16:41:48.075 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 16:41:48.077 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 16:41:48.132 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:49:41.930 [main] AdminView - Orders
+[INFO ] 2024-01-11 16:55:05.073 [main] AdminView - Orders
+[INFO ] 2024-01-11 16:55:22.296 [main] AdminView - Orders
+[INFO ] 2024-01-11 16:55:55.347 [main] AdminView - Orders
+[INFO ] 2024-01-11 16:56:16.372 [main] AdminView - Orders
+[INFO ] 2024-01-11 16:56:16.820 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 16:58:40.113 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 17:41:44.366 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 17:41:44.409 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 17:41:44.410 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 17:41:44.412 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 17:41:53.943 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 17:41:53.950 [main] ValidationView - 1: JDBC
+[DEBUG] 2024-01-11 17:41:53.951 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 17:41:57.115 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[INFO ] 2024-01-11 17:42:10.142 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 17:42:10.142 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 17:42:10.142 [main] ValidationView - 2: registration
+[DEBUG] 2024-01-11 17:44:02.844 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 17:44:02.851 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 17:44:02.851 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 17:44:02.852 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 17:44:05.177 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 17:44:05.177 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 17:44:05.178 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 17:44:06.610 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:44:06.611 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:44:06.611 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:44:06.611 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:44:06.613 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 17:44:12.818 [main] AdminView - [4]position is repairman, demostratyuon of update
+
+[INFO ] 2024-01-11 17:44:12.835 [main] AdminView - [9]position is , no description
+
+[INFO ] 2024-01-11 17:44:12.835 [main] AdminView - [11]position is Omnissiah, machine God 
+
+[INFO ] 2024-01-11 17:44:12.836 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:44:12.836 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:44:12.836 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:44:12.837 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 17:45:07.050 [main] AdminView - [12]position is JsonPost, some description
+
+[INFO ] 2024-01-11 17:45:43.385 [main] AdminView - created
+[INFO ] 2024-01-11 17:45:45.401 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:45:45.402 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:45:45.404 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:45:45.405 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 17:45:52.740 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:45:52.742 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:45:52.743 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:45:52.744 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:45:52.746 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 17:45:54.191 [main] AdminView - [4]position is repairman, demostratyuon of update
+
+[INFO ] 2024-01-11 17:45:54.206 [main] AdminView - [9]position is , no description
+
+[INFO ] 2024-01-11 17:45:54.207 [main] AdminView - [11]position is Omnissiah, machine God 
+
+[INFO ] 2024-01-11 17:45:54.208 [main] AdminView - [12]position is JsonPost, some description
+
+[INFO ] 2024-01-11 17:45:54.209 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:45:54.209 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:45:54.211 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:45:54.212 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 17:46:21.566 [main] AdminView - Input id
+[INFO ] 2024-01-11 17:46:22.633 [main] AdminView - [12]position is JsonPost, some description
+
+[INFO ] 2024-01-11 17:46:22.634 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:46:22.635 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:46:22.636 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:46:22.637 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:46:22.638 [main] AdminView - 5. Services
+[DEBUG] 2024-01-11 17:48:24.534 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 17:48:24.542 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 17:48:24.543 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 17:48:24.543 [main] ValidationView - 3: Json
+[DEBUG] 2024-01-11 17:50:42.771 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 17:50:42.780 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 17:50:42.781 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 17:50:42.781 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 17:50:44.553 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 17:50:44.554 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 17:50:44.555 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 17:50:45.489 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:50:45.489 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:50:45.490 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:50:45.490 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:50:45.490 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 17:50:47.806 [main] AdminView - [4]position is repairman, demostratyuon of update
+
+[INFO ] 2024-01-11 17:50:47.827 [main] AdminView - [9]position is , no description
+
+[INFO ] 2024-01-11 17:50:47.827 [main] AdminView - [11]position is Omnissiah, machine God 
+
+[INFO ] 2024-01-11 17:50:47.828 [main] AdminView - [12]position is JsonPost, some description
+
+[INFO ] 2024-01-11 17:50:47.828 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:50:47.829 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:50:47.829 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:50:47.829 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 17:51:04.561 [main] AdminView - [13]position is OmnissiahDEMO2, machine God DEMO2
+
+[INFO ] 2024-01-11 17:51:11.653 [main] AdminView - created
+[INFO ] 2024-01-11 17:51:14.635 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:51:14.637 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:51:14.638 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:51:14.639 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 17:51:29.002 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:51:29.004 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:51:29.005 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:51:29.006 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:51:29.008 [main] AdminView - 5. Services
+[DEBUG] 2024-01-11 17:55:14.687 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 17:55:14.694 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 17:55:14.694 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 17:55:14.695 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 17:55:33.034 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 17:55:33.034 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 17:55:33.035 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 17:55:34.411 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:55:34.412 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:55:34.412 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:55:34.412 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:55:34.413 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 17:55:41.951 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-11 17:55:41.952 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-11 17:55:41.952 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-11 17:55:41.952 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-11 17:55:41.953 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-11 17:55:41.953 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-11 17:55:41.953 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-11 17:55:41.953 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-11 17:55:41.954 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-11 17:55:41.954 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-11 17:55:41.954 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-11 17:55:41.955 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-11 17:55:41.955 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-11 17:55:41.955 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-11 17:55:41.956 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-11 17:55:41.956 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-11 17:55:41.956 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-11 17:55:41.956 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-11 17:55:41.957 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-11 17:55:41.957 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:55:41.958 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:55:41.958 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:55:41.958 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 17:56:04.475 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG] 2024-01-11 17:56:04.539 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:56:04.540 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:56:04.541 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:56:04.543 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[INFO ] 2024-01-11 17:56:42.955 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:56:42.956 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:56:42.957 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:56:42.958 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 17:57:07.672 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:57:07.674 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:57:07.675 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:57:07.676 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[INFO ] 2024-01-11 17:57:28.642 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:57:28.644 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:57:28.645 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:57:28.646 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 17:57:36.965 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 17:57:36.970 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 17:57:36.970 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 17:57:36.971 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 17:57:42.847 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 17:57:42.848 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 17:57:42.848 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 17:57:43.642 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:57:43.642 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:57:43.643 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:57:43.643 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:57:43.643 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 17:57:45.271 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-11 17:57:45.271 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-11 17:57:45.271 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-11 17:57:45.272 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-11 17:57:45.272 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-11 17:57:45.272 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-11 17:57:45.272 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-11 17:57:45.273 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-11 17:57:45.273 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-11 17:57:45.273 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-11 17:57:45.273 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-11 17:57:45.274 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-11 17:57:45.274 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-11 17:57:45.275 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-11 17:57:45.275 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-11 17:57:45.276 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-11 17:57:45.276 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-11 17:57:45.277 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-11 17:57:45.278 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-11 17:57:45.278 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:57:45.279 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:57:45.279 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:57:45.279 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 17:59:38.265 [main] LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG] 2024-01-11 17:59:38.350 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:59:38.352 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:59:38.354 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 17:59:38.355 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[INFO ] 2024-01-11 17:59:42.844 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:59:42.845 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:59:42.846 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:59:42.848 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 17:59:49.326 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 17:59:49.327 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 17:59:49.328 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 17:59:49.329 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 17:59:49.330 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 17:59:50.616 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-11 17:59:50.617 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-11 17:59:50.619 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-11 17:59:50.621 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-11 17:59:50.622 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-11 17:59:50.624 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-11 17:59:50.625 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-11 17:59:50.626 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-11 17:59:50.628 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-11 17:59:50.629 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-11 17:59:50.630 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-11 17:59:50.631 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-11 17:59:50.633 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-11 17:59:50.634 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-11 17:59:50.635 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-11 17:59:50.636 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-11 17:59:50.637 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-11 17:59:50.638 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-11 17:59:50.638 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-11 17:59:50.639 [main] AdminView - 1: get
+[INFO ] 2024-01-11 17:59:50.640 [main] AdminView - 2: add
+[INFO ] 2024-01-11 17:59:50.641 [main] AdminView - 3: update
+[INFO ] 2024-01-11 17:59:50.642 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:00:49.273 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 18:00:49.274 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 18:00:49.276 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[DEBUG] 2024-01-11 18:00:49.277 [main] PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+[INFO ] 2024-01-11 18:00:49.293 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:00:49.294 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:00:49.295 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:00:49.296 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:04:38.329 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:04:38.336 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:04:38.336 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:04:38.337 [main] ValidationView - 3: Json
+[DEBUG] 2024-01-11 18:04:40.977 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:04:40.978 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:04:40.979 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:04:40.980 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:04:42.920 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:04:42.920 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:04:42.921 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:04:43.753 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:04:43.753 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:04:43.753 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:04:43.754 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:04:43.754 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:04:45.609 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-11 18:04:45.610 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-11 18:04:45.611 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-11 18:04:45.612 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-11 18:04:45.612 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-11 18:04:45.612 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-11 18:04:45.613 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-11 18:04:45.613 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-11 18:04:45.614 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-11 18:04:45.614 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-11 18:04:45.615 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-11 18:04:45.615 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-11 18:04:45.616 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-11 18:04:45.616 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-11 18:04:45.617 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-11 18:04:45.617 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-11 18:04:45.617 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-11 18:04:45.618 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-11 18:04:45.618 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-11 18:04:45.619 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:04:45.619 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:04:45.620 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:04:45.620 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:05:31.539 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:05:31.541 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:05:31.542 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:05:31.545 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:05:35.149 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:05:35.151 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:05:35.152 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:05:35.153 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:05:35.154 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:05:36.276 [main] AdminView - [1] - Somebofy
++375-25-124-39-52
+
+[INFO ] 2024-01-11 18:05:36.278 [main] AdminView - [2] - User#2
+None
+
+[INFO ] 2024-01-11 18:05:36.280 [main] AdminView - [6] - NewMyNick
+1
+
+[INFO ] 2024-01-11 18:05:36.281 [main] AdminView - [7] - pas3
+1
+
+[INFO ] 2024-01-11 18:05:36.283 [main] AdminView - [8] - pas4
+1
+
+[INFO ] 2024-01-11 18:05:36.284 [main] AdminView - [25] - User#25
+None
+
+[INFO ] 2024-01-11 18:05:36.286 [main] AdminView - [26] - User#26
+None
+
+[INFO ] 2024-01-11 18:05:36.287 [main] AdminView - [27] - User#27
+None
+
+[INFO ] 2024-01-11 18:05:36.289 [main] AdminView - [29] - User#29
+None
+
+[INFO ] 2024-01-11 18:05:36.290 [main] AdminView - [32] - User#32
+None
+
+[INFO ] 2024-01-11 18:05:36.291 [main] AdminView - [36] - User#36
+None
+
+[INFO ] 2024-01-11 18:05:36.293 [main] AdminView - [37] - User#37
+None
+
+[INFO ] 2024-01-11 18:05:36.294 [main] AdminView - [38] - User#38
+None
+
+[INFO ] 2024-01-11 18:05:36.295 [main] AdminView - [39] - User#39
+None
+
+[INFO ] 2024-01-11 18:05:36.296 [main] AdminView - [42] - Demonstration Nick
+some phone
+
+[INFO ] 2024-01-11 18:05:36.297 [main] AdminView - [43] - NewNick
+NewPhone
+
+[INFO ] 2024-01-11 18:05:36.298 [main] AdminView - [54] - xmlNick
++375(25)...
+
+[INFO ] 2024-01-11 18:05:36.298 [main] AdminView - [57] - Staxon Statham
++44(819)...
+
+[INFO ] 2024-01-11 18:05:36.299 [main] AdminView - [59] - xmlNickDEMO2
++375(25)...DEMO2
+
+[INFO ] 2024-01-11 18:05:36.300 [main] AdminView - [60] - CustomerJsonick
++375(44)...
+
+[INFO ] 2024-01-11 18:05:36.301 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:05:36.302 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:05:36.303 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:05:36.304 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:05:47.700 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:05:47.702 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:05:47.703 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:05:47.704 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:05:47.705 [main] AdminView - 5. Services
+[DEBUG] 2024-01-11 18:07:59.488 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:07:59.493 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:07:59.494 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:07:59.494 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:08:02.047 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:08:02.047 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:08:02.048 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:08:03.945 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:08:03.946 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:08:03.946 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:08:03.946 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:08:03.946 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:08:09.340 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.341 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.342 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.343 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.343 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.343 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.344 [main] AdminView - [58] Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:08:09.345 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:08:09.345 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:08:09.346 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:08:09.346 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:12:08.001 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:12:08.008 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:12:08.008 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:12:08.009 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:12:10.847 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:12:10.848 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:12:10.848 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:12:11.914 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:12:11.914 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:12:11.915 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:12:11.915 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:12:11.915 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:12:13.335 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.336 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.336 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.337 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.337 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.337 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.338 [main] AdminView - [58] Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:12:13.338 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:12:13.338 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:12:13.339 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:12:13.339 [main] AdminView - 4: delete
+[ERROR] 2024-01-11 18:12:47.999 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 61, 'SomeNick', 'somePhone', 12, '6.0', 5 )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`equipment_repair_service`.`employee_profiles`, CONSTRAINT `employee_profiles_ibfk_2` FOREIGN KEY (`serviceCenterId`) REFERENCES `service_centers` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[DEBUG] 2024-01-11 18:17:20.280 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:17:20.287 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:17:20.288 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:17:20.288 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:17:27.800 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:17:27.801 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:17:27.801 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:17:28.898 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:17:28.899 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:17:28.899 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:17:28.899 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:17:28.900 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:17:37.260 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.261 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.261 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.262 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.262 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.263 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.263 [main] AdminView - [58] Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:17:37.263 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:17:37.264 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:17:37.264 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:17:37.264 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:19:17.182 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:19:17.190 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:19:17.191 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:19:17.192 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:19:30.690 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:19:30.691 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:19:30.691 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:19:32.174 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:19:32.174 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:19:32.174 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:19:32.175 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:19:32.175 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:19:37.591 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.591 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.592 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.592 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.593 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.594 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.594 [main] AdminView - [58] Name: Radion AMDvov ,phone +375(29)...
+Exp 8.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:19:37.595 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:19:37.595 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:19:37.595 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:19:37.596 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:21:46.376 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:21:46.383 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:21:46.384 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:21:46.385 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:21:49.991 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:21:49.992 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:21:49.992 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:21:51.279 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:21:51.280 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:21:51.280 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:21:51.280 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:21:51.281 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:21:54.079 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:21:54.080 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:21:54.080 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:21:54.081 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:21:54.081 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:21:54.082 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:21:54.082 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:21:54.083 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:21:54.083 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:21:54.084 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:22:25.138 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:22:25.144 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:22:25.144 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:22:25.145 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:22:36.567 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:22:36.567 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:22:36.568 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:22:40.951 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:22:40.951 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:22:40.951 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:22:40.952 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:22:40.952 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:22:42.521 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:22:42.521 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:22:42.521 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:22:42.522 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:22:42.522 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:22:42.522 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:22:42.523 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:22:42.523 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:22:42.523 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:22:42.524 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:24:06.544 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:24:06.552 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:24:06.553 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:24:06.553 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:24:15.136 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:24:15.137 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:24:15.137 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:24:18.823 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:24:18.823 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:24:18.824 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:24:18.824 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:24:18.824 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:24:20.522 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:24:20.523 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:24:20.523 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:24:20.524 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:24:20.524 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:24:20.525 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:24:20.526 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:24:20.526 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:24:20.527 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:24:20.527 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:25:08.067 [main] AdminView - profile was successfully created
+[INFO ] 2024-01-11 18:25:09.321 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:25:09.324 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:25:09.326 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:25:09.328 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:25:13.945 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:25:13.947 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:25:13.948 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:25:13.950 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:25:13.951 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:25:16.527 [main] AdminView - [2] Name: Зубенко Михаил Петрович ,phone +375(25)514-57-41
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:25:16.529 [main] AdminView - [33] Name: Alex Isaev ,phone +375(25)...
+Exp 1.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:25:16.530 [main] AdminView - [34] Name: Sergei Safronov ,phone +375(25)...
+Exp 2.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:25:16.531 [main] AdminView - [35] Name: Fake Dmitry The First ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:25:16.532 [main] AdminView - [36] Name: 1 ,phone +375(25)...
+Exp 0.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:25:16.533 [main] AdminView - [56] Name: xmlFullName ,phone +375(25)...
+Exp 5.0 years, position: repairman
+
+[INFO ] 2024-01-11 18:25:16.535 [main] AdminView - [61] Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost
+
+[INFO ] 2024-01-11 18:25:16.536 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:25:16.537 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:25:16.537 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:25:16.538 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:25:30.140 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:25:30.142 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:25:30.143 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:25:30.145 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:25:30.147 [main] AdminView - 5. Services
+[DEBUG] 2024-01-11 18:34:14.174 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:34:14.180 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:34:14.181 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:34:14.181 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:34:19.833 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:34:19.834 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:34:19.834 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:34:21.292 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:34:21.292 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:34:21.292 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:34:21.293 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:34:21.293 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:34:23.923 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+
+[INFO ] 2024-01-11 18:34:23.923 [main] AdminView - [2] name: name 2, location: adress 2
+
+[INFO ] 2024-01-11 18:34:23.924 [main] AdminView - [3] name: name 3, location: adress 3
+
+[INFO ] 2024-01-11 18:34:23.924 [main] AdminView - [28] name: null, location: null
+
+[INFO ] 2024-01-11 18:34:23.925 [main] AdminView - [29] name: someName, location: someAddress
+
+[INFO ] 2024-01-11 18:34:23.925 [main] AdminView - [30] name: someName, location: someAddress
+
+[INFO ] 2024-01-11 18:34:23.925 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:34:23.926 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:34:23.926 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:34:23.927 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:35:03.624 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:35:03.626 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:35:03.627 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:35:03.628 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 18:35:09.204 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:35:09.206 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:35:09.207 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:35:09.208 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:35:09.209 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:35:13.732 [main] AdminView - [1] name: name 1, location: Kolotushkina st.
+
+[INFO ] 2024-01-11 18:35:13.733 [main] AdminView - [2] name: name 2, location: adress 2
+
+[INFO ] 2024-01-11 18:35:13.734 [main] AdminView - [3] name: name 3, location: adress 3
+
+[INFO ] 2024-01-11 18:35:13.735 [main] AdminView - [28] name: null, location: null
+
+[INFO ] 2024-01-11 18:35:13.736 [main] AdminView - [29] name: someName, location: someAddress
+
+[INFO ] 2024-01-11 18:35:13.736 [main] AdminView - [30] name: someName, location: someAddress
+
+[INFO ] 2024-01-11 18:35:13.737 [main] AdminView - [31] name: someName, location: someAddress
+
+[INFO ] 2024-01-11 18:35:13.738 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:35:13.739 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:35:13.740 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:35:13.741 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:41:52.533 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:41:52.538 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:41:52.539 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:41:52.540 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:41:56.003 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:41:56.004 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:41:56.005 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:42:12.693 [main] ValidationView - Input login
+[INFO ] 2024-01-11 18:42:12.694 [main] ValidationView - Input login
+[DEBUG] 2024-01-11 18:42:18.853 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:42:18.859 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:42:18.860 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:42:18.860 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:42:20.778 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:42:20.779 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:42:20.779 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:42:23.091 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:42:23.091 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:42:23.091 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:42:23.092 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:42:23.092 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:42:26.019 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:42:26.020 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:42:26.020 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:42:26.021 [main] AdminView - 4: delete
+[ERROR] 2024-01-11 18:43:22.865 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 63, 'Intelov Icore the sevens', 'phoneFromOrderJsob', 'null', '4.0', 32 )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'postId' at row 1
+[ERROR] 2024-01-11 18:43:26.785 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-11 18:43:28.310 [main] AdminView - java.sql.SQLException: Incorrect integer value: 'null' for column 'postId' at row 1
+[ERROR] 2024-01-11 18:43:29.427 [main] AdminView - [Ljava.lang.StackTraceElement;@7adbd080
+[INFO ] 2024-01-11 18:43:31.263 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:43:31.265 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:43:31.267 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:43:31.269 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 18:53:18.405 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:53:18.411 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:53:18.412 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:53:18.412 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:53:24.547 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:53:24.547 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:53:24.548 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:53:26.604 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:53:26.605 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:53:26.605 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:53:26.605 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:53:26.606 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:53:33.812 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:53:33.812 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:53:33.813 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:53:33.813 [main] AdminView - 4: delete
+[WARN ] 2024-01-11 18:54:22.856 [main] AdminView - profile for employee wasn't created
+[DEBUG] 2024-01-11 18:54:29.051 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 18:54:29.058 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 18:54:29.059 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 18:54:29.059 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 18:54:31.431 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 18:54:31.431 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 18:54:31.432 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 18:54:33.564 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 18:54:33.565 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 18:54:33.565 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 18:54:33.565 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 18:54:33.566 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 18:54:36.182 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:54:36.183 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:54:36.183 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:54:36.184 [main] AdminView - 4: delete
+[WARN ] 2024-01-11 18:54:58.191 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-11 18:55:00.550 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 63, 'Intelov Icore the sevens', 'phoneFromOrderJsob', 'null', '4.0', 34 )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'postId' at row 1
+[ERROR] 2024-01-11 18:55:07.101 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-11 18:55:08.078 [main] AdminView - User with loginJsonloginWorker is already existed
+[ERROR] 2024-01-11 18:55:08.463 [main] AdminView - [Ljava.lang.StackTraceElement;@620aa4ea
+[INFO ] 2024-01-11 18:55:09.244 [main] AdminView - 1: get
+[INFO ] 2024-01-11 18:55:09.245 [main] AdminView - 2: add
+[INFO ] 2024-01-11 18:55:09.247 [main] AdminView - 3: update
+[INFO ] 2024-01-11 18:55:09.248 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 19:00:06.466 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 19:00:06.471 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 19:00:06.472 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 19:00:06.473 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 19:00:09.812 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 19:00:09.812 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 19:00:09.813 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 19:00:34.108 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:00:34.108 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:00:34.108 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:00:34.109 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:00:34.109 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:00:36.414 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:00:36.415 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:00:36.415 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:00:36.415 [main] AdminView - 4: delete
+[WARN ] 2024-01-11 19:01:01.359 [main] AdminView - profile for employee wasn't created
+[DEBUG] 2024-01-11 19:01:14.422 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 19:01:14.426 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 19:01:14.427 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 19:01:14.427 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 19:01:27.034 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 19:01:27.035 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 19:01:27.035 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 19:01:56.966 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:01:56.966 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:01:56.966 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:01:56.967 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:01:56.967 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:02:06.889 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:02:06.889 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:02:06.889 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:02:06.890 [main] AdminView - 4: delete
+[WARN ] 2024-01-11 19:03:22.674 [main] AdminView - profile for employee wasn't created
+[ERROR] 2024-01-11 19:03:28.632 [main] CustomerProfileView - Some error with table employee_profiles
+query is INSERT INTO employee_profiles VALUES ( 63, 'Intelov Icore the sevens', 'phoneFromOrderJsob', 'null', '4.0', 36 )
+Exception is java.sql.SQLException: Incorrect integer value: 'null' for column 'postId' at row 1
+[ERROR] 2024-01-11 19:03:45.883 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-11 19:03:45.884 [main] AdminView - User with loginJsonloginWorker is already existed
+[ERROR] 2024-01-11 19:03:45.887 [main] AdminView - [Ljava.lang.StackTraceElement;@620aa4ea
+[INFO ] 2024-01-11 19:03:45.888 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:03:45.888 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:03:45.889 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:03:45.890 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 19:07:19.397 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 19:07:19.402 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 19:07:19.403 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 19:07:19.403 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 19:07:22.921 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 19:07:22.921 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 19:07:22.922 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 19:07:24.810 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:07:24.811 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:07:24.811 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:07:24.811 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:07:24.811 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:07:29.882 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:07:29.883 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:07:29.883 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:07:29.883 [main] AdminView - 4: delete
+[WARN ] 2024-01-11 19:08:36.060 [main] AdminView - profile for employee wasn't created
+[WARN ] 2024-01-11 19:08:40.652 [main] AdminView - profile was created
+[INFO ] 2024-01-11 19:09:35.605 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:09:35.608 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:09:35.610 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:09:35.613 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 19:09:52.101 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:09:52.103 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:09:52.104 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:09:52.105 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:09:52.106 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:09:54.374 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, , finish date is null
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-11 19:09:54.375 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:09:54.376 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:09:54.377 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:09:54.378 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 19:11:53.398 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:11:53.399 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:11:53.400 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:11:53.401 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:11:53.402 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:11:55.352 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, , finish date is null
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-11 19:11:55.353 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:11:55.354 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:11:55.355 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:11:55.356 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 19:15:03.581 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 19:15:03.586 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 19:15:03.586 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 19:15:03.587 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 19:15:05.846 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 19:15:05.847 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 19:15:05.847 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 19:15:06.766 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:15:06.766 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:15:06.767 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:15:06.767 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:15:06.767 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:15:11.079 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, 
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-11 19:15:11.080 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:15:11.080 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:15:11.080 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:15:11.081 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 19:15:26.618 [main] AdminView - Input id
+[ERROR] 2024-01-11 19:15:30.236 [main] UsersDAO - Some error with table users
+query is   SELECT cp.nick, cp.phone AS customerPhone, 
+ ep.fullName, ep.phone AS phone,
+ e.type, e.producer, e.model,
+ oe.cost, oe.returned,
+ sc.name, sc.address
+ FROM orders AS o
+ JOIN equipments AS e ON e.id = o.equipmentId
+ JOIN order_executions AS oe ON oe.id = o.executeId
+ JOIN customer_profiles AS cp ON cp.id = o.userId
+ JOIN employer_profiles AS ep ON ep.id = oe.employerId
+ JOIN service_centers AS sc ON sc.id = oe.serviceCenterID WHERE o.id = 14
+Exception is java.sql.SQLSyntaxErrorException: Table 'equipment_repair_service.employer_profiles' doesn't exist
+[DEBUG] 2024-01-11 19:16:20.843 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 19:16:20.852 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 19:16:20.852 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 19:16:20.853 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 19:16:22.642 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 19:16:22.642 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 19:16:22.643 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 19:16:23.987 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:16:23.987 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:16:23.987 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:16:23.987 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:16:23.988 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:16:25.633 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, 
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-11 19:16:25.634 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:16:25.634 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:16:25.634 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:16:25.635 [main] AdminView - 4: delete
+[ERROR] 2024-01-11 19:16:29.733 [main] EquipmentsDAO - Some error with table equipments
+query is INSERT INTO equipments(type, Producer, model, price)  VALUES ( 'JsonType', 'Producer from json', 'json model', '999.0' )
+Exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'JsonType-Producer from json-json model' for key 'EquipmentType'
+[ERROR] 2024-01-11 19:16:29.734 [main] AdminView - Some error with creating order
+[ERROR] 2024-01-11 19:16:29.734 [main] AdminView - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'JsonType-Producer from json-json model' for key 'EquipmentType'
+[ERROR] 2024-01-11 19:16:29.734 [main] AdminView - [Ljava.lang.StackTraceElement;@5a62b2a4
+[INFO ] 2024-01-11 19:16:29.735 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:16:29.735 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:16:29.735 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:16:29.736 [main] AdminView - 4: delete
+[DEBUG] 2024-01-11 19:16:52.612 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-11 19:16:52.617 [main] ValidationView - 1: console
+[DEBUG] 2024-01-11 19:16:52.618 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-11 19:16:52.618 [main] ValidationView - 3: Json
+[INFO ] 2024-01-11 19:16:54.864 [main] ValidationView - Log in or registration?
+[INFO ] 2024-01-11 19:16:54.864 [main] ValidationView - 1: log in
+[INFO ] 2024-01-11 19:16:54.865 [main] ValidationView - 2: registration
+[INFO ] 2024-01-11 19:16:55.889 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:16:55.889 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:16:55.889 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:16:55.890 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:16:55.890 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 19:16:58.109 [main] AdminView - order information:
+[14] Equipment: 
+Producer from json, null, json model, 
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-11 19:16:58.110 [main] AdminView - 1: get
+[INFO ] 2024-01-11 19:16:58.110 [main] AdminView - 2: add
+[INFO ] 2024-01-11 19:16:58.110 [main] AdminView - 3: update
+[INFO ] 2024-01-11 19:16:58.110 [main] AdminView - 4: delete
+[INFO ] 2024-01-11 19:17:03.060 [main] AdminView - Input id
+[INFO ] 2024-01-11 19:17:06.389 [main] AdminView - order information:
+[14] client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 0.0 years
+Equipment: 
+JsonType, Producer from json, json model, 
+status:  not returned , cost: 615.0
+
+[INFO ] 2024-01-11 19:17:06.389 [main] AdminView - 1. Customers
+[INFO ] 2024-01-11 19:17:06.390 [main] AdminView - 2. Workers
+[INFO ] 2024-01-11 19:17:06.390 [main] AdminView - 3. Worker positions
+[INFO ] 2024-01-11 19:17:06.390 [main] AdminView - 4. Orders
+[INFO ] 2024-01-11 19:17:06.391 [main] AdminView - 5. Services
+[INFO ] 2024-01-11 20:01:59.936 [main] testMAin - [0] - CustomerJsonick
++375(44)...
+Customer with login [JsonloginCustomer] And password [jsonPassCustomer] 
+
+[DEBUG] 2024-01-11 20:01:59.959 [main] testMAin - Name: SomeNick ,phone somePhone
+Exp 6.0 years, position: JsonPost, on service center: someName someAddress
+
+[DEBUG] 2024-01-11 20:01:59.961 [main] testMAin - [12]position is JsonPost, some description
+
+[DEBUG] 2024-01-11 20:01:59.962 [main] testMAin - [5] name: someName, location: someAddress
+
+[DEBUG] 2024-01-11 20:02:00.010 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-17
+
+[DEBUG] 2024-01-12 15:13:27.155 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-12 15:59:15.276 [main] ValidationView - JDBC or my batis?
+[DEBUG] 2024-01-12 15:59:15.281 [main] ValidationView - 1: console
+[DEBUG] 2024-01-12 15:59:15.281 [main] ValidationView - 2: Stax
+[DEBUG] 2024-01-12 15:59:15.282 [main] ValidationView - 3: Json
+[INFO ] 2024-01-12 15:59:56.992 [main] testMAin - [0] - CustomerJsonick2
++375(44)...
+Customer with login [NewUinqueJsonloginCustomer] And password [NewUinqueJsonPassCustomer] 
+
+[DEBUG] 2024-01-12 15:59:57.018 [main] testMAin - Name: NewSomeJsonNick ,phone +375(json)...
+Exp 6.0 years, position: NewUniqueJsonWorkerPost, on service center: new name Some json address
+
+[DEBUG] 2024-01-12 15:59:57.019 [main] testMAin - [14]position is NewUniqueJsonPost, some json description
+
+[DEBUG] 2024-01-12 15:59:57.021 [main] testMAin - [39] name: JsonUnique company, location: NewJson address
+
+[DEBUG] 2024-01-12 15:59:57.066 [main] testMAin - order information:
+client: [0] - CustomerFRomOrderJson
+phoneFromOrderJson
+Customer with login [JsonloginCustomer2] And password [jsonPassCustomer2] 
+worker: Name: Intelov Icore the sevens ,phone phoneFromOrderJsob
+Exp 4.0 years, position: JsonPost, on service center: someName someAddress
+Equipment: 
+JsonType, Producer from json, json model, problems: 
+[id = 6 , typeId=2][id = 7 , typeId=3], finish date is 2024-01-18
+
